@@ -1,0 +1,840 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:scaffolding"
+	id: "0000000000000096"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"歡迎來到建築章節"
+				""
+				"這個部分包含了一些建築與裝飾相關的模組，以及一些能幫你完成工作的各種實用工具，並讓你踏上成為經驗豐富的建築師的道路。"
+			]
+			icon: "minecraft:scaffolding"
+			id: "058D3BEB64C74E27"
+			optional: true
+			rewards: [
+				{
+					id: "3C390EFCC5489351"
+					item: "minecraft:stonecutter"
+					type: "item"
+				}
+				{
+					id: "4E93367F3DC60C27"
+					item: "hexerei:mahogany_woodcutter"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "再見了方塊屋"
+			tasks: [{
+				id: "4A2592C4467CEAF6"
+				title: "建築師"
+				type: "checkmark"
+			}]
+			title: "裝飾"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: ["連接玻璃新增了具有連接材質的玻璃和玻璃片。當然包含了透明玻璃以及原版中全部 16 色的染色類型。"]
+			icon: "connectedglass:clear_glass"
+			id: "66099AFAA1A6043F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "73CEB3BC6963B644"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			subtitle: "窗外的一切看得清清楚楚"
+			tasks: [{
+				id: "7E626988261D7522"
+				item: {
+					Count: 1b
+					id: "itemfilters:mod"
+					tag: {
+						value: "connectedglass"
+					}
+				}
+				title: "連接玻璃"
+				type: "item"
+			}]
+			title: "連接玻璃"
+			x: 0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"此模組正如其名。很簡單，就是燈光模組。"
+				""
+				"但別被名稱騙了。簡單燈光提供的燈光可不簡單，讓你的基地隨時保持時尚且明亮。"
+			]
+			icon: "simplylight:illuminant_block_on"
+			id: "42FB32CC99E66E3F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7E2D7FEE20672C9D"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "這裡太暗了"
+			tasks: [{
+				count: 16L
+				id: "1EFA47BC6E4EC782"
+				item: {
+					Count: 1b
+					id: "itemfilters:mod"
+					tag: {
+						value: "simplylight"
+					}
+				}
+				title: "任何 16 個簡單燈光"
+				type: "item"
+			}]
+			title: "簡單燈光"
+			x: -0.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"在找玻璃階梯嗎？或是獄髓門？終界石告示牌有嗎？好了，別找了。"
+				""
+				"鑲框方塊提供了各種方塊形狀的空白模板，能模仿點擊方塊的材質。"
+				""
+				"若點擊的方塊是螢光石甚至還能發光！"
+			]
+			icon: "framedblocks:framed_cube"
+			id: "0798D5139479A837"
+			rewards: [
+				{
+					id: "7A45DC96F03CA232"
+					item: "framedblocks:framed_hammer"
+					type: "item"
+				}
+				{
+					id: "1C5FD3A8CD3424C0"
+					item: "framedblocks:framed_wrench"
+					type: "item"
+				}
+			]
+			subtitle: "天空無極限"
+			tasks: [{
+				count: 4L
+				id: "6D98E195282468AF"
+				item: "framedblocks:framed_cube"
+				type: "item"
+			}]
+			title: "鑲框方塊"
+			x: 1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"是否厭倦了橡木抽屜在你的建築當中像統神這麼耀眼突出，與你的建築色調一點都不搭？"
+				""
+				"鑲框抽屜提供了一個空白的模板，可以將不同的方塊在工作台中組合在一起，用這些方塊的材質打造獨特的抽屜樣式，無論是正面、側面或是邊框，這些鑲框抽屜在視覺上是可高度自訂的。"
+				""
+				"更別說功能性儲存模組不僅是提供了一個抽屜模板，實際上每個種類的都有，無論是 1x2，2x2，甚至是壓縮抽屜。"
+			]
+			icon: "functionalstorage:framed_1"
+			id: "473BE440ECB1CEDF"
+			min_width: 250
+			rewards: [
+				{
+					id: "799AB9D93C124D6F"
+					item: "functionalstorage:netherite_upgrade"
+					type: "item"
+				}
+				{
+					id: "006783158FEE960D"
+					item: "functionalstorage:void_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "蓋個抽屜"
+			tasks: [{
+				id: "130291F7FD5C22C4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:framed_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:framed_4"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+						]
+					}
+				}
+				title: "任何鑲框抽屜"
+				type: "item"
+			}]
+			title: "鑲框抽屜"
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"如果你喜歡沉浸工程模組的工業風格，那你可能會更喜歡工程師的裝飾模組。"
+				""
+				"這個模組新增了一些裝飾方塊，讓你在沉浸工程模組的基地中感到賓至如歸。無論是危險標示、工業平台、支撐梁架，工程師的裝飾模組都能滿足你的需求。"
+			]
+			icon: "engineersdecor:steel_catwalk_stairs"
+			id: "68E143E444AF44C2"
+			rewards: [{
+				count: 2
+				id: "3C8E7414A7A4C3C0"
+				item: "engineersdecor:sign_hotwire"
+				random_bonus: 4
+				type: "item"
+			}]
+			subtitle: "沉浸式的裝飾"
+			tasks: [{
+				count: 12L
+				id: "3962CC2A503F48BE"
+				item: "engineersdecor:metal_bar"
+				type: "item"
+			}]
+			title: "工程師的裝飾"
+			x: -1.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: [
+				"若你喜歡中世紀或鄉村風格的建築，無論是懸崖上的城堡、樹林中的小屋，還是疲憊旅行者造訪的豐盛小酒館，裝飾性方塊模組中總有適合你的風格的方塊。"
+				""
+				"裝飾性方塊模組提供了許多精美材質且設計精良的方塊，滿足你的建築需求。"
+			]
+			icon: "decorative_blocks:oak_support"
+			id: "03D0B336BB7CEFE1"
+			rewards: [
+				{
+					id: "3305966DAE15A384"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "2A80F9273B5F083C"
+					item: "the_bumblezone:sugar_water_bottle"
+					type: "item"
+				}
+				{
+					id: "6EF2696BD9DA2B0F"
+					item: "farmersdelight:milk_bottle"
+					type: "item"
+				}
+			]
+			subtitle: "別走啊，聽看看..."
+			tasks: [{
+				id: "36159E7E842C9962"
+				item: {
+					Count: 1b
+					id: "itemfilters:mod"
+					tag: {
+						value: "decorative_blocks"
+					}
+				}
+				title: "裝飾性方塊"
+				type: "item"
+			}]
+			title: "裝飾性方塊"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"羅馬不是一天造成的，但靠著這些工具，說不定可以。"
+				""
+				"繼續看下去，發掘更多便利的工具，能大大減少大型建築所需花費的時間。"
+			]
+			icon: "framedblocks:framed_hammer"
+			id: "5411C8D2344CC2F1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "215C050F84460976"
+				item: "minecraft:scaffolding"
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "為不同的工作挑個好工具"
+			tasks: [{
+				id: "48834CDA218F71E0"
+				title: "Building Tools"
+				type: "checkmark"
+			}]
+			title: "一般的建築工具"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"它能切割，研磨，鑿製，拋光甚至煮飯和洗衣！"
+				""
+				"切石機的所有功能，現在能以更精巧的便攜形式放在你的精緻背包或精緻儲物箱中！"
+				""
+				"免責聲明：實際上不會煮飯和洗衣。禁止商業使用。"
+				""
+				"警告：遠離兒童，動物，白癡。運作時請勿將手放在刀片上。長時間使用可能導致疲勞或視力耗損。"
+			]
+			icon: "minecraft:stonecutter"
+			id: "085A8424875A2B23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "31F796972A4B7369"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "類似 Chisel，但比較胖"
+			tasks: [{
+				id: "0F45B05043BCCBE6"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:stonecutter_upgrade"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedstorage:stonecutter_upgrade"
+							}
+						]
+					}
+				}
+				title: "切石升級"
+				type: "item"
+			}]
+			title: "攜帶式切石機"
+			x: 0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"一個高級的建築裝置，有多種模式，能快速建造一面牆，樓梯和一個大平台。"
+				""
+				"對方塊蹲下右鍵設定要拿來建築的方塊。使用建築小幫手的介面（預設快捷鍵 : g）來使用進階功能。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_building"
+				tag: {
+					state: {
+						data: { }
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+					}
+				}
+			}
+			id: "0F06CA2A45323C4C"
+			rewards: [{
+				id: "651CFE821154BBC8"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "它能蓋東西"
+			tasks: [{
+				id: "5DB4EE8F264A9453"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_building"
+					tag: {
+						state: {
+							data: { }
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "建築小幫手"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"快速更替範圍內的方塊，無須破壞原本的方塊再手動放上。若附上絲綢之觸，能將精緻的方塊無痛回收，例如玻璃，"
+				""
+				"對方塊蹲下右鍵設定要拿來替換的方塊。使用建築小幫手的介面（預設快捷鍵 : g）來使用進階功能。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_exchanging"
+				tag: {
+					state: {
+						data: { }
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+					}
+				}
+			}
+			id: "25E1DB1C3F184D4C"
+			rewards: [{
+				id: "2A430B36A4ECDB29"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "它能替換東西"
+			tasks: [{
+				id: "0031DADEE3BD0089"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_exchanging"
+					tag: {
+						state: {
+							data: { }
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "更替小幫手"
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"這是個強大的工具，可以複製大範圍的建築並在其他地方重新建造，這讓復刻大範圍建築更容易了，例如重複的牆壁設計，或是用一些不同的既有建築來裝飾一個區域。"
+				""
+				"使用建築小幫手的介面（預設快捷鍵 : g）來使用進階功能。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_copy_paste"
+				tag: {
+					mode: 0b
+					template_id: [I;
+						-937522451
+						-1230682587
+						-1166065172
+						-847433661
+					]
+				}
+			}
+			id: "2E5F1C7B4B293531"
+			rewards: [{
+				id: "56EDEB3CE12B8C19"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "它能複製並貼上東西"
+			tasks: [{
+				id: "6AB9C0357788BA56"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_copy_paste"
+					tag: {
+						mode: 0b
+						template_id: [I;
+							-937522451
+							-1230682587
+							-1166065172
+							-847433661
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "複製貼上小幫手"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"當你只想清出一個洞出來蓋東西，而你不在意那些方塊是什麼。"
+				""
+				"請注意，這個工具會銷毀所有移除的方塊！"
+				""
+				"使用建築小幫手的介面（預設快捷鍵 : g）來使用進階功能。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "buildinggadgets:gadget_destruction"
+				tag: {
+					fuzzy: 1b
+					overlay: 1b
+				}
+			}
+			id: "095108AB50598C04"
+			rewards: [{
+				id: "61F9F3D49C389940"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "猜猜它能幹嘛..."
+			tasks: [{
+				id: "1441EAF1EDC3AFDF"
+				item: {
+					Count: 1b
+					id: "buildinggadgets:gadget_destruction"
+					tag: {
+						fuzzy: 1b
+						overlay: 1b
+					}
+				}
+				type: "item"
+			}]
+			title: "破壞小幫手"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"經典的模組，建築手杖，其功能為簡單的延伸放置在世界上已放置的方塊。這能很容易的就蓋好一座牆，只要先打好地基，再用手杖建築。"
+				""
+				"此版本還新增了一個功能，例如能破壞方塊，在空中放方塊，甚至能從快捷欄中隨機放置方塊。"
+				""
+				"Ctrl + Shift 對空氣右鍵使用能開啟進階選項的介面，或是 Ctrl + 滾輪可以在建築模式中快速切換。"
+			]
+			icon: {
+				Count: 1b
+				id: "constructionwand:stone_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
+			id: "26B88D08862EA1AE"
+			rewards: [{
+				count: 16
+				id: "214C2A82D3E5941A"
+				item: "minecraft:scaffolding"
+				random_bonus: 16
+				type: "item"
+			}]
+			subtitle: "Accio"
+			tasks: [{
+				id: "131EB02FBDE8DC98"
+				item: {
+					Count: 1b
+					id: "constructionwand:diamond_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "建築手杖"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"伸縮機械手增加了你的觸及距離，這能讓你在更遠的地方放置或破壞方塊。"
+				""
+				"要使用伸縮機械手，將其放在你的非慣用手上，然後像平常一樣使用在慣用手上的方塊或工具。"
+				""
+				"配戴銅製後背包時，伸縮機械手不會消耗耐久，而是使用存在背包的一些氣體。"
+			]
+			icon: {
+				Count: 1b
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "34F00196E2D0B4B0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "384957F4FCE7BC6A"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "BOING! BOING!"
+			tasks: [{
+				id: "36A419607017EA31"
+				item: {
+					Count: 1b
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "伸縮機械手"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: [
+				"對稱杖不會讓那些現實中的對稱強迫症者失望。"
+				""
+				"這個工具會以中心點周圍的鏡像位置自動放置方塊，這讓大型建築變得輕而易舉。"
+				""
+				"首先，右鍵地面上的一個方塊作為中心點。選擇後，蹲下右鍵開啟設定介面，選擇鏡子類型與方向。"
+			]
+			hide_dependency_lines: true
+			icon: "create:wand_of_symmetry"
+			id: "147B701C5BCF2424"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "01870BF5EE173AB5"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "強迫症患者的福音"
+			tasks: [{
+				id: "0A989C0C09502289"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			title: "對稱杖"
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			description: [
+				"夸克是個相當龐大的模組，雖然它值得有自己的一個章節，或是成為建築章節的一部分，但我們覺得將其獨立出一個訊息更為合適。雖然幾乎不可能寫出所有夸克提供的內容，但以下是讓建築時可以更輕鬆的一些亮點。"
+				""
+				"- 裝飾性方塊：夸克提供了大量的方塊，像是不同造型的儲物箱用合成的，或像是剛玉水晶從世界各地採集。"
+				""
+				"- 鋪路鏟：這工具能隨機放置方塊。使用時隨機放置快捷欄上的各式方塊。"
+				""
+				"有關更多夸克提供建築相關的功能，請見其官方網站。"
+				""
+				"{\"text\":\"Quark Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://quarkmod.net/#features\"}}"
+			]
+			icon: {
+				Count: 1b
+				id: "quark:trowel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "73696B8EC7BB92C7"
+			rewards: [{
+				id: "2577A6FCCC09B07B"
+				item: "quark:abacus"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "包羅萬象"
+			tasks: [{
+				id: "5B29C3C71D617D0A"
+				title: "夸克模組"
+				type: "checkmark"
+			}]
+			title: "夸克模組"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5411C8D2344CC2F1"]
+			description: ["需要捲尺嗎？用測距器如何？這個小東西能快速計算 A 點至 B 點間的距離，非常適合規劃大型建築。只要在起點右鍵地面然後走到終點。"]
+			id: "45A99E75C9AFCFC5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0A09BABD778C97C2"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2F6A3A84B2EBFABD"
+				item: "quark:abacus"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: ["一個簡單的感應器，可以放在任何的門上。當玩家靠近時，門會自動打開。垂直偵測範圍可以使用 Redstone Key 進行調整，因此能在更大的門上運作。"]
+			id: "17F29DFB161A6D1E"
+			rewards: [{
+				id: "2606C21488212483"
+				item: "manyideas_core:redstone_key"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73B6B9FD71519D5C"
+				item: "manyideas_doors:player_door_sensor"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["058D3BEB64C74E27"]
+			description: ["附魔剪刀，對彩虹羊使用時會產出彩虹羊毛。"]
+			id: "7F8E9CAAF204E1F3"
+			tasks: [{
+				id: "50B8BB361CE34B8A"
+				item: {
+					Count: 1b
+					id: "manyideas_core:mysterious_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.0d
+		}
+		{
+			description: [
+				"動力機械模組有一組專門用來保存建築藍圖並複製出來的工具。"
+				""
+				"藍圖與筆讓你能儲存既有結構的藍圖。這個已儲存的藍圖能讓你在其他任何地方復建出來。"
+				""
+				"1) 右鍵選擇要儲存結構的兩個對角。"
+				"2) 對著選定區域的一個面並按住 Ctrl + 滾輪來調整該面。"
+				"3) 右鍵命名並儲存藍圖。"
+				""
+				"動力機械模組的 GitHub 網站有個 wiki 頁面說明了如何儲存藍圖："
+				""
+				"{\"text\":\"儲存藍圖\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic\"}}"
+			]
+			hide_dependency_lines: true
+			id: "225DD8C72B11FFE3"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5596D763FED920E0"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "建築學 101"
+			tasks: [{
+				id: "5A9DC446B30DBFA0"
+				item: "create:schematic_and_quill"
+				type: "item"
+			}]
+			title: "儲存藍圖"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["225DD8C72B11FFE3"]
+			description: [
+				"為了將結構放置出來，你需要製作出藍圖 - 這能靠藍圖桌完成。"
+				""
+				"開啟藍圖桌介面，將滑鼠游標放在的中間框上，滾動滑鼠選擇要製作的藍圖。在左邊的欄位中放入空白藍圖，按下打勾按鈕列印藍圖，這會將該藍圖上傳至伺服器，若藍圖結構很大可能會需要一點時間。在此過程中你可以先關閉藍圖桌介面，稍後再回來查看。\"開啟資料夾\"的按鈕會打開你電腦中這個實例的藍圖資料夾，\"重新整理資料夾\"的按鈕則會更新藍圖列表。"
+				""
+				"手持印出的藍圖，右鍵將此藍圖結構預覽於世界中。螢幕上的介面提供調整藍圖的選項：移動，旋轉，翻轉。Shift 右鍵藍圖可以編輯，放置，選轉和鏡像。你能依此為依據來開始建築，但有更好的方法..."
+				""
+				"請注意：預設狀況下包含了常見的多方塊結構藍圖。可以按下\"開啟資料夾\"重新移動這些藍圖並重新整理這些資料。"
+				""
+				"動力機械模組的 GitHub 網站有個 wiki 頁面說明了如何載入藍圖："
+				""
+				"{\"text\":\"載入藍圖\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic\"}}"
+			]
+			id: "7B4FBC9CC07C6E28"
+			min_width: 300
+			rewards: [{
+				id: "03CCD8A592938743"
+				item: "create:empty_schematic"
+				title: "Empty Schematic"
+				type: "item"
+			}]
+			subtitle: "申請建築許可證"
+			tasks: [{
+				id: "1D0625DD24276142"
+				item: "create:schematic_table"
+				type: "item"
+			}]
+			title: "放置藍圖"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7B4FBC9CC07C6E28"]
+			description: [
+				"藍圖加農砲是你將建築蓋出來的方式。它使用火藥作為推進劑，並從相鄰的容器從取出方塊。"
+				""
+				"將你剛設定好位置的藍圖放入藍圖加農砲中，左上角裝填火藥，每 400 個方塊會消耗一個火藥。點擊介面中間的\"播放\"按鈕開始放至方塊！"
+				""
+				"預設狀況下，加農砲若沒有足夠的方塊會停止運作，並會替換掉範圍內的方塊，但會保護 tile entities （像是儲物箱之類的）。替換下來的方塊不會掉落，會消失，加農砲不是採石工具！按下左下角的按鈕可以進行調整。"
+				""
+				"請注意：加農砲並不是很快，但可以同時使用多個加農砲，能使用時間之瓶創造奇蹟！"
+				""
+				"動力機械模組的 GitHub 網站有個 wiki 頁面說明了如何列印藍圖："
+				""
+				"{\"text\":\"列印藍圖\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic\"}}"
+			]
+			id: "55FBBB1108757907"
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "454017D41CFDE042"
+				item: "minecraft:gunpowder"
+				title: "Gunpowder"
+				type: "item"
+			}]
+			subtitle: "建築大爆炸"
+			tasks: [{
+				id: "26823569074F6FA3"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			title: "列印藍圖"
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+	title: "建築"
+}

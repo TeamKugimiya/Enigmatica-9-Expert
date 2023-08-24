@@ -1,10 +1,10 @@
 # 模組包名稱
-modpack-name: Modpack-Template
+modpack-name: Enigmatica 9: Expert
 
 # 模組包專案設定（自動更新通知）
 # 如果 Project ID 為空將會停止檢查
-modpack-project-id:
-modpack-file-id: 
+modpack-project-id: 882461
+modpack-file-id: 4705151
 
 # 用戶端 - 複製陣列
 client-patch:

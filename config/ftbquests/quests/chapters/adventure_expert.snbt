@@ -1,0 +1,143 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "adventure_expert"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:recovery_compass"
+	id: "156D069818843235"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"探險家當心了，因為這片土地上許多看似廢棄的建築物中都蘊含著恐怖氣息。"
+				""
+				"寶藏等待著勇者；死亡等待著弱者。"
+			]
+			hide: true
+			id: "47AE76E02C85889D"
+			rewards: [{
+				id: "487FC72668032818"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "砍殺遊戲"
+			tasks: [{
+				icon: "kubejs:scavengers_delight"
+				id: "78721C9F7AAB1EB7"
+				title: "探索地牢"
+				type: "checkmark"
+			}]
+			title: "探索地牢"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"喜歡你所看見的事物嗎？Oh, the Biomes You’ll go模組新增了大量美麗的生態域來美化你的世界。"
+				""
+				"出去走走，四處看看，看你喜歡什麼。或許你會找到一個適合你的地方落腳？"
+			]
+			hide: true
+			id: "7F5FA709506E3B64"
+			rewards: [{
+				id: "5DA1C4C66DAC08B5"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "外面的世界是如此地寬廣。"
+			tasks: [{
+				icon: "byg:pink_cherry_sapling"
+				id: "0DB34AAC146D5382"
+				title: "Oh, The Biomes You'll Go"
+				type: "checkmark"
+			}]
+			title: "Oh, The Biomes You'll Go"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"找不到路嗎？需要找個沙漠來個老派的採沙嗎？或是找個地方住下呢？"
+				""
+				"製作Nature’s Compass來幫你找到稀有或不常見的生態域。"
+			]
+			hide: true
+			id: "5CB7CB9124468371"
+			rewards: [{
+				id: "57CD9762F229EE5D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "我們才沒有迷路呢，這就是我們要去的地方。"
+			tasks: [{
+				id: "27C01B99748ABC70"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: ["大樹 9 專家版從暮光森林開始。面對危險的敵人，恢復生命之樹，並拓展探索新的世界。"]
+			hide: true
+			id: "273A8476E713635C"
+			rewards: [{
+				id: "7C1548324A304CEB"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				advancement: "twilightforest:root"
+				criterion: ""
+				id: "56814ABCF9C95DAF"
+				title: "暮光森林"
+				type: "advancement"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"蜜蜂的世界比人們想得更廣闊。"
+				""
+				"把傳送機放在蜂箱的正下方，然後將終界珍珠丟入蜂箱中，看看裡頭有什麼好康的。"
+			]
+			hide: true
+			icon: "the_bumblezone:beehive_beeswax"
+			id: "1A8E11E6902EF950"
+			rewards: [{
+				id: "64AB9C8C216812FC"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_bumblezone/teleportation/teleport_to_bumblezone_pearl"
+					criterion: ""
+					icon: "the_bumblezone:beehive_beeswax"
+					id: "4601E6FFAE3DF988"
+					type: "advancement"
+				}
+				{
+					id: "4478F355EBF30E9F"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+			]
+			title: "The Bumblezone"
+			x: 1.0d
+			y: 2.5d
+		}
+	]
+	title: "冒險"
+}

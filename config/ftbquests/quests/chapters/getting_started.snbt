@@ -1,0 +1,322 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_started"
+	group: ""
+	icon: "minecraft:nether_star"
+	id: "0000000000000044"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"歡迎遊玩大樹 9，很開心你來了！ :D"
+				" "
+				"任務分成兩個類型："
+				""
+				"● 探索新鮮事"
+				"● 學習模組"
+				""
+				"你可以在下面學習更多關於這兩類更多的訊息。"
+				""
+			]
+			icon: "minecraft:oak_sapling"
+			id: "0000000000000045"
+			min_width: 260
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0000000000000A93"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			size: 1.5d
+			tasks: [{
+				icon: "minecraft:oak_sapling"
+				id: "0000000000000046"
+				type: "checkmark"
+			}]
+			title: "歡迎！"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"探索任務線的目的是展示這包有什麼可用的內容。"
+				""
+				"若你是麥塊模組新手或是需要一些靈感，這些章節是個很好的起點。"
+				""
+				"目前這些章節包含了："
+				""
+				"● 冒險"
+				"● 建築"
+				"● 工具裝備"
+				"● 紅石與邏輯"
+				"● 儲物"
+			]
+			id: "00000000000002AC"
+			rewards: [{
+				id: "00000000000002B4"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				icon: "minecraft:compass"
+				id: "00000000000002AD"
+				title: "探索大樹"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"學習模組章節的設計是為了幫助你遊玩這些大型內容的模組，並分為科技與魔法的章節。大致介紹了這些模組如何發展與如何運作，這些方塊的用途與模組的概念。"
+				""
+				"這些章節涵蓋了很多內容，但並非所有的內容。所以若這些模組有手冊，請務必搭配使用學習。"
+			]
+			icon: "minecraft:writable_book"
+			id: "00000000000002AE"
+			rewards: [{
+				id: "00000000000002B2"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "00000000000002AF"
+				title: "學習模組"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"若你是麥塊模組新手，要搞清楚什麼是什麼是有點令人感到畏懼的。"
+				""
+				"這就是為何我們做了一本書，總結了一些基本知識並在你的模組旅途中提供堅強的基礎。"
+			]
+			id: "00000000000006E9"
+			rewards: [{
+				id: "00000000000006EB"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+				title: "Modded for Dummies"
+				type: "item"
+			}]
+			subtitle: "嘿，聽好了！"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+				id: "00000000000006EA"
+				title: "嘿，聽好了！"
+				type: "checkmark"
+			}]
+			title: "模組白癡"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0000000000000045"]
+			description: [
+				"龐大的知識寶庫就在你手中。這個寶典預先存入了各個模組的手冊，因此隨時可查閱。"
+				""
+				"● 右鍵開啟選單並選擇一本書。"
+				"  點選後無論出於何種意圖與目的，"
+				"  怪奇寶典都會轉變成那本書。"
+				""
+				"● 對空氣左鍵將其恢復為原本的怪奇寶典。"
+				""
+				"● 當轉換為某個模組的書時，蹲下並丟出會讓怪奇寶典移除"
+				"  該模組的書並將該書丟出。"
+				""
+				"● 將寶典與其他模組的書合成後，將書合併到怪奇寶典內。"
+				""
+				"不小心弄丟了？只要再做一個新的，它會預先存入各個手冊。"
+			]
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "1F5D6018C2E35C3D"
+			min_width: 250
+			rewards: [{
+				id: "68C0A864D96B2AC8"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: {
+						"eccentrictome:mods": {
+							ae2: {
+								0: {
+									Count: 1.0d
+									id: "ae2:guide"
+								}
+							}
+							apotheosis: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "apotheosis:apoth_chronicle"
+									}
+								}
+							}
+							ars_nouveau: {
+								0: {
+									Count: 1.0d
+									id: "ars_nouveau:worn_notebook"
+								}
+							}
+							engineersdecor: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "engineersdecor:engineersdecor_manual"
+									}
+								}
+							}
+							ftbquests: {
+								0: {
+									Count: 1.0d
+									id: "ftbquests:book"
+								}
+							}
+							immersiveengineering: {
+								0: {
+									Count: 1.0d
+									id: "immersiveengineering:manual"
+								}
+							}
+							industrialforegoing: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "industrialforegoing:industrial_foregoing"
+									}
+								}
+							}
+							littlelogistics: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "littlelogistics:guide"
+									}
+								}
+							}
+							modonomicon: {
+								0: {
+									Count: 1.0d
+									id: "modonomicon:modonomicon"
+									tag: {
+										"modonomicon:book_id": "theurgy:the_hermetica"
+									}
+								}
+							}
+							modularrouters: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "modularrouters:book"
+									}
+								}
+							}
+							naturesaura: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "naturesaura:book"
+									}
+								}
+							}
+							occultism: {
+								0: {
+									Count: 1.0d
+									id: "occultism:dictionary_of_spirits"
+									tag: {
+										"modonomicon:book_id": "occultism:dictionary_of_spirits"
+									}
+								}
+							}
+							pneumaticcraft: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "pneumaticcraft:book"
+									}
+								}
+							}
+							powah: {
+								0: {
+									Count: 1.0d
+									id: "powah:book"
+								}
+							}
+							rftoolsbase: {
+								0: {
+									Count: 1.0d
+									id: "rftoolsbase:manual"
+								}
+							}
+							sushigocrafting: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "sushigocrafting:sushigocrafting"
+									}
+								}
+							}
+							thermal: {
+								0: {
+									Count: 1.0d
+									id: "patchouli:guide_book"
+									tag: {
+										"patchouli:book": "thermal:guidebook"
+									}
+								}
+							}
+						}
+						"eccentrictome:version": 1.0d
+					}
+				}
+				only_one: true
+				title: "Full Eccentric Tome"
+				type: "item"
+			}]
+			subtitle: "別緊張"
+			tasks: [{
+				id: "7781E2B735D79B56"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			title: "怪奇寶典"
+			x: -1.5d
+			y: -6.0d
+		}
+	]
+	title: "冒險啟程"
+}

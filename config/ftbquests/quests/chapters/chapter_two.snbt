@@ -1,0 +1,1030 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_two"
+	group: "2FE70BF4886F08F4"
+	icon: "byg:subzero_crystal_cluster"
+	id: "762FE9447FC2B081"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["55C6945D58D77AB6"]
+			description: [
+				"當太陽在Wilden Grove落下，同時月亮也為你的魔法團升起。"
+				""
+				"擁抱黑夜。"
+			]
+			id: "4C676E7D2BA75DE4"
+			rewards: [{
+				count: 2
+				id: "0F52F5957E3F3790"
+				item: "rftoolsbase:infused_diamond"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: "kubejs:gloaming_catalyst"
+				id: "7D0D0C5E4E8FF86D"
+				observe_type: 0
+				timer: 0L
+				title: "薄暮催化器"
+				to_observe: "kubejs:gloaming_catalyst"
+				type: "observation"
+			}]
+			title: "薄暮催化器"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["這種附魔裝置能夠賦予物品魔力，毫無疑問的在將來的發展上有巨大的價值。"]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "31E4C2A162D7497C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "4C9ACBB578AFC307"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					count: 3
+					id: "3EA016A20F0AE7FA"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2D56C518D77625DD"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "0C24097F0058189C"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55C6945D58D77AB6"]
+			description: [
+				"正如女王所說，為了在時機未至之前阻止暮光幽靈教派，Wilden Grove召開了一場危險的儀式。"
+				""
+				"可惜的是，儀式太過強大，他們迷失在野獸的呼喚中。"
+				""
+				"代表女王發送一條訊息，告訴他們：&7\"我們對你的友情感到哀悼。現在安息吧。\"&r 然後讓他們安詳離開。"
+				""
+				"========================================"
+				""
+				"這場戰鬥的傳送門會在短時間內關閉。"
+				""
+				"捕捉一隻荒野奇美拉並擊敗其他怪物，以獲得荒野貢物。被捕捉的荒野奇美拉將用於挖掘魔境汁液，這個流體有多種用途。"
+				""
+				"想多打幾次這個戰鬥請隨意，但並沒有打算要求你打超過一次。"
+			]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:wilden_grove_gate"
+				}
+			}
+			id: "0B7E9625225C8413"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "57F9A2443CFDEB47"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5E066AEF6EE32A8F"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:wilden_grove_gate"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BBD39057657A72D"
+					item: "ars_nouveau:wilden_tribute"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0B7E9625225C8413"]
+			description: ["在與Wilden Grove的戰鬥結束後，所獲得的Wilden Tribute，是那些達到了魔法能力巔峰的人所持有的標誌。"]
+			id: "10238EBB9B55F67B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "2D791DABDEA4EA64"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "1DDBFACA2CC5B913"
+				item: "ars_elemental:mark_of_mastery"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21C352EEFEB25365"]
+			description: [
+				"從礦石中提取有用的元素鐵並不是一個簡單的任務，需要一些專門的設備來完成這個過程。"
+				""
+				"首先，需要一個特殊附魔的粉碎輪來將礦石破碎成較小的顆粒。然後，需要將產生的碎礦在高溫下進行酸浴處理，以開始去除雜質。"
+			]
+			id: "6044FE23384692A5"
+			rewards: [{
+				id: "7D7743EF1763E052"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0B70A4972A7F691F"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["33BCDA0A76E2523C"]
+			description: [
+				"受控魔法能量的集中爆發對轉換某些材料是必要的。碰巧的是，一個專門準備的水晶球，扮演了這種轉變的完美透鏡，能接收並放大外界傳來的能量。"
+				""
+				"============================="
+				""
+				"充能桿必須接在能輸出能量的方塊上，單靠自身無法直接放置。"
+				""
+				"直接放在脈動水晶的底部是可行的，但感覺有些尷尬。反之，可考慮使用能量儀表板或模組化路由器來放置充能桿。只要在放置充能桿的面上設定為能量輸出即可。"
+			]
+			hide: true
+			icon: "powah:energizing_orb"
+			id: "60324503ED7AC4C1"
+			rewards: [
+				{
+					id: "4FE88FB703488A37"
+					item: "energymeter:meter"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1173DB9473878230"
+					item: "powah:energizing_rod_basic"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1E9F51D9111326A7"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					id: "05525E02360F94FE"
+					item: "powah:energizing_rod_basic"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6044FE23384692A5"]
+			description: [
+				"為了繼續純化鐵礦所需的高溫和完美條件，需要建造另一個魔法裝置，即強化高爐。"
+				""
+				"這個裝置使用烈焰電晶作為燃料，雖然它非常適合用於鐵，但也適用於處理許多其他金屬。"
+			]
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "2BA70920EA1ED0A8"
+			rewards: [{
+				count: 8
+				id: "123F692F841A813C"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "79ABD0D7EFB8D300"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "3296A9C9C71EBE17"
+					item: "kubejs:crude_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "改良的高爐"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21C352EEFEB25365"]
+			description: [
+				"以下多方塊機器可以使用見習工藝方塊來建造："
+				""
+				"● 金屬沖壓機"
+				"● 混合器"
+				"● 裝罐器"
+				"● 裝配機"
+				"● 鋸木機"
+			]
+			icon: "immersiveengineering:light_engineering"
+			id: "2C43443DCFFF65F4"
+			rewards: [{
+				id: "4124CD879D379691"
+				item: "immersiveengineering:fluid_pump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05A605FCDAEBD972"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			title: "輕型機械"
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1034686D695A8A6D"]
+			description: [
+				"存在著一種在領域中不平衡的魔法能量。雖然像這個世界一樣，正好像充滿了魔法的潛力，但其他地方卻明顯缺乏。"
+				""
+				"隨著生命之樹部分修復，我們可以安全地恢復與另一世界的靈魂達成的古老協議，以魔源交換他們的勞力。"
+				""
+				"能量轉移矩陣充當橋樑，促使這種交換成為可能。當正確地整合到奧術的裝置中，材料和魔源可以通過它流入另一世界。作為交換，那裡的靈魂將轉化材料並將其歸還，作為報酬保留魔源。"
+				""
+				"確實是一筆公平的交易。"
+			]
+			icon: "kubejs:energetic_transference_matrix"
+			id: "21C352EEFEB25365"
+			rewards: [
+				{
+					id: "5C549F9BD46501E4"
+					item: "powah:player_transmitter_basic"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "363F6A8483473ED2"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			subtitle: "Interdimensional Outsourcing"
+			tasks: [
+				{
+					id: "4027AFF2F762B0D1"
+					item: "kubejs:energetic_transference_matrix"
+					type: "item"
+				}
+				{
+					id: "0FC163032DB062F7"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2BA70920EA1ED0A8"
+				"4C676E7D2BA75DE4"
+			]
+			description: [
+				"冶金灌注機是一種特殊的裝置，用於將材料與各種物質進行魔法融合，它在純化元素鐵的過程中至關重要。"
+				""
+				"在添加火元素之後，粗鐵可以鍛煉成鋼，而在添加風元素之後，金屬可以純化成可鍛鍊的鐵。"
+			]
+			id: "49159D9F94B7006C"
+			rewards: [
+				{
+					count: 8
+					id: "37CB2B7EFAFD94D1"
+					item: "emendatusenigmatica:enriched_fire_essence"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1D69775E794A868E"
+					item: "emendatusenigmatica:enriched_air_essence"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7667047356862670"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4CC418E7200DF351"]
+			description: [
+				"Cell Maze似乎是個可能的起點。找到它並四處群找女王所在的線索。它們以被Honey Web分隔開的大型隔間結構而聞名，並含有無數的Honey Cocoons。"
+				""
+				"進入前務必獲得Protection of the Hive的效果！"
+				""
+				"================================="
+				""
+				"當在Bumblezone裡時，拿著Honey Compass對空氣右鍵將調整成Cell Maze。"
+			]
+			id: "57861ABDB35ED555"
+			rewards: [{
+				count: 16
+				id: "7171199016FE9E99"
+				item: "minecraft:honey_bottle"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "707735727FE79FB9"
+				item: {
+					Count: 1b
+					id: "the_bumblezone:honey_compass"
+					tag: {
+						CompassType: "structure"
+						TargetDimension: "the_bumblezone:the_bumblezone"
+						TargetPos: {
+							X: -2480
+							Y: 0
+							Z: -1936
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57861ABDB35ED555"]
+			description: [
+				"終於見到女王！"
+				""
+				"完成女王要求的任務，或將應有的物品歸還給它，來贏得女王的恩惠。"
+				""
+				"=================================="
+				""
+				"Essence of the Bees確實是個非常稀有的獎勵，因此不要浪費掉了！"
+				"在使用掉前先用它來製作薄暮催化器，為了獲得其提供的所有永久獎勵。"
+			]
+			icon: "the_bumblezone:essence_of_the_bees"
+			id: "55C6945D58D77AB6"
+			rewards: [
+				{
+					count: 8
+					id: "5D5766AB445B727E"
+					item: "the_bumblezone:royal_jelly_bottle"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "21E8E534E6A7EBA6"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run summon the_bumblezone:beehemoth ~ ~2 ~"
+					icon: "the_bumblezone:bee_queen_spawn_egg"
+					id: "1F7EF0E9FB5A71ED"
+					player_command: false
+					title: "The Queen's Guard"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "3CC2FBDD7AB29403"
+					item: {
+						Count: 1b
+						id: "the_bumblezone:honey_compass"
+						tag: {
+							CompassType: "structure"
+							CustomDescription: "item.the_bumblezone.honey_compass_throne_description"
+							CustomName: "item.the_bumblezone.honey_compass_throne_structure"
+							Locked: 1b
+							TargetDimension: "the_bumblezone:the_bumblezone"
+							TargetPos: {
+								X: -1472
+								Y: 0
+								Z: -4688
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "586A6799065EA729"
+					item: "the_bumblezone:essence_of_the_bees"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2153EBB1D50F0039"]
+			description: [
+				"Bumblezone中蜿蜒的小路是因蜂群思維而建，因此其他人可能很難走。製作Honey Compass是最安全的前進方式。"
+				""
+				"當在蜜蜂家中記得對它們表示尊重。餵食蜜蜂和Honeycomb Brood Block一些美味的蜂蜜食物來獲得Protection of the Hive。只有尊貴的個人才可以進入它們最神聖的地方。"
+				""
+				"================================="
+				""
+				"當在Bumblezone，可以隨時挖到最頂部或是最底部離開。高於或低於某個特定的高度時，你將被傳送回你來的地方。"
+			]
+			icon: "minecraft:honeycomb"
+			id: "4CC418E7200DF351"
+			rewards: [{
+				count: 16
+				id: "6AA44F123D286226"
+				item: "the_bumblezone:bee_bread"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4F31450F59F287F9"
+					item: {
+						Count: 1b
+						id: "the_bumblezone:honey_compass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "727B3D8940DE93A6"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "the_bumblezone:bee_bread"
+								}
+								{
+									Count: 1b
+									id: "minecraft:honey_bottle"
+								}
+							]
+						}
+					}
+					title: "Bee Treats"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60324503ED7AC4C1"]
+			description: ["這種獨特的合金被古人稱為山銅，特別適用於放大器的高級附魔。"]
+			id: "00B21E64DEFACB40"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "23B342C9B1B2B79C"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "01AF1B57146069F1"
+				item: "emendatusenigmatica:brass_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31E4C2A162D7497C"]
+			description: [
+				"在那仍以老舊生活方式的地方，蜜蜂在社群的生活中握有特權的地位。從孩子的出生到朋友的死去，重要事件的消息都會先與蜜蜂分享。"
+				""
+				"眾所周知，Wilden Grove 是個熱心的養蜂人，有些人推測蜜蜂會透過夢境向它們傳遞訊息，讓它們知曉來自四面八方的消息。"
+				""
+				"這是個美麗的故事，但簡單的占卜肯定也能做到相同的事。"
+				""
+				"儘管如此，這種作法從未真正消失，特別是Grove之間。似乎隨著暮光幽靈崇拜在此處的崛起，德魯伊可能已與蜜蜂討論起這些事，甚至可能尋求女王的建議。"
+				""
+				"找尋女王蜂，看看它們是否能提供任何線索。"
+				""
+				"================================================="
+				""
+				"為了前往Bumblezone，蜂箱的正下方必須放置傳送機，然後將終界珍珠丟入蜂箱。"
+			]
+			icon: "minecraft:beehive"
+			id: "2153EBB1D50F0039"
+			min_width: 300
+			rewards: [{
+				id: "6363919C99636DBD"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4A2B53416D546C80"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "637617E3CEC25857"
+					item: "mekanism:teleporter"
+					type: "item"
+				}
+			]
+			title: "蜜蜂的故事"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4C676E7D2BA75DE4"]
+			description: [
+				"作為對女王提供服務的回報，它授予你前往一個充滿豐富的綠洲的安全通行權。"
+				""
+				"用它們的禮物滋養生命之樹，並前往主世界尋找更多恢復生命之樹的答案。"
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:tree_of_life_2"
+			id: "2759988A5B69A455"
+			rewards: [
+				{
+					count: 2
+					id: "0606173E7BE74E39"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:stable_warp_scroll"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "14AC976E409BBD66"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "48FE87B0C247EE47"
+					item: "kubejs:tree_of_life_2"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "110AE71D3773300B"
+					item: "kubejs:shard_of_enduring"
+					type: "item"
+				}
+			]
+			title: "生命之樹"
+			x: 2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2759988A5B69A455"]
+			description: [
+				"憑藉著與目的地調和的物品和女王蜂的祝福，前往主世界現在是可以實現的。"
+				""
+				"================================="
+				""
+				"利用生命之樹進行傳送容易出現…漂移。確保帶上一些返回家的方式，以及在另一側設置傳送門的方法。"
+			]
+			icon: "supplementaries:globe"
+			id: "356B7D1DFF632DBD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "4F02BC40CABDEFBD"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					icon: "supplementaries:globe"
+					id: "38380859B691C3D0"
+					title: "造訪主世界"
+					type: "dimension"
+				}
+				{
+					id: "4448E4A5664FA364"
+					item: "kubejs:teleport_overworld"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["作為魔法能量網路跳動的心臟，綁定至 ME 控制器中的元素，能引導魔法能量在各個部件之間流動，使巫師能執行想像的到的奇幻壯舉。"]
+			icon: "ae2:controller"
+			id: "330C200F0F0243FC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "72393E06B7289A9F"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+					icon: "kubejs:aura_leaf"
+					id: "5C8EE393AD050F66"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "3B6B2B365CAD16C1"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					id: "77937A9F77A075BC"
+					item: {
+						Count: 1b
+						id: "thermal:blizz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_blizz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_blizz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["00B21E64DEFACB40"]
+			description: ["岩石使者以其力量與耐力聞名，若以魔法能量進行適當的補償，它將任勞任怨地為動力機械模組的機器提供動力。"]
+			icon: "createaddition:electric_motor"
+			id: "1FDD6F9166A33F8D"
+			rewards: [{
+				id: "340D5E7099030199"
+				item: "kubejs:bright_arcanite_crystal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "04B03547884EC0AA"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+				{
+					id: "3484734D8BB146ED"
+					item: {
+						Count: 1b
+						id: "thermal:basalz_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_bound_basalz.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_bound_basalz\"}"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D0AA79380E87E57"]
+			description: ["符文複印用於穩定更大的次元口袋，讓更多的靈魂同時在所需的任務上工作，同時需要更少的物理空間來容納裝置本身。真是炫酷！"]
+			id: "7563E41DBF4FD286"
+			rewards: [{
+				id: "616836DA3BC9596E"
+				item: "kubejs:bright_arcanite_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D78A382292EF627"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1D0AA79380E87E57"]
+			description: [
+				"以下多方塊機器可以使用精熟工藝方塊來建造："
+				""
+				"● 發酵機"
+				"● 工業擠壓機"
+				"● 煉油廠"
+				"● 粉碎機"
+			]
+			id: "15F56E72212629FB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "42238537475907E4"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0154E90B21C27B44"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			title: "重型機械"
+			x: 3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["49159D9F94B7006C"]
+			description: [
+				"雖然在精密製造中也有其用途，但不變鋼在工匠中更為著名，因為它具有抵抗魔法壓縮的獨特能力。"
+				""
+				"================================="
+				""
+				"對不變鋼進行附魔，製作出法術不變鋼。"
+				""
+				"下面的法術形式能粉碎地上的物品："
+				""
+				"&5投射物&r > &a粉碎&r > &6敏感&r "
+			]
+			id: "1D0AA79380E87E57"
+			rewards: [{
+				id: "5D844F4A7BA28FCE"
+				item: "pneumaticcraft:compressed_iron_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C129E4F6EAC8C83"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1034686D695A8A6D"]
+			description: [
+				"在另一邊有朋友似乎相當有優勢，因為在他們的領域中距離對他們來說意義不大。"
+				""
+				"一個量子網絡橋巧妙地利用了這個特點，使得在極長的距離和不同領域之間傳輸物品、流體、氣體，甚至是能量成為可能。"
+				""
+				"請參考應用能源2章節中有關建造這個多方塊結構的更多信息。"
+			]
+			icon: "ae2:quantum_entangled_singularity"
+			id: "206B112E5F0C1C0A"
+			rewards: [{
+				id: "51FA17E37F1C0EE5"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "191656C32155B744"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "588420C0C476EAA5"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+			]
+			title: "量子網路橋"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7563E41DBF4FD286"]
+			description: ["機器運作有點慢嗎？只需使用工廠安裝器為其提供更多靈魂的空間。同時通過安裝能量和速度升級來幫助它們。"]
+			icon: "mekanism:basic_tier_installer"
+			id: "0945523A7F5C5494"
+			rewards: [{
+				count: 2
+				id: "138C7D0E7C94DA26"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "274A3556346681CA"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_tier_installer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_tier_installer"
+								}
+							]
+						}
+					}
+					title: "工廠安裝器"
+					type: "item"
+				}
+				{
+					id: "13E55AEB17889CB5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:upgrade_energy"
+								}
+								{
+									Count: 1b
+									id: "mekanism:upgrade_speed"
+								}
+							]
+						}
+					}
+					title: "升級"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7001144C71F0E0BC"]
+			description: [
+				"雖然用手有些費力，但似乎可以從維度水晶矩陣上削下小片碎片。"
+				""
+				"在這些水晶中塞入大量材料而不進行任何形式的平面穩定似乎導致了口袋境域的崩塌，形成了一個似乎能夠通過某種其他空間將遠處的地方連接起來的奇異點。"
+				""
+				"================================="
+				""
+				"一個4K儲存元件將足夠用於製作奇點。"
+			]
+			icon: "ae2:condenser"
+			id: "1034686D695A8A6D"
+			rewards: [{
+				id: "4AB0ED4E487C5632"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "20C82AF23D7B3FF1"
+					item: "ae2:condenser"
+					type: "item"
+				}
+				{
+					id: "34F15A06EC034615"
+					item: "ae2:cell_component_4k"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2D8D0D2EA0C2B717"]
+			description: [
+				"儘管微弱，這個內含於水晶矩陣中的小空間應該對於儲存物品非常有用。"
+				""
+				"但也許還有更多待發現的東西。或許需要一把非常鋒利的刀..."
+			]
+			id: "7001144C71F0E0BC"
+			rewards: [{
+				count: 6
+				id: "5BFE207A3A4BFFD4"
+				item: "kubejs:dimensional_storage_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A0EE27AC02790EC"
+				item: {
+					Count: 1b
+					id: "occultism:dimensional_matrix"
+					tag: {
+						spiritName: "Morjyrzur"
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7001144C71F0E0BC"]
+			description: [
+				"正如所料，即使是最小程度的穩定，這個矩陣也能夠儲存大量的物品。"
+				""
+				"確實需要進一步使用平面穩定器進行實驗。"
+			]
+			id: "5D2DEF2DF3C21A09"
+			rewards: [{
+				id: "0BA1C1494478B440"
+				item: "occultism:storage_stabilizer_tier1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DFF4D850A8B2CF1"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2153EBB1D50F0039"]
+			description: [
+				"光經由這些水晶折射得奇怪...彷彿它已經走了更遠的距離。也許那些故事裡的某些真實成分不是毫無根據的。"
+				""
+				"確實，這些Glistering Honey Crystals在注入了靈氣後呈現出非常不尋常的拓撲結構。"
+				""
+				"================================="
+				""
+				"維度碎片方塊可以轉化成芽床，並且像紫水晶一樣生長，這樣很容易獲得更多。"
+			]
+			icon: "the_bumblezone:glistering_honey_crystal"
+			id: "2D8D0D2EA0C2B717"
+			tasks: [
+				{
+					id: "1E12D23625F0F61C"
+					item: "the_bumblezone:glistering_honey_crystal"
+					type: "item"
+				}
+				{
+					id: "49BFDDCD188AC1EC"
+					item: "rftoolsbase:dimensionalshard"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "第 二 章"
+}

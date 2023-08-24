@@ -1,0 +1,2604 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter_one"
+	group: "2FE70BF4886F08F4"
+	icon: "naturesaura:ancient_sapling"
+	id: "2E4E08D773CFD9CF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"Wilden Grove 施展了一種特殊形式的德魯伊魔法，這個魔法慢慢地將金屬地下抽取至土堆中，在那可輕鬆取得這些金屬而將對土地的傷害降至最低。"
+				""
+				"無庸置疑這些土堆仍然存在。找尋它們，但要注意，在沒有了 Grove 的情況下，可能有其他人已將此佔為己有。"
+				""
+				"================================="
+				""
+				"金屬的製程已重度魔改，許多金屬有獨特的取得方式。請仔細地查閱EMI。"
+			]
+			hide: true
+			id: "1075F3BAA03841EF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "60A777DE4B85ED0F"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "661311DE367A692A"
+					item: "minecraft:raw_gold"
+					type: "item"
+				}
+				{
+					id: "2BF19C51CB184E04"
+					item: "minecraft:raw_copper"
+					type: "item"
+				}
+				{
+					id: "17CF16620C377879"
+					item: "emendatusenigmatica:raw_silver"
+					type: "item"
+				}
+				{
+					id: "6C4462B5BE32C471"
+					item: "emendatusenigmatica:raw_tin"
+					type: "item"
+				}
+			]
+			title: "基礎冶金"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"奇怪的事情發生了。很久很久之前，這片沼澤被 Wilden Grove 守護著，一群德魯伊誓言守護並看守附近的荒地。然而，不知為何，像納迦這樣的生物，現在正恐嚇著這片土地。"
+				""
+				"只要打敗它，以這裡為家的精靈們，無疑地會表達它們的感激之情。"
+				""
+				"================================="
+				""
+				"找到並擊殺納迦。"
+				""
+				"它應該位於附近的一個大石頭庭院裡。納迦雖然速度很快，但並不以其智力聞名，再盲目的憤怒中，能很容易地躲開它的攻擊。保持距離並瞄準頭部。"
+				""
+				"擊敗它之後，競技場中央會生成一個箱子。務必帶走裡面的東西。"
+				""
+				"請注意：暮光森林的進度系統已在專家模式中停用。現在起，你可以隨心所欲地探索任何地區。"
+			]
+			hide: true
+			id: "73CDA6ED2393DE42"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "74F868CAED853121"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "恐懼是心靈殺手"
+			tasks: [{
+				id: "34B9CD591F64D0B0"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"透過蒸餾各種自然成分，能更容易的挖掘出它們的能量。"
+				""
+				"所有種類的藥水都可以用非常常見的成分釀造。務必查看一下可以釀造些什麼，當面對這片土地上遊蕩的不太友好的生物時，藥水是不可或缺的。"
+				""
+				"使用調和鍋釜釀造一些閱歷藥水，或其他你感興趣的藥水。釀造完畢後，可用玻璃瓶右鍵鍋釜裝瓶。"
+				""
+				"================================="
+				""
+				"請注意調和巫術模組中的藥水流體不會顯示在 EMI 中。找尋配方最簡單的方式是查看原版的藥水，然後查看成分的用途。兩個系統之間的所有藥水成分都是相同的。"
+			]
+			id: "66585A158F41DE44"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "7447FA9138D4E94E"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "hexerei:mixing_cauldron"
+				id: "4BA040966CFE1DC8"
+				observe_type: 0
+				timer: 0L
+				title: "調和鍋釜"
+				to_observe: "hexerei:mixing_cauldron"
+				type: "observation"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["438EA01F776992AD"]
+			description: [
+				"這片土地在 Grove 的管理下繁榮了數千年，儘管它們不在了，巨大的能量仍聚集於此。"
+				""
+				"收集這些能量的關鍵始於樹林，在研缽中製作一些閃耀纖維，然後將其撒在任何樹木的樹葉上。當它紮根後，樹葉會開始轉化，從而獲取黃金葉。"
+			]
+			hide_dependency_lines: true
+			id: "69D302194D4262C6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "4C4DBF8114CB2E51"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2DA048F9BCBFD749"
+					item: "naturesaura:gold_fiber"
+					type: "item"
+				}
+				{
+					id: "1F57FC2A2FF93F98"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["69D302194D4262C6"]
+			description: [
+				"手持黃金葉對任何原木蹲下右鍵將其轉換成木基座，這是森林儀式的必需品。"
+				""
+				"參閱\"自然靈氣之書\"，將此結構可視化搭建，並說明如何使用。"
+			]
+			id: "7224985826C6E047"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "0BF68F0E91094483"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "naturesaura:wood_stand"
+				id: "25F71D67CED16E2E"
+				observe_type: 0
+				timer: 0L
+				title: "木基座"
+				to_observe: "naturesaura:wood_stand"
+				type: "observation"
+			}]
+			title: "森林儀式"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"7224985826C6E047"
+				"73CDA6ED2393DE42"
+			]
+			description: [
+				"有了在納迦遺跡中找到的種子、草藥與樹苗後，是時候紮根了，我的意思是，是時候蓋個農場了。"
+				""
+				"看來生命之樹和至高木樹林自從維護的 Wilden Grove 離開後就從這片土地後就消失了。復育它們至關重要，因為它們構成了集中於此的所有魔法的基礎。"
+				""
+				"使用森林儀式取得每一種至高木樹苗，並開始與其他獲得的種子和植物一起種植。"
+				""
+				"袋子裡的果實可以像種植可可豆的方式種在至高木的樹幹上。每個果實只能生長在其特定的至高木樹上。"
+				""
+				"透過這個儀式也能獲得兩種類型的遠古樹苗，兩者都具有獨特的幫助。"
+				"粉紅色樹苗的樹將魔法能量集中在內，使其對某些裝置有用。而黃色品種的果實似乎承載著前人的記憶。"
+			]
+			id: "66A59B3CD77FB54A"
+			min_width: 300
+			rewards: [
+				{
+					count: 3
+					id: "7BE2B86F33268C1A"
+					item: {
+						Count: 1b
+						id: "minecraft:potion"
+						tag: {
+							Potion: "apotheosis:knowledge"
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "39B68CC0E19837B6"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "3E9ED412320D7C44"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:red_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_elemental:yellow_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:green_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:purple_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:blue_archwood_sapling"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:ancient_sapling"
+							}
+							{
+								Count: 1b
+								id: "quark:ancient_sapling"
+							}
+						]
+					}
+				}
+				title: "魔法樹苗"
+				type: "item"
+			}]
+			title: "德魯伊之根"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"雖然一開始很慢，灌注室對恢復生命之樹有很大的幫助。不僅能凝結成有許多用途的魔源寶石，更能用來取得元素精華；掌握這些精華能使生命之樹重新生長。"
+				""
+				"放在灌注室周圍基座上的聚焦物品永遠不會被消耗，僅作為決定成品的關鍵物品。"
+			]
+			id: "4830632A0E6E9651"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "6F2498DE79248A40"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					count: 3
+					id: "643EF395119756CD"
+					item: "ars_nouveau:arcane_platform"
+					type: "item"
+				}
+			]
+			tasks: [{
+				icon: "ars_nouveau:imbuement_chamber"
+				id: "559BB247F6674A56"
+				observe_type: 0
+				timer: 0L
+				title: "灌注室"
+				to_observe: "ars_nouveau:imbuement_chamber"
+				type: "observation"
+			}]
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6DBB9A9F698FA7B9"]
+			description: [
+				"煉金魔源通道能將藥水轉換成更封閉且便攜的魔法能量，魔源。這能更容易的傳輸與使用，使其成為許多專注於魔法追求的理想選擇。"
+				""
+				"將藥水罐放在魔源通道附近，它將進行轉換並將魔源輸入附近的魔源罐中。"
+				""
+				"務必將一些魔源提供給附近的灌注室中，讓它們運作得更快！"
+				""
+				"================================================="
+				""
+				"關於將藥水放入藥水罐的方法，請參閱右邊的任務。"
+				"{@pagebreak}"
+				"&nFilling Potion Jars&r"
+				""
+				"Potions may be inserted into Potion Jars through the following methods:"
+				""
+				"● Wixies: Potions brewed by Wixies are automatically "
+				"  inserted into nearby Potion Jars."
+				""
+				"● Starbuncles: When equipped with a Wixie Hat, Starbuncles"
+				"  may be used to transport potions from one jar to "
+				"  another."
+				""
+				"● Fluid Containment Jars: Any liquid potion piped into these"
+				"  Jars will be automatically inserted into a Potion Jar "
+				"  placed atop it. This can be used to convert potions from"
+				"  Create, Immersive Engineering, Hexerei, and Thermal into "
+				"  Potion Jar Potions for use in Alchemical Sourcelinks."
+				""
+				"● Item Drain: Create Item Drains will drain Potion Bottles, "
+				"  converting them to fluid form. This may be combined with"
+				"  Fluid Containment Jars. "
+				""
+				"● Manually: Potion Bottles may be Right-Clicked onto a "
+				"  Potion Jar to insert them."
+			]
+			icon: "ars_nouveau:alchemical_sourcelink"
+			id: "4BC2557232FAAC68"
+			min_width: 300
+			rewards: [
+				{
+					count: 4
+					id: "1D87D734DBE1C1C5"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E0A8F950EC660CC"
+					item: "ars_nouveau:relay"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "5414F5E5DBF5FCA4"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "7E588C3E5E9F189A"
+					item: "ars_nouveau:alchemical_sourcelink"
+					type: "item"
+				}
+				{
+					id: "01B64EB17008EF24"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+				{
+					id: "7E9ACE7C84B7A434"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			title: "從魔源直線前進"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: ["鐵的製程非常困難，需要更先進的奧術機器才能從礦物中正確的提純為鐵。然而透過將其融合為活性混合物鐵木時，可作為各種魔法的應用。"]
+			id: "6DBB9A9F698FA7B9"
+			rewards: [{
+				id: "40282E6227B9E924"
+				item: "twilightforest:ironwood_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "16597A295DCF16BB"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6DBB9A9F698FA7B9"]
+			description: [
+				"手持黃金葉並對著鐵木方塊蹲下右鍵將其轉換成自然祭壇。"
+				""
+				"同時務必建造剩餘的必備結構。任何種類的木材都能使用。"
+			]
+			icon: "naturesaura:nature_altar"
+			id: "4B874AA448FF4C7A"
+			rewards: [{
+				count: 64
+				id: "01CFFD55A90494A9"
+				item: "naturesaura:gold_powder"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "10897A1810BFBEAD"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+				{
+					icon: "naturesaura:nature_altar"
+					id: "58B970D39285FE82"
+					observe_type: 0
+					timer: 0L
+					title: "自然祭壇"
+					to_observe: "naturesaura:nature_altar"
+					type: "observation"
+				}
+			]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4830632A0E6E9651"]
+			description: ["透過平衡靈氣外向的力量與該法術的內向擠壓，我們能達到穩定的平衡，該平衡足夠堅固與耐用，足以協助先進的冶金術：壓縮石。"]
+			id: "79B755D0BDB6A8B7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0E5BD92301912FBE"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "03C5CEE9CEF3B241"
+				item: "pneumaticcraft:compressed_stone"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"雷霆使者透過 Gythia’s Perpetual Geas儀式綁定到這個裝置中，並使用提供的魔法能量產生大量的空氣。"
+				" "
+				"但請注意設備產生的熱量，因為雷霆使者必須保持涼爽才能有效的運作。"
+			]
+			icon: "pneumaticcraft:flux_compressor"
+			id: "0DB07D1C824BFEA8"
+			rewards: [{
+				count: 4
+				id: "7C2B69BE8651EC03"
+				item: "pneumaticcraft:volume_upgrade"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "438CB309DA6F1D4D"
+					item: "pneumaticcraft:flux_compressor"
+					type: "item"
+				}
+				{
+					id: "42ABEC342B377FCE"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+				{
+					id: "21267160D037E938"
+					item: "kubejs:ritual_summon_bound_blitz"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DB07D1C824BFEA8"]
+			description: [
+				"壓力室是個重要的奧術構造，應用於許多面向，從高嶺黏土提取鋁到製作強力的彈射彈藥，以及更多更多的運用。"
+				""
+				"================================="
+				""
+				"特別注意製作中使用到的模組拓展卡。這可安裝至大多數的管道模組來增強其能力。"
+				""
+				"例如安裝至壓力表管道模組中，將大大簡化壓縮機的控制。"
+				""
+				"同時，安裝在調節管道模組時，當涉及到通過管道系統允許的壓力大小時，能夠有效進行微調。"
+			]
+			icon: "pneumaticcraft:pressure_chamber_interface"
+			id: "75C38D71F1A04EB4"
+			rewards: [{
+				count: 4
+				id: "0B334D75FD80C81D"
+				item: "pneumaticcraft:speed_upgrade"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "50FD357FF5C33713"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+				{
+					id: "0DE304F85997C797"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4B874AA448FF4C7A"]
+			description: [
+				"原始暮光幽靈雖然愚蠢，但它們的研究卻離我們不遠。Carminite具有出色的奧術共鳴，但與之結合的紅石調節過於強大。由此產生的超輻射不夠穩定便很快地超出了它們的裝置能控制的範圍。"
+				""
+				"另一方面，與魔源寶石融合似乎可以正確的引導奧術領域。然而這些最初的嘗試似乎並不完美。這個過程必須優化。"
+				""
+				"================================================"
+				""
+				"雖然還有一些其他的方式可以使用，但Enigmatic Unity模組的Pulsating Crystals提供了發電的基礎。需要附近有魔源罐，它會定期從中抽取一定數量的魔源，將其轉換成電力。若此時存在任何的靈氣，也會消耗一部分靈氣，在此過程中產出更多的電力。"
+			]
+			id: "3B372F597A05E777"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "63EC6BE1C18F9E9A"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
+					icon: "kubejs:aura_leaf"
+					id: "38C17BE6339B21BC"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "77D74CEE62130A5B"
+				item: "enigmaticunity:dim_source_generator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0BAE6EBFEA3026B9"]
+			description: [
+				"隨著賽特斯石英水晶的純化與生長，真正的工作就可以開始了。當透過Pulsating Crystal充能時，它們的晶格內會產生一個奧術場，能利用它以一種非常受控和定向的方法將物質與能量傳輸很遠的距離。"
+				""
+				"================================="
+				""
+				"打造一個小型ME網路（無ME控制器），由一個能量接收器，一個ME合成終端，和一個以上的ME儲存匯流排並用ME玻璃線纜連接而成。"
+				""
+				"考慮將其與功能性儲存模組或是精巧儲存控制器合併使用，以充分利用有限的頻道數。"
+			]
+			icon: "ae2:energy_acceptor"
+			id: "4FEF700D65A68CFB"
+			rewards: [
+				{
+					count: 16
+					id: "276AFA8EBC23CC5C"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "566B531B87A61061"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4202AA34977E0F17"
+					item: "ae2:energy_acceptor"
+					type: "item"
+				}
+				{
+					id: "303B7F620DD08842"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "5B68DE27253EC4C9"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					id: "6C362370090CF12E"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "應用能源"
+			x: -9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"沒有掃帚的巫師算什麼東西？"
+				""
+				"製作一把掃帚來四處移動可能有助於避免一些更...致命的障礙。"
+				""
+				"製作鮮血印記並安裝至調和鍋釜中獲得必要的鮮血。在鍋釜內跳上跳下，用你的血填滿鍋釜，然後用玻璃瓶對鍋釜右鍵裝瓶。"
+				""
+				"================================="
+				""
+				"可考慮製作Magebloom Broom Brush。對足夠強大的魔法玩家來說，這永遠不會壞掉，因為它從主人身上的魔力來修補自身。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:willow_broom"
+				tag: { }
+			}
+			id: "67A48CCEDA5C6AF3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "5CD17C5FC1E99147"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "227E258AA45F15CD"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:willow_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "ars_scalaes:archwood_broom"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "hexerei:witch_hazel_broom"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "基礎掃帚"
+					type: "item"
+				}
+				{
+					id: "173DC23E5B15EBE3"
+					item: "hexerei:blood_sigil"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: ["聰明的巫師會使用他可使用的一切工具，而Superior Shields在探索這片土地時提供了強大的保護。"]
+			hide_dependency_lines: true
+			id: "7C58B3E61A83C628"
+			rewards: [{
+				id: "01CB66007B462CFF"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "superiorshields:capacity"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7BBEB1DDBE230A5C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "superiorshields:bronze_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:electrum_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:constantan_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:ironwood_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:steeleaf_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:knightmetal_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:enchanter_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Superior Shields"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["30547CCA38EC3A0D"]
+			description: [
+				"需要召喚烈焰使者並將其綁定至適當的材料來製作這個裝置。幸運的是，有了對元素的控制，召喚烈焰使者應該是件微不足道的小事。"
+				""
+				"每個類型的元素使者都可以使用  Gythia’s Perpetual Geas 儀式來召喚。這些元素使者被召喚時是無 AI 且沒有掉落物。"
+			]
+			icon: "create:blaze_burner"
+			id: "5038FC4A51F51F31"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "29AD14E62D652876"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					id: "118314732B168F3D"
+					item: "createaddition:straw"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "6BEDB6EB5F5DD15C"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "377114D7550BC0D8"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					id: "5A0D8A4117EF4915"
+					item: "kubejs:ritual_summon_bound_blaze"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75C38D71F1A04EB4"]
+			description: [
+				"鋁的奇怪製程從將黏土轉換成高嶺黏土開始。"
+				""
+				"透過EMI查看剩餘的製作過程。"
+			]
+			icon: "immersiveengineering:ingot_aluminum"
+			id: "345CBD118EAA0C09"
+			rewards: [{
+				id: "3AE51D9B0D130B36"
+				item: "emendatusenigmatica:aluminum_block"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "emendatusenigmatica:aluminum_ingot"
+					id: "29BB4507855ECBB7"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/aluminum"
+						}
+					}
+					title: "鋁"
+					type: "item"
+				}
+				{
+					id: "48662443C3B62783"
+					item: "kubejs:kaolin_clay"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73CDA6ED2393DE42"]
+			description: ["或許造訪一些在地的巫妖塔能取得更多的訊息，或者至少能發現更多有用的工具來幫助恢復生命之樹？"]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:novice_spell_book"
+			id: "370C40BCC3A6A055"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "181F9F12E4654AC3"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3452A9AC39B219A4"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"幸運的是，儘管法術書已破舊不堪，粉碎之魔符顯得完整且可用。許多其他的仍須維修，但這暫時可用。"
+				""
+				"雖然可以找到許多魔符來修理法術書，抄寫台也能用來製作任何魔符。"
+			]
+			id: "7507572BD048B6C9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "0CEB7353C721EF23"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "711069D305E66D19"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"風通常是Grove的德魯伊掌握的第一種精華，需要它們最親密的盟友烏鴉的羽毛禮物，以及對德魯伊戰鬥能力的考驗。"
+				""
+				"================================="
+				""
+				"取得雷霆沙塵："
+				""
+				"在世界中找尋生怪磚並破壞它。它們有機會造成空間破裂，讓所有類型的生物流通，包含了雷霆使者與其他元素使者。擊敗它們並關閉裂縫取得雷霆沙塵。"
+			]
+			hide_dependency_lines: true
+			id: "1C6BF5FE58C49456"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "368322B66A743C01"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "43B5455E97D1AB02"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6AB326583DEF4915"
+				item: "ars_nouveau:air_essence"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"在嚴寒中生存並從雪怪首領身上取回皮毛被認為是一個壯舉。進入雪林中的雪怪巢穴，對抗這些兇猛的生物並取得皮毛。"
+				""
+				"================================="
+				""
+				"取得暴雪立方："
+				""
+				"在世界中找尋生怪磚並破壞它。它們有機會造成空間破裂，讓所有類型的生物流通，包含了暴雪使者與其他元素使者。擊敗它們並關閉裂縫取得暴雪立方。"
+			]
+			hide_dependency_lines: true
+			id: "605D0EC9ABE8595E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "51CCBDE9F54731C8"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "35079413F0D062FB"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "2C9FC97C9F2B625B"
+				item: "ars_nouveau:water_essence"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"對於年輕的德魯伊來說，取得魔豆是個狡猾的考驗，需要潛入巨魔的巢穴並帶著它們的神聖之豆逃跑。"
+				""
+				"找到他們的巢穴是最棘手的部分，因為它們生活在高地的地底深處。然而，據說巢穴的上方土壤特別肥沃。也許找到這點有助於找到它們。"
+				""
+				"================================="
+				""
+				"取得岩石裂骸："
+				""
+				"在世界中找尋生怪磚並破壞它。它們有機會造成空間破裂，讓所有類型的生物流通，包含了岩石使者與其他元素使者。擊敗它們並關閉裂縫取得岩石裂骸。"
+			]
+			hide_dependency_lines: true
+			id: "272C349F5CF92FA0"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "3C9CCE31C80E1348"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "11B3DE3B0795BA69"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "1FB74CF06AD39276"
+				item: "ars_nouveau:earth_essence"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Grove的德魯伊通常隨身攜帶生命符咒，以幫助它們防止面對一些危險生物時過早死亡。儘管死亡是自然循環的一部分，但它們並不反對透過藥物或其他類似的護符來延長壽命。"
+				""
+				"另一方面，亡靈對它們來說是令人憎惡的，更殘酷的是，它們尊敬的死者似乎已經被復活並被設定了邪惡的目的。尋找巫妖塔，看看是否能在那找到答案。"
+			]
+			hide_dependency_lines: true
+			id: "30DB748747B58442"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "61B34E18FBDA8BE6"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "06804245F30E2149"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "477CD97ADFBFC51B"
+				item: "ars_elemental:anima_essence"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"這些書籍曾是古代法術知識的寶庫，如今已被賦予了某種扭曲的生命力。據推測，這些附魔是為了保護儲存的知識而開發的，但也可能是為了惹惱存放這些書籍的圖書館員。"
+				""
+				"儘管它們具有危險性，但仍能從中提取有用的魔符。"
+				""
+				"執行此儀式可以召喚更多這樣的書。它們是補充這本新發現的法術書中遺失的魔符的最佳方法。"
+			]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:death_tome_gate_large"
+				}
+			}
+			id: "28A304E0F1600640"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
+				icon: "ars_nouveau:blank_glyph"
+				id: "4D3BD7740EAF736F"
+				player_command: false
+				title: "Random Tier 1 Glyph"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					entity: "twilightforest:death_tome"
+					id: "0DBE4EB438DD3212"
+					type: "kill"
+					value: 5L
+				}
+				{
+					id: "3D0287DCD0BE94E2"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:death_tome_gate_small"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "召喚死亡之書"
+			x: -8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"Wilden Grove曾與九頭蛇交友並馴服，它們以火焰沼澤為家。它們是如何做到這一點的仍是個謎...看來現在獲得血液的方式只有一種。別靠得太近，否則你肯定會成為它的下一餐。"
+				""
+				"================================="
+				""
+				"取得烈焰桿："
+				""
+				"在世界中找尋生怪磚並破壞它。它們有機會造成空間破裂，讓所有類型的生物流通，包含了烈焰使者與其他元素使者。擊敗它們並關閉裂縫取得烈焰桿。"
+			]
+			hide_dependency_lines: true
+			id: "7A3B33287BFF4CB1"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "07DDF6CFF702FA3E"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "1411C2FA9E44E9AE"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "700787ED503D9218"
+				item: "ars_nouveau:fire_essence"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"605D0EC9ABE8595E"
+				"1C6BF5FE58C49456"
+				"272C349F5CF92FA0"
+				"7A3B33287BFF4CB1"
+			]
+			description: [
+				"掌握了這些元素後，在生命之樹恢復之前只剩下一個任務：冰雪女王必須死。"
+				""
+				"前往寒冷的冰川並擊敗冰雪女王取得Subzero Crystals。"
+			]
+			hide_dependency_lines: true
+			id: "729E9D41A28D0E4D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "624D22F8BB99AF09"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "River of Memory"
+			tasks: [{
+				id: "0FC4B74A9A5ACFFC"
+				item: "byg:subzero_crystal_shard"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: [
+				"原生於元素表面的火元素，熾熱金屬特別適合容納火元素。"
+				""
+				"雖然在這個表面上是無法天然存在的，但它可以透過仔細運用火之精華和其他材料來製作。"
+			]
+			id: "30547CCA38EC3A0D"
+			rewards: [{
+				id: "331A0CC3C988D124"
+				item: "twilightforest:fiery_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "449066CA51EE1BF6"
+				item: "twilightforest:fiery_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: ["召喚是Wilden Grove的德魯伊早期就掌握的一項技能，只要具備基礎的煉金知識即可製作和種植法師之花種子。"]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:conjuration_essence"
+			id: "087CFEB4B77FAE9B"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "75C613BBF99219CD"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "5B324D5035FAA45D"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "5A391AC753037129"
+				item: "ars_nouveau:conjuration_essence"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: [
+				"孤獨的巫師是個忙碌的巫師。"
+				""
+				"一天當中要製作藥水，合成，採收和其他事情，如果有人伸出援手，當然感激不盡，對吧？"
+				""
+				"慶幸的是，隨著納迦的離開，不乏願意盡其所能提供幫助的小精靈。"
+				""
+				"================================="
+				""
+				"畫出Aching’s Amicable Accord儀式，在\"魔靈全典\"中有詳細的描述。"
+				""
+				"可以召喚一些神祕學，調和巫術和新生魔藝模組的小動物；研究使用精心製作的昏睡粉來看看有什麼可用的。"
+			]
+			hide_dependency_lines: true
+			id: "7CFD3DFD4C593EB5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "5986A05AFF7B5081"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "05F83955C4E12297"
+				item: "hexerei:mindful_trance_blend"
+				type: "item"
+			}]
+			title: "使魔夥伴"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["79B755D0BDB6A8B7"]
+			description: [
+				"製作更精細的設備將需要更精緻型態的金屬。"
+				""
+				"這些堅固的機械設備，機械鍛壓機和輥軋機，分別能完成正確的板材或線材與桿材的任務。"
+			]
+			id: "44B02A5817C4144A"
+			rewards: [{
+				id: "0FC05A9E5B974922"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7E269B72F57C62D3"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "1A61D7D0519A6615"
+					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: ["至今為止的基本熔爐的升級版。這個簡單的裝置只是將能量引導到外置燃火器來產生熱量。簡單暴力。"]
+			id: "505DBC92B7AC1AFE"
+			rewards: [{
+				id: "61B93BE9DF0FEBC9"
+				item: {
+					Count: 1b
+					id: "thermal:upgrade_augment_2"
+					tag: {
+						AugmentData: {
+							BaseMod: 4
+							Type: "Upgrade"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C7C33FFD852E5A8"
+				item: "thermal:machine_furnace"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1075F3BAA03841EF"]
+			description: [
+				"金屬鍛造需要專門的工具與製程，而這些都不是現成的。"
+				""
+				"然而只要付出一點努力，就能從原礦中取得更簡單的原料。製作研缽及杵開始研磨這些礦物，並製作高爐將其熔煉成有用的形式。"
+				""
+				"只要使用漏斗就能簡單的自動化研缽及杵，不需手動。"
+				""
+				"首先，簡單的金屬如銅可以透過研磨，高爐熔煉，再研磨，最後再一次高爐融煉，製作成銅錠。之後會有更好的方法。"
+			]
+			id: "438EA01F776992AD"
+			rewards: [
+				{
+					count: 4
+					id: "374D86C82113C057"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "45F86B71FC1BA4F4"
+					item: "naturesaura:furnace_heater"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6DE620F66FF61F90"
+					item: "hexerei:pestle_and_mortar"
+					type: "item"
+				}
+				{
+					id: "37D34D2AA1C71252"
+					item: "minecraft:blast_furnace"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["438EA01F776992AD"]
+			description: ["合金需要精細研磨的金屬與某種形式的助熔劑混合，以幫助黏合與去除雜質，然後再將其加熱製成高品質的合金錠。對現在而言，研缽及杵就夠用了。"]
+			id: "0FE800BE7F220F36"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5C4A1E2E0AC85142"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7FCF40CA690E02B4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "emendatusenigmatica:electrum_ingot"
+							}
+							{
+								Count: 1b
+								id: "emendatusenigmatica:bronze_ingot"
+							}
+						]
+					}
+				}
+				title: "合金"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"保持一切井然有序是一件沒人有時間去做的苦差事。或者說，除了書龍之外沒有別人。"
+				""
+				"然而，只需一些書龍和聰明的運用大型儲存容器，書龍就能讓你在一個方便的地方輕鬆存取所有物品。"
+				""
+				"參閱新生魔藝的任務章節和\"破舊的筆記本\"獲得更深入的工作原理。"
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:bookwyrm_charm"
+			id: "585E9984E9D6D09C"
+			rewards: [
+				{
+					count: 8
+					id: "0DD0D672A19E586E"
+					item: "ars_nouveau:repository"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "11AB85F4A8D711C2"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1EB98DDEF71EC000"
+					item: "ars_nouveau:bookwyrm_charm"
+					type: "item"
+				}
+				{
+					id: "3778AA9ABF10601C"
+					item: "ars_nouveau:storage_lectern"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"說到釀造藥水，薇克精是最好的。務必召喚一些讓魔源源源不絕。"
+				""
+				"為了讓薇克精知道要釀造什麼藥水，將釀造好的藥水放在它的鍋釜附近的奧術基座或平台上。這能透過在調和鍋釜並持玻璃瓶右鍵後取得。"
+				""
+				"整個產線都必須有指定的藥水才能讓它完成工作。例如，要釀造閱歷藥水，它需要一個基座放著基礎藥水，和另一個基座放著閱歷藥水。每個步驟間還都需要一個藥水罐。多個薇克精也可以一起工作，每個薇克精完成產線的其中一個步驟。"
+				""
+				"更多的資訊可以查看\"破舊的筆記本\"。"
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:wixie_charm"
+			id: "60ECF7DD8B262631"
+			rewards: [
+				{
+					count: 8
+					id: "7FD354CD076A2619"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5D0ACAACAA68E0CD"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "01EA0EF25D997350"
+					item: "ars_nouveau:wixie_charm"
+					type: "item"
+				}
+				{
+					id: "701592B5C2CFF255"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "05D27686E86156A8"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"星寶石獸多才多藝且友善，能辦到移動物品、流體、氣體與能量，甚至是藥水。"
+				""
+				"它們相當聰明能夠自動化許多遊戲初期的任務，例如將藥草放上晾乾架曬乾，將曬乾後的藥草帶回倉儲，庫存熔爐燃料，將藥水從A點移至B點，甚至更多。"
+				""
+				"它們需要一些設備來完成各個任務，因此務必為它們穿上合適的裝備。在EMI搜尋Starbuncle Equipment星寶石獸裝備，找到它們可使用的所有東西。"
+			]
+			hide_dependency_lines: true
+			id: "0C1D8DEC8ACB56AC"
+			rewards: [
+				{
+					id: "53407B1C5DA8EBAE"
+					item: "ars_nouveau:starbuncle_shades"
+					type: "item"
+				}
+				{
+					id: "75BF9711B018CC11"
+					item: "starbunclemania:direction_scroll"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "11443A06230EBBDC"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "1321FD497583DDCC"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			dependency_requirement: "one_completed"
+			description: [
+				"下列雖並不詳盡，但強調了與這些使魔交朋友所帶來的一些好處，可同時召喚多個。"
+				""
+				"有關這些和其他使魔的詳細資訊，參閱\"魔靈全典\"中使魔儀式的章節。"
+				""
+				"戰鬥"
+				"● 木乃伊 – 為你戰鬥。"
+				"● 眼魔 – 從它眼中發射魔法雷射。"
+				""
+				"實用"
+				"● 守護者 – 移動的不死圖騰。"
+				"● 貪婪 – 像磁鐵一樣蒐集物品。"
+				"● 河狸 – 砍樹更快。"
+				""
+				"增益"
+				"● 具翼 – 提供多段跳，跳躍提升和緩降。"
+				"● 龍 – 增加獲得的經驗值。"
+				"● 蝙蝠 – 獲得夜視。"
+				"● 克蘇魯 – 獲得水下呼吸。"
+				"● 小鹿 – 獲得跳躍提升。"
+				"● 惡魔 – 獲得火焰抗性。"
+				""
+				"其他"
+				"● 鐵匠 – 修理裝備並對其他使魔提供升級，以各種方式增強它們。"
+				""
+				"注意：使魔不受友軍傷害，因此在它們附近戰鬥通常是安全的。此外，一些戰鬥向的使魔也增強了，幫助它們存活。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						hasFamiliar: 0b
+					}
+				}
+				id: "occultism:familiar_ring"
+				tag: {
+					familiar: {
+						hasFamiliar: 0b
+					}
+				}
+			}
+			id: "72B2DCE0BDCE548F"
+			min_width: 300
+			rewards: [
+				{
+					id: "32CA91154A0B0B68"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								hasFamiliar: 0b
+							}
+						}
+						id: "occultism:familiar_ring"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5961092F4097FD3E"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				advancement: "occultism:occultism/familiar/root"
+				criterion: ""
+				id: "44087E084C0010C4"
+				type: "advancement"
+			}]
+			title: "使魔"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"紫水晶魔像曾是Wilden Grove雇傭的勤奮生物，很可能是它們能生產高品質紫水晶的關鍵。"
+				""
+				"儘管它們叫做紫水晶魔像，但它們也很樂意的與其他紫水晶以外的晶簇一起工作。"
+			]
+			hide_dependency_lines: true
+			id: "5A9F370B2DA197C9"
+			rewards: [
+				{
+					id: "01A0DA4C928250F9"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "56ACF42C5D91BAF5"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "14E135F0E762732D"
+				item: "ars_nouveau:amethyst_golem_charm"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"儘管Wilden Grove雇傭烏鴉而聞名，但也有不少人更願意與體型較小但同樣聰明的烏鴉交朋友。"
+				""
+				"召喚一隻烏鴉並餵食種子大雜燴來與它成為朋友。這些樂於助人的小動物可裝備武器和帽子，並誓死保衛它們的朋友。"
+				""
+				"在調和巫術的章節中獲得更多關於烏鴉的資訊。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:crow_spawn_egg"
+				tag: {
+					display: {
+						Lore: ["{\"translate\":\"item.kubejs.ritual_summon_crow.tooltip\"}"]
+						Name: "{\"translate\":\"item.kubejs.ritual_summon_crow\"}"
+					}
+				}
+			}
+			id: "7DC3B92B7722D2EB"
+			rewards: [
+				{
+					id: "24BD267ED65B77CB"
+					item: {
+						Count: 1b
+						id: "hexerei:crow_flute"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "5177B763DE66FC8D"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					icon: {
+						Count: 1b
+						id: "hexerei:crow_spawn_egg"
+						tag: {
+							display: {
+								Lore: ["{\"translate\":\"item.kubejs.ritual_summon_crow.tooltip\"}"]
+								Name: "{\"translate\":\"item.kubejs.ritual_summon_crow\"}"
+							}
+						}
+					}
+					id: "0F6AF050D2340F55"
+					item: "kubejs:ritual_summon_crow"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "174E4CF2D19C2143"
+					item: "hexerei:seed_mixture"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"操縱之精華是較容易掌握的一種簡單的精華，與轉換和遠程互動有關。"
+				""
+				"製作所需的一切都應該很容易從地下挖到。"
+			]
+			hide_dependency_lines: true
+			id: "511EF28B97B74DA9"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "0BD0FAEB5CF42323"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "4F929950817CCC3E"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6D5F8903CDAEFA40"
+				item: "ars_nouveau:manipulation_essence"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4830632A0E6E9651"]
+			description: [
+				"Wilden Grove 因從地球中提取高品質紫水晶而聞名，它們用這些紫水晶來生產魔源寶石。"
+				""
+				"無庸置疑的，能在它們的家園廢墟或它們遺留的礦山下找到。"
+			]
+			id: "11AB47232D9F5D6D"
+			rewards: [{
+				count: 2
+				id: "477B37812787254C"
+				item: "emendatusenigmatica:source_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C7B6B3C361553D4"
+				item: "emendatusenigmatica:source_gem"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["729E9D41A28D0E4D"]
+			description: [
+				"恢復生命之樹的全部榮耀絕非易事。使用至今以來獲得的知識來培育原初種子。隨著時間和犧牲，它會變得更加強大。"
+				""
+				"選擇一個足夠進行儀式的地點，為其樹根提供所需的空間。進行儀式會立刻讓樹長出來，以儀式的五角星為中心。"
+				""
+				"================================="
+				""
+				"注意：生命之樹將面向北方，有一個小入口通往五芒星室。這個方向無法更改。"
+			]
+			icon: "kubejs:tree_of_life_1"
+			id: "33BCDA0A76E2523C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
+				icon: "kubejs:aura_leaf"
+				id: "389C33B783F1A41E"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "75A370CD9D47EE45"
+					item: "kubejs:tree_of_life_1"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "78442FB8ED137BFF"
+					item: "kubejs:shard_of_renewal"
+					type: "item"
+				}
+			]
+			title: "生命之樹"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["347A644441BCF449"]
+			description: ["通常與錫礦聚集在一起，地獄石英偶爾可以從更好的研磨工具，如石磨，研磨礦石時提取而出。"]
+			id: "5B7806FED7D58329"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2D22DA949427C0B4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "76702DE4AA5CCE26"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79B755D0BDB6A8B7"]
+			description: ["石磨由比簡單的研缽更堅韌的材料製成，能使礦物更堅韌，甚至偶爾能從礦石中回收一些副產物。"]
+			hide_dependency_lines: true
+			id: "347A644441BCF449"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "651C07D976AD902F"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					id: "0E1F9854A317EE27"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0F473BC094DDA58D"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A7AEB067C49F899"]
+			description: [
+				"就像煉金魔源通道可將藥水中的魔法精華提煉成魔源一樣，滯留型吸收器的結構，有助於將這些能量以靈氣的形式重新引導回環境中。"
+				""
+				"這是個大型的多方塊結構，因此務必查看\"自然靈氣之書\"的可視化幫助搭建此結構。"
+				""
+				"================================================="
+				""
+				"使用這個結構產生靈氣需要製作滯留藥水，並將它扔到吸收器上的金色十字區域。丟入品質更高，更強效且持續時間越久的藥水，會產生更多的靈氣。"
+				""
+				"值得注意的是，儘管薇克精可以自動化製作藥水，但無法製作滯留或飛濺藥水。然而，使用動力機械的釀造系統輕鬆實現自動化，之後也可使用工業先鋒的自動釀造台。"
+			]
+			icon: "naturesaura:potion_generator"
+			id: "16E90BC107468EC2"
+			min_width: 300
+			rewards: [
+				{
+					count: 8
+					id: "4AD02A30701D4394"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					id: "56A596BFA05198BA"
+					item: "naturesaura:mover_cart"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "150E44FC952BB995"
+					item: "naturesaura:potion_generator"
+					type: "item"
+				}
+				{
+					count: 28L
+					id: "741C6A98C22B5E2B"
+					item: "minecraft:nether_bricks"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "2E87B053B4E0E3E2"
+					item: "minecraft:red_nether_bricks"
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B874AA448FF4C7A"]
+			description: [
+				"靈氣遇到了麻煩了嗎？需要快速提升嗎？"
+				""
+				"執行此儀式將暮光森林的Boss戰利品轉換為大量的靈氣。"
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:aura_leaf"
+			id: "32B066B03F861D56"
+			optional: true
+			shape: "hexagon"
+			tasks: [{
+				id: "6F7D8E0C230D3026"
+				item: "kubejs:aura_leaf"
+				optional_task: true
+				title: "緊要關頭的靈氣"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"儀式魔法是神祕藝術的另一個面向，有許多形式，從在地板上用粉筆畫出奧術圈圈到燃燒專門準備的咒語板。"
+				""
+				"儀式火盆為自動化和防禦提供了許多選擇。查看各種咒語板的功能並了解它們的用途。"
+			]
+			icon: "ars_nouveau:ritual_brazier"
+			id: "324073603AF6FB29"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "65C797E604B3DA0F"
+					player_command: false
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					id: "2B400407B6D2D2BD"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5E75899DC12B686C"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"魔法遠不只是動動手指和發出閃閃光芒。事實上，透過奧術藝術使用正確的材料與製程，能做到更多的事情。"
+				""
+				"很久以前，轉換和魔法領域的專家就發現了創造巨大水晶管道網路的方法，這些管道能實現奇幻的壯舉。它們能將大量的材料儲存在維度陣列中，並能用來隨心所欲製作幾乎任何東西。"
+				""
+				"目前這一切似乎遙不可及，但簡單的傳輸似乎是可行的。"
+				""
+				"========================================"
+				""
+				"首先找到一些賽特斯石英水晶；Wilden Grove當然在礦山中留下了一些。"
+				""
+				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化石英並誘導它開始生長。"
+			]
+			hide_dependency_lines: true
+			id: "0BAE6EBFEA3026B9"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "5BAC9CC4EA1BAEEC"
+				player_command: false
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "76259CE881312220"
+				item: "ae2:quartz_block"
+				type: "item"
+			}]
+			title: "賽特斯石英農場"
+			x: -9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11AB47232D9F5D6D"]
+			description: [
+				"女巫相當了解蜂蜜的治療功效，幾個世紀以來一直被用來治療無數的疾病。靠著一點額外的魔法，能轉換成一種更強的物質，稱為暮光之息。"
+				""
+				"難過的是，蜜蜂似乎放棄的這個地區。也許現在有人照顧它們的話，就能被吸引回來？"
+				""
+				"================================="
+				""
+				"在森林中的房屋遺跡找尋任何殘留的蜂巢，並用它為蜜蜂製作個合適的家。"
+				""
+				"蜜蜂本身可以被降生祭壇召喚出來，只要給它們一些美味的花朵！"
+			]
+			icon: "naturesaura:animal_spawner"
+			id: "3A7AEB067C49F899"
+			rewards: [{
+				id: "72DE8D6EDF9F6515"
+				item: "thermal:device_hive_extractor"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "096F98097551C561"
+					item: "naturesaura:animal_spawner"
+					type: "item"
+				}
+				{
+					id: "7EE58C8ECCAA505E"
+					item: "minecraft:beehive"
+					type: "item"
+				}
+				{
+					id: "6ABD82F025EAE011"
+					item: "minecraft:bee_spawn_egg"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C63D330A4BFB305"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"儘管製作強大的法術可能無法立即實踐，一級的魔符仍然相當強大。"
+				""
+				"值得注意的是解除魔法之魔符，能快速移除許多怪物身上出現的強大藥水效果。"
+				""
+				"務必花點時間試試法術書，對於經驗豐富的巫師來說，這很容易上手並成為強大的武器之一。"
+			]
+			id: "508748A195DE2C10"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "46B73E0A24DE5D55"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "6D5621B8BF6A9C18"
+				item: "ars_nouveau:glyph_dispel"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7AD5D1665CA3DF4F"]
+			description: [
+				"對於目光敏銳，心胸開闊的人來說，魔法無所不在。自古以來，巫師們就一直進行釀造，利用大地蘊藏的力量來達到它們的目的。"
+				""
+				"在正確的時間使用正確的藥水可以使生存變得截然不同。"
+				""
+				"================================="
+				""
+				"新增了各種自訂的藥水配方，使其在遊戲初期就能使用。事實上，釀造對於遊戲發展的一切都至關重要。"
+				""
+				"面對強大的怪物時，力量藥水能提供巨大的幫助，而迅捷和隱形藥水能幫助完全避開它們。此外，新生魔藝模組提供了混合藥水並能儲存在藥水燒瓶中，以便一次使用時即可擁有多種藥水效果。"
+			]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:potion_melder"
+			id: "4682D4537535937C"
+			rewards: [
+				{
+					id: "2301E26C33533490"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:potion_flask"
+						tag: {
+							Damage: 8
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
+					icon: "kubejs:aura_leaf"
+					id: "2136A5B6580847A6"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2EB943DDAA4C39F8"
+					item: "ars_nouveau:potion_jar"
+					type: "item"
+				}
+				{
+					id: "00984709DEA11344"
+					item: "ars_nouveau:potion_melder"
+					type: "item"
+				}
+			]
+			title: "藥水"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["66585A158F41DE44"]
+			description: [
+				"俗話說，勇敢的巫師就是死去的巫師。在這充滿致命怪物的世界中生存需要的不僅是蠻力；狡猾的頭腦和敏捷的腳步更為重要。"
+				""
+				"聰明的巫師知道什麼時候要逃跑。"
+				""
+				"當然有時候戰鬥是不可避免的。畢竟世界並不公平。所以當一切似乎都在血腥中時，請記得這是一體兩面的：骯髒的戰鬥吧。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7AD5D1665CA3DF4F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+				icon: "kubejs:aura_leaf"
+				id: "44AF536691C6AFC3"
+				player_command: false
+				title: "Aura Infusion"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "512F931B7ED46E5C"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "生存必需品"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4682D4537535937C"]
+			description: [
+				"與力竭聲嘶之冠類似，藥水護符的作用是使效果的持續時間比正常的藥水長得多。例如用三分鐘的藥水製作的藥水護符，每一點耐久將持續 8 秒。"
+				""
+				"即使沒有附魔，使用壽命比起製作它的藥水們長得多。"
+			]
+			hide_dependency_lines: true
+			id: "1B214D5A289CD17A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "13E73AB24BADDF67"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+						Potion: "minecraft:long_water_breathing"
+					}
+				}
+				id: "6DCBDBFF2F899881"
+				item: {
+					Count: 1b
+					id: "apotheosis:potion_charm"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "藥水護符"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4682D4537535937C"
+				"7AD5D1665CA3DF4F"
+			]
+			description: [
+				"骷髏經常使用藥水箭矢，若不小心被逮到時，這會是個糟糕的一天。"
+				""
+				"藥水箭矢能簡單的將普通箭矢對著藥水罐右鍵製作，不需要滯留藥水！爆炸箭矢是一種特別令人討厭的武器，對於活著的或死掉的生物都很有用。"
+			]
+			hide_dependency_lines: true
+			id: "15C6FD1F5AD1C530"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "6D4844BFC44CD5D5"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "minecraft:tipped_arrow"
+					tag: {
+						Potion: "minecraft:harming"
+					}
+				}
+				id: "1CE5E04BB5956BD2"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:arrows"
+					}
+				}
+				title: "藥水箭矢"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4682D4537535937C"]
+			description: [
+				"藥水當然不會持續很長的時間，手動喝藥水也不總是那麼容易做到。務必看一下力竭聲嘶之冠，一種讓藥水時效更長的簡單方法。"
+				""
+				"特別有意思的是，它能從藥水燒瓶中提取，意思是混合藥水能輕鬆的使用更久。"
+			]
+			hide_dependency_lines: true
+			id: "7376270A390D6A3C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "5C504E7B50DF72CA"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "633962F5F4F1548E"
+				item: "ars_nouveau:alchemists_crown"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["370C40BCC3A6A055"]
+			description: [
+				"通常粉碎只能對放在世界中的方塊使用。然而透過敏感增強後，也能對地上的掉落物使用。"
+				""
+				"以下的法術形式會粉碎地上的掉落物："
+				""
+				"&5投射物&r > &a粉碎&r > &6敏感&r"
+			]
+			icon: "ars_nouveau:glyph_crush"
+			id: "618CFB7745031AF6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "53223E0F43F27F71"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0623BA2C11B158BF"
+					item: "ars_nouveau:glyph_crush"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "003F24BD5E1DBA07"
+					item: "ars_nouveau:glyph_sensitive"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["345CBD118EAA0C09"]
+			description: [
+				"占卜這件事能追溯到幾個世紀前，從茶葉到內臟，各種材料都被用來當作占卜的焦點。"
+				""
+				"雖然肯定有效，但有些人偏愛這種方法只是為了觀賞；任何事情都可以用來調整一個人的思想以完成任務。"
+			]
+			hide_dependency_lines: true
+			id: "37A128B304BAC0EC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "0278C7667B0EC3FE"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "38BBFF1EA9A911FD"
+				item: {
+					Count: 1b
+					id: "theurgy:divination_rod_t3"
+					tag: {
+						Damage: 0
+						"theurgy:divination.setting.allow_attuning": 1b
+						"theurgy:divination.setting.allowed_blocks_tag": "theurgy:divination_rod_t4_allowed_blocks"
+						"theurgy:divination.setting.disallowed_blocks_tag": "theurgy:divination_rod_t4_disallowed_blocks"
+						"theurgy:divination.setting.duration": 40.0d
+						"theurgy:divination.setting.max_damage": 512.0d
+						"theurgy:divination.setting.range": 96.0d
+						"theurgy:divination.setting.tier": "minecraft:netherite"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["66A59B3CD77FB54A"]
+			description: [
+				"作為這片土地僅存的少數守護者之一，謎題羊在魔法森林中定居。"
+				""
+				"找到它們並完成它們的任務。它們是否正確地知道發生了什麼事值得懷疑，但它們可能擁有將生命之樹恢復至關重要的知識。"
+				""
+				"================================="
+				""
+				"取得各種顏色的羊毛並提供給謎題羊。"
+			]
+			id: "032D29DD7D946EDB"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "69D3102DD62060D9"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "0BE9EBECF0414FE5"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "45865EFBDFC3E239"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			title: "謎題羊"
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["032D29DD7D946EDB"]
+			description: [
+				"謎題羊已同意幫助你恢復生命之樹，透過提供重建原初種子所需的必要知識。然而，需要一些幫助。"
+				""
+				"召喚這片土地上的四種元素之靈，將它們的能量灌注至種子中。"
+			]
+			hide: true
+			id: "1DC39E690B6178EF"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "67BBB8A5B92C7AE7"
+					player_command: false
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "6A9DEFBAF39BE8C7"
+					player_command: false
+					title: "Aura Infusion"
+					type: "command"
+				}
+			]
+			shape: "heart"
+			tasks: [{
+				id: "644F047CE0367F5A"
+				item: "kubejs:primordial_seed"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B372F597A05E777"]
+			description: [
+				"雖然幽魂塔本身就感染了大量的塔木蛀蟲，但吸引更多的小動物卻是微不足道的。另一方面，要擺脫它們可能有點複雜。"
+				""
+				"然而，它們不會單獨出現，所以請小心！"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:swarm_gate_large"
+				}
+			}
+			id: "5D1FCC45134CB879"
+			rewards: [{
+				count: 4
+				id: "291E911003FDDDA7"
+				item: "emendatusenigmatica:carminite_gem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					entity: "minecraft:endermite"
+					icon: "minecraft:spawner"
+					id: "534A73E9BF329237"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "twilightforest:towerwood_borer"
+					id: "2E7B9A411B813DED"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "minecraft:silverfish"
+					icon: "minecraft:spawner"
+					id: "1567106A573CDBAD"
+					type: "kill"
+					value: 5L
+				}
+				{
+					id: "7849128B7816AA53"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:swarm_gate_small"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "召喚蟲群"
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["729E9D41A28D0E4D"]
+			description: [
+				"隨著法術施法能力的提升，可以透過法術砲塔提高一些自動化的能力。"
+				""
+				"作為一個實際的例子，以下的法術形式將讓砲塔從鄰近的藥水罐中取出標準的藥水，將其轉換成滯留藥水並將其扔出。"
+				""
+				"&5彈射物&r > &a灌注&r > &6延長時效&r"
+				""
+				"這些滯留藥水與製作出的一模一樣，能用於運作滯留型吸收器，而不需要製作超出基礎藥水的材料。"
+			]
+			hide_dependency_lines: true
+			id: "7619B458914F41FF"
+			rewards: [{
+				id: "58831BD248E42B45"
+				item: {
+					Count: 1b
+					id: "ars_nouveau:spell_parchment"
+					tag: {
+						"ars_nouveau:caster": {
+							current_slot: 0
+							flavor: ""
+							hidden_recipe: ""
+							is_hidden: 0b
+							spell_count: 1
+							spells: {
+								spell0: {
+									name: "Lingering Potions"
+									recipe: {
+										part0: "ars_nouveau:glyph_projectile"
+										part1: "ars_nouveau:glyph_infuse"
+										part2: "ars_nouveau:glyph_extend_time"
+										size: 3
+									}
+									sound: {
+										pitch: 0.01f
+										soundTag: {
+											id: "ars_nouveau:tempestry_family"
+										}
+										volume: 0.4f
+									}
+									spellColor: {
+										b: 255
+										g: 71
+										r: 1
+										type: "ars_nouveau:rainbow"
+									}
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3716441EC6ACD043"
+				item: "ars_nouveau:basic_spell_turret"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["729E9D41A28D0E4D"]
+			description: ["一種賦予最多五個實體一個小時的飛行時間的強力儀式。對於遠離家園探索很有用。若有必要，請務必攜帶重新啟動儀式的材料。"]
+			hide_dependency_lines: true
+			icon: "ars_nouveau:ritual_flight"
+			id: "6952D7AD61181E37"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "64D8345AD1B57F8B"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5623626CB05FAC41"
+					item: "ars_nouveau:ritual_flight"
+					type: "item"
+				}
+				{
+					id: "39C158A69FF4C6FE"
+					item: "kubejs:ritual_of_enduring_flight"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.5d
+		}
+	]
+	title: "第 一 章"
+}
