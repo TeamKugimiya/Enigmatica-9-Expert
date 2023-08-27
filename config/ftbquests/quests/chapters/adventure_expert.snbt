@@ -87,7 +87,7 @@
 		}
 		{
 			dependencies: ["2CCCDD05AED3153F"]
-			description: ["大樹 9 專家版從暮光森林開始。面對危險的敵人，恢復生命之樹，並拓展探索新的世界。"]
+			description: ["Enigmatica 9: Expert 從暮光森林開始。面對危險的敵人，恢復生命之樹，並拓展探索新的世界。"]
 			hide: true
 			id: "273A8476E713635C"
 			rewards: [{
@@ -110,7 +110,7 @@
 			description: [
 				"蜜蜂的世界比人們想得更廣闊。"
 				""
-				"把傳送機放在蜂箱的正下方，然後將終界珍珠丟入蜂箱中，看看裡頭有什麼好康的。"
+				"把通用機械模組的傳送機放在蜂箱的正下方，然後將終界珍珠丟入蜂箱中，看看裡頭有什麼好康的。"
 			]
 			hide: true
 			icon: "the_bumblezone:beehive_beeswax"

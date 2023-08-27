@@ -323,29 +323,24 @@
 				""
 				"關於將藥水放入藥水罐的方法，請參閱右邊的任務。"
 				"{@pagebreak}"
-				"&nFilling Potion Jars&r"
+				"&n將藥水注入藥水罐&r"
 				""
-				"Potions may be inserted into Potion Jars through the following methods:"
+				"藥水能透過以下方式注入藥水罐中："
 				""
-				"● Wixies: Potions brewed by Wixies are automatically "
-				"  inserted into nearby Potion Jars."
+				"● 薇克精：透過薇克精自動釀造藥水時能自動注入附近的藥水罐中。"
 				""
-				"● Starbuncles: When equipped with a Wixie Hat, Starbuncles"
-				"  may be used to transport potions from one jar to "
-				"  another."
+				"● 星寶石獸：當穿上薇克精帽子時，星寶石獸能在兩個藥水罐中"
+				"  運輸藥水。"
 				""
-				"● Fluid Containment Jars: Any liquid potion piped into these"
-				"  Jars will be automatically inserted into a Potion Jar "
-				"  placed atop it. This can be used to convert potions from"
-				"  Create, Immersive Engineering, Hexerei, and Thermal into "
-				"  Potion Jar Potions for use in Alchemical Sourcelinks."
+				"● 流體罐：任何流體藥水輸入流體罐內時，能自動將藥水輸出至"
+				"  正上方的藥水罐中。這能轉換包含動力機械、沉浸工程、"
+				"  調和巫術與熱力模組的藥水類型，並注入藥水罐中"
+				"  提供給煉金魔源通道使用。"
 				""
-				"● Item Drain: Create Item Drains will drain Potion Bottles, "
-				"  converting them to fluid form. This may be combined with"
-				"  Fluid Containment Jars. "
+				"● 分液池：動力機械模組的分液池能將藥水瓶分液，轉換成流體型態。"
+				"  這能與流體罐合併使用。"
 				""
-				"● Manually: Potion Bottles may be Right-Clicked onto a "
-				"  Potion Jar to insert them."
+				"● 手動：手持藥水瓶對右鍵藥水罐能直接注入藥水。"
 			]
 			icon: "ars_nouveau:alchemical_sourcelink"
 			id: "4BC2557232FAAC68"
@@ -545,7 +540,7 @@
 				""
 				"================================================"
 				""
-				"雖然還有一些其他的方式可以使用，但Enigmatic Unity模組的Pulsating Crystals提供了發電的基礎。需要附近有魔源罐，它會定期從中抽取一定數量的魔源，將其轉換成電力。若此時存在任何的靈氣，也會消耗一部分靈氣，在此過程中產出更多的電力。"
+				"雖然還有一些其他的方式可以使用，但謎樣統整模組的脈動水晶提供了發電的基礎。需要附近有魔源罐，它會定期從中抽取一定數量的魔源，將其轉換成電力。若此時存在任何的靈氣，也會消耗一部分靈氣，在此過程中產出更多的電力。"
 			]
 			id: "3B372F597A05E777"
 			min_width: 300
@@ -578,7 +573,7 @@
 		{
 			dependencies: ["0BAE6EBFEA3026B9"]
 			description: [
-				"隨著賽特斯石英水晶的純化與生長，真正的工作就可以開始了。當透過Pulsating Crystal充能時，它們的晶格內會產生一個奧術場，能利用它以一種非常受控和定向的方法將物質與能量傳輸很遠的距離。"
+				"隨著賽特斯石英水晶的純化與生長，真正的工作就可以開始了。當透過脈動水晶充能時，它們的晶格內會產生一個奧術場，能利用它以一種非常受控和定向的方法將物質與能量傳輸很遠的距離。"
 				""
 				"================================="
 				""
@@ -1515,7 +1510,7 @@
 				""
 				"它們相當聰明能夠自動化許多遊戲初期的任務，例如將藥草放上晾乾架曬乾，將曬乾後的藥草帶回倉儲，庫存熔爐燃料，將藥水從A點移至B點，甚至更多。"
 				""
-				"它們需要一些設備來完成各個任務，因此務必為它們穿上合適的裝備。在EMI搜尋Starbuncle Equipment星寶石獸裝備，找到它們可使用的所有東西。"
+				"它們需要一些設備來完成各個任務，因此務必為它們穿上合適的裝備。在EMI搜尋星寶石獸裝備，找到它們可使用的所有東西。"
 			]
 			hide_dependency_lines: true
 			id: "0C1D8DEC8ACB56AC"
@@ -1827,7 +1822,6 @@
 					type: "item"
 				}
 			]
-			title: "生命之樹"
 			x: -3.5d
 			y: 2.0d
 		}

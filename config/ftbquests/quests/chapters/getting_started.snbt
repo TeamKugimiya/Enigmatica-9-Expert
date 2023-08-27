@@ -44,7 +44,7 @@
 		{
 			dependencies: ["0000000000000045"]
 			description: [
-				"探索任務線的目的是展示這包有什麼可用的內容。"
+				"探索新鮮事的任務目的是展示這包有什麼可用的內容。"
 				""
 				"若你是麥塊模組新手或是需要一些靈感，這些章節是個很好的起點。"
 				""
@@ -65,7 +65,7 @@
 			tasks: [{
 				icon: "minecraft:compass"
 				id: "00000000000002AD"
-				title: "探索大樹"
+				title: "探索 Enigmatica"
 				type: "checkmark"
 			}]
 			x: -0.5d
