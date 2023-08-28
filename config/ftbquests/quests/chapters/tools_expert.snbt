@@ -1,0 +1,1208 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tools_expert"
+	group: "0856CF7F5CBEB20A"
+	icon: {
+		Count: 1b
+		id: "minecraft:netherite_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "6532940C993EB0C1"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"許多模組增加了各種非常有用的工具，這些工具很容易被忽略。這章任務不會涵蓋所有內容，但將突顯一些在其他任務章節中未提到的較為重要的選擇。"
+				""
+				"注意：大多數工具和盔甲已被標記，以便在 EMI 中更容易搜索。搜索以下類別以發現更多內容："
+				""
+				"● #armors"
+				"● #armors/helm"
+				"● #armors/chest"
+				"● #armors/leggings"
+				"● #armors/boots"
+				""
+				"● #tools"
+				"● #tools/pickaxe"
+				"● #tools/shovel"
+				"● #tools/axe"
+				"● #tools/hoe"
+				"● #tools/multi-tool"
+			]
+			hide: true
+			icon: {
+				Count: 1b
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "291E5727DD1ADDF4"
+			rewards: [{
+				id: "6C88FB980076E7D5"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "6CB601D6EDB6AA57"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools"
+					}
+				}
+				title: "Any Tool"
+				type: "item"
+			}]
+			title: "工具與裝備"
+			x: -10.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"一種能遠距離挖掘方塊的電力工具。"
+				""
+				"危險：4 級雷射裝置。避免眼睛與皮膚接觸。"
+				""
+				"值得注意的升級"
+				""
+				"● 光源放置升級"
+				"● 範圍挖掘升級"
+				"● 絲綢之觸升級"
+				"● 幸運升級"
+				"● 能過濾的虛空銷毀升級"
+				"● 磁鐵升級"
+			]
+			icon: {
+				Count: 1b
+				id: "mininggadgets:mininggadget"
+				tag: {
+					energy: 1000000
+				}
+			}
+			id: "400BF1DBF5EF7971"
+			rewards: [
+				{
+					id: "00DFFC8DE1F504C3"
+					item: "mininggadgets:upgrade_light_placer"
+					title: "Upgrade: Light Placer"
+					type: "item"
+				}
+				{
+					id: "1BD7572FA91C5CC2"
+					item: "mininggadgets:upgrade_void_junk"
+					type: "item"
+				}
+			]
+			subtitle: "哇靠是雷射"
+			tasks: [
+				{
+					id: "2570BAAA2D7D8317"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mininggadgets:mininggadget"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "mininggadgets:mininggadget_simple"
+									tag: { }
+								}
+								{
+									Count: 1b
+									id: "mininggadgets:mininggadget_fancy"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "挖掘小幫手"
+					type: "item"
+				}
+				{
+					id: "3FEA294367FD4307"
+					item: "mininggadgets:modificationtable"
+					type: "item"
+				}
+			]
+			x: -9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"是否曾經希望能在天空中建立平台，而不須垂直墊高一根通天柱才能到那裡呢？"
+				""
+				"如果你不能飛行，可能還是得需要墊個通天柱。但，如果你可以飛行，可以使用一瓶雲來作為平台的起點。"
+				""
+				"在y192和y196之間使用玻璃瓶，你可以獲得瓶裝雲。手持它對空氣右鍵將雲放置出來，能讓其他方塊放置在其旁邊。幾秒後，它會消失，但如果在一段時間內將另一個方塊放置上，它會自動回到瓶子裡。"
+			]
+			hide_dependency_lines: true
+			id: "7C80BF770471D535"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7B241F0433CB46B4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "心思飄雲間"
+			tasks: [{
+				id: "36B52599415F3A77"
+				item: "quark:bottled_cloud"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"把每分每秒當寶藏珍惜，用它們來做任何你喜歡的事情。"
+				""
+				"在大多數機器上蹲下右鍵，可以花費儲存的時間來暫時加速它們。"
+			]
+			hide_dependency_lines: true
+			id: "49E1BA11BF18AC10"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "7878D3C0A8B1AE6D"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			subtitle: "只想與你度過..."
+			tasks: [{
+				id: "0862CF8273A2BA78"
+				item: {
+					Count: 1b
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"Enigmatica 9 中並沒有專門的連鎖挖掘模組，因為我們有各種非常酷的工具，提供了相同的功能甚至更多。"
+				""
+				"範圍挖掘？同方塊挖掘？遠距離的神秘挖掘？是的，我們有這些功能。"
+				""
+				"以下的任務將幫助突顯一些更為重要的選擇。請享用！"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4650EB4575965AAD"
+			rewards: [{
+				id: "19455C7D8B7BAD8F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "5792CBBC2598D7C9"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools"
+					}
+				}
+				title: "任何工具"
+				type: "item"
+			}]
+			title: "連鎖挖掘?"
+			x: -10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"初始即有鑽石等級挖掘能力的鑽頭，氣動鑿岩錘能夠連鎖挖掘礦物和木材。它還具有其他幾種模式，以更有控制的方式清除區域。"
+				""
+				"升至獄髓等級時，只要你想就能連鎖挖掘任何方塊。"
+			]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:jackhammer"
+				tag: {
+					DigMode: "MODE_1X1"
+					DrillBit: "DIAMOND"
+					UpgradeCache: {
+						speed: 10
+						volume: 25
+					}
+					UpgradeInventory: {
+						Items: [
+							{
+								Count: 25b
+								Slot: 0
+								id: "pneumaticcraft:volume_upgrade"
+							}
+							{
+								Count: 10b
+								Slot: 1
+								id: "pneumaticcraft:speed_upgrade"
+							}
+						]
+						Size: 9
+					}
+					"pneumaticcraft:air": 1200000
+				}
+			}
+			id: "28DF07224351C4B0"
+			rewards: [{
+				count: 4
+				id: "6EB5B00B9A480AC9"
+				item: "pneumaticcraft:volume_upgrade"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "183025779DB8C0CD"
+					item: "pneumaticcraft:jackhammer"
+					type: "item"
+				}
+				{
+					id: "39F8AF3AEE8B4C31"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "pneumaticcraft:drill_bit_diamond"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:drill_bit_netherite"
+								}
+							]
+						}
+					}
+					title: "鑽頭"
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"當安裝礦脈挖掘單元時，Meka-工具能挖掘礦脈和原木。它可以選擇性地切換適用的方塊。"
+				""
+				"此外爆破單元能挖掘至多 9x9 的大範圍，可在模塊調節器介面中調整半徑與其他選項。"
+			]
+			icon: {
+				Count: 1b
+				id: "mekanism:meka_tool"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+						modules: {
+							"mekanism:blasting_unit": {
+								amount: 4
+								blast_radius: 4
+								enabled: 1b
+								renderHUD: 1b
+							}
+						}
+					}
+				}
+			}
+			id: "03213C040584537B"
+			rewards: [{
+				id: "3DB1C4ACE53A9FE0"
+				item: "mekanism:module_shearing_unit"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4845CF13045C8DAE"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+				{
+					id: "5D160816F72F66AF"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:module_vein_mining_unit"
+								}
+								{
+									Count: 1b
+									id: "mekanism:module_blasting_unit"
+								}
+							]
+						}
+					}
+					title: "挖掘單元"
+					type: "item"
+				}
+			]
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"當將鏈鋸附魔至斧頭上時，能使斧頭一次砍倒整棵樹，而不是一次只有一格方塊。"
+				""
+				"製作鋼葉斧時甚至已經預先附魔！"
+			]
+			id: "1EA2524632247041"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "0074A49DCD3DD188"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "12371C7615E49F82"
+				item: {
+					Count: 1b
+					id: "twilightforest:steeleaf_axe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:efficiency"
+								lvl: 2s
+							}
+							{
+								id: "apotheosis:chainsaw"
+								lvl: 1s
+							}
+						]
+						RepairCost: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "鏈鋸"
+			x: -9.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: ["探天者之斧有能力砍倒整棵樹，使任何伐木作業輕鬆完成。"]
+			id: "24FA5629BEE5681B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3570B6A36168655F"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "26BB982DA92AE9A0"
+				item: {
+					Count: 1b
+					id: "naturesaura:sky_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -8.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"在初學者法術書中包含了砍伐之魔符，它可以作用於樹木、蘑菇、仙人掌或其他植物，將它們一次性砍倒。"
+				""
+				"二級的破壞之魔符適用於任何類型的方塊破壞。"
+				""
+				""
+				"對上述任一種魔符套用範圍效果之魔符後，能增加可破壞的方塊數量。"
+				""
+				"例如：觸碰 > 砍伐或破壞 > 範圍效果 x8"
+			]
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:creative_spell_book"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 2
+						flavor: ""
+						spell_count: 10
+						spells: {
+							spell0: {
+								name: "Grow"
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "ars_nouveau:glyph_grow"
+									size: 2
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 255
+									r: 25
+								}
+							}
+							spell1: {
+								name: ""
+								recipe: {
+									part0: "ars_elemental:glyph_homing_projectile"
+									part1: "ars_nouveau:glyph_freeze"
+									part2: "ars_nouveau:glyph_cold_snap"
+									part3: "ars_nouveau:glyph_cold_snap"
+									part4: "ars_nouveau:glyph_amplify"
+									part5: "ars_nouveau:glyph_amplify"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 167
+									g: 25
+									r: 80
+								}
+							}
+							spell2: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "ars_nouveau:glyph_fell"
+									part2: "ars_nouveau:glyph_aoe"
+									part3: "ars_nouveau:glyph_aoe"
+									part4: "ars_nouveau:glyph_aoe"
+									part5: "ars_nouveau:glyph_aoe"
+									part6: "ars_nouveau:glyph_aoe"
+									part7: "ars_nouveau:glyph_aoe"
+									part8: "ars_nouveau:glyph_aoe"
+									part9: "ars_nouveau:glyph_aoe"
+									size: 10
+								}
+								sound: {
+									pitch: 0.01f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 25
+									r: 30
+								}
+							}
+							spell3: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_orbit"
+									part1: "ars_nouveau:glyph_aoe"
+									part2: "ars_nouveau:glyph_aoe"
+									part3: "ars_nouveau:glyph_aoe"
+									part4: "ars_nouveau:glyph_aoe"
+									part5: "ars_nouveau:glyph_aoe"
+									part6: "ars_nouveau:glyph_aoe"
+									part7: "ars_nouveau:glyph_split"
+									part8: "ars_nouveau:glyph_split"
+									part9: "ars_nouveau:glyph_lightning"
+									size: 10
+								}
+								sound: {
+									pitch: 1.67f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 255
+									r: 255
+								}
+							}
+							spell4: {
+								name: "Launch"
+								recipe: {
+									part0: "ars_nouveau:glyph_projectile"
+									part1: "ars_nouveau:glyph_launch"
+									part2: "ars_nouveau:glyph_heal"
+									size: 3
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 90
+									r: 255
+								}
+							}
+							spell5: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_projectile"
+									part1: "ars_nouveau:glyph_redstone_signal"
+									size: 2
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 255
+									r: 25
+								}
+							}
+							spell6: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "ars_nouveau:glyph_snare"
+									part2: "ars_nouveau:glyph_crush"
+									size: 3
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 74
+									r: 150
+								}
+							}
+							spell7: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_orbit"
+									part1: "ars_nouveau:glyph_split"
+									part2: "ars_nouveau:glyph_split"
+									part3: "ars_nouveau:glyph_split"
+									part4: "ars_nouveau:glyph_harm"
+									part5: "ars_nouveau:glyph_extend_time"
+									part6: "ars_nouveau:glyph_hex"
+									part7: "ars_elemental:glyph_poison_spores"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_extend_time"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 25
+									g: 255
+									r: 25
+								}
+							}
+							spell8: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_self"
+									part1: "ars_elemental:glyph_poison_spores"
+									part2: "ars_nouveau:glyph_extend_time"
+									part3: "ars_nouveau:glyph_extend_time"
+									part4: "ars_nouveau:glyph_extend_time"
+									part5: "ars_nouveau:glyph_extend_time"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 180
+									g: 25
+									r: 255
+								}
+							}
+							spell9: {
+								name: "Storm"
+								recipe: {
+									part0: "ars_nouveau:glyph_orbit"
+									part1: "ars_nouveau:glyph_split"
+									part2: "ars_nouveau:glyph_split"
+									part3: "ars_nouveau:glyph_split"
+									part4: "ars_elemental:glyph_poison_spores"
+									part5: "ars_elemental:glyph_poison_spores"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 255
+									g: 25
+									r: 30
+								}
+							}
+						}
+					}
+				}
+			}
+			id: "2CFAA6C4D717E6BF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "26D391BE317C1493"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "6EF4B7A372868F7B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:novice_spell_book"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:apprentice_spell_book"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:archmage_spell_book"
+								}
+							]
+						}
+					}
+					title: "法術書"
+					type: "item"
+				}
+				{
+					id: "5CF6DEDBBA142D2B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:glyph_fell"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:glyph_break"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "砍伐或破壞之魔符"
+					type: "item"
+				}
+			]
+			title: "法術"
+			x: -11.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"基礎的鏟與鎚的升級，這些工具能夠挖掘 3x3 的範圍。"
+				""
+				"將 Power of the Depth 附魔到挖掘工具上時，每個等級會使工具多挖掘一格方塊的深度。"
+			]
+			icon: {
+				Count: 1b
+				id: "simplytools:diamond_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E6CE233428FFE63"
+			rewards: [{
+				id: "60ABB884D6744408"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "simplytools:power_of_the_depth"
+							lvl: 3s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "38A42BC191855ECB"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "simplytools:diamond_hammer"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "simplytools:diamond_excavator"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "挖掘工具"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: ["隨著每個充電後的等級，無限電鑽和無限電鋸的工作範圍也越大。電鑽在挖掘點為中心半徑內運作，而電鋸在大面積上從頂部向下砍樹。"]
+			icon: {
+				Count: 1b
+				id: "industrialforegoing:infinity_drill"
+				tag: {
+					CanCharge: 1b
+					Energy: 9223372036854775807L
+					Fluid: {
+						Amount: 1000000
+						FluidName: "biofuel"
+					}
+					Selected: "ARTIFACT"
+					Special: 1b
+				}
+			}
+			id: "4439EC0EB57A1F69"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "52510292FF8D040C"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0DD2A260790C8A0A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "industrialforegoing:infinity_saw"
+								tag: {
+									CanCharge: 1b
+									Energy: 0L
+									Fluid: {
+										Amount: 0
+										FluidName: "biofuel"
+									}
+									Selected: "POOR"
+									Special: 0b
+								}
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:infinity_drill"
+								tag: {
+									CanCharge: 1b
+									Energy: 0L
+									Fluid: {
+										Amount: 0
+										FluidName: "biofuel"
+									}
+									Selected: "POOR"
+									Special: 0b
+								}
+							}
+						]
+					}
+				}
+				title: "無限工具"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: [
+				"採礦機械鑽和伐木機械鋸都需要流體燃料才能運作，在這包終能接受大部分的流體燃料。"
+				""
+				"機械鑽能挖掘至多 3x3 的範圍，而機械鋸會嘗試鋸倒整棵樹。"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Items: [{
+							Count: 1b
+							Slot: 0
+							id: "immersiveengineering:drillhead_steel"
+						}]
+						Size: 5
+					}
+				}
+				id: "immersiveengineering:drill"
+				tag: {
+					Fluid: {
+						Amount: 4000
+						FluidName: "immersiveengineering:biodiesel"
+					}
+					singleBlockMode: 0b
+					upgrades: {
+						capacity: 2000
+						oiled: 1b
+						waterproof: 1b
+					}
+				}
+			}
+			id: "3F7FCEDE77D9EC80"
+			rewards: [{
+				id: "7A8C7FC8EDC3EA90"
+				item: "immersiveengineering:toolupgrade_drill_damage"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1CE712C151A1CB1F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									ForgeCaps: {
+										Parent: {
+											Items: [ ]
+											Size: 5
+										}
+									}
+									id: "immersiveengineering:buzzsaw"
+									tag: { }
+								}
+								{
+									Count: 1b
+									ForgeCaps: {
+										Parent: {
+											Items: [ ]
+											Size: 5
+										}
+									}
+									id: "immersiveengineering:drill"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "工程師工具"
+					type: "item"
+				}
+				{
+					id: "6C75C7F200B7655D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersiveengineering:drillhead_iron"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:drillhead_steel"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:sawblade"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:rockcutter"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "鑽頭或鋸片"
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			dependency_requirement: "all_started"
+			description: [
+				"悄然接近的苦力怕幹掉了你嗎？狂熱的殭屍總是糾纏在你面前嗎？淫穢的骷弓就是不讓你安心挖礦嗎？"
+				""
+				"拿個盾牌吧！但不只是普通的盾牌，Superior Shields 可以放在飾品欄中，自動保護佩戴者，甚至能阻擋背後的攻擊。"
+				""
+				"Superior Shields有三個重要的屬性，決定了它們的保護效果："
+				""
+				"● Hit Points"
+				"它們能阻擋的傷害心數，在需要重新充能前。"
+				""
+				"● Recharge Rate"
+				"它們需要多少秒才能充能一半的盾牌。"
+				""
+				"● Recharge Delay"
+				"在未受到傷害的情況下經過的秒數，盾牌開始充能。"
+				""
+				"總體而言，這些數據意味著盾牌只在持有者沒有受到持續攻擊的情況下才有效，一旦Hit Points減少，持有者需要遠離危險區域，以讓盾牌重新充電。因此，它們非常適用於意外攻擊，但不會讓你永遠存活下去。"
+				""
+				"除了基本屬性外，它們還可以附魔以多種有趣的效果，例如當盾牌耗盡時，可以治愈持有者的所有藥水效果，或者對損壞盾牌的任何東西施加中毒效果。"
+			]
+			hide_dependency_lines: true
+			id: "121CF33BFAEF6205"
+			min_width: 300
+			rewards: [
+				{
+					id: "3345648606C68BEB"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "superiorshields:quickened"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2FCA3B2C9ABB9D73"
+					player_command: false
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "superiorshields:netherite_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "50541B95613CA29B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "superiorshields:bronze_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:electrum_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:constantan_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:ironwood_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:steeleaf_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:knightmetal_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "superiorshields:enchanter_shield"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Superior Shields"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["291E5727DD1ADDF4"]
+			description: [
+				"需要幫助管理所有這些工具嗎？製作一個工具腰帶吧！"
+				""
+				"工具腰帶預設可以容納兩個工具，但通過在鐵砧上加入腰包可以擴充至最多九個欄位。"
+				""
+				"當放在飾品欄中時，這個腰帶能在其已儲存的任何工具之間進行快速切換。查看按鍵綁定選單相關選項。預設情況下，打開工具切換介面的按鍵是 R，打開腰帶的背包以加入或移除工具的按鍵是 V。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "toolbelt:belt"
+				tag: { }
+			}
+			id: "5460EDD6024A9548"
+			rewards: [{
+				id: "1A699324C4F5EC1A"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A274B01C0215C3F"
+				item: {
+					Count: 1b
+					id: "toolbelt:belt"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["4650EB4575965AAD"]
+			description: ["對於迅速清除樹葉相當好用，低調的鋤頭也是田地中的重要工具，可以輕鬆地割斷大片草地。"]
+			id: "04EC298DE2818F2A"
+			rewards: [{
+				count: 8
+				id: "17A4B0F76044BC9A"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			tasks: [{
+				id: "515526797B08891A"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.0d
+			y: -7.5d
+		}
+	]
+	title: "工具裝備"
+}
