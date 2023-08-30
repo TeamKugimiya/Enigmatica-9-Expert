@@ -1,0 +1,1538 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:hopper"
+	id: "00000000000002AB"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"模組化路由器是非常強大的自動化工具。雖是一個方塊但可增強後執行許多操作，像是破壞方塊，排序物品，將物品輸入遠方容器，或同時進行以上所有操作，甚至更多！"
+				""
+				"所有模組化路由器的模組/升級/增強都有物品提示的資訊，滑鼠游標移至 EMI 或身上的物品上時，按住\" i \"即可查看它們如何運作的提示。"
+				"（當查詢製作配方介面開啟時，物品提示將不起作用）"
+				""
+				"同時該模組也有\"模組化路由器\"指南手冊，記載著所有詳細的資訊。"
+			]
+			hide_dependency_lines: true
+			id: "15E49A6B00BE744C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "0000000000000968"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			subtitle: "你有試過關掉重開了嗎？"
+			tasks: [{
+				id: "366C08F8F32D7E4B"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			title: "物品路由器"
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"XNET作為可編程的物流介面，基於適應外部條件的已編寫邏輯進行運作。除了邏輯功能外，它也能快速且精準地傳輸物品，流體，氣體和電力。"
+				""
+				"首先，必須要有一個控制器，一些纜線和一些同色的連接器。控制器本身也需要少量的電力才能運作。"
+				""
+				"將連接器放在機器或紅石設備上，然後用一般的纜線接回控制器。控制器也需要另一個連接器。"
+				""
+				"所有的編寫都在控制器內執行，首先在介面內建立頻道，然後選擇連接器對其執行的內容進行編寫。強烈建議看一些相關的影片，如果沒有視覺化的教學，這不是一件容易的事。"
+			]
+			hide_dependency_lines: true
+			icon: "xnet:controller"
+			id: "559D7D60CDDE5596"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0000000000000A5D"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "204956F05E407E82"
+					item: "xnet:controller"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "79D951766C0A6EF5"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "xnet:netcable_red"
+								}
+								{
+									Count: 1b
+									id: "xnet:netcable_green"
+								}
+								{
+									Count: 1b
+									id: "xnet:netcable_blue"
+								}
+								{
+									Count: 1b
+									id: "xnet:netcable_yellow"
+								}
+							]
+						}
+					}
+					title: "任何 XNet 線纜"
+					type: "item"
+				}
+				{
+					id: "4B2CE60937C00CCE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "xnet:connector_red"
+								}
+								{
+									Count: 1b
+									id: "xnet:connector_green"
+								}
+								{
+									Count: 1b
+									id: "xnet:connector_blue"
+								}
+								{
+									Count: 1b
+									id: "xnet:connector_yellow"
+								}
+							]
+						}
+					}
+					title: "任何 XNet 連接器"
+					type: "item"
+				}
+			]
+			title: "XNet 控制器"
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			description: ["說到紅石，模組帶來了很多好處。從可以同時傳輸 16 種不同等級的紅石訊號線纜，緊湊的單一方塊計時器或閂鎖器，或只是無線跨維度的連接器，一定有一種解決方案可以滿足你的紅石需求。"]
+			icon: "minecraft:comparator"
+			id: "3468E652B4FE85FA"
+			rewards: [{
+				id: "0DFBD5289D4AFCA0"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "61B85B234D1E9F5E"
+				type: "checkmark"
+			}]
+			title: "紅石與邏輯"
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			description: ["模組代表\"路由器\"的基本編程；路由器執行任何操作都至少需要一個。單一路由器中至多可安裝九個模組，且當路由器啟動時，每個模組會依序由左至右依序運行。"]
+			hide_dependency_lines: true
+			id: "21B266F6556271EB"
+			rewards: [{
+				count: 2
+				id: "04E2CB365714CFFD"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			tasks: [{
+				id: "428BD8D12FB203C8"
+				item: "modularrouters:blank_module"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["60A72B4FC2AFD9C3"]
+			description: [
+				"分配模組的功能非常類似 MK2 的發送和接收模組，且以相同的方式與方塊綁定。然而，分配模組可以綁定多達八個不同的面或方塊。"
+				""
+				"開啟模組的介面，設定為傳輸至路由器或輸出，並設定分配策略，例如輪詢調度或隨機。"
+			]
+			id: "1956D60143703C16"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "239155FDD340ECAF"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6F60B6D7143847D6"
+				item: {
+					Count: 1b
+					id: "modularrouters:distributor_module"
+					tag: {
+						modularrouters: {
+							ModuleFilter: { }
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: ["破壞模組能破壞與路由器相鄰的方塊。它的素質是由製作時使用的鎬而定，包含附魔，挖掘等級，和其他的特性，所以請確保製作時使用了適合的鎬。"]
+			id: "108E174F5672BF48"
+			rewards: [{
+				id: "1277D5B23BCA8923"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:silk_touch"
+							lvl: 1s
+						}]
+						RepairCost: 1
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "614539807F15E23E"
+				item: {
+					Count: 1b
+					id: "modularrouters:breaker_module"
+					tag: {
+						modularrouters: {
+							Direction: "NONE"
+							ModuleFilter: { }
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"執行模組會嘗試使用暫存的物品對方塊或實體右鍵。"
+				""
+				"當給予武器並設為攻擊模式時也能用來攻擊實體。"
+			]
+			id: "27C9B26FB5FF10E1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "3922A588208AF529"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "462755624D5FE2DE"
+				item: {
+					Count: 1b
+					id: "modularrouters:activator_module"
+					tag: {
+						modularrouters: {
+							Direction: "NONE"
+							ModuleFilter: { }
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"真空模組是個強大的自動化工具，它能根據複雜的過濾器來拾取地上的掉落物。"
+				""
+				"若加上經驗真空增強，能拾取經驗球並轉換成兼容的流體經驗或經驗瓶。"
+			]
+			id: "322583CAAD093EE4"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3C512C78B12406AA"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "56280F9C61952290"
+				item: {
+					Count: 1b
+					id: "modularrouters:vacuum_module"
+					tag: {
+						modularrouters: {
+							Direction: "NONE"
+							ModuleFilter: { }
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"流體模組可作為接收或發送，將流體輸入或輸出路由器。請注意路由器沒有內建流體儲存空間來儲存任何流體，因此至少要提供一個。一個普通的鐵桶或是模組的儲罐都可以，只要將它放在路由器內的暫存中。"
+				""
+				"它能與儲罐或世界中的流體互動，需要的話可以在世界中放置和收集流體。"
+				""
+				"MK1 版只能和路由器緊鄰的方塊空間互動。互動的方向能在模組介面中設定。"
+				""
+				"MK2 版必須手持該模組對想要互動的方塊蹲下右鍵設定。"
+			]
+			id: "56234AA9ED3E8324"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "30E1EC30981D6B46"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6F58BD0AC1F29AD4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "modularrouters:fluid_module"
+								tag: {
+									modularrouters: {
+										Direction: "NONE"
+										FluidDir: 0b
+										MaxTransfer: 1000
+										ModuleFilter: { }
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "modularrouters:fluid_module_2"
+								tag: {
+									modularrouters: {
+										FluidDir: 0b
+										MaxTransfer: 1000
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "流體模組"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"Redstone Pen 和 Quill 能在方塊的任何一面\"畫\"上紅石粉，並能完全手動控制是否連接。只要右鍵即可開始畫紅石！僅在方塊上的紅石路徑充能，並不會充能方塊本身，但你也可以選擇這樣做，只要拿筆右鍵紅石路徑的中心。"
+				""
+				"Quill 會消耗你身上的紅石粉，而 Pen 版本則是本身充滿紅石，不需要身上有任何紅石粉。將 Pen 和紅石粉或紅石塊一起合成來補充紅石。當左鍵清除一段紅石路徑時，Pen 也會重新吸收紅石。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "redstonepen:pen"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44070C90619D14E6"
+			rewards: [{
+				count: 16
+				id: "5EEDBF4F50558BA8"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4DCA07CD21BD3977"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "redstonepen:quill"
+							}
+							{
+								Count: 1b
+								id: "redstonepen:pen"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "Either Redstone Pen"
+				type: "item"
+			}]
+			title: "紅石筆"
+			x: -7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"便宜的無線紅石，有無限的頻道，傳輸距離不錯但不是無限的。"
+				""
+				"關於如何使用此功能的詳細說明，將滑鼠游標移至 EMI 或包包的物品上，按住思索鍵（預設：w）來查看教學動畫。"
+			]
+			hide_dependency_lines: true
+			id: "28A8C7959A7EEBAE"
+			rewards: [{
+				id: "6F390DC46A49341F"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "1C4826588F57C889"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["28A8C7959A7EEBAE"]
+			description: [
+				"可遙控啟動已連接的紅石。"
+				""
+				"關於如何使用此功能的詳細說明，將滑鼠游標移至 EMI 或包包的物品上，按住思索鍵（預設：w）來查看教學動畫。"
+			]
+			id: "21E4D556E8AE724E"
+			rewards: [{
+				id: "21EC369B48E4317E"
+				item: "minecraft:lectern"
+				type: "item"
+			}]
+			tasks: [{
+				id: "161C3B3F56665A92"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"從後方的輸入訊號設定輸出端的訊號，並從側方輸入的訊號重製輸出端的訊號。非常適合自動開關發電機。"
+				""
+				"關於如何使用此功能的詳細說明，將滑鼠游標移至 EMI 或包包的物品上，按住思索鍵（預設：w）來查看教學動畫。"
+			]
+			hide_dependency_lines: true
+			id: "1042C49086A29CE2"
+			rewards: [{
+				id: "3AA02F6637A04AD3"
+				item: "minecraft:comparator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A55E19410163485"
+				item: "create:powered_latch"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["559D7D60CDDE5596"]
+			description: [
+				"當試著從非原版的訊號源讀取紅石訊號時，通常需要代理器。放置紅石代理器以便這些紅石訊號源指向它，然後將連接器放在代理上。"
+				""
+				"某些情況下，還需要進行方塊更新。為此，請改用紅石代理器（更新）。"
+			]
+			id: "34D8561D229A3122"
+			rewards: [{
+				id: "6A693F43E60B3E3B"
+				item: "xnet:connector_blue"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A89EF5C6B8A8132"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "xnet:redstone_proxy"
+							}
+							{
+								Count: 1b
+								id: "xnet:redstone_proxy_upd"
+							}
+						]
+					}
+				}
+				title: "紅石代理器"
+				type: "item"
+			}]
+			title: "紅石代理器（更新）"
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: ["和紅石粉的功能類似，但是方塊的形式。能簡單的垂直傳輸訊號。"]
+			hide_dependency_lines: true
+			id: "359D48635F222076"
+			rewards: [{
+				count: 2
+				id: "45E59A0B45A70321"
+				item: "supplementaries:cog_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59DB7B4DA871079D"
+				item: "supplementaries:cog_block"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["44070C90619D14E6"]
+			description: [
+				"能放在方塊的任一側的簡單中繼器。物品提示解釋了每一種的運作方式。"
+				""
+				"放置時，對著方塊一側右鍵你希望輸出的方向。"
+			]
+			icon: "redstonepen:inverted_relay"
+			id: "28F791EC21444045"
+			rewards: [{
+				count: 2
+				id: "38EDFE0071A6B262"
+				item: "redstonepen:relay"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B0B720B736296F8"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "redstonepen:relay"
+							}
+							{
+								Count: 1b
+								id: "redstonepen:inverted_relay"
+							}
+							{
+								Count: 1b
+								id: "redstonepen:bistable_relay"
+							}
+							{
+								Count: 1b
+								id: "redstonepen:pulse_relay"
+							}
+							{
+								Count: 1b
+								id: "redstonepen:bridge_relay"
+							}
+						]
+					}
+				}
+				title: "Any RS Pen Relay"
+				type: "item"
+			}]
+			title: "RS Pen Relays"
+			x: -7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			description: ["升級是安裝在路由器本身並增強其運作方式，例如加快速度或使其免疫爆炸破壞。"]
+			hide_dependency_lines: true
+			id: "7CD587747CC14268"
+			rewards: [{
+				count: 2
+				id: "3E55636E26686CC0"
+				item: "modularrouters:blank_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3FD6609BE4F80DAD"
+				item: "modularrouters:blank_upgrade"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["15E49A6B00BE744C"]
+			description: ["增強安裝在各個模組中，且只用於該模組，改變它的運作方式。"]
+			hide_dependency_lines: true
+			id: "7CA354074FCF8447"
+			rewards: [{
+				count: 2
+				id: "35F7F3293209E5BA"
+				item: "modularrouters:augment_core"
+				type: "item"
+			}]
+			tasks: [{
+				id: "175A67867F65B8C0"
+				item: "modularrouters:augment_core"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"收到紅石訊號後在設定的時間內發送脈衝訊號。"
+				""
+				"關於如何使用此功能的詳細說明，將滑鼠游標移至 EMI 或包包的物品上，按住思索鍵（預設：w）來查看教學動畫。"
+			]
+			hide_dependency_lines: true
+			id: "26365967FDE026B6"
+			rewards: [{
+				id: "2E26D4A73E250301"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1E9609D8328D536F"
+				item: "create:pulse_repeater"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1042C49086A29CE2"]
+			description: [
+				"使用輸入的脈衝訊號切換輸出端的訊號。使用中繼器發送一個脈衝訊號從輸出端導回輸入端，並加上一段延遲，就能完成脈衝訊號延長器。"
+				""
+				"關於如何使用此功能的詳細說明，將滑鼠游標移至 EMI 或包包的物品上，按住思索鍵（預設：w）來查看教學動畫。"
+			]
+			id: "2013BF98F905223C"
+			rewards: [
+				{
+					id: "46DC8CD903DE448A"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "0EA944B40AA81DC1"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "39E71AF33C273C4C"
+				item: "create:powered_toggle_latch"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["559D7D60CDDE5596"]
+			description: [
+				"RF 工具的過濾模組兼容 XNet，若要標籤過濾這是必須的。"
+				""
+				"將過濾模組放入介面上方四個欄位其中之一，然後在連接器右邊的 \"filter index\"按鈕中選擇其中一個。"
+			]
+			id: "0597A437596EABC1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7E251F2D83DBC6E3"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3DFB959BAC0FAAFF"
+				item: {
+					Count: 1b
+					id: "rftoolsbase:filter_module"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: [
+				"調節增強根據其安裝至的模組而有不同的作用。一般來說，它們會設定模組運作時的條件。對發送模組來說，當目標容器的物品少於限制時，才會運作。"
+				""
+				"有關如何更改每個模組的詳細信息，請查看\"模組化路由器\"指南手冊中的條目。"
+			]
+			id: "0163571DC8F997F5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "621F32F72099BE12"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "143E9C1A894A8972"
+				item: "modularrouters:regulator_augment"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: [
+				"速度與堆疊升級有助於控制路由器的運作速度。"
+				""
+				"安裝更多的速度升級使路由器更頻繁的運作內部的程式。"
+				""
+				"另一方面，堆疊升級使路由器每次運作能移動更多物品。例如，每隔幾秒移動一組物品通常比每刻移動一個物品更有效率。"
+				""
+				"當然，兩者可以混合使用來實現預期的目標。"
+			]
+			id: "3D7E621374741748"
+			rewards: [
+				{
+					count: 3
+					id: "1BAB8612F63CCCC9"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "38A7373CD75CD65E"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7CABBEFEA29A5692"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+				{
+					id: "797528A2459D22B8"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["使路由器完全抗爆，使其免疫 TNT 和凋零，是處理爆炸或建造凋零時有價值的升級。"]
+			id: "27F2EAA313795208"
+			rewards: [{
+				id: "2DA82C3A16F3ACB1"
+				item: "modularrouters:blast_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61DD5DD42B8E1C8E"
+				item: "modularrouters:blast_upgrade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"發送和接收模組分別將物品發送至遠處容器或從遠處容器提取物品。"
+				""
+				"MK1 版只能沿著直線運作，但不需要視線中看的到。因此接收模組 MK1 能從牆的另一側箱子中取出物品。然而，它們只能與範圍內的第一個容器互動。"
+				""
+				"MK2 取消了直線，而是與方塊的特定面互動。對要互動的方塊的一面蹲下右鍵綁定。例如，要取出熔爐的產物，必須將其綁定到熔爐的底部。"
+				""
+				"MK3 發送模組則更進一步，能讓路由器發送至任何距離，甚至跨維度。當然，目標容器所在區塊必須載入。除此之外，與 MK2 版相同，也需要綁定至容器的某側。"
+			]
+			id: "60A72B4FC2AFD9C3"
+			rewards: [
+				{
+					count: 3
+					id: "38C6E5FA80C00A29"
+					item: {
+						Count: 1b
+						id: "modularrouters:sender_module_1"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "54ADA65D38042D89"
+					item: {
+						Count: 1b
+						id: "modularrouters:puller_module_1"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6BE2EDE7B7976DDA"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_1"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_2"
+									tag: {
+										modularrouters: {
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_3"
+									tag: {
+										modularrouters: {
+											ModuleFilter: { }
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "發送模組"
+					type: "item"
+				}
+				{
+					id: "580FE19F371CABA6"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:puller_module_1"
+									tag: {
+										modularrouters: {
+											Direction: "NONE"
+											ModuleFilter: { }
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:puller_module_2"
+									tag: {
+										modularrouters: {
+											ModuleFilter: { }
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "接收模組"
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"能量輸出和能量分配模組能讓路由器對附近的方塊提供電力。"
+				""
+				"能量輸出模組只能輸出給鄰近的方塊，而能量分配模組能輸出給八格內的遠處方塊。"
+				""
+				"無論哪一種，都需要一個電力來源。這可以是路由器內暫存區中放入任何含電物品的方式，或是安裝能量升級後，由路由器本體能量暫存的方式。"
+			]
+			icon: {
+				Count: 1b
+				id: "modularrouters:energy_distributor_module"
+				tag: {
+					modularrouters: {
+						Direction: "NONE"
+						ModuleFilter: { }
+					}
+				}
+			}
+			id: "2AB330A73BD6447C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "27AFD476C3E9CE35"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "79300CFD6BA43948"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_distributor_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D322C9809E07CCA"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_output_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["給予路由器一定量的能量儲存空間，讓路由器能同時處理物品和能量傳輸。"]
+			id: "5A7512AA919309E5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "56004BEDB4624F96"
+				player_command: false
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0CF6F9BAA4502A0E"
+				item: "modularrouters:energy_upgrade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["當安裝至有範圍限制的模組中時，這些能調整工作範圍。例如，真空模組能減少拾取範圍，避免撿拾其他自動化設施的掉落物。或是發送模組能增加範圍，用於更遠的容器。"]
+			id: "5769B2F6C1C41BF9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "16F20BC236C77741"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4E92C9FC29427BD1"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "modularrouters:range_down_augment"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:range_up_augment"
+							}
+						]
+					}
+				}
+				title: "範圍增強"
+				type: "item"
+			}]
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["手持它對另一個方塊蹲下右鍵，並安裝至路由器中升級它的外觀和感覺。讓路由器看起來幾乎像是任何東西，甚至是花！"]
+			id: "58F3471ACCC0F86A"
+			rewards: [{
+				id: "54186C7FFD7F0FE0"
+				item: "minecraft:allium"
+				type: "item"
+			}]
+			tasks: [{
+				id: "035E21B5DBD9BD35"
+				item: "modularrouters:camouflage_upgrade"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"無論是自動化，可伸縮的吊橋，或是很潮的門，造橋模組適用於各種情況。"
+				""
+				"MK1 版在收到強紅石訊號時放置路由器暫存的方塊，然後在弱紅石訊號時收回。請記得，製作時使用的破壞模組必須是足夠高等級的鎬，用以破壞回收的方塊。"
+				""
+				"當與外部的一些邏輯組合時，它們非常適合收集在世界中轉換的方塊，例如氧化的銅方塊。"
+				""
+				"MK2 版主要是美觀的用途，例如橋梁或門。它放置的所有方塊都是\"幽靈\"方塊，能讓玩家在上面行走或阻止他們通過。"
+				""
+				"安裝模擬增強後，這些方塊會保留目標方塊的屬性，例如亮度和硬度。"
+				""
+				"安裝推動增強後，造橋模組在造出方塊時會推動實體。"
+				""
+				"當使用多個造型模組時，同步升級能幫助確保它們同時運作。"
+			]
+			id: "3CB129682BA3399A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "67EA54AB859657A6"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0F3A18E0B4440919"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "modularrouters:extruder_module_1"
+								tag: {
+									modularrouters: {
+										Direction: "NONE"
+										ModuleFilter: { }
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "modularrouters:extruder_module_2"
+								tag: {
+									modularrouters: {
+										Direction: "NONE"
+										ModuleFilter: { }
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "造橋模組"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: ["需要更高級的篩選器嗎？或只是更大的篩選器？模組化路由器有多種篩選器，用於該模組中所有模組的篩選欄位中，進而實現一些真正高級的功能。"]
+			icon: "modularrouters:bulk_item_filter"
+			id: "795B13C31D41A45D"
+			rewards: [{
+				id: "2E3F82B6A759073B"
+				item: "modularrouters:bulk_item_filter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B47A042CE63665C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "modularrouters:bulk_item_filter"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:inspection_filter"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:mod_filter"
+							}
+							{
+								Count: 1b
+								id: "modularrouters:regex_filter"
+							}
+						]
+					}
+				}
+				title: "任何篩選器"
+				type: "item"
+			}]
+			title: "更多篩選器"
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["26365967FDE026B6"]
+			description: [
+				"在初始紅石訊號移除後，將紅石訊號保持一定的時間。"
+				""
+				"關於如何使用此功能的詳細說明，將滑鼠游標移至 EMI 或包包的物品上，按住思索鍵（預設：w）來查看教學動畫。"
+			]
+			id: "3C349C559F88A363"
+			rewards: [{
+				id: "074C3282498DCE8D"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			tasks: [{
+				id: "58CA3C3C515AC16B"
+				item: "create:pulse_extender"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7CD587747CC14268"]
+			description: ["流體傳輸升級的運作有點類似流體版的堆疊升級，使路由器每次運作能處理更多的流體。傳輸率仍需要在流體模組中設定。"]
+			id: "41C71AEDF8E9A5C7"
+			rewards: [{
+				count: 3
+				id: "4A8892A8E8CEC447"
+				item: "modularrouters:fluid_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "69CAF3EA62DE4B0E"
+				item: "modularrouters:fluid_upgrade"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["篩選器輪詢調度增強改變模組篩選器的性質，將其改變為輪詢調度的列表。每當路由器運作時，它會循環篩選器的下一個物品，並只對其有效。每當路由器運作時應該拾取不同物品時非常有用。"]
+			id: "43D0BB5727B18AB3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "08DE601136922190"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4B21087E1243B4B2"
+				item: "modularrouters:filter_round_robin_augment"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["用於投擲和投擲器模組，拾取延遲增強是避免投擲出的物品立刻被玩家撿起。每個增加十秒的延遲。"]
+			id: "64E9FD4632B92843"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2243774A0B86BB25"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6832B2DCB3C58AAF"
+				item: "modularrouters:pickup_delay_augment"
+				type: "item"
+			}]
+			x: -13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: ["快速拾取增強用於真空模組，並強制模組忽略任何拾取的延遲，盡快撿起來。"]
+			id: "460F55C357B8DF7F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2AD1A7E7FBED5577"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "56F47D4A4F411979"
+				item: "modularrouters:fast_pickup_augment"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: [
+				"紅石增強讓路由器依據接收到的紅石訊號使模組禁用或啟用單一模組。"
+				""
+				"然而，路由器仍需要運作才能正常工作。因此，當路由器中的一個模組安裝此增強時，建議將路由器設置為紅石模式：總是運作，才能使特定的模組依照紅石訊號對應啟用或禁用。"
+			]
+			id: "6C80F938921271DC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "27427773186BCFB8"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "25EBD2A311AC0930"
+				item: "modularrouters:redstone_augment"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7CA354074FCF8447"]
+			description: [
+				"堆疊增強就只是給指定模組增加堆疊的大小，獨立於其他的模組。"
+				""
+				"舉例來說，接收模組安裝兩個堆疊增強時，使其同時能提取四個物品，然後使用四個發送模組將這四個物品平均分配至四個不同的容器中。"
+			]
+			id: "189E11ADA3E5BF23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5DA8602DB0ED0DF3"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "735E20DC0126C844"
+				item: "modularrouters:stack_augment"
+				type: "item"
+			}]
+			x: -14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21B266F6556271EB"]
+			description: [
+				"投擲模組與投擲器模組是將物品丟入世界中的好方法。"
+				""
+				"投擲器模組只會將物品直接落下，而投擲模組能像原版的發射器一樣賦予一定的速度。不同的是速度和方向是可設定的。"
+				""
+				"設定時間時，請從小數值開始實驗；投擲模組相當強大。速度 1.0 和俯角 45.0 可以將物品射出大概 18 格遠。在最大速度下，這些物品可能再也見不到了。"
+			]
+			id: "67591F9B9E23D5C3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "36E4235895E38D38"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "41C41E19ECBFFA03"
+					item: {
+						Count: 1b
+						id: "modularrouters:flinger_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+								Pitch: 0.0f
+								Speed: 0.0f
+								Yaw: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "29E5F81F70524360"
+					item: {
+						Count: 1b
+						id: "modularrouters:dropper_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"紅石接線代表了紅石技術的進步，允許專業的工程師打造複雜的邏輯電路，比起傳統的紅石粉較不易出現故障。顏色編碼的頻道系統也讓小型紅石網絡能與多個獨立的機器進行互動。"
+				""
+				"紅石線纜可接在紅石線纜接線器，紅石探測接線器和紅石接口連接器。這些能傳輸紅石訊號且沒有訊號的衰減。"
+				""
+				"紅石線纜接線器是訊號的輸入與輸出點，能直接放置在方塊上。使用螺絲起子設定它們的模式和顏色頻道。"
+				""
+				"紅石探測接線器的功能非常類似比較器，但有一些額外的內建功能。大多數沉浸工程模組的機器能輸出特殊的比較器訊號，這些訊號能被紅石探測接線器判讀的到。關於每個機器的詳細訊息，請參閱工程師手冊。"
+				""
+				"紅石接口連接器是與特殊方塊像是物品裝配台和邏輯單元連接使用，讓這些方塊能夠讀取這些紅石訊號。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:wirecoil_redstone"
+			id: "0F3213C2D5485E07"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "21186E3E79CE729E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "77D958D9ACA92218"
+					item: "immersiveengineering:wirecoil_redstone"
+					type: "item"
+				}
+				{
+					id: "40C7CD15412A3979"
+					item: "immersiveengineering:connector_redstone"
+					type: "item"
+				}
+				{
+					id: "1DB826C14C8462EF"
+					item: "immersiveengineering:connector_probe"
+					type: "item"
+				}
+				{
+					id: "67FBAA5C931FC761"
+					item: "immersiveengineering:connector_bundled"
+					type: "item"
+				}
+			]
+			title: "紅石接線"
+			x: -9.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"邏輯單元代表一個緊湊且可能相當複雜的紅石邏輯電腦。最多必須對十個邏輯電路編寫程式且放在內部，並在外部連接一個紅石接口連接器。"
+				""
+				"每當輸入的訊號改變時，邏輯單元會將已安裝的電路循環一次，執行每個電路運作，讓一個訊號對多個邏輯閘進行運作，或甚至將多個顏色編碼的頻道做為輸入和輸出訊號。"
+			]
+			hide_dependency_lines: true
+			id: "1FF9CA3EE7F4278A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "50603CD292ADFE2D"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "22883C7BA3DD8EE6"
+				item: "immersiveengineering:logic_unit"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1FF9CA3EE7F4278A"]
+			description: [
+				"邏輯電路本身是在工程師電路裝配台製作的。"
+				""
+				"這個裝配台需要從後方輸入電力，以及一定數量的符文原型板，鉛線，和真空管。不同的邏輯運算需要不同的數量。"
+				""
+				"電路需編寫運算子與輸入輸出的顏色。"
+				""
+				"準備好後，完成的電路會從介面的右側輸出。"
+				""
+				"電路可以放回上方欄位重新編寫輸入輸出，但運算子在第一次編寫時就已鎖定。"
+			]
+			icon: "immersiveengineering:logic_circuit"
+			id: "2159567BA78E0A96"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "59C423C8FAA91053"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "43B1CA89D91A0DB6"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+				{
+					id: "73437E9CDD9D1202"
+					item: "immersiveengineering:circuit_board"
+					type: "item"
+				}
+				{
+					id: "5540EFDC98885D11"
+					item: "immersiveengineering:wire_lead"
+					type: "item"
+				}
+				{
+					id: "0B46E2BDE09FED63"
+					item: "immersiveengineering:electron_tube"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"紅石管道模組透過傳輸管道網路來讀取和輸出紅石訊號。每個模組能設定顏色頻道，能在同一個管道網路中傳輸至多 16 個不同的訊號。"
+				""
+				"這不需要空氣且訊號不會隨著距離而衰減。"
+				""
+				"在接收模式下安裝模組擴充水晶時，它能設為和原版比較器完全相同的運作方式，從方塊中取得訊號並輸出特殊量級的紅石訊號，比如說精煉廠。"
+				""
+				"在輸出模式下安裝時，可以使用多種功能。例如，當使用多個顏色頻道時，可作為「與」閘，「或」閘，與另一個頻道的訊號等級或與定值比較等等。將這些連接在一起可以製作一些真正緊湊的紅石邏輯。"
+			]
+			hide_dependency_lines: true
+			id: "1B0B9D271A013CB1"
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "580C270FD6B9EF4B"
+				item: "pneumaticcraft:module_expansion_card"
+				type: "item"
+			}]
+			subtitle: "紅石進化"
+			tasks: [{
+				count: 2L
+				id: "332907C9101D2A78"
+				item: "pneumaticcraft:redstone_module"
+				type: "item"
+			}]
+			title: "紅石管道模組"
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3468E652B4FE85FA"]
+			description: [
+				"萬能感測器是個強大的機器，它能根據各種狀況輸出紅石訊號，例如偵測附近的玩家，當玩家對方塊右鍵時，方塊是否存在，亮度等級，或甚至方塊目前的熱量。"
+				""
+				"當讀取熱量時，試著瞄準熱管或氣動工藝模組的機器，而不是安裝導熱框架的容器。"
+			]
+			hide_dependency_lines: true
+			id: "0D01781386CC5EEE"
+			rewards: [
+				{
+					id: "78E81C6649951023"
+					item: "pneumaticcraft:block_tracker_upgrade"
+					title: "Block Tracker Upgrade"
+					type: "item"
+				}
+				{
+					id: "4A857F82E1E65B98"
+					item: "pneumaticcraft:gps_tool"
+					title: "GPS Tool"
+					type: "item"
+				}
+			]
+			subtitle: "雷達之下"
+			tasks: [{
+				id: "189A3C683392323F"
+				item: "pneumaticcraft:universal_sensor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+	]
+	title: "紅石與邏輯"
+}
