@@ -1,0 +1,972 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "applied_energistics_2_expert"
+	group: "72A9465344128AF9"
+	icon: "ae2:drive"
+	id: "57299B70360DE499"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: [
+				"ME 控制器網路由 ME 控制器的多方塊結構、一些線纜和一些頻道組成，頻道數量取決於控制器多方塊的大小。在這個配置中，頻道按最近的原則分佈，所以如果超過八個設備連接到一條玻璃線纜，只有靠近控制器的八個設備會運作。"
+				""
+				"多方塊本身的形式相對自由，但還是有些規則適用："
+				"1. 所有 ME 控制器的方塊必須直接相連。"
+				"2. 多方塊結構必須在 7x7x7 的立方體內。"
+				"3. 一個 ME 控制器最多可以在一個軸上有兩個相連的控制器，因此 T "
+				"   字形是有效的而十字型則不行。"
+				""
+				"控制器本身能接受能量並提供給整個網路使用，意思是能量接受器並不是必要的。"
+				""
+				"每個露出的 ME 控制器的面能提供至多 32 個頻道，使用緻密線纜或 P2P 通道來連接。關於 P2P 的事我們稍後再談。現在而言，只需知道一條緻密線纜能傳輸 32 個頻道，使至多 32 個設備能接上。"
+			]
+			hide_dependency_lines: true
+			id: "5F3E20C3B3A32ACF"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4F04543FFF72A9BD"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "70CEB08A623209D4"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			title: "ME 控制器網路"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: ["無論是小型網路或有控制器的網路，ME 網路的主要目的是儲存以及物流。儲存方面，ME 網路有兩種選擇，ME 儲存匯流排和ME 驅動器。"]
+			hide_dependency_lines: true
+			icon: "ae2:chest"
+			id: "7FB8B3BF03A89410"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5CA8480BEB290EE9"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3D82AB251B74143F"
+				item: "ae2:certus_quartz_wrench"
+				type: "item"
+			}]
+			title: "儲存"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7FB8B3BF03A89410"]
+			description: [
+				"能容納十個儲存單元，ME 驅動器是 AE2 的數位儲存系統的心臟。"
+				""
+				"因為每個儲存單元能儲存有限制數量的材料類型，通常不會想要把所有東西都丟進去。因此可以透過單元工作台來設定過濾，避免任何其他材料存入該單元。"
+				""
+				"設定過濾時可以很方便的從 EMI 直接拉過來設定，而不需要手中有該物品。"
+			]
+			icon: "ae2:drive"
+			id: "156CA5F24C59302A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "01BF4CB94D87B2BF"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2D9BECD55CCD5D5F"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					id: "63392F77E05B0BF4"
+					item: "ae2:cell_workbench"
+					type: "item"
+				}
+			]
+			title: "數位儲存"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["156CA5F24C59302A"]
+			description: [
+				"基礎的物品儲存，能存 63 個類型的物品，像是石頭或礦物。注意物品有不同 NBT 資料的會被視為不同類型的，因此將怪物農場的附魔裝全部丟入儲存將會很快就滿了。"
+				""
+				"而位元組背後的計算方式事實上是有點複雜的，要知道的是，儲存單元若僅存放單一種類，那麼它們能存放的比更多類型的量更多。"
+				""
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+			]
+			id: "0B95DC452E02E964"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "332B628F01F6ACC8"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "0685913D68AE2214"
+				item: {
+					Count: 1b
+					id: "ae2:item_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["156CA5F24C59302A"]
+			description: [
+				"基礎的流體儲存，能存五個類型的流體，像是熔岩或水。"
+				""
+				"而位元組背後的計算方式事實上是有點複雜的，要知道的是，儲存單元若僅存放單一種類，那麼它們能存放的比更多類型的量更多。"
+				""
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+			]
+			id: "4B21571216DCDC69"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "2191B6E99F2D07AD"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "33E354A291EA4A94"
+				item: {
+					Count: 1b
+					id: "ae2:fluid_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["156CA5F24C59302A"]
+			description: [
+				"基礎的化學品儲存，能存五個類型的化學品，像是鈉或硫酸。放射性化學品是無法存入的。"
+				""
+				"而位元組背後的計算方式事實上是有點複雜的，要知道的是，儲存單元若僅存放單一種類，那麼它們能存放的比更多類型的量更多。"
+				""
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+			]
+			id: "73765EC8E099FD57"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "15402D7A6B44E06D"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6A8CF9203996BA11"
+				item: {
+					Count: 1b
+					id: "appmek:chemical_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7FB8B3BF03A89410"]
+			description: [
+				"ME 儲存匯流排作為大部分外部儲存方塊和 ME 網路之間的介面。"
+				""
+				"這可以是簡單的與一個儲物箱或流體儲罐連接；或是用於連接大型儲存網路至 ME 網路。"
+			]
+			id: "731CE00BD8C9E575"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "60E138B701BF7801"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "210F35A3EE24C0EC"
+				item: "ae2:storage_bus"
+				type: "item"
+			}]
+			title: "外部儲存"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5F3E20C3B3A32ACF"
+				"7346C9F69D3927FF"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"作為標準的主要線纜，玻璃線纜可傳輸至多八個頻道，共有十七種顏色。"
+				""
+				"不同的顏色可以併排而不會連接在一起，使它們能用來保持頻道間的分離。"
+			]
+			id: "64845BD36C494E85"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1E9648A738A38B54"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "ae2:fluix_glass_cable"
+				id: "3F0F39B75A23111F"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "ae2:glass_cable"
+					}
+				}
+				title: "ME 玻璃線纜"
+				type: "item"
+			}]
+			title: "建立連接"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["64845BD36C494E85"]
+			description: [
+				"包覆線纜的功能與玻璃線纜相同，只是提供了更簡潔的外觀。"
+				""
+				"此外，緻密包覆線纜的傳輸頻道數是一般的四倍，使其為最合適從 ME 控制器中提取通道，每個面能提取至多 32 個頻道。"
+				""
+				"然而，部分的設備如終端機或匯流排，無法與緻密線纜連接，因此雖然它們是出色的線纜，但最終連接到這些設備的仍需要一般的線纜。"
+			]
+			id: "78F2C89B4BDC3518"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "67827C9AA3B11001"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "672C399C73401663"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:fluix_covered_cable"
+							}
+							{
+								Count: 1b
+								id: "ae2:fluix_covered_dense_cable"
+							}
+						]
+					}
+				}
+				title: "包覆線纜"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5F3E20C3B3A32ACF"]
+			description: ["自動合成包含三個部分：合成 CPU，樣板供應器和樣板本身。這三者共同協作來執行任何自動合成的請求。"]
+			id: "103D66D58E2AE871"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "0B9B7C9D9C4B7E3C"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "723A3C0A0248D17A"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "自動合成"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7346C9F69D3927FF"]
+			description: [
+				"終端機能從網路中手動存入或取出物品，而合成終端機內建了工作台，使其能直接在系統內快速取得材料進行合成。"
+				""
+				"物品能像平常一樣取出，而流體和化學品需要使用流體儲罐或化學儲罐，對終端機內的流體或化學品左鍵取出。同樣的，也能手持儲罐右鍵存入。"
+			]
+			hide_dependency_lines: true
+			id: "489B2FA4E73E5951"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "73050A813C48DF48"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1F7BA3B5B9ADFEB8"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:crafting_terminal"
+							}
+							{
+								Count: 1b
+								id: "ae2:terminal"
+							}
+						]
+					}
+				}
+				title: "終端機"
+				type: "item"
+			}]
+			title: "存取系統"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"當實際告訴系統如何製作某些東西時，必須在樣板編碼終端機中對樣板進行編碼。透過 EMI 的配方搜索並點擊加號（+）按鈕，將配方加入樣板編碼。不需要身上實際有這些材料。"
+				""
+				"編碼後，將樣板放到正確的樣板供應器內。"
+			]
+			id: "5D1DAA00815D0590"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "404BC61163C2C12B"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "40ABE1BE92DFCC5C"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			title: "編寫樣板"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F3E20C3B3A32ACF"]
+			description: [
+				"P2P 或稱為點對點，是一種使用一個頻道傳輸至多 32 個頻道的概念。對 AE2 新手而言，設置 P2P 無疑是個艱鉅的任務，但基礎知識是相當容易掌握的。"
+				""
+				"{\"text\":\"AE2 Wiki: P2P Tunnels\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/misc/p2p-tunnel\"}} "
+				""
+				"關於設置的範例，請參閱下面幾頁。"
+				""
+				"{@pagebreak}"
+				"P2P 範例："
+				""
+				"1. 將控制器放出並對其供電。"
+				""
+				"2. 再來，將 ME P2P 通道貼在控制器上；平整的一面必須貼著控制器。"
+				""
+				"3. 隨後用紅色 ME 玻璃線纜從 P2P 通道接回控制器。這將 P2P "
+				"   通道註冊在網路內。這條紅色 ME 玻璃線纜將成為我們的控制線。"
+				"   任何顏色都可以；關鍵是保持一致性與組織性。"
+				""
+				"4. 現在，從控制器任何空的一面，接上綠色包覆線纜。綠色將代表我們"
+				"   乘載的線纜，且只用來傳輸 P2P 的連接。"
+				"   同樣的，任何顏色都可以；但請避免使用任何有可能意外地與"
+				"   其他線纜連接的顏色。"
+				""
+				"5. 在綠色包覆線纜的末端，放上另一個 ME P2P 通道。"
+				"   這時平整的一面應該是向外的，此面能看的到賽特斯石英的顏色。"
+				"{@pagebreak}"
+				"6. 接著，這兩個通道必須鏈結起來；這時要使用記憶卡；"
+				"   記憶卡的顏色是無關緊要的。"
+				""
+				"7. 手持記憶卡對連接控制器那端的 ME P2P 通道蹲下右鍵。"
+				"   頻率會改變成從 0000 到一些隨機的四個位元的 ID。"
+				"   這個 ID 現在已保存在記憶卡內。"
+				""
+				"10. 現在，拿著記憶卡對另一個 P2P 通道右鍵。"
+				"    這時它的頻率應該被設為相同的頻率 ID ，並應該顯示為"
+				"    \"已建立連結（輸出端）\"。在此 P2P 通道平整的一面放上"
+				"    黃色緻密線纜，現在從控制器的所有 32 個頻道都能提供給"
+				"    黃色緻密線纜使用。"
+				""
+				"此時，綠色包層線纜應該只顯示一個頻道已使用，無論在黃色線纜那邊有連接了多少裝置。"
+				""
+				"對於這個小型網路來說，這個工作量很大但成效甚微，確實你的判斷沒有錯。但，試著考慮一個大型控制器的多方塊結構："
+				""
+				"● 如上所述，可以將八個 P2P 通道放在控制器上，"
+				"  並透過一個控制器線纜進行連接。"
+				""
+				"● 一條包層線纜即可傳輸全部八個 P2P 通道到離你基地的遠處。"
+				""
+				"● 這些 P2P 通道能乘載各 32 個頻道就等於 256 個頻道，"
+				"  就只靠一條簡單的包層線纜傳輸。"
+				""
+				"在不使用 P2P 的狀況下要做到相同的事情，需要管理八條獨立的緻密線纜，一直連接到同樣遠的地方。"
+			]
+			icon: "ae2:me_p2p_tunnel"
+			id: "78F157F1561D932F"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "05BD8A1423C36C57"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "4F3701C0B742470B"
+					item: "ae2:me_p2p_tunnel"
+					type: "item"
+				}
+				{
+					icon: {
+						Count: 1b
+						id: "ae2:memory_card"
+						tag: { }
+					}
+					id: "797A4938CFEFE5F4"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "ae2:memory_cards"
+						}
+					}
+					title: "Memory Cards"
+					type: "item"
+				}
+			]
+			title: "ME P2P 通道"
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"合成 CPU 本身是個長方體的多方塊結構，包含了合成單元，合成儲存器和選擇性的協同處理合成單元，"
+				""
+				"合成單元本身是個嚴謹的填充方塊，用於當不需要或不想要有更多合成儲存器，但必須完成長方體的多方塊結構時。"
+				""
+				"合成儲存器決定了 CPU 能處理多複雜的合成配方。層層套娃的合成配方會需要更大的 CPU 來處理所有東西。"
+				""
+				"若網路設置是許可的，協同處理合成單元能使 CPU 能併行運作。意思是將相同的樣板放入多個獨立機器的樣板供應器，或是一個樣板供應器連接著多個分子組裝機。"
+				""
+				"每個合成 CPU 能完成單一任務，從開始到結束。這有可能牽扯許多步驟，像是將原木製成木材，然後木材製成木棍，最後將這些木棒製作成工具。"
+			]
+			id: "7E5425AD75D67C77"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "328112AEC0ACFA08"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "ae2:1k_crafting_storage"
+				id: "00BE39BD462DCEB9"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:crafting_unit"
+							}
+							{
+								Count: 1b
+								id: "ae2:1k_crafting_storage"
+							}
+							{
+								Count: 1b
+								id: "ae2:4k_crafting_storage"
+							}
+							{
+								Count: 1b
+								id: "ae2:16k_crafting_storage"
+							}
+							{
+								Count: 1b
+								id: "ae2:64k_crafting_storage"
+							}
+							{
+								Count: 1b
+								id: "ae2:256k_crafting_storage"
+							}
+							{
+								Count: 1b
+								id: "ae2:crafting_accelerator"
+							}
+						]
+					}
+				}
+				title: "合成 CPU"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"合成 CPU 主導合成，樣板供應器則是負責將物品輸出並輸入成品回系統。"
+				""
+				"對於基本的合成台方式的製作，樣板供應器必須連接一個或多個分子組裝機。分子組裝機能接收輸入物品和樣板供應器中的樣板，然後完成後自動將成品送回樣板供應器中。分子組裝機也能自動製作鍛造台和切石機的配方。與基本的合成配方編碼方式相同。"
+				""
+				"當製作涉及到其他的機器時，或稱為處理樣板，樣板供應器必須貼著機器放置，且要放在正確的一面。例如，自動化熔爐的配方需要將樣板供應器放在熔爐的頂部，並且需要一些東西如漏斗，將成品從底部導出並將它傳回樣板供應器。"
+				""
+				"許多情況下，最簡單的方法是透過其他物流模組，來手動分配輸入與輸出，但這是一個需要你來解決的練習。"
+				""
+				"有些像是通用機械或熱力模組機器，有能從物品輸入的那一面將產物輸出，因此是更簡單自動化的，只要一個樣板供應器就夠了。"
+			]
+			icon: "ae2:molecular_assembler"
+			id: "67DC697DC3116C61"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "19C4E8870DEE24D3"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "155CF4EBC1624BC5"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "741963BCF3511107"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+			]
+			title: "合成"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: [
+				"成形和破壞面板分別能夠放置和破壞方塊，對於自動化任務特別有用。它們還能設置為投擲物品或拾取物品。"
+				""
+				"然而，成形面板不會從網路中抽取，相反的，物品在進入系統時立即被放置。意思是在許多狀況下，必須建立一個獨立的網路或是子網路，才能充分利用成形面板。它可以由小至控制器或能量接受器來供電，一個介面，一個線纜，和一個成形面板組成。任何輸入介面的物品會立刻放置出來。"
+				""
+				"破壞面板會將前方的任何方塊立刻起作用。也能附上幸運或絲綢之觸來更有效處理賽特斯石英水晶簇或冰之類的東西。但它無法直接過濾。要過濾什麼要破壞，一個過濾儲存的子網路系統是必要的，只允許需要的方塊進入系統。例如，在採收賽特斯石英水晶時，為了確保它只破壞完整的賽特斯石英水晶簇，子網路應該有一個只能存放賽特斯水晶的過濾儲存。一個貼著儲物箱並設定過濾的儲存匯流排就足夠了。"
+			]
+			id: "4BD11D2FEB20CA76"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "255A9411D3B4D8FC"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "46017C60DD0D02F9"
+					item: "ae2:annihilation_plane"
+					type: "item"
+				}
+				{
+					id: "6D8DF3C5F4C0F25C"
+					item: "ae2:formation_plane"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: ["雖然介面能被動的接收或提供材料，輸出和輸入匯流排則有主動輸出與輸入的功能。設置一個輸出匯流排貼著儲罐，並設定為輸出水，讓儲罐始終保時滿水，或設置輸入匯流排貼著一個有氫氣的儲罐，將它輸入至系統。"]
+			id: "380710CC9E988E6E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4523DC97AA9D7388"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "1F4B3425D2AED786"
+					item: "ae2:import_bus"
+					type: "item"
+				}
+				{
+					id: "51DFC730611E90FE"
+					item: "ae2:export_bus"
+					type: "item"
+				}
+			]
+			title: "ME 輸入/輸出 匯流排"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: ["ME 介面能在一格方塊中，從 ME 系統取出或輸入材料。任何輸入介面的材料會立刻傳入系統中可用的儲存空間。能選擇性設定提供至多九種材料，使得它們能透過其他模組的管道從系統中提取材料。"]
+			id: "45FD47C73C76D9EB"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "15C35DA822BB37E1"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "698BD2581B49FE93"
+				item: "ae2:interface"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["489B2FA4E73E5951"]
+			description: [
+				"量子網路橋是個多方塊結構，能讓網路能無線傳輸並跨維度。它包含了一個環狀共八個的量子環，中央是 ME 量子連接倉，且可以是垂直或是水平的結構。"
+				""
+				"需要兩個這樣的多方塊結構才能起作用，且一對的量子纏結奇點必須放入兩端。遠處的結構也需要供電才能啟動。"
+				""
+				"建好後，兩側的網路會視為相同的。但請確保兩側的區塊是載入的。"
+				""
+				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/quantum-bridge\"}}"
+			]
+			icon: "ae2:quantum_entangled_singularity"
+			id: "03662FB8C114E255"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7201CC8D7142B3D1"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "1386C9EFE6AF9CF1"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "207D87975B1F6F7B"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "67B8DB06E27CB172"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+			]
+			title: "量子網路橋"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7FB8B3BF03A89410"]
+			description: [
+				"儲存監控器能顯示網路中指定物品的總數量。"
+				""
+				"存取監控器加強了這個功能，讓玩家能直接透過它右鍵輸入或取出這些物品。"
+			]
+			id: "4A481FE223072D06"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "520888C8211BEEC9"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "757E4B8921A9764C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:storage_monitor"
+							}
+							{
+								Count: 1b
+								id: "ae2:conversion_monitor"
+							}
+						]
+					}
+				}
+				title: "儲存與存取監控器"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["103D66D58E2AE871"]
+			description: [
+				"樣板供應器有時可能會藏在難以直接存取的地方。樣板存取終端機能直接存取網路中的每個樣板供應器。讓新編碼的樣板可以從一個地方直接輕鬆放入。"
+				""
+				"樣板供應器會自動顯示它們連接的方塊名稱，然而，若想要更有組織性的安排想自訂名稱，可以在鐵砧中重新命名。"
+				""
+				"在樣板存取終端機的介面中，可以切換隱藏各個樣板供應器。"
+			]
+			id: "7DC10A42E9E03052"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7C383955F6661648"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "332A01187B9AAEC5"
+				item: "ae2:pattern_access_terminal"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: [
+				"小型網路由能量接收器，一些線纜和最多八個頻道組成。若使用中超過八個頻道，整個網路將會關閉。"
+				""
+				"頻道限制相當嚴格，但考慮到一個 ME 儲存匯流排能與功能性儲存模組或精緻儲存容器的控制器連接；因此，小型網路能集中存取大量的儲存，使其成為早期能建構的好方法。"
+			]
+			hide_dependency_lines: true
+			id: "7346C9F69D3927FF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5AF2CC718C7B645A"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "48D6E5FE2CD4FC03"
+				item: "ae2:energy_acceptor"
+				type: "item"
+			}]
+			title: "小型網路"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0097F2FB87804251"]
+			description: [
+				"自動化採收賽特斯石英水晶是發展 AE2 的主要挑戰之一。因為賽特斯石英水晶的需求量相當大。"
+				""
+				"自動採收有許多可行的方法，包含新生魔藝模組的紫水晶魔像。"
+			]
+			id: "23B703D29164C39A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+				icon: "kubejs:miners_delight"
+				id: "78266754B7850F70"
+				player_command: false
+				title: "Miner's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "283AEFC457EF26C8"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["78F2C89B4BDC3518"]
+			description: [
+				"智慧線纜與緻密智慧線纜的功能與相應的包覆線纜相同，只增加了一個功能，它們在側面能顯示正在使用的頻道數。"
+				""
+				"注意：同類型與同色的智慧或包覆線纜會連接在一起，因此不需要拉一長條智慧線纜。相反的，請考慮在線路的起點使用智慧線纜，然後用包覆線纜繼續拉線。這能輕鬆地指出整條線路上正在使用的頻道數。"
+			]
+			id: "066690B512F54C08"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "09CFB74977302E69"
+				player_command: false
+				title: "Rare Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "1D45B4425C813E2F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ae2:fluix_smart_cable"
+							}
+							{
+								Count: 1b
+								id: "ae2:fluix_smart_dense_cable"
+							}
+						]
+					}
+				}
+				title: "智慧線纜"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["78F157F1561D932F"]
+			description: [
+				"P2P 不僅能傳輸頻道，也能透過網路遠距離傳輸許多材料，很快就會縱橫交錯於你的基地。"
+				""
+				"要設定 P2P 通道的傳輸類型，將一個正常的 ME P2P 通道放下，然後拿著調整的物品對它右鍵。例如要改成能量通道，大多數含電的物品都能調整。這個物品不會被消耗，每個通道類型的有效的物品會顯示在 EMI 中。"
+				""
+				"除了讓基地的走線更整潔外，P2P 通道基本上有無限的吞吐量，且沒有傳輸時間；從一端輸入物品會立刻從另一端出來。"
+				""
+				"雖然 ME P2P 通道不能套層使用，但其他類型的 P2P 通道可以透過 ME P2P 通道連結傳輸。"
+			]
+			id: "0F0C0C200A524CBF"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/ae2/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "165D78BF236C3E68"
+				player_command: false
+				title: "Epic Applied Energistics Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "35D05AF6D564F15D"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "appmek:chemical_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "ae2:fluid_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "ae2:item_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "ae2:fe_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "ae2:me_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "ae2:redstone_p2p_tunnel"
+							}
+							{
+								Count: 1b
+								id: "ae2:light_p2p_tunnel"
+							}
+						]
+					}
+				}
+				title: "其他 P2P 通道"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"應用能源模組將儲存與物流提升到另一個高度。靠它本身就能完成許多合成的自動化，同時還提供深度儲存的解決方案，並能與許多模組搭起互動的橋樑。"
+				""
+				"首先需要一些賽特斯石英水晶，這需要一些探索。穿上鞋子帶上指南針，是時候出發了。"
+				""
+				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"}}"
+			]
+			hide: true
+			icon: "ae2:singularity"
+			id: "0097F2FB87804251"
+			rewards: [{
+				id: "2111D1788D713E16"
+				item: "ae2:certus_quartz_wrench"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "ae2:certus_quartz_crystal"
+				id: "04533E87C2D77F38"
+				item: "ae2:certus_quartz_crystal"
+				title: "應用能源 2"
+				type: "item"
+			}]
+			title: "應用能源 2"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "應用能源 2"
+}

@@ -1,0 +1,546 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "villagers_expert"
+	group: "0856CF7F5CBEB20A"
+	icon: "minecraft:emerald"
+	id: "775889C531B9A925"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["製甲師提供各種附魔裝備，這些裝備在早期非常有用。他們也是鐘的方便來源。"]
+			id: "1522FAB5B707F508"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0C95B6DC07AD0BE9"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3A2706F5D507DD43"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "製甲師"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["屠夫大多買生肉麥熟肉。然而對少數幸運的人而言，他們有可能能交易兔子腳。"]
+			id: "5666C8219D9DA337"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5CC67A2426602997"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6D059F90ABF4498E"
+				item: "minecraft:smoker"
+				type: "item"
+			}]
+			title: "屠夫"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["或許最知名的是它們能交易附近的寶藏和古蹟的地圖，製圖師其實還提供許多有趣的物品，例如旗幟圖案或古風墨水，能使地圖有華麗的褪色外觀，用於裝飾的目的。"]
+			id: "5597FAE499274F10"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "03E298EA8E6067CD"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3B114383B57974E1"
+				item: "minecraft:cartography_table"
+				type: "item"
+			}]
+			title: "製圖師"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["神職人員買賣許多珍貴材料，例如黃金和青金石。然而，他們也是終界珍珠的極好來源，而且不需要戰鬥。"]
+			id: "20957365FD15F4C2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2A6758B68600AC1F"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3FFB8E7991FEDD62"
+				item: "minecraft:brewing_stand"
+				type: "item"
+			}]
+			title: "神職人員"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["農夫能買賣各種農作物。同時也賣可疑的燉湯和其他食物。"]
+			id: "2AFF5C846A39C507"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "394BB50E84096B55"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5BF7BDEC4E7CA065"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			title: "農夫"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["有多餘的魚要賣嗎？漁夫買生魚賣熟魚。他們也提供附魔釣竿。"]
+			id: "5821CEBA23FD498C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "6236F2A8BC341526"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "42DF32AC339B9C19"
+				item: "minecraft:barrel"
+				type: "item"
+			}]
+			title: "漁夫"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["需要弓或弩嗎？或是一些箭矢而不用殺雞？製箭師就是你要的。他們甚至偶爾會賣附魔品。"]
+			id: "3DB47F7AF2D042A1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "470AF5F4392838E4"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "22B8FA3B2435A6BC"
+				item: "minecraft:fletching_table"
+				type: "item"
+			}]
+			title: "製箭師"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["皮匠是皮製品如皮製裝備或鞍的絕佳來源。"]
+			id: "31E9C3B2671938D0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "511EDDF455805A19"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "14BECFE0D1E1903E"
+				item: "minecraft:cauldron"
+				type: "item"
+			}]
+			title: "皮匠"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: [
+				"圖書管理員始終是個經典，因為他能交易附魔書而聞名。要說的是，我們做了一些事情來減少交易時會出現的附魔書種類，避免不斷重複刷新才能獲得想要的附魔書。"
+				""
+				"能刷到的附魔書："
+				""
+				"● 保護"
+				"● 火焰保護"
+				"● 爆炸保護"
+				"● 投射物保護"
+				"● 輕盈"
+				"● 防禦反擊"
+				"● 窳民剋星"
+				"● 不死剋星"
+				"● 分裂"
+				"● 拆解"
+				"● 靈魂綁定"
+				"● 擴容"
+				"● 容量"
+				"● 無限"
+				"● 自然修補"
+				"● Comb Cutter"
+				"● 引誘"
+				"● 魚餌"
+			]
+			id: "6D6A23DEDB0707CD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2C6369052E2F9461"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "04EE57074E7E4056"
+				item: "minecraft:lectern"
+				type: "item"
+			}]
+			title: "圖書管理員"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["石匠買賣各種石頭和石磚，特別有用的是作為石英磚的來源。"]
+			id: "6BE789B38242042B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "6886A183E6C3283E"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7BF8328E3B0C77A8"
+				item: "minecraft:stonecutter"
+				type: "item"
+			}]
+			title: "石匠"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["牧羊人主要買賣羊毛和染料，也有其藝術的一面，偶爾也會賣繪畫。"]
+			id: "3E5C78302D1DB75E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0538883C54775B33"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2F8153628576F330"
+				item: "minecraft:loom"
+				type: "item"
+			}]
+			title: "牧羊人"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["工具匠提供了各種附魔工具，這些工具在早期非常有用。他們也是鐘的方便來源。"]
+			id: "6C9DE0A1D4C72117"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7EF42B6A98D6340B"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "304180865A9AE285"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			title: "工具匠"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["武器匠提供各種附魔武器，這些武器在早期非常有用。他們也是鐘的方便來源。"]
+			id: "7F61E2C24268FA98"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5B2649A6081434D9"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6D051A0732B16914"
+				item: "minecraft:grindstone"
+				type: "item"
+			}]
+			title: "武器匠"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["魔導裝甲學者販售各種氣動工藝模組的設備，轉管機槍專用彈藥，甚至是電路板。"]
+			id: "18A0D921EEF7FE7F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "4A7C2F412652EE4C"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3DF441ECE45658A8"
+				item: "pneumaticcraft:charging_station"
+				type: "item"
+			}]
+			title: "魔導裝甲學者"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["覓食者會向你收購你可能閒置的各種備用蘑菇。"]
+			id: "747A1D6FC136658A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "6579CF88E0968397"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "46B59781281AC734"
+				item: "byg:foragers_table"
+				type: "item"
+			}]
+			title: "覓食者"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["暗影導師能交易各種奧術商品，對於獲得儀式之板，使魔碎片，甚至稀有的施法者卷軸特別有用。"]
+			id: "23ED03FE63FD2373"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "4C9C4580BCF7757B"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "53CC631030A8D31F"
+				item: "ars_nouveau:arcane_core"
+				type: "item"
+			}]
+			title: "暗影導師"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["結構工程師主要買賣混凝土和鷹架等建築材料。然而，他們也會以高價出售礦物寶藏地圖。"]
+			id: "553AC0B8D27BADA8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5259D49C49DAB5DF"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "065E1A43E1767A25"
+				item: "immersiveengineering:turntable"
+				type: "item"
+			}]
+			title: "結構工程師"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["機械師大概最有用的是他們能提供藍圖，因為他們是電弧爐電極藍圖取得的可靠來源之一。同時也賣工具，鑽頭和各種機器零件。"]
+			id: "0158D296E36BB419"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "186F59EBEABC7E7C"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7F6288E714F210C6"
+				item: "immersiveengineering:craftingtable"
+				type: "item"
+			}]
+			title: "機械師"
+			x: -4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["電工提供各種電線和電力元件，以及法拉第裝備，在裸露的電線周圍確保你的安全。"]
+			id: "59FC61E69453FA4D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2E3163DF1860C162"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "62E86377665F546D"
+				item: "immersiveengineering:circuit_table"
+				type: "item"
+			}]
+			title: "電工"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: ["槍匠能交易槍枝零件和彈藥，對於製作強大的左輪手槍來說是無價的，因為他們提供有特殊屬性的獨特零件，如增加幸運或射擊速度。"]
+			id: "58A73376FCA9A5C6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "5C7BB752EC3632BB"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0D17FD3AA81B3D05"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			title: "槍匠"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A341C5D96C4A809"]
+			description: [
+				"沉浸工程的服裝商使用的工作站是最詭異的之一，需要將旗幟放置在地板上（非牆上），並且旗幟上有外觀。只要對放置的旗幟右鍵使用外觀即可。"
+				""
+				"然後，他們會賣各種外觀獎勵袋，讓你能輕鬆取得許多隨機的外觀，並使用於相容的物品上，如左輪手槍，採礦機械鑽等。"
+			]
+			icon: "minecraft:white_banner"
+			id: "39BD2E415530761E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "59EE246084CF7CDB"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "3508CC7BD81DF94C"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_common"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_uncommon"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_rare"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_epic"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:shader_bag_ie_masterwork"
+								}
+							]
+						}
+					}
+					title: "任何外觀"
+					type: "item"
+				}
+				{
+					id: "7F6A2E6030399F43"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:banners"
+						}
+					}
+					title: "Banner"
+					type: "item"
+				}
+			]
+			title: "服裝商"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"有些模組新增了村民職業，而要搞清楚哪個工作站給哪個村民職業，不是一件簡單的任務。"
+				""
+				"以下的任務涵蓋了村民能使用的工作站，並試著簡單描述可能發現的交易內容。"
+			]
+			hide: true
+			id: "7A341C5D96C4A809"
+			shape: "gear"
+			tasks: [{
+				icon: "minecraft:emerald_block"
+				id: "648E00887FAA8285"
+				stat: "minecraft:talked_to_villager"
+				title: "與村民對話"
+				type: "stat"
+				value: 1
+			}]
+			title: "村民"
+			x: -3.5d
+			y: -4.0d
+		}
+	]
+	title: "村民"
+}
