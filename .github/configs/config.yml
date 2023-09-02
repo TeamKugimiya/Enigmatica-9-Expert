@@ -12,8 +12,10 @@ client-patch:
   - "kubejs"
   - "resourcepacks"
   - "LICENSE"
+  - "options.txt"
 
 # 伺服器 - 複製陣列（為空將會停止產生伺服器版）
 server-patch:
   - "config"
+  - "kubejs"
   - "LICENSE"
