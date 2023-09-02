@@ -1,0 +1,221 @@
+[general]
+	#The Application ID of the Discord App to use. Replace this with your client id from the discord dashboard to change the name of the app
+	applicationID = 985608835060346970
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen. ONLY AVAILABLE WHEN CLOTH CONFIG IS INSTALLED!
+	configScreen = true
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Internal Version Number. NO TOUCHY!
+	version = 18
+
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "正在載入 Enigmatica 9 Expert"
+	#The second line of text under the app name
+	state = "正在啟動遊戲..."
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 目前閒置中"
+	#The second line of text under the app name
+	state = "正在標題畫面中休息"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 正在尋覓 E9E 伺服器"
+	#The second line of text under the app name
+	state = "正在尋找朋友"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[realms_list]
+	#Enable/Disable the Realms Screen Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 正在尋覓 Realm"
+	#The second line of text under the app name
+	state = "正在瀏覽 Realms"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% 正在加入遊戲"
+	#The second line of text under the app name
+	state = "正在加入遊戲"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "正在遊玩單人模式"
+	#The second line of text under the app name
+	state = "%world%, %biome%"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "正在 %servername% 上與 %players% 名玩家遊玩"
+	#The second line of text under the app name
+	state = "%world%, %biome%"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[realms]
+	#Enable/Disable the Realms Game Event
+	enabled = false
+	#The first line of text under the app name
+	description = "正在 %realmname% 上遊玩"
+	#The second line of text under the app name
+	state = "%world%, %biome%"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%realmdescription%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[generic]
+	#The first line of text under the app name
+	description = "正在遊玩 Enigmatica 9 Expert"
+	#The second line of text under the app name
+	state = "%world%, %biome%"
+	#The Asset ID/URL of the image to display as the large image
+	largeImageKey = ["logo"]
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%large_image_text%"
+	#The Asset ID/URL of the image to display as the small image
+	smallImageKey = ["%playerhead%"]
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%small_image_text%"
+	#The buttons to display on Discord 
+	buttons = []
+
+[custom]
+	#Must these variables be parsed along with other variables
+	enabled = true
+	#Your custom variables to add
+
+	[[custom.variables]]
+		name = "large_image_text"
+		value = "Enigmatica 9 Expert Minecraft %mcver% 模組生存"
+
+	[[custom.variables]]
+		name = "small_image_text"
+		value = "共安裝了 %mods% 個模組"
+
+[dimension_overrides]
+	enabled = false
+
+	[[dimension_overrides.dimensions]]
+		name = "overworld"
+		description = "%player% 正位於主世界中"
+		state = ""
+		largeImageKey = ["overworld"]
+		largeImageText = "位於主世界"
+		smallImageKey = ["%playerhead%"]
+		smallImageText = "%small_image_text%"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_nether"
+		description = "%player% 位於地獄"
+		state = ""
+		largeImageKey = ["nether"]
+		largeImageText = "正位於地獄中"
+		smallImageKey = ["%playerhead%"]
+		smallImageText = "%small_image_text%"
+		buttons = []
+
+	[[dimension_overrides.dimensions]]
+		name = "the_end"
+		description = "%player% 位於終界"
+		state = ""
+		largeImageKey = ["end"]
+		largeImageText = "正位於終界中"
+		smallImageKey = ["%playerhead%"]
+		smallImageText = "%small_image_text%"
+		buttons = []
+
+
