@@ -1,0 +1,1932 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_expert"
+	group: "72A9465344128AF9"
+	icon: "create:cogwheel"
+	id: "1066FD3A96922827"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"歡迎來到動力機械！本質上來說，動力機械和原版的紅石系統一樣有相同的主要目的：提供玩家能實現各種奇特創作的物品。"
+				""
+				"你問哪方面的創作？基本上包含了任何類型。製作可以搭乘的火車，隧道，大型有功能的風車，或甚至能夠運作的魔術方塊！"
+				""
+				"想像力就是你的超能力。"
+				""
+				"當然，涉及的內容相當多，這些任務無法詳盡的告訴你。相反的，我們的目的是介紹動力機械的基本概念，為你開始自己的實驗奠定厚實的基礎。"
+			]
+			hide: true
+			icon: "create:wrench"
+			id: "0A67F4F9AE300856"
+			min_width: 250
+			rewards: [{
+				id: "14A1BD3883AD12AF"
+				item: "create:wrench"
+				title: "Wrench"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "create:large_cogwheel"
+				id: "77654BA6263D7365"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "Create"
+				type: "item"
+			}]
+			title: "動力機械"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A67F4F9AE300856"]
+			description: [
+				"和許多系統相同，需要電力。對動力機械而言，這通常代表了讓某些東西轉起來。當然，有許多方式可以做到這一點，但讓我們簡單的介紹一些基礎知識。"
+				""
+				"首先，有所謂的發動機與動力器械。當然，發動機讓東西轉起來，而動力器械則使用提供的轉動力才能運作。但並非所有發動機和動力器械是相等的。"
+				""
+				"每個發動機能輸出固定的 SU，並分配給所有連接的動力器械使用。若動力器械需要的 SU 大於發動機所提供的，那麼整個系統就會癱瘓。"
+				""
+				"動力器械運作的速度越快，影響力越大，消耗的 SU 也越多。"
+				""
+				"要知道正在發出或使用多少 SU，看著該方塊時戴上工程師護目鏡。"
+				""
+				"最後一點，雖然動力機械沒有遊戲內的說明書，但它卻有一個思索系統，透過簡短的遊戲動畫順序展示了這些物品的運作方式。將滑鼠游標移至大部分的物品上，並按住物品提示上的思索鍵即可查看。"
+			]
+			hide_dependency_lines: true
+			icon: "create:goggles"
+			id: "2C03271FD5A61ADC"
+			min_width: 300
+			rewards: [{
+				id: "5B15F41A9F4FA7AE"
+				item: "create:goggles"
+				title: "Engineer's Goggles"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "需要一些組裝"
+			tasks: [{
+				id: "0636D39777033A66"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:andesite_casing"
+							}
+							{
+								Count: 1b
+								id: "create:brass_casing"
+							}
+							{
+								Count: 1b
+								id: "create:copper_casing"
+							}
+						]
+					}
+				}
+				title: "如何開始：動能"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"或許第一個由多方塊結構構成的裝置是風車。這是一款能在高轉速下運作的高 SU 發動機。產生更多的 SU 和更高的轉速，只要在結構中增加更多的風帆或羊毛。"
+				""
+				"從何下手？放下風車軸承，看起來黏黏的那一面就是這個結構剩下要建造的地方。動能從另一端輸出。注意，這可以從任何方向建造。"
+				""
+				"接下來，將旋轉底盤接上軸承黏黏的那一面。旋轉底盤在這作為風車的軸，葉片由此向外延伸。"
+				"拿史萊姆球對旋轉底盤右鍵使其變得有黏性（不消耗史萊姆球），大部分的裝飾方塊在風車的連接範圍內都能接上。"
+				""
+				"要查看目前旋轉底盤的連接半徑，手持板手並看著旋轉底盤。整體被凸顯的方塊將成為結構的一部份。對著旋轉底盤上顯示的數字，長按右鍵輪調整半徑。"
+				""
+				"請注意，只有連接旋轉底盤未抓住的方塊時才需要強力膠，例如，當方塊延伸至風車前方時。若風帆直接固定在旋轉底盤上時是不需要強力膠的，但是，這樣做的樂趣在哪？讓它更好看！"
+			]
+			icon: "create:white_sail"
+			id: "0F8AB5768B1C2320"
+			min_width: 300
+			rewards: [
+				{
+					id: "6CA3463F764F7A03"
+					item: {
+						Count: 1b
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Super Glue"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "265E3903847F3130"
+					player_command: false
+					title: "Epic Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "不含電池"
+			tasks: [
+				{
+					id: "2FF82C0F29345D03"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "4183FF6865164FB1"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+				{
+					count: 32L
+					icon: "create:white_sail"
+					id: "2C8472E08AA08D3F"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "create:white_sail"
+								}
+								{
+									Count: 1b
+									id: "create:sail_frame"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "forge:wool"
+									}
+								}
+							]
+						}
+					}
+					title: "風帆"
+					type: "item"
+				}
+			]
+			title: "風車"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"建造水車雖然比風車簡單得多，但產出的 SU 也少得多，且轉速也更慢。"
+				""
+				"對於空間精巧比轉速更重要的應用時相當有用。例如，在你的基地製作一扇精美的門。"
+				""
+				"要讓它轉起來，只要有水流過它即可。與先前的版本不同的是，現在水車只要有一格碰觸到水流即可，產出的 SU 與轉速是固定的。"
+			]
+			id: "6E6CFBCB2D86480C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "7F6B1C3C3F88F766"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "就像個唱片"
+			tasks: [{
+				id: "398D87D681ADA291"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			dependency_requirement: "all_started"
+			description: [
+				"鼓風機是任何工廠不可或缺的一部分，用於製作與移動物品或生物。"
+				""
+				"要使用它來製作，必須吹過熔岩，水，火，或靈魂火。在吹過的氣流前方的掉落物分別會被熔煉，洗滌，燻製或喚魂。"
+				""
+				"氣流能穿過特定的方塊像是，鐵柵欄和地板門，讓你能安全的放置熔岩和水。"
+				""
+				"特別值得注意的是，鼓風機能直接處理置物台或輸送帶上的物品，但輸送帶上的物品在處理時不會停止移動。"
+				""
+				"要更有效的使用鼓風機與輸送帶的搭配方式，讓氣流吹送整條輸送帶。高轉速的鼓風機代表氣流能吹得更遠。這也能讓鼓風機能同時多個陣列使用。"
+			]
+			hide_dependency_lines: true
+			icon: "create:propeller"
+			id: "371E4554AB5BF278"
+			min_width: 300
+			rewards: [
+				{
+					id: "0A143EDC0DB433E1"
+					item: "create:analog_lever"
+					title: "Analog Lever"
+					type: "item"
+				}
+				{
+					id: "2836A754827B4CA8"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+			]
+			subtitle: "風生水起"
+			tasks: [{
+				id: "49D1CDC195EAAE1E"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"製作漂亮的風車可能並不是你來這的唯一原因。最有可能的是，你希望它能做一些有用的事情，但風車在上面，而我們在下面。"
+				""
+				"事實上，傳遞動能相當簡單。傳動軸可用於直線傳遞動能，而齒輪可用於改變方向和轉速。"
+			]
+			hide_dependency_lines: true
+			id: "1BEDF6F64E346198"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "6701BD22C891A0F5"
+					player_command: false
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "4DA0DBB12E8121B7"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+			]
+			subtitle: "有異音 先拆坐墊"
+			tasks: [{
+				count: 16L
+				id: "5ADE0C735C849DE2"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "傳動軸"
+			x: 6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"厭倦了你基地上那些難看的洞嗎？從傳動軸空隙透出來的風讓你發抖嗎？別再找了。"
+				""
+				"拿著機殼對傳動軸或齒輪右鍵把它們包起來。當傳動軸穿過牆壁或地板時特別完美。"
+				""
+				"將齒輪包覆後也能避免它的軸與其他相鄰的方塊連接，除非用板手調整。已連接的不會被影響。"
+				""
+				"在輸送帶下方使用也相當好看。"
+			]
+			hide_dependency_lines: true
+			id: "0BC3EAEF807A3043"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "78FA2D541E288B56"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "在輸送帶之下"
+			tasks: [{
+				count: 4L
+				id: "588C7E583427E4D7"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:brass_casing"
+							}
+							{
+								Count: 1b
+								id: "create:andesite_casing"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "機殼"
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"你連接了一段很長的傳動軸，看起來有點不太牢靠，不是嗎？"
+				""
+				"可在傳動軸或齒論上安裝支架，這完全是為了裝飾。這確實更好看了！"
+			]
+			hide_dependency_lines: true
+			id: "3E72EE1807CDD108"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "689DB92C44140D9D"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "為你撐腰"
+			tasks: [
+				{
+					count: 4L
+					id: "425FA9DFBF034CCA"
+					item: "create:wooden_bracket"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1DE7A5B0015647EA"
+					item: "create:metal_bracket"
+					type: "item"
+				}
+			]
+			title: "支架"
+			x: 5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"齒輪箱比一對齒輪稍貴一些，用途與垂直齒輪相同，改變軸線的方向。"
+				""
+				"但是，它們有一些好處，能將動能分為兩個方向。同時也有垂直的版本讓軸線改變為上下傳遞。"
+			]
+			hide_dependency_lines: true
+			id: "417A0D7FCC31C9C6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "37B5190441657460"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "箱中齒輪"
+			tasks: [{
+				id: "2CEB0E0797ABE86A"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"我們的風車轉得有點慢，但不代表所有東西都得轉得這麼慢。系統的轉速可用齒輪比提高（或降低）。"
+				""
+				"例如：假設你的動能正在轉動一個小齒輪。將它的齒連接到大齒輪的齒，結果是大齒輪的軸會變成一半的轉速。"
+				""
+				"同樣的，一個大齒輪的齒與小齒輪的齒連接時，會使小齒輪的軸以兩倍速轉動。"
+				""
+				"這些是可以連續改變的，但請記得，系統中的動力器械轉動的越快，會消耗更多的 SU。"
+				""
+				"此外，兩個大齒輪可以垂直連接，這能讓軸改變方向。對於轉角或從高往低處傳遞動能時，相當有用。"
+			]
+			hide_dependency_lines: true
+			id: "0529A7926084FDB2"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5DA3139CCB2387ED"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "齒輪大師"
+			tasks: [
+				{
+					count: 4L
+					id: "56BB961C37D2B355"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "64AD41A730E04FA5"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			title: "齒輪"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"就像動力機械中的許多東西一樣，輸送帶是個多種用途的物品。"
+				""
+				"主要的用途是傳輸物品，能以水平或 45 度的方向乘載物品移動。"
+				""
+				"然而，它也能將動能從一個傳動軸傳到另一個。在提供多個平行的傳動軸動能，且同個方向轉動時，是個相當好的方式。"
+				""
+				"一個輸送帶能連接至多 20 格遠，若有需要，每個方塊空間能將它接上另一個軸線。"
+				""
+				"要將輸送帶接上傳動軸，只要放下兩個傳動軸，然後手持輸送帶對兩端右鍵。在已放置的輸送帶間放入傳動軸能增加連接處。"
+			]
+			hide_dependency_lines: true
+			id: "035D3B83AB5BDF27"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "62C35306B67B2809"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "站上去試試"
+			tasks: [{
+				count: 4L
+				id: "7BD2ADE2765A251A"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "輸送帶"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"鏈式傳動箱的功能相當類似輸送帶，將垂直的傳動軸連接在一起。"
+				""
+				"將多個鏈式傳動箱放在一直線上並相互旋轉 90 度，也能用於改變動能傳輸的方向。"
+			]
+			hide_dependency_lines: true
+			id: "183883DE59B8C18F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5710F5B07DBCE190"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "鏈接工作"
+			tasks: [{
+				id: "3356FB1F9B83A44B"
+				item: "create:encased_chain_drive"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"將數百個齒輪連接起來實現精準的轉速並不總是可行的。為您介紹，轉速控制器。將一個大齒輪放在上方，然後從側方輸入動能。"
+				""
+				"控制器能自動調整至任何轉速至兩個輸出的軸上。長按右鍵調整轉速。"
+			]
+			hide_dependency_lines: true
+			icon: "create:rotation_speed_controller"
+			id: "55C9BC72FE80FD40"
+			rewards: [
+				{
+					id: "47BF8587EEDF584B"
+					item: "create:large_cogwheel"
+					title: "Large Cogwheel"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "039581C4AD45A4C3"
+					player_command: false
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "把轉速超爆"
+			tasks: [{
+				id: "274F7413D31D0B78"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"漏斗有將物品導入與導出容器的功能。"
+				""
+				"例如，漏斗接上儲物箱，能將物品從儲物箱導出，並放到相連的輸送線上。同樣的，輸送帶傳入漏斗時能將物品輸入相連的儲物箱。"
+			]
+			hide_dependency_lines: true
+			id: "76C15F75CAC6EA59"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "0F1A62465CBB42D6"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "此漏斗非彼漏斗"
+			tasks: [
+				{
+					id: "1CC1574FBA2DE3BC"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "6007163AECE4684A"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"滑槽是個簡單但快速的方法將物品向下傳輸。只要將物品從上方投入，然後物品會從底部出來。"
+				""
+				"除了簡單的將物品丟到世界上之外，滑槽的好處是能以 45 度角的方式移動物品，且多個滑槽能匯聚成一個滑槽，能讓物品傳輸的終點能有更好的控制。"
+				""
+				"滑槽也能用來將物品向上傳輸。若一個滑槽的正上方有設置了鼓風機，能用來將輸送帶上的物品吸起來。當然，要將物品導出滑槽需要一些方法，像是漏斗。"
+			]
+			hide_dependency_lines: true
+			id: "5D9D512AF7BACF22"
+			min_width: 250
+			rewards: [{
+				id: "622EAD08CD315864"
+				item: "create:encased_fan"
+				title: "Encased Fan"
+				type: "item"
+			}]
+			subtitle: "不能溜滑梯"
+			tasks: [{
+				count: 4L
+				id: "61AF2B91C765B6A0"
+				item: "create:chute"
+				type: "item"
+			}]
+			title: "滑槽"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"隧道遠不只是輸送帶的蓋子，在分配物品方面有大幫助。"
+				""
+				"當一組物品通過安山隧道時，能自動從這一組物品中取出一個物品放到相連的傳輸帶或置物檯上。"
+				""
+				"黃銅隧道與安山隧道的運作有些微不同。除了將物品分配至相連的輸送帶外，一直線的隧道能被視為一體，並分配物品給多個平行的輸送帶。"
+				""
+				"當物品進入一個隧道時，它們將被平均分配給另一側所有連接的隧道。"
+			]
+			hide_dependency_lines: true
+			id: "13BABBB9E5BC167D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "21CE398AFABF3FC8"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "雙狹縫實驗"
+			tasks: [
+				{
+					id: "24CA81419BEBDCF2"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+				{
+					id: "46888010A100684C"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"一個簡單的物品暫存。"
+				""
+				"置物台能放上一組物品，但也能被鼓風機洗滌，熔煉，燻製和喚魂，還有鍛壓機鍛壓。"
+			]
+			hide_dependency_lines: true
+			id: "61CC9070E557407D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "5272BC579D3D9836"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "不負保管責任"
+			tasks: [{
+				id: "3573823661D0D526"
+				item: "create:depot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"機械臂是個高級的短距離物品傳輸工具。能同時與多個點連接完成輸入與輸出的動作。"
+				""
+				"放置機械臂前先完成連接，只要拿著它對允許的容器類型右鍵，如置物台，漏斗，或輸送帶。再次右鍵能切換輸入或輸出模式。"
+				""
+				"機械臂能觸及共四格遠的距離。"
+			]
+			hide_dependency_lines: true
+			id: "5C517A5685DBE05D"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "0A7D176961C23E15"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "霹靂五號是真的"
+			tasks: [{
+				id: "209FAB6C9047CEBA"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"石磨已經存在了幾個世紀之久，代表我們仍在使用一些最古老的技術。它們比用手磨東西更有效率。"
+				""
+				"動力機械模組的石磨，是一種很好的早期研磨材料的方法。"
+			]
+			hide_dependency_lines: true
+			id: "4EAAE11B2CB2508D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "02080084ABF0EECA"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "石磨不是石墨"
+			tasks: [{
+				id: "2718BB43CC315C6B"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"粉碎輪是至今為止使用的石磨的老大哥。總體而言，它們更好用，每次運作能比石磨處理更多的輸入。"
+				""
+				"更堅硬的外表使其能處理石磨不能處理的材料。"
+				""
+				"設置一對粉碎輪需要一點智慧，因為兩個粉碎輪必須以相反的方向轉動，而兩輪交會的上方方向必須是向內的。"
+				""
+				"兩個粉碎輪中間需要一格間隙。物品可以從上方直接投入或以更好控制的方式導入至兩輪交會的位置。"
+				""
+				"粉碎輪也能水平放置，使其能與輸送帶系統很好的連接。"
+			]
+			hide_dependency_lines: true
+			id: "372939B9A825CBE7"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "5464DCCBFDF03454"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "心碎了無痕"
+			tasks: [{
+				count: 2L
+				id: "4F04499D0E5DE632"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "粉碎輪"
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"用來製作或其他自動化目的都很有用，機械手能扮演好各種創作的角色。"
+				""
+				"物品可以透過輸送帶，漏斗，或大部分其他物品傳輸的方式輸入機械手。給予動能後，它會持續嘗試拿著給予的物品對前方的實體右鍵，無論物品或生物。"
+				""
+				"拿板受對機械手右鍵將其切換成左鍵模式，這能讓它拿著武器攻擊生物，或其他必須左鍵互動的事情。"
+			]
+			hide_dependency_lines: true
+			icon: "create:brass_hand"
+			id: "4437E4A0A60B9AA6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "533389DECD3DB973"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "指向技"
+			tasks: [
+				{
+					id: "15E1CB053901CE0B"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "49396BB653C1F73A"
+					item: {
+						Count: 1b
+						id: "create:sand_paper"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0A67F4F9AE300856"]
+			description: ["在輸送帶下有了一些基礎的動能與物流後，是時候弄髒我們的手開始做些正經事了。動力機械提供了許多新的製作機制，了解這些對這個模組而言是相當重要的。"]
+			hide_dependency_lines: true
+			icon: "create:whisk"
+			id: "780BADC429826D36"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "5044588C6DA5D045"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "就是一些小機制，億點點"
+			tasks: [{
+				id: "58A9C660957F3340"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:andesite_casing"
+							}
+							{
+								Count: 1b
+								id: "create:brass_casing"
+							}
+							{
+								Count: 1b
+								id: "create:copper_casing"
+							}
+						]
+					}
+				}
+				title: "如何開始：材料加工"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"機械鍛壓機是壓平東西的好方法。與作業盆一起使用時，也能將材料壓實，例如粒壓成錠。"
+				""
+				"對壓板材而言，鍛壓機能放在輸送帶，置物台，或任何方塊之上。"
+				""
+				"若放在輸送帶上，它能自動讓輸送帶暫停，進行鍛壓過程。"
+				""
+				"當放在置物台上時，偵測到下方有物品並能鍛壓處理時，會立刻進行類似的工作。"
+				""
+				"但，當放在任何方塊上時，則需要紅石訊號才能開始工作。（譯註：並沒有）"
+			]
+			hide_dependency_lines: true
+			id: "4953C4EFF1D71FC2"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "20A5EC236DC4A972"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "Bonk！"
+			tasks: [{
+				id: "05F9C570924BAC36"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"機械攪拌器有助於將固體和流體材料混合成更有用的形式，從釀造藥水，製作茶，或製作高級合金，攪拌器都能做到。攪拌器下方必須有一個作業盆。"
+				""
+				"注意有些配方需要熱源，這時需要烈焰使者動力爐。"
+				""
+				"若在作業盆旁低一格的位置放上置物台或分液池時，成品會自動輸出。當置物台或分液池的位置正確時，作業盆會出現一個小開口。"
+			]
+			hide_dependency_lines: true
+			icon: "create:mechanical_mixer"
+			id: "3194F9A3366D6894"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "634D74739A220234"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "攪一攪 拌一拌 再攪一攪"
+			tasks: [
+				{
+					id: "2F933BBDF96EB6F7"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "7886E9BE01CBEFA3"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"當需要高溫的時候，沒什麼比地獄的灼熱更適合了。為什麼不把它帶回來呢？"
+				""
+				"烈焰使者動力爐是透過，手持空的烈焰使者動力爐對烈焰使者右鍵（消耗生物）或烈焰使者生怪磚（不消耗生怪磚）來製作。它們會產高溫，但不是永久的。"
+				""
+				"若它們冷卻時，餵食煤炭或其他可燃材料，讓它們再次加熱。"
+			]
+			hide_dependency_lines: true
+			id: "24D0F4F6DD9176EF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "0AF701A6E011A769"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "可能是活的"
+			tasks: [{
+				id: "6BA5F80D7DFF5751"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["24D0F4F6DD9176EF"]
+			description: [
+				"你說不夠熱是什麼意思？好吧，讓它們吃蛋糕！"
+				""
+				"當一些配方說需要超級加熱時，就是烈焰蛋糕上場的時候。"
+				""
+				"製作烈焰蛋糕相當考驗你的技術，因為這需要大量不同的製作機制。你能把這條產線自動化到何種程度呢？"
+			]
+			id: "3F3F1688537E79E6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "17932E9C90BF9F0B"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "在地美食 非人食"
+			tasks: [{
+				id: "055A7D6F11BE8F99"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"就像移動物品不是免費的，要移動或抽取流體也是需要一些動能。"
+				""
+				"機械幫浦從齒輪接受動能，根據轉動的方向加壓一段管道讓流體順著一個方向流動。"
+				""
+				"幫浦上有個好用的小箭頭指示出現在流體傳輸的方向。一個幫浦能加壓一大段管道，所以務必將它們分開。"
+			]
+			hide_dependency_lines: true
+			icon: "create:mechanical_pump"
+			id: "2893783F1421974C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "563CFD1505CBBC00"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "阿基米德式螺旋抽水機"
+			tasks: [
+				{
+					id: "4BB7F0E6F2CB41E6"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "6D743A608D0DBFA1"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: ["流體閥門給予動能後能開啟或關閉，例如閥門開關。"]
+			hide_dependency_lines: true
+			icon: "create:fluid_valve"
+			id: "360088196B951985"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "513969EA94AFA47D"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "把門關上"
+			tasks: [
+				{
+					id: "09CA331CE0AB9FE9"
+					item: "create:fluid_valve"
+					type: "item"
+				}
+				{
+					id: "4C7A730BB750C0F1"
+					item: "create:copper_valve_handle"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: ["做到不可能的事情對模組來說只是小菜一碟。智慧流管道就是流體的過濾器，無論是控制儲罐中的哪種流體能被抽取，或是讓哪種流體能通過管道。"]
+			hide_dependency_lines: true
+			id: "5529332469374634"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "757E5C7AB9DC87FF"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "逆滲透"
+			tasks: [{
+				id: "3D7F52D89450E8A9"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"流體儲存罐是個主題性的多方塊結構，能滿足你所有流體儲存的需求。"
+				""
+				"然而它們不能與玩家直接互動，必須透過管道才能輸出或輸入流體。它們與相連的儲存罐能一同成型為多方塊結構，使其有大量的儲存空間。"
+				"基底可以是 1x1，2x2，or 3x3 ，且能垂直延伸。"
+				""
+				"================================="
+				""
+				"注意，流體儲存罐的儲存容量在 Enigmatica 9 中大幅提升。"
+			]
+			hide_dependency_lines: true
+			id: "1BDD98EC01F427FE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "34E1C82BFD5BD409"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "深不可測"
+			tasks: [{
+				count: 4L
+				id: "0E6AFA2E108ACB1E"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "Fluid Tanks"
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: ["注液器是放在置物台上搭配使用的。它會嘗試將置物台上的物品填滿。例如，製作水桶，藥水裝瓶，或好喝的茶！"]
+			hide_dependency_lines: true
+			id: "0F1BA9EA4A4E1E83"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2D708C8085FCBB03"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "單兵注意"
+			tasks: [{
+				id: "1F50DC2FC43E1C4B"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0A67F4F9AE300856"]
+			description: [
+				"模組化裝置是指打造一個幾乎無限可能的多方塊結構。"
+				""
+				"可以是固定位置並使用動能運作，或是接上礦車並無須動力的運作，只需要鐵軌就能繼續移動。"
+				""
+				"下面是一些這些裝置可能會使用到的特殊方塊。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "create:minecart_contraption"
+				tag: {
+					Contraption: {
+						Actors: [ ]
+						Anchor: {
+							X: 108
+							Y: 84
+							Z: -93
+						}
+						Blocks: [
+							{
+								Block: {
+									Name: "create:minecart_anchor"
+									Properties: {
+										axis: "z"
+									}
+								}
+								Pos: {
+									X: 0
+									Y: 0
+									Z: 0
+								}
+							}
+							{
+								Block: {
+									Name: "minecraft:spruce_planks"
+								}
+								Pos: {
+									X: 0
+									Y: 1
+									Z: 0
+								}
+							}
+						]
+						BoundsFront: [
+							0.0f
+							0.0f
+							0.0f
+							1.0f
+							2.0f
+							1.0f
+						]
+						FluidStorage: [ ]
+						Passengers: [ ]
+						RotationMode: "ROTATE"
+						Seats: [ ]
+						Stalled: 0b
+						Storage: [ ]
+						SubContraptions: [ ]
+						Superglue: [ ]
+						Type: "mounted"
+					}
+					display: { }
+				}
+			}
+			id: "5F310E6373C3A6FF"
+			rewards: [{
+				id: "2897A0F829A9F11E"
+				item: "minecraft:minecart"
+				title: "Minecart"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "07AF2F236AD701B4"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "模組化裝置"
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5F310E6373C3A6FF"]
+			description: [
+				"當談到移動裝置時，初期可以從機械活塞開始。"
+				""
+				"作為一個實用簡單的例子，想像一片很長的農田。機械活塞可用於定期推動收割裝置，往返移動採收農作物。"
+			]
+			icon: "create:mechanical_piston"
+			id: "273CC6A935E6CCA2"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "48B4464DBD40B9D0"
+					player_command: false
+					title: "Rare Create Loot Box"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "350C5628949B4110"
+					item: "create:piston_extension_pole"
+					title: "Piston Extension Pole"
+					type: "item"
+				}
+			]
+			subtitle: "工程師開發計畫"
+			tasks: [{
+				id: "64A817D85AF2DC57"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:mechanical_piston"
+							}
+							{
+								Count: 1b
+								id: "create:sticky_mechanical_piston"
+							}
+						]
+					}
+				}
+				title: "機械活塞"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5F310E6373C3A6FF"]
+			description: [
+				"礦車裝修站是打造用來乘坐的礦車裝置。"
+				""
+				"裝置必須在裝修站上方打造。準備好後，給裝修站紅石訊號會將連接的方塊轉變成一個實體。"
+				""
+				"整個礦車能使用板手收起，使其能簡單的帶走整個裝置。"
+				""
+				"基於礦車的裝置的一個絕佳例子是隧道潛盾機。它能在其前進方向鋪設鐵軌，並在後方回收鐵軌。甚至建造橋樑避開峽谷！"
+			]
+			id: "1C3D0868BEFA2BD6"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4494D69A52071143"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "相當不科學"
+			tasks: [{
+				id: "6829F2AEBEC8CD85"
+				item: "create:cart_assembler"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5F310E6373C3A6FF"]
+			description: [
+				"和風車軸承類似，機械軸承能用於建造轉動裝置。"
+				""
+				"例如，打造一個長臂的裝置，轉動掃過樹場，砍下遇到的所有樹木。"
+			]
+			id: "4405D0E5F291C3E2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1597FC0ADBA5E7C9"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "轉轉轉 好運旺來一起轉"
+			tasks: [{
+				id: "35B56C6B4BEE87A3"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"1FD1BDE180595CB9"
+				"273CC6A935E6CCA2"
+				"4405D0E5F291C3E2"
+				"28371C67E6DC0C84"
+				"1C3D0868BEFA2BD6"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"底盤是大型創作的基底。"
+				""
+				"機殼底盤沿著較暗的邊相互連接，並自動被視為整體的一個部件，其他部件可以黏在上面。"
+				"在底盤本體較淺的邊上塗上強力膠，它們也會與同一條線上的方塊連接在一起。"
+				""
+				"同樣的，旋轉底盤能以圓形平面的方塊連接，只要它們全都接觸在一起並且底盤的淺色面有塗上強力膠。"
+				""
+				"這能使用少量的強力膠建造非常大型的裝置。然而，這不是必需的，相反的，方塊能簡單的使用強力膠黏在一起成為一個大型的不規則結構。"
+				""
+				"別擔心，一旦大型裝置成型，強力膠的痕跡是看不見的，成為非常美觀的結構。"
+				""
+				"手持板手看著底盤，並按住右鍵來調整連接方塊的範圍。"
+				""
+				"注意：史萊姆球能用在底盤本身作為不會消耗的強力膠。拿史萊姆球對底盤右鍵能對一面上膠，雙擊右鍵對每個面上膠。"
+			]
+			id: "299048747CDB2516"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "378F3AE6697344A6"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2FF46AD8FC9C1239"
+					item: "create:radial_chassis"
+					type: "item"
+				}
+				{
+					id: "08B5DC41BBA13F5B"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+			]
+			title: "底盤"
+			x: 7.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["299048747CDB2516"]
+			description: ["一個聰明的收割機，僅收割成熟的作物。"]
+			id: "731A9E96BAFDBA4C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "6ED3255791EBD190"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "農田專家"
+			tasks: [{
+				id: "13911A217105BD44"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["299048747CDB2516"]
+			description: ["機械鑽頭可以固定或移動使用，作為挖礦設備。"]
+			id: "2005DEC30C94F4AD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "28C9B593F7559123"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "我的鑽頭可是突破天際的鑽頭啊！"
+			tasks: [{
+				id: "423BF25ACF0E60C2"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["299048747CDB2516"]
+			description: [
+				"耕地是個困難的工作。做一台機器幫你工作。"
+				""
+				"然而，機械犁不僅是簡單的農地維護有用，且能成為移動礦車機器提供一個很好的補給，將鐵軌從後方回收。"
+			]
+			id: "274E797023E98258"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "54F79A04D05AC440"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "突破性的創新"
+			tasks: [{
+				id: "1D98BD2723B2587C"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["299048747CDB2516"]
+			description: [
+				"從砍樹倒切石，圓鋸見證了一切。"
+				""
+				"當放置並提供動能後，它能將原木切割為木材，且適用切石機的配方。除非圓鋸有設置過濾，否則切石機配方會隨機輸出。"
+				""
+				"當接上移動的機器，它能砍下整棵樹。相當適合打造一個簡單的樹場。"
+			]
+			id: "797763DE2C50D314"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "001C17D5D029CEEE"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "鋸大斬獲"
+			tasks: [{
+				id: "1B4763A22B304F47"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["299048747CDB2516"]
+			description: [
+				"許多情況下，這個一些能接上移動設備的工具，能自動拾取採集的物品，只要設備有足夠的儲存空間。"
+				""
+				"只要黏上一個儲物箱，足以提供足夠的儲存空間，但要將物品導出又是另一件事了。"
+				""
+				"介面就是作為移動裝置上的容器的代理。每當移動裝置上連接的移動式介面，與世界上的介面相連時，裝置會短暫暫停，進行連接。"
+				""
+				"若有東西要從介面輸出或輸入時，機器會持續暫停直到沒有東西需要傳輸。一旦傳輸停止，設備會繼續運作。"
+				""
+				"為了防止這種暫停，或想提前中斷，可給予固定介面的位置紅石訊號。"
+			]
+			id: "58B3F7B9968F9D7E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "22E781622F117752"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "隨插隨用"
+			tasks: [
+				{
+					id: "33AA3FE874954EE5"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+				{
+					id: "4554582EDFFDE65A"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+			]
+			title: "移動式介面"
+			x: 7.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5F310E6373C3A6FF"]
+			description: [
+				"需要電梯嗎？"
+				""
+				"透過滑輪繩索連接的平台，為自己打造一個電梯。"
+				""
+				"使用變速箱簡單地反轉方向。"
+			]
+			id: "1FD1BDE180595CB9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "762027CFF1BB1983"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "電梯向上"
+			tasks: [{
+				id: "313887BA46E496E5"
+				item: "create:rope_pulley"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"比起繁雜的齒輪比是稍微好一點的控制方式。可調式鏈式變速箱使用紅石訊號設定可變的轉速，至多可達輸入轉速的兩倍。"
+				""
+				"考慮使用可調式控制桿來簡單的設定轉速。"
+			]
+			hide_dependency_lines: true
+			id: "0982E0B3C563E541"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "129FC9D4B142A885"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "這個才能改變轉速"
+			tasks: [{
+				id: "09D9C662DEB0C51D"
+				item: "create:adjustable_chain_gearshift"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			dependency_requirement: "one_completed"
+			description: [
+				"軟管滑輪，能將流體從世界上抽取或倒出。製作大範圍或抽乾水池，讓你的工廠茁壯！"
+				""
+				"超大範圍的流體，像是海洋或是地獄的熔岩池會被認定為無限供應，因此若你想要抽乾海底遺跡，也仍必須蓋一些牆才能真的抽乾這些水。"
+				""
+				"注意，軟管滑輪本身不抽流體。將軟管深入流體源後，設置機械幫浦幫你抽取。"
+			]
+			hide_dependency_lines: true
+			id: "5367697265B2572C"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "12FECCF21E3A5E81"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "有分升起或下降"
+			tasks: [{
+				id: "41B454D275D1DE8B"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"需要反轉方向嗎？變速箱就是你要的。"
+				""
+				"給它紅石訊號會讓輸出端的選轉方向與輸入端的方向相反。"
+			]
+			hide_dependency_lines: true
+			id: "6FA60FAFEB59003A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "615974670DD4392E"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "沒有改變轉速 只改變轉向"
+			tasks: [{
+				id: "35EA22E18BF7C927"
+				item: "create:gearshift"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"其實是相當簡單的設備。離合器切斷軸線上的動能，就是個簡單的開關。"
+				""
+				"對需要精準控制時間的更高級裝置也很有用。"
+			]
+			hide_dependency_lines: true
+			id: "45F0B34B3988D2F0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4258C881DD19230C"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "停下來受檢"
+			tasks: [{
+				id: "52A6BBA8F88E28FB"
+				item: "create:clutch"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["24D0F4F6DD9176EF"]
+			description: [
+				"太晚參加喝茶派對就像 1773 年嗎？"
+				""
+				"試試建築工人茶！不會花你多久時間準備的。"
+			]
+			id: "7FC80C83F7A70EA3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "4BD7F5A9A1818D77"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "喝口茶 休息一下！"
+			tasks: [{
+				id: "207BBE59083BB681"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			dependency_requirement: "one_completed"
+			description: [
+				"分液池，對從含流體的物品取出流體來說相當有用，像是鐵桶或玻璃瓶。對於將流體從作業盆中導出也相當實用。"
+				""
+				"它也有一個小的內部空間，可透過管道存取當中的流體。"
+			]
+			hide_dependency_lines: true
+			id: "70B2C4200B09A07E"
+			min_width: 225
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2573803F64C9B873"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "沒有排入下水道"
+			tasks: [{
+				id: "1AAE8908EE3033EE"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"有了熱源，水和一個封閉的空間，就能製作蒸汽機產生大量的 SU。"
+				""
+				"打造基本的鍋爐，需要四個流體儲存罐放置在一個正方形中，並至少連接一個蒸汽機。將儲存罐注滿水並在其下方提供熱源，就能讓整個系統動起來。拿傳動軸對蒸汽機前端右鍵成型，並由傳動軸將動能輸出。"
+				""
+				"鍋爐可以透過任何營火或岩漿塊被動加熱，但透過烈焰使者動力爐加熱，能加熱至更高的溫度，進而產出更多的 SU。無論哪一種方式，都需要持注水，隨著蒸汽機數量的增加，每次運作都會消耗更多的水。"
+			]
+			icon: "create:steam_engine"
+			id: "6C74400AD471917A"
+			min_width: 250
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "730DADB4DB8FCE64"
+					player_command: false
+					title: "Legendary Create Loot Box"
+					type: "command"
+				}
+				{
+					id: "6B5B52CC47DADBF1"
+					item: "create:steam_whistle"
+					type: "item"
+				}
+			]
+			subtitle: "紐科門負責的方塊"
+			tasks: [
+				{
+					id: "3BFC93247964F2FA"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "76C2FD745FE06245"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F310E6373C3A6FF"]
+			description: [
+				"無論是簡單的傳輸貨物，人員運輸，或是移動的採石場，火車提供了一種優雅的解決方案。"
+				""
+				"火車是大型的移動裝置，可以通過火車站點，火車時刻表，和火車訊號機實現自動化。它們能穿越未載入的區塊，使長距離運輸成為可能；只要火車站點是載入的。然而鑽頭和其他機器無法在未載入的區塊運作。"
+				""
+				"使用火車站點開始打造火車。因為這功能相當複雜，強烈建議查看每個火車設備部件的教學動畫。"
+			]
+			icon: "create:track"
+			id: "28371C67E6DC0C84"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "76589AD67CFA6AA0"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "注意月台間隙"
+			tasks: [
+				{
+					count: 16L
+					id: "4AEBAB560CD355F7"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "0AD223E0634EE2C4"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "11B6EEEF5C0A6FE6"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "6BD62513A6047B12"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			title: "火車"
+			x: 7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0A67F4F9AE300856"]
+			description: ["動力機械的大半樂趣在於看著東西在動，且它的物流方式不會讓你失望。從輸送帶著物品移動，到管道顯示流體在裡面流動，動力機械提供了許多方式將大多數的東西四處移動。"]
+			hide_dependency_lines: true
+			id: "21E017D060FC5109"
+			shape: "hexagon"
+			subtitle: "從這到那 看起來都很有趣"
+			tasks: [{
+				id: "2FAB5E21F73D3C8C"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:andesite_casing"
+							}
+							{
+								Count: 1b
+								id: "create:brass_casing"
+							}
+							{
+								Count: 1b
+								id: "create:copper_casing"
+							}
+						]
+					}
+				}
+				title: "如何開始：物流與儲存"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["21E017D060FC5109"]
+			description: [
+				"就像它們複製的運輸箱，物品倉每個方塊能容納大量的物品。然而，它們不能手動互動，因此物品必須透過自動化輸入或輸出。"
+				""
+				"物品倉能組合成多方塊結構的儲存容器。基底必須是正方形且最大是 3x3，而長度最多為直徑的三倍，最大尺寸為 3x3x9。"
+				""
+				"================================="
+				""
+				"注意，物品倉的儲存容量在 Enigmatica 9 中大幅提升。"
+			]
+			hide_dependency_lines: true
+			id: "2B2831B7CA29DFE7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4D53FA0D11747F26"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "囤積者的夢想"
+			tasks: [{
+				id: "5FDBE067CC27D743"
+				item: "create:item_vault"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C03271FD5A61ADC"]
+			description: [
+				"這個簡單的馬達是相當簡潔並能產出優秀的 SU。"
+				""
+				"提供任何 FE 的電源使其轉動，並能在背後設定轉速。轉速越高能提供更多的 SU，但電力也消耗更多。對於高 SU，低轉速的設備而言，確保與轉速控制器一起使用。"
+			]
+			id: "304335B08B51F1DA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "4F43163D2CBCABEF"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "開始拉線"
+			tasks: [{
+				id: "470B3E86185B251B"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["24D0F4F6DD9176EF"]
+			description: [
+				"誰知道烈焰使者也會口渴？它們當然對水不感興趣，但其他可燃流體似乎剛剛好。"
+				""
+				"對烈焰使者動力爐使用吸管，使其能接受流體燃料。若給正確的燃料，它也能超級加熱！"
+			]
+			id: "22B7A9A1F7CDD7A1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "30DE8FD2BCB34418"
+				player_command: false
+				title: "Epic Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "海龜在哭泣"
+			tasks: [{
+				id: "031BAA05820B2A8A"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: ["輥軋機非常適合製作一些適合電子設備使用的乾淨桿材與線材。這能手動使用，或作為大型工廠的一部分與輸送帶一起使用。"]
+			hide_dependency_lines: true
+			id: "22FC283CBAF198BF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4CE1F858B1237850"
+				player_command: false
+				title: "Rare Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "繼續轉動"
+			tasks: [{
+				id: "6751D909A230A60B"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["780BADC429826D36"]
+			description: [
+				"高功率的電子設備，透過感應電流為物品無線充電，特斯拉線圈在任何工廠都相當實用。"
+				""
+				"當放在輸送帶或置物台上，並提供有效的電力，特斯拉線圈能將物品充電。不僅能處理顯示的配方，也能為裝備或電池充電。"
+				""
+				"特斯拉線圈也能有更破壞性的用途，將其放置並除了電力外給予紅石訊號。在這個模式下，它能傷害附近的實體。"
+			]
+			hide_dependency_lines: true
+			id: "0FAE129A0C845C20"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "4A9E638F4D1CD688"
+				player_command: false
+				title: "Legendary Create Loot Box"
+				type: "command"
+			}]
+			subtitle: "與某汽車品牌無關"
+			tasks: [{
+				id: "2E53D2DD93264422"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.5d
+		}
+	]
+	title: "動力機械"
+}
