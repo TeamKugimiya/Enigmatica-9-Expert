@@ -4,5 +4,27 @@
     "advancement.naturesaura.infused_materials.desc": "使用自然祭壇來製作灌注鐵木",
     "advancement.naturesaura.infused_tools.desc": "製作植物學家之鎬與植物學家之劍",
     "block.naturesaura.tainted_gold_block": "汙染黃金方塊",
-    "item.naturesaura.tainted_gold": "汙染黃金錠"
+    "item.naturesaura.tainted_gold": "汙染黃金錠",
+
+    "comment_patch": "補充內容",
+    "item.naturesaura.vacuum_bottle": "瓶裝真空",
+    "block.naturesaura.lower_limiter": "靈氣失衡保護裝置",
+    "advancement.naturesaura.vacuum_bottle": "深呼吸，吸入深淵",
+    "advancement.naturesaura.vacuum_bottle.desc": "使用瓶與塞捕捉虛空",
+    "block.naturesaura.sky_ingot_block": "蒼穹方塊",
+    "block.naturesaura.depth_ingot_block": "深淵方塊",
+    "item.naturesaura.depth_ingot": "深淵錠",
+    "item.naturesaura.depth_pickaxe": "靈魂行者之鎬",
+    "item.naturesaura.depth_axe": "靈魂行者之斧",
+    "item.naturesaura.depth_shovel": "靈魂行者之鏟",
+    "item.naturesaura.depth_sword": "靈魂行者之劍",
+    "item.naturesaura.depth_hoe": "靈魂行者之鋤",
+    "item.naturesaura.depth_helmet": "靈魂行者頭盔",
+    "item.naturesaura.depth_chest": "靈魂行者胸甲",
+    "item.naturesaura.depth_pants": "靈魂行者護腿",
+    "item.naturesaura.depth_shoes": "靈魂行者靴子",
+    "advancement.naturesaura.depth_ingot": "受困深淵",
+    "advancement.naturesaura.depth_ingot.desc": "製作出深淵錠",
+    "advancement.naturesaura.depth_tools": "優雅步姿",
+    "advancement.naturesaura.depth_tools.desc": "製作出全套靈魂行者工具與盔甲"
 }
