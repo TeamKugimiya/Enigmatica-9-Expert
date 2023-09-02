@@ -1,0 +1,8 @@
+{
+	"block.naturesaura.infused_iron_block": "灌注鐵方塊",
+	"item.naturesaura.infused_iron": "灌注鐵錠",
+	"advancement.naturesaura.infused_materials.desc": "使用自然祭壇來製作灌注鐵木",
+	"advancement.naturesaura.infused_tools.desc": "製作植物學家之鎬與植物學家之劍",
+	"block.naturesaura.tainted_gold_block": "汙染黃金方塊",
+	"item.naturesaura.tainted_gold": "汙染黃金錠"
+}

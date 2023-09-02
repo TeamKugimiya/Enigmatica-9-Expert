@@ -1,0 +1,9 @@
+{
+	"item.ae2.printed_silicon": "符文複印",
+	"item.ae2.printed_logic_processor": "符文複印：巨靈",
+	"item.ae2.printed_calculation_processor": "符文複印：火靈",
+	"item.ae2.printed_engineering_processor": "符文複印：魔王",
+	"item.ae2.logic_processor": "符文複印：巨靈（已綁定）",
+	"item.ae2.calculation_processor": "符文複印：火靈（已綁定）",
+	"item.ae2.engineering_processor": "符文複印：魔王（已綁定）"
+}

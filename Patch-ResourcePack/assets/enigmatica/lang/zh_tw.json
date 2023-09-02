@@ -1,0 +1,66 @@
+{
+    "domain.enigmatica.display_name": "Enigmatica 9",
+    "block.minecraft.nether_portal.name": "地獄傳送門",
+    "block.minecraft.stonecutter": "切石機",
+    "container.stonecutter": "切石機",
+    "entity.minecraft.villager.beekeeper": "養蜂人",
+
+    "miniboss.enigmatica.witch_solitary_witch": "獨行女巫",
+    "miniboss.enigmatica.wither_skeleton_withered_knight": "凋零騎士",
+    "miniboss.enigmatica.stray_hoarfrost_knight": "白霜騎士",
+    "miniboss.enigmatica.skeleton_forsaken_knight": "死亡騎士",
+
+    "advancements.enigmatica.husbandry.tame_all_animals.title": "動物學",
+    "advancements.enigmatica.husbandry.tame_all_animals.description": "馴服所有可馴服的動物！",
+
+    "effect.sushigocrafting.acquired_taste.description": "處於該效果下進食時，將獲得額外的飽食度。",
+    "effect.sushigocrafting.small_bites.description": "處於該效果下進食時，低機率不會消耗食物。",
+    "effect.sushigocrafting.steady_hands.description": "處於該效果下使用砧板時，將為你的食材提供額外的重量。",
+
+    "effect.ars_nouveau.recovery.description": "提高從其他來源獲得的治療效果。",
+    "effect.ars_nouveau.blasting.description": "在效果時間結束時，使目標產生劇烈爆炸。",
+    "effect.ars_nouveau.shielding.description": "減輕來自所有來源的傷害。",
+    "effect.ars_nouveau.freezing.description": "身體隨時間逐漸凍結。",
+    "effect.ars_nouveau.bounce.description": "使目標獲得彈性效果，就像在史萊姆方塊上行走一樣。",
+    "effect.ars_nouveau.familiar_sickness.description": "防止召喚使魔。",
+    "effect.ars_nouveau.flight.description": "區域性的創造模式飛行。",
+    "effect.ars_nouveau.glide.description": "賦與鞘翅滑翔能力。",
+    "effect.ars_nouveau.gravity.description": "使飛行中的生物墜落至地面。",
+    "effect.ars_nouveau.hex.description": "處於劇毒、凋零，以及燃燒的效果下，承受的傷害將略微增加。除此之外，該詛咒還會使魔力回復與治療效果量減半。",
+    "effect.ars_nouveau.magic_find.description": "使魔法生物獲得發光效果，紫水晶也將穿透方塊顯露。",
+    "effect.ars_nouveau.shocked.description": "被閃電之魔符擊中時施加。使後續追加的閃電傷害能造成額外傷害。",
+    "effect.ars_nouveau.snared.description": "使目標行動受限。",
+    "effect.ars_nouveau.spell_damage.description": "提高《新生魔藝》法術所能造成的傷害。",
+    "effect.ars_nouveau.summoning_sickness.description": "防止召喚生物。",
+
+    "effect.naturesaura.breathless.description": "逐漸使目標窒息。",
+
+    "effect.apotheosis.bleeding.description": "隨時間逐漸失去生命值。",
+    "effect.apotheosis.knowledge.description": "提高獲得的經驗量。",
+    "effect.apotheosis.vitality.description": "每級提高 20% 獲得的治療量。",
+    "effect.apotheosis.grievous.description": "每級減少 40% 獲得的治療量。當達到 III 或以上等級時，將完全無法獲得治療效果。",
+
+    "effect.occultism.third_eye.description": "賦與能看見異界石與異界木的真實樣貌能力，並允許它們能被收穫。",
+    "effect.occultism.dragon_greed.description": "龍使魔能使主人得到的經驗值增加。",
+    "effect.occultism.mummy_dodge.description": "木乃伊使魔是功夫大師，會為保護其主人而戰。",
+    "effect.occultism.beaver_harvest.description": "河狸使魔能提升其主人的伐木速度，此外還能在附近樹苗長成樹木時進行砍伐。",
+    "effect.occultism.double_jump.description": "賦與能在半空中進行二段跳的能力。",
+    "effect.occultism.bat_lifesteal.description": "從受攻擊的生物上竊取生命力，並用於治療攻擊者。",
+
+    "affix.apotheosis:sword/mob_effect/breathless": "窒息的",
+    "affix.apotheosis:sword/mob_effect/breathless.suffix": "《虛空》",
+    "affix.apotheosis:sword/mob_effect/bleeding": "獻祭的",
+    "affix.apotheosis:sword/mob_effect/bleeding.suffix": "《緋紅儀式》",
+    "affix.apotheosis:sword/mob_effect/paralysis": "刺痛的",
+    "affix.apotheosis:sword/mob_effect/paralysis.suffix": "《蜂巢》",
+    "affix.apotheosis:sword/mob_effect/blasting": "爆炸的",
+    "affix.apotheosis:sword/mob_effect/blasting.suffix": "《病痛之手》",
+    "affix.apotheosis:armor/mob_effect/shielding": "堅守的",
+    "affix.apotheosis:armor/mob_effect/shielding.suffix": "《頑抗》",
+    "affix.apotheosis:armor/mob_effect/chilling": "冰河的",
+    "affix.apotheosis:armor/mob_effect/chilling.suffix": "《白霜》",
+
+    "item.apotheosis.gem.apotheosis:everbright/moon_touched": "月色寶石",
+    "item.apotheosis.gem.apotheosis:everdawn/sun_kissed": "豔陽寶石",
+    "item.apotheosis.gem.apotheosis:twilight_forest/twilight_guardian": "暮光守衛寶石"
+}

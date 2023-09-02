@@ -1,0 +1,22 @@
+{
+	"ars_nouveau.tooltip.magebloom": "透過法師之花種子生長而來。",
+	"tooltip.ars_nouveau.wilden_tribute": "透過擊敗荒野奇美拉獲得。請查看荒野之林民族傳送門珍珠。",
+	"tooltip.magebloom": "使用調和鍋釜合成",
+    "effect.ars_nouveau.shielding.desc": "減輕受到的傷害。",
+    "effect.ars_nouveau.freezing.desc": "減緩目標移動速度並逐漸凍結。",
+    "effect.ars_nouveau.blasting.desc": "持續時間結束時產生爆炸。",
+    "effect.ars_nouveau.recovery.desc": "提高獲得的治療效果。",
+    "effect.ars_nouveau.spell_damage.desc": "提高法術造成的傷害。",
+    "effect.ars_nouveau.mana_regen.desc": "提高魔力的回復速率。",
+    "ars_nouveau.perk.saturation.desc": "進食時獲得額外的飽食度。",
+    "ars_nouveau.perk.mana_regen.desc": "提高每刻（tick）魔力的回復量。",
+    "ars_nouveau.perk.percent_max_mana.desc": "以乘法形式提高魔力值上限。",
+    "ars_nouveau.perk.flat_max_mana.desc": "以加法形式提高魔力值上限。",
+    "ars_nouveau.perk.wixie.desc": "藥水效果的持續時間倍率。",
+    "ars_nouveau.perk.spell_damage.desc": "額外的法術傷害。",
+    "ars_nouveau.perk.warding.desc": "額外的傷害減輕。",
+    "ars_nouveau.perk.feather.desc": "百分比減少摔落傷害。",
+    "ars_nouveau.perk.feather": "羽化",
+    "ars_nouveau.perk.toughness.desc": "尚未實裝。",
+    "ars_nouveau.perk.toughness": "韌性"
+}

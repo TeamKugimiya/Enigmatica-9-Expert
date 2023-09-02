@@ -1,0 +1,5 @@
+{
+    "forge.nameTagDistance.desc": "實體名稱標籤最遠的顯示距離。",
+    "forge.stepHeight.desc": "不跳躍的情況下，可直接走上的方塊高度。",
+    "forge.swimSpeed.desc": "游泳時的移動速度倍數。"
+}

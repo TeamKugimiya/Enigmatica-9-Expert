@@ -1,0 +1,8 @@
+{
+	"block.industrialforegoing.ore_laser_base": "物質雷射基座",
+    "fluid_type.industrialforegoing.biofuel": "深淵汁液",
+    "block.biofuel": "深淵汁液",
+    "item.industrialforegoing.biofuel_bucket": "深淵汁液桶",
+    "tooltip.titanium.facing_handler.biofuel": "深淵汁液",
+    "tooltip.titanium.facing_handler.biofuel_tank": "深淵汁液儲罐"
+}
