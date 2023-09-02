@@ -1,0 +1,52 @@
+{
+	"toomanyglyphs.glyph_name.glyph_filter_block": "篩選：方塊",
+	"toomanyglyphs.glyph_desc.glyph_filter_block": "除非法術的目標是方塊，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_entity": "篩選：實體",
+	"toomanyglyphs.glyph_desc.glyph_filter_entity": "除非法術的目標是實體，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_living": "篩選：存活生物",
+	"toomanyglyphs.glyph_desc.glyph_filter_living": "除非法術的目標是存活的生物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_living_not_player": "篩選：非玩家",
+	"toomanyglyphs.glyph_desc.glyph_filter_living_not_player": "除非法術的目標是玩家以外的存活生物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_living_not_monster": "篩選：非怪物",
+	"toomanyglyphs.glyph_desc.glyph_filter_living_not_monster": "除非法術的目標是怪物以外的存活生物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_player": "篩選：玩家",
+	"toomanyglyphs.glyph_desc.glyph_filter_player": "除非法術的目標是存活的玩家，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_monster": "篩選：怪物",
+	"toomanyglyphs.glyph_desc.glyph_filter_monster": "除非法術的目標是存活的怪物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_lay_on_hands": "雙手觸摸",
+	"toomanyglyphs.glyph_desc.glyph_lay_on_hands": "根據使用場合在觸摸與自身兩種形態間切換。若目標為存活生物或非怪物實體時，使用觸摸形態；若沒有觸摸目標時，則使用自身形態。若未能成功找到目標施放時，則不消耗魔力。若在該魔符後方直接搭配篩選構件，將會根據該篩選構件所指定的目標進行施放，而不再局限於存活生物或非怪物實體。",
+
+	"toomanyglyphs.glyph_name.glyph_reverse_direction": "反轉方向",
+	"toomanyglyphs.glyph_desc.glyph_reverse_direction": "使針對方塊的法術效果，在命中方塊表面後反轉其作用方向。",
+
+	"toomanyglyphs.glyph_name.glyph_chaining": "連鎖",
+	"toomanyglyphs.glyph_desc.glyph_chaining": "使法術效果能夠在多個同類目標之間產生連鎖效應，這些目標可以是相似的方塊，或是施法者以外的存活生物。使用範圍效果增強，你可以提高連鎖效應影響的目標數量；使用穿透增強，你能夠擴大連鎖效應的生效範圍。",
+
+	"toomanyglyphs.glyph_name.glyph_ray": "射線",
+	"toomanyglyphs.glyph_desc.glyph_ray": "立即擊中所指的目標，射程有距離上限，但比觸摸遠。無論射線是否有命中目標，都會消耗魔力。範圍效果增強能提高射程。使用一次感應構件，能使射線命中無碰撞箱的物體，例如植物與漂浮的魔光球體。使用二次感應構件，能使射線命中流體。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_item": "篩選：物品",
+	"toomanyglyphs.glyph_desc.glyph_filter_item": "除非法術的目標是世界上的掉落物，否則停止法術的解析過程。對於無法將非存活生物，作為目標的投射物和基礎射線來說，可能會毫無用處。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_animal": "篩選：動物",
+	"toomanyglyphs.glyph_desc.glyph_filter_animal": "除非法術的目標是動物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_is_baby": "篩選：幼年生物",
+	"toomanyglyphs.glyph_desc.glyph_filter_is_baby": "除非法術的目標是幼年生物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_filter_is_mature": "篩選：成年生物",
+	"toomanyglyphs.glyph_desc.glyph_filter_is_mature": "除非法術的目標是成年生物，否則停止法術的解析過程。",
+
+	"toomanyglyphs.glyph_name.glyph_amplify_two": "強化 II",
+	"toomanyglyphs.glyph_desc.glyph_amplify_two": "強化魔符的進階版本，以效率為代價換取更強大的力量。",
+
+	"toomanyglyphs.glyph_name.glyph_amplify_three": "強化 III",
+	"toomanyglyphs.glyph_desc.glyph_amplify_three": "強化魔符的終極版本，毫不保留地將龐大的魔力，注入在一個魔符效果中。"
+}

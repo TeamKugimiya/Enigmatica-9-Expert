@@ -1,0 +1,98 @@
+{
+	"itemGroup.starbunclemania": "星寶石獸狂熱",
+
+	"starbunclemania.glyph_name.glyph_": "",
+	"starbunclemania.glyph_name.glyph_place_fluid": "放置流體",
+	"starbunclemania.glyph_desc.glyph_place_fluid": "將流體放置在世界上。流體會從施法者快捷爛，或炮塔旁的儲罐中取用。",
+	"starbunclemania.glyph_name.glyph_pickup_fluid": "拾取流體",
+	"starbunclemania.glyph_desc.glyph_pickup_fluid": "拾取世界上的流體，並裝進施法者快捷欄，或炮塔旁的儲罐中。",
+
+
+	"block.starbunclemania.fluid_jar": "流體罐",
+	"block.starbunclemania.fluid_sourcelink": "流體魔源通道",
+	"block.starbunclemania.source_condenser": "魔源凝結器",
+
+	"item.starbunclemania.direction_scroll": "方位卷軸",
+	"item.starbunclemania.fluid_scroll_allow": "流體卷軸：允許",
+	"item.starbunclemania.fluid_scroll_deny": "流體卷軸：拒絕",
+
+	"item.starbunclemania.star_hat": "布魯士帽",
+	"item.starbunclemania.wyrm_degree": "書龍學位",
+	"item.starbunclemania.star_battery": "星寶石獸電池",
+	"item.starbunclemania.star_bucket": "星寶石獸桶",
+	"item.starbunclemania.star_balloon": "星寶石獸氣球",
+	"item.starbunclemania.star_bin": "星寶石獸垃圾桶",
+	"item.starbunclemania.star_saddle": "星寶石獸鞍 [半成品]",
+	"item.starbunclemania.star_sword": "星寶石獸之劍 [半成品]",
+	"item.starbunclemania.star_wand": "神聖之杖 [半成品]",
+	"item.starbunclemania.fluid_jar": "流體罐",
+	"item.starbunclemania.source_fluid_bucket": "液態魔源桶",
+	"fluid_type.starbunclemania.source_fluid": "液態魔源",
+	"gas.starbunclemania.source_gas": "氣態魔源",
+	"entity.starbunclemania.starby_mount": "星寶石獸",
+
+	"ars_nouveau.starbuncle.sided_item_behavior_set": "星寶石獸將會從方塊的指定一側，存放／取出物品",
+	"ars_nouveau.starbuncle.fluid_behavior_set": "星寶石獸將開始傳輸流體",
+	"ars_nouveau.starbuncle.energy_behavior_set": "星寶石獸將開始傳輸能量",
+	"ars_nouveau.starbuncle.gas_behavior_set": "星寶石獸將開始傳輸氣體",
+	"ars_nouveau.starbuncle.trash_behavior_set": "星寶石獸將會銷毀物品",
+	"ars_nouveau.starbuncle.sword_behavior_set": "星寶石獸選擇開始付諸暴力",
+	"ars_nouveau.starbuncle.heal_behavior_set": "星寶石獸將開始治療生物",
+
+	"ars_nouveau.starbuncle.default_behavior": "已還原回預設的物品傳輸",
+	"ars_nouveau.starbuncle.energy_to": "星寶石獸將在這裡儲存能量",
+	"ars_nouveau.starbuncle.energy_from": "星寶石獸將從這顆電池取出能量",
+
+	"starbunclemania.tooltip.fluid_jar": "已儲存 %dmB 的",
+	"ars_nouveau.starbuncle.fluid_to": "星寶石獸將在這裡儲存流體",
+	"ars_nouveau.starbuncle.fluid_from": "星寶石獸將從這個儲罐取出流體",
+
+	"starbunclemania.tooltip.gas": "已儲存 %dmB 的",
+	"ars_nouveau.starbuncle.gas_to": "星寶石獸將在這裡儲存氣體",
+	"ars_nouveau.starbuncle.gas_from": "星寶石獸將從這個儲罐取出氣體",
+
+	"ars_nouveau.starbuncle.trashing_items": "銷毀地面與 %d 處容器中的物品",
+
+	"ars_nouveau.starbuncle.storing_energy": "正在向 %d 處位置儲存能量",
+	"ars_nouveau.starbuncle.taking_energy": "正在從 %d 處位置取出能量",
+
+	"ars_nouveau.starbuncle.storing_fluid": "正在向 %d 處位置儲存流體",
+	"ars_nouveau.starbuncle.taking_fluid": "正在從 %d 處位置取出流體",
+
+	"ars_nouveau.starbuncle.storing_gas": "正在向 %d 處位置儲存氣體",
+	"ars_nouveau.starbuncle.taking_gas": "正在從 %d 處位置取出氣體",
+
+	"starbunclemania.cosmetic": "裝飾配件",
+	"starbunclemania.page.direction_scroll": "Provides a face/direction to Starbuncle automations. When the scroll is used on a starbuncle or placed in an item frame on a block, the starbuncle will interact with the block from the specified face.",
+	"starbunclemania.page.fluid_scroll": "Provides a filter to Starbuncle fluid automations. Works like the item counterpart, used on a starbuncle or placed in an item frame on the tank.",
+	"starbunclemania.page.fluid_jar": "A tank made from cascading archwood logs that can hold up to 16 buckets of fluid. If used to store a potion fluid and a potion jar is placed above it, the fluid will be converted to the jar for flask/melding use.",
+	"starbunclemania.page.fluid_sourcelink": "Consumes fluids to generate source. Will automatically drain from tanks below it if compatible.",
+	"starbunclemania.page.source_condenser": "Condense the Source from Jars into a stable fluid. Will automatically output to tanks below it if possible.",
+	"starbunclemania.page.star_hat": "Accessories from StarbuncleMania aren't just for the worker starbuncles to enjoy, you can use them on your starbuncle familiar too! This one doesn't do anything, but is surely stylish. Shift-clicking a starby with an accessory will only set it as cosmetic, without setting the job.",
+	"starbunclemania.page.star_battery": "Allows Starbuncles to transport energy. Once wearing the accessory, use the Dominion wand to connect them between FE blocks.",
+	"starbunclemania.page.star_bucket": "Allows Starbuncles to transport fluids. Once wearing the accessory, use the Dominion wand to connect them between tanks.",
+	"starbunclemania.page.star_balloon": "Allows Starbuncles to transport simple gasses [Mekanism]. Can be dyed if used as cosmetic, but will use the stored gas color when used for transport. Once wearing the accessory, use the Dominion wand to connect them between gas tanks.",
+	"starbunclemania.page.wyrm_degree": "Allows Starbuncles to insert/extract items from a specific side with Direction Scrolls.",
+	"starbunclemania.page.star_bin": "Allows Starbuncles to embrace their inner raccoon and trash items. While wearing the accessory the Starbuncle will void any nearby item on the ground.",
+	"starbunclemania.page.star_saddle": "Allows Starbuncles to transport players. While wearing the accessory, the Starbuncle becomes big enough to be rideable. [Still a bit wip, might be a bit wonky]",
+
+	"starbunclemania.adv.title.wyrm_degree": "這也要歸功於我的兩個學位......",
+	"starbunclemania.adv.desc.wyrm_degree": "獲得書龍學位",
+	"starbunclemania.adv.title.star_battery": "能量傳輸",
+	"starbunclemania.adv.desc.star_battery": "獲得星寶石獸電池",
+	"starbunclemania.adv.title.star_bucket": "流體傳輸",
+	"starbunclemania.adv.desc.star_bucket": "獲得星寶石獸桶",
+	"starbunclemania.adv.title.star_balloon": "氣體傳輸",
+	"starbunclemania.adv.desc.star_balloon": "獲得星寶石獸氣球",
+	"starbunclemania.adv.title.star_bin": "垃圾愛好者",
+	"starbunclemania.adv.desc.star_bin": "獲得星寶石獸垃圾桶",
+	"starbunclemania.adv.title.fluid_jar": "如果...",
+	"starbunclemania.adv.desc.fluid_jar": "獲得流體罐",
+	"starbunclemania.adv.title.fluid_sourcelink": "魔源灑水器",
+	"starbunclemania.adv.desc.fluid_sourcelink": "獲得流體魔源通道",
+	"starbunclemania.adv.title.source_condenser": "異端黏性物",
+	"starbunclemania.adv.desc.source_condenser": "獲得魔源凝結器",
+	"starbunclemania.adv.title.": "",
+	"starbunclemania.adv.desc.": ""
+
+}
