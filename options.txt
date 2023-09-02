@@ -1,0 +1,5 @@
+enableVsync:false
+darkMojangStudiosBackground:true
+gamma:1
+resourcePacks:["vanilla","mod_resources","emendatusenigmatica_assets","Everycomp Generated Pack","Supplementaries Generated Pack","V Slab Compat Generated Pack","packmenu","quark:emote_resources","file/ModsTranslationPack-1.19.x.zip","file/Enigmatica-9-Expert-Patches.zip"]
+lang:zh_tw
