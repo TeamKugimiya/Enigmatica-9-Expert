@@ -1,5 +1,5 @@
 {
-	"block.pneumaticcraft.compressed_iron_block": "法術不變鋼方塊",
+    "block.pneumaticcraft.compressed_iron_block": "法術不變鋼方塊",
     "block.pneumaticcraft.creative_compressed_iron_block": "【創造模式】法術不變鋼方塊",
     "gui.tooltip.block.pneumaticcraft.heat_pipe": "用康銅製成的絕緣芯，可以傳遞熱量並避免損失任何熱量到相鄰的空氣或流體中。法術不變鋼方塊的更緊湊替代品。能被偽裝塗覆器偽裝。",
     "gui.tooltip.block.pneumaticcraft.pressure_chamber_valve": "壓力室可以用於貯存空氣。但其主要用途是將各種材料壓縮成其他材料。例如不變鋼壓縮成法術不變鋼，或者是將煤炭壓縮成鑽石。",
@@ -40,5 +40,20 @@
     "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.smouldering": "液體 - 陰燃",
     "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.fading": "液體 - 微燃",
     "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.kindled": "液體 - 明燃",
-    "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.seething": "液體 - 猛燃"
+    "pneumaticcraft.gui.jei.description.createaddition_liquid_blaze_burner.seething": "液體 - 猛燃",
+
+    "comment_patch": "補充內容",
+    "fluid.pneumaticcraft.biodiesel": "生物柴油",
+    "fluid.pneumaticcraft.diesel": "柴油",
+    "fluid.pneumaticcraft.ethanol": "乙醇",
+    "fluid.pneumaticcraft.etching_acid": "蝕刻酸",
+    "fluid.pneumaticcraft.gasoline": "汽油",
+    "fluid.pneumaticcraft.kerosene": "煤油",
+    "fluid.pneumaticcraft.lpg": "液化石油氣",
+    "fluid.pneumaticcraft.lubricant": "潤滑油",
+    "fluid.pneumaticcraft.memory_essence": "記憶源質",
+    "fluid.pneumaticcraft.oil": "石油",
+    "fluid.pneumaticcraft.plastic": "熔融塑膠",
+    "fluid.pneumaticcraft.vegetable_oil": "植物油",
+    "fluid.pneumaticcraft.yeast_culture": "酵母菌"
 }

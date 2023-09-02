@@ -1,8 +1,20 @@
 {
-	"block.industrialforegoing.ore_laser_base": "物質雷射基座",
+    "block.industrialforegoing.ore_laser_base": "物質雷射基座",
     "fluid_type.industrialforegoing.biofuel": "深淵汁液",
     "block.biofuel": "深淵汁液",
     "item.industrialforegoing.biofuel_bucket": "深淵汁液桶",
     "tooltip.titanium.facing_handler.biofuel": "深淵汁液",
-    "tooltip.titanium.facing_handler.biofuel_tank": "深淵汁液儲罐"
+    "tooltip.titanium.facing_handler.biofuel_tank": "深淵汁液儲罐",
+
+    "comment_patch": "補充內容",
+    "fluid_type.industrialforegoing.essence": "精華液",
+    "fluid_type.industrialforegoing.meat": "肉湯",
+    "fluid_type.industrialforegoing.sewage": "汙水",
+    "fluid_type.industrialforegoing.sludge": "汙泥",
+    "fluid_type.industrialforegoing.latex": "乳膠",
+    "fluid_type.industrialforegoing.pink_slime": "粉紅史萊姆液",
+    "fluid_type.industrialforegoing.protein": "蛋白質",
+    "fluid_type.industrialforegoing.ether_gas": "乙醚氣體",
+    "fluid_type.industrialforegoing.raw_ore_meat": "未處理的礦物肉湯",
+    "fluid_type.industrialforegoing.fermented_ore_meat": "發酵的礦物肉湯"
 }

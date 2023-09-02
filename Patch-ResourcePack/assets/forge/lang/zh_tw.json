@@ -1,5 +1,13 @@
 {
     "forge.nameTagDistance.desc": "實體名稱標籤最遠的顯示距離。",
     "forge.stepHeight.desc": "不跳躍的情況下，可直接走上的方塊高度。",
-    "forge.swimSpeed.desc": "游泳時的移動速度倍數。"
+    "forge.swimSpeed.desc": "游泳時的移動速度倍數。",
+
+    "comment_patch": "補充內容",
+    "forge.swim_speed": "游泳速度",
+    "forge.name_tag_distance": "名稱標籤繪製距離",
+    "forge.entity_gravity": "重力",
+    "forge.block_reach": "方塊互動",
+    "forge.entity_reach": "實體互動",
+    "forge.step_height": "步行輔助"
 }

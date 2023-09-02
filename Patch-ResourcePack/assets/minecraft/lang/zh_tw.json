@@ -1,9 +1,9 @@
 {
-	"item.minecraft.dragon_breath": "暮光氣息",
-	"item.minecraft.shears": "植物學家剪刀",
-	"effect.minecraft.wither.desc": "隨時間受到凋零傷害。",
-	"effect.minecraft.absorption.desc": "賦與暫時性的額外生命值。",
-	"effect.minecraft.resistance.desc": "減輕受到的傷害。",
-	"generic.attack_range.desc": "你能攻擊目標的最遠距離。",
-	"generic.reachDistance.desc": "你能與方塊互動的最遠距離。"
+    "item.minecraft.dragon_breath": "暮光氣息",
+    "item.minecraft.shears": "植物學家剪刀",
+    "effect.minecraft.wither.desc": "隨時間受到凋零傷害。",
+    "effect.minecraft.absorption.desc": "賦與暫時性的額外生命值。",
+    "effect.minecraft.resistance.desc": "減輕受到的傷害。",
+    "generic.attack_range.desc": "你能攻擊目標的最遠距離。",
+    "generic.reachDistance.desc": "你能與方塊互動的最遠距離。"
 }
