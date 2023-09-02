@@ -1,0 +1,615 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing_expert"
+	group: "72A9465344128AF9"
+	icon: "industrialforegoing:latex_processing_unit"
+	id: "2861645F43F7DAA3"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: ["工業先鋒模組提供各式各樣的機器來自動化種農業相關任務。從種農作物，飼養動物，到複製怪物和挖掘資源。"]
+			hide: true
+			icon: "industrialforegoing:plastic"
+			id: "7F5A622EA197C0FE"
+			rewards: [{
+				id: "7DDDD5D43A796F70"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "minecraft:raw_copper"
+				id: "35E13A443EB4BC9E"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "工業先鋒"
+				type: "item"
+			}]
+			title: "工業先鋒"
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"將固體溶解在流體中是個相當常見的任務，無論在家中或是在工業中。"
+				""
+				"溶解室將這個處理過程更進一步，將材料溶解在一起，然後有系統地從這鍋湯中重建出全新的東西。"
+			]
+			hide_dependency_lines: true
+			id: "3E89C56A496461D9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "379E1DF360B71C28"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "極端措施"
+			tasks: [{
+				id: "4DE2685012E5A8D2"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"機器升級分為四類：速度，效率，處理和範圍。"
+				""
+				"速度：增加機器的運作速度"
+				""
+				"效率：降低機器所需的能量"
+				""
+				"處理：使機器每次處理能執行多個運作"
+				""
+				"範圍：增加機器的工作範圍"
+				""
+				"並非所有機器都能安裝全部的升級。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "industrialforegoing:range_addon11"
+				tag: {
+					TitaniumAugment: {
+						Range: 11.0f
+					}
+				}
+			}
+			id: "4CC162048F792C86"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6719F2C0C0E7FB2B"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "一些卡片"
+			tasks: [{
+				icon: {
+					Count: 1b
+					id: "industrialforegoing:range_addon11"
+					tag: {
+						TitaniumAugment: {
+							Range: 11.0f
+						}
+					}
+				}
+				id: "70080631CE03AAC2"
+				item: {
+					Count: 1b
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "industrialforegoing:.*_addon"
+					}
+				}
+				title: "任何升級"
+				type: "item"
+			}]
+			title: "升級"
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"此機器是個一站式鵝卵石商店。"
+				""
+				"它能從熔岩和水生產鵝卵石，然後執行至多四個序列處理，無論熔煉，粉碎，2x2 合成，或 3x3 合成，以生產各種最終產物。"
+				""
+				"例如，鵝卵石能粉碎成礫石，然後是沙，最後能融煉成玻璃。"
+			]
+			hide_dependency_lines: true
+			id: "74A44328C7E9FAF8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "3EF8435392E86386"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "岩石與沙灘"
+			tasks: [{
+				id: "23694575C3ECC943"
+				item: "industrialforegoing:material_stonework_factory"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"一個能大範圍挖掘的電鑽，非常適合長時間挖掘。"
+				""
+				"蹲下右鍵設定其選項。"
+				""
+				"對生物燃料儲罐右鍵填充。"
+			]
+			hide_dependency_lines: true
+			id: "41E4A38DBA6DE6A7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "35FD9DE9C1AE9790"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "03AF60226A59F3DE"
+				item: {
+					Count: 1b
+					id: "industrialforegoing:infinity_drill"
+					tag: {
+						CanCharge: 1
+						Energy: 0
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Selected: "POOR"
+						Special: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: ["施肥機能自動使用肥料或骨粉，大幅提升的作物生長。"]
+			hide_dependency_lines: true
+			id: "08142040D5D8815C"
+			rewards: [
+				{
+					count: 16
+					id: "0C51BC0086C07E6B"
+					item: "industrialforegoing:fertilizer"
+					title: "Fertilizer"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "076765969F37C975"
+					player_command: false
+					title: "Rare Industrial Foregoing Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "第二次機會"
+			tasks: [{
+				id: "5BC241B5CA44B54C"
+				item: "industrialforegoing:plant_fertilizer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"更強大的三叉戟，無論落在哪都能傷害許多生物。內建忠誠，波濤和喚雷附魔，並能依需求切換開關。"
+				""
+				"蹲下右鍵設定其選項。"
+				""
+				"對生物燃料儲罐右鍵填充。"
+			]
+			hide_dependency_lines: true
+			id: "63A495A27778E61B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "5C407B1EF44A000F"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4A927A428D655966"
+				item: {
+					Count: 1b
+					id: "industrialforegoing:infinity_trident"
+					tag: {
+						CanCharge: 1b
+						Channeling: 0b
+						Energy: 0L
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Loyalty: 0
+						Riptide: 0
+						Selected: "POOR"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"重型進戰武器，摧毀範圍內的任何東西。內建斬首附魔，並能切換開與關。"
+				""
+				"蹲下右鍵設定其選項。"
+				""
+				"對生物燃料儲罐右鍵填充。"
+			]
+			hide_dependency_lines: true
+			id: "255410094C4D7875"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "55819A4D04CED075"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "雷神之鎚！"
+			tasks: [{
+				id: "5A75E1A302F15DE1"
+				item: {
+					Count: 1b
+					id: "industrialforegoing:infinity_hammer"
+					tag: {
+						Beheading: 0
+						CanCharge: 1b
+						Energy: 0L
+						Fluid: {
+							Amount: 0
+							FluidName: "biofuel"
+						}
+						Selected: "POOR"
+						Special: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"透過給一種被稱謂肉湯的可疑物質後，敵對生物產生裝置能快速生成原生於此生態域的敵對生物。光照等級須嚴格遵守，因此空間太亮的話，生物將不會生成。"
+				""
+				"能量與肉湯會分配至所有相鄰的敵對生物產生裝置，使得相連接的大量敵對生物產生裝置能一起運作。"
+			]
+			hide_dependency_lines: true
+			id: "2E391C1331D1C854"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6C27923990829FB4"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "大地枯萎"
+			tasks: [{
+				id: "02831806736BC87A"
+				item: "industrialforegoing:mechanical_dirt"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7F5A622EA197C0FE"]
+			description: ["工業先鋒有各種機器幫助簡化作物種植。"]
+			hide_dependency_lines: true
+			icon: "minecraft:wheat"
+			id: "10C9F0F84BF69D0A"
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:wheat_seeds"
+				id: "20D9B3D97BB89D52"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:seeds"
+					}
+				}
+				title: "任何種子"
+				type: "item"
+			}]
+			title: "如何開始：農場管理"
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7F5A622EA197C0FE"]
+			description: ["除了機器之外，工業先鋒模組也有涵蓋各種用途的實用工具。"]
+			hide_dependency_lines: true
+			icon: "industrialforegoing:meat_feeder"
+			id: "3A4F484FD23B29BA"
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:raw_copper"
+				id: "6151856A474E9DD0"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "Any Raw Materials"
+				type: "item"
+			}]
+			title: "工具與實用設備"
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			description: [
+				"傳輸器是小型模組，能用於相鄰的容器間傳輸物品或流體。距離是有限的，但速度非常快。由於在一格空間內能放入多個傳輸器，因此可輕鬆地將機器輸出分配並分類到其他容器中。"
+				""
+				"速度升級能使傳輸器運作得更快，而效率升級能讓每次傳輸的量更多。"
+			]
+			hide_dependency_lines: true
+			id: "230C4DBDBA945EF5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2CF35E56988649E5"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "光明與黑暗"
+			tasks: [
+				{
+					id: "50EBA69B08622D27"
+					item: "industrialforegoing:item_transporter_type"
+					type: "item"
+				}
+				{
+					id: "7507AE46BCF8747A"
+					item: "industrialforegoing:fluid_transporter_type"
+					type: "item"
+				}
+				{
+					id: "6E3F7CC015126663"
+					item: "industrialforegoing:world_transporter_type"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "傳輸器"
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"對任何被動的動物農場來說是極佳的額外收入，汙水收集槽會緩慢的從工作範圍中的動物身上收集流體汙水。"
+				""
+				"汙水收集槽也能收集經驗球，並直接轉換成精華液。"
+			]
+			hide_dependency_lines: true
+			id: "0D2046CE317CC921"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "131B8F1A1F1FE1FC"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "你留下了什麼"
+			tasks: [{
+				id: "0A39421A5A792EFA"
+				item: "industrialforegoing:sewer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: ["一個簡單的設備能將汙水轉換成有用一點的東西：肥料。"]
+			hide_dependency_lines: true
+			id: "52764EBC333BE812"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "58FC0103111007F7"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "看你怎麼想"
+			tasks: [{
+				id: "18186923CB301AAB"
+				item: "industrialforegoing:sewage_composter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"收割機會快速採收工作範圍內的所有作物，從機器前方延伸出去。當收割時，它將移除整個作物，因此關鍵在於與播種機結合使用。"
+				""
+				"當收割作物時，會產生少量需要再進一步處理的汙泥。"
+				""
+				"提供少量的乙醚氣體，使其收割時能自動重新種植。"
+			]
+			hide_dependency_lines: true
+			id: "3A75AA5CC54B57CF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "0DB5BF86FD75C324"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "收割獎勵"
+			tasks: [{
+				id: "37ECEAF58C0961EB"
+				item: "industrialforegoing:plant_gatherer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"在範圍內重新種植作物的實用設備。它能在其上方的區域播種，使其隱藏在地下看不到的地方。"
+				""
+				"每個輸出欄位能放入種子來設定特定的種子類型，然後上鎖。介面左側的每個欄位則對應機器頂部的顏色。這表示種子將被種在哪個區域，一個播種機能輕鬆處理高達九個獨立的農地。"
+			]
+			hide_dependency_lines: true
+			id: "1FBB65CA305699EA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "56424275050ABFF4"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "要種的太多 時間太少"
+			tasks: [{
+				id: "7DE2B1DD0A9C4018"
+				item: "industrialforegoing:plant_sower"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: [
+				"水耕法自誕生以來已被用來促進各種植物的生長，使作物長得更強壯，營養更豐富。"
+				""
+				"水耕床運作類似耕地，能在其上方種植大多數的作物。然而，提供一點能量和水，將大大加速作物生長。"
+				""
+				"提供少量的乙醚氣體時，甚至能自動採收成熟的作物。"
+			]
+			hide_dependency_lines: true
+			id: "052EA866FC2E143E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3463EB949B33CDA9"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "671363BB149F467C"
+				item: "industrialforegoing:hydroponic_bed"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10C9F0F84BF69D0A"]
+			description: ["精煉收割機所產生的汙泥，能生產一些方塊，如黏土，沙，和靈魂砂。"]
+			hide_dependency_lines: true
+			id: "5E518FE797F99F6F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "788C3E2A822F3CD0"
+				player_command: false
+				title: "Rare Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "奇妙的轉折..."
+			tasks: [{
+				id: "202E7CC257BC8DA2"
+				item: "industrialforegoing:sludge_refiner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3A4F484FD23B29BA"]
+			hide_dependency_lines: true
+			icon: "industrialforegoing:fluid_laser_base"
+			id: "56A313EA5C3D6A59"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/industrial_foregoing/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "356398A4898C5D98"
+				player_command: false
+				title: "Epic Industrial Foregoing Loot Box"
+				type: "command"
+			}]
+			subtitle: "沒記錯的話"
+			tasks: [
+				{
+					id: "695ABC9BF36D0A72"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							value: "industrialforegoing:.*_laser_base"
+						}
+					}
+					title: "雷射鑽基座"
+					type: "item"
+				}
+				{
+					id: "22F1AAB9CBAABCB3"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+			]
+			title: "雷射鑽"
+			x: 7.0d
+			y: -6.0d
+		}
+	]
+	title: "工業先鋒"
+}
