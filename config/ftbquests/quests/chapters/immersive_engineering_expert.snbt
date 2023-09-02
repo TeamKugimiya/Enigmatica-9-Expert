@@ -1,0 +1,1474 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_engineering_expert"
+	group: "72A9465344128AF9"
+	icon: "immersiveengineering:heavy_engineering"
+	id: "035BFB6931C638D0"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"沉浸工程是一款多功能的科技模組，專注於大型多方塊結構與物流，看起來就像是來自 19 世紀的工廠。"
+				""
+				"工程師手冊中詳細的說明了所涵蓋的一切，所以務必隨時查看一下。"
+			]
+			hide: true
+			icon: "immersiveengineering:manual"
+			id: "24EB456683513CA7"
+			rewards: [{
+				id: "68535F8D076AD10B"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "immersiveengineering:electron_tube"
+				id: "064FC2BF0229F351"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "沉浸工程"
+				type: "item"
+			}]
+			title: "沉浸工程"
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["24EB456683513CA7"]
+			description: [
+				"若沒有適當的物流將物品，流體和電力運送到需要它們的機器，就不是完整的工廠。因此，沉浸工程提供了一套強大的工具來完成這項任務。"
+				""
+				"然而，在深入研究前，需要先介紹一些工具，因為之後會需要用到。"
+				""
+				"值得信賴的工程師槌子，主要用於成型各種多方塊結構的機器與旋轉支援的方塊。在緊急時刻將金屬敲成板也很實用。"
+				""
+				"工程師剪線鉗對於許多合成來說是不可或缺的，但或許對於快速安全地切斷懸掛的帶電電線更為有用。"
+				""
+				"工程師螺絲起子對精準改變紅石接線器和其他東西相當好用。"
+				""
+				"全部的工具和其他東西能儲放於工程師工具箱，便於使用。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:toolbox"
+			id: "49C19EB5AD09505C"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7CF96DD04549C88E"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+				{
+					id: "52054E2227B1F750"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 23
+							}
+						}
+						id: "immersiveengineering:toolbox"
+					}
+					type: "item"
+				}
+				{
+					id: "121F99E8D1B506B8"
+					item: "immersiveengineering:screwdriver"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "0C1389A70E2497E7"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "如何開始：物流與儲存"
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2BE93580D70ADF20"]
+			description: [
+				"工程師會花費大量時間在裝配台上，使用工具修補並小心的製作精緻的零件。"
+				""
+				"工程師裝配台提供了一個空間調整該模組的工具。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:workbench"
+			id: "6E5C3A7C6F30FF95"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "398CDC6CF25157E2"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2867C5992DCE39E0"
+				item: "immersiveengineering:workbench"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["49C19EB5AD09505C"]
+			description: [
+				"將物品從處理到儲存不需要手動操作，傳送帶可以完全勝任這個任務。"
+				""
+				"與鐵軌非常類似，傳送帶能向上或向下傾斜。若有需要，它們也是含水方塊，用染料右鍵能改變傳送帶邊框的顏色。"
+				""
+				"有多種版本，如裝飾性的遮蔽傳送帶，但也有更實用的版本："
+				""
+				"卸貨傳送帶能將物品輸入下方的容器，或只是將物品丟到它下方。能用紅石訊號停止。"
+				""
+				"垂直傳送帶能緊湊的垂直移動物品，而無須用一般的傳送帶斜向上爬。"
+				""
+				"分流傳送帶能將收到的每組物品，輪流送往另一側。無法將輸送帶上的一組物品分開。"
+				""
+				"抽取傳送帶從連接的容器中取出物品。可用螺絲起子調整抽取速率，並使用槌子調整提取點，使其能從傳送帶側邊輸入物品，而非只能從傳送帶的源頭一致。它們也能以紅石控制，強訊號能將整體停止。"
+			]
+			icon: "immersiveengineering:conveyor_basic"
+			id: "14039F7C90D023AB"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "46FD7B2580341B5A"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "526005D7814BCDD1"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "19CD707664CAB05C"
+					item: "immersiveengineering:conveyor_extract"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2BE93580D70ADF20"]
+			description: [
+				"全方位的粉碎機通常用於處理原礦和其他大量物品。"
+				""
+				"物品能從開放的頂部直接投入，吸入的物品會依序處理。也能使用管道從頂部輸入，避免將物品掉落在世界上，無論時間有多短。"
+				""
+				"作業完成後，它會將產物自動輸出至正面連接的容器或輸送帶上。"
+				""
+				"請小心，刀刃能造成大量傷害，輕鬆地擊殺生物並摧毀任何掉入的物品，若它們沒有配方。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:crusher"
+			id: "7CD8E2C4F323C73B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "426A2E4DA6AFF591"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_crusher"
+				criterion: ""
+				id: "651C4FDE25F87CB6"
+				type: "advancement"
+			}]
+			title: "粉碎機"
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2BE93580D70ADF20"]
+			description: [
+				"金屬沖壓機是任何機房的主要設備，用於高效製作板材，齒輪，電線與其他沖壓產品。"
+				""
+				"拿適當的模具對中心活塞右鍵完成機器的設置。模具能隨時替換，雖然通常而言，針對每個想要的種類打造多個金屬沖壓機，是更有效率的。"
+				""
+				"物品能透過內建的輸送帶輸入，產物會順著輸送帶輸出。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:metal_press"
+			id: "5B9822A74466148B"
+			rewards: [
+				{
+					count: 8
+					id: "1490CC5E595F40EF"
+					item: "emendatusenigmatica:iron_plate"
+					title: "Iron Plate"
+					type: "item"
+				}
+				{
+					auto: "enabled"
+					count: 4
+					id: "55893B8A47AC8275"
+					item: "emendatusenigmatica:steel_plate"
+					title: "Steel Plate"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "4154AF97AF351A81"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_metalpress"
+				criterion: ""
+				id: "6CFF7F99D30ADDB9"
+				type: "advancement"
+			}]
+			title: "金屬沖壓機"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2BE93580D70ADF20"]
+			description: [
+				"一個強大的熔爐，幫助維持特定的熱量需求來熔煉特定金屬。"
+				""
+				"燃料和物品輸入都從頂部輸入，而產物從正面與背面輸出。在高爐側面增加高爐鼓風機並供電，能顯著加快速度。"
+				""
+				"產物會自動輸入連接的容器或連接的輸送帶上。"
+				""
+				"注意：一般高爐已被 Enigmatica 9 禁用。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:advanced_blast_furnace"
+			id: "65B1D9B610A11074"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "31244E3A165692D7"
+					player_command: false
+					title: "Epic Immersive Engineering Loot Box"
+					type: "command"
+				}
+				{
+					id: "640DDB8B296D6A12"
+					item: "emendatusenigmatica:steel_ingot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
+				criterion: ""
+				id: "1AA7EB0A384887B5"
+				type: "advancement"
+			}]
+			title: "強化高爐"
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["133A278BE0697460"]
+			description: ["外置加熱器是個簡單的機器，當供能時，能加熱鄰近的熔爐。這能使熔爐熔煉的更快速且無須燃料。"]
+			hide_dependency_lines: true
+			id: "413BD93C7A51D3B0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "40925150E26EAE3B"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0BF6A1FDE474580F"
+				item: "immersiveengineering:furnace_heater"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2BE93580D70ADF20"]
+			dependency_requirement: "one_completed"
+			description: [
+				"有效將原木處理成木材的大型機器。若未安裝鋸片，只會將原木剝皮。然而安裝鋸片後，它能將這些剝皮原木處理成木材。"
+				""
+				"物品能透過內建的輸送帶輸入，產物會順著輸送帶輸出，而副產物會輸入至正面連接的容器或輸送帶上。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:sawmill"
+			id: "2082A8C3FF0CC996"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "1066F6DE27800461"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "6F389DC5125000A5"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "immersiveengineering:multiblocks/mb_sawmill"
+					criterion: ""
+					id: "0D36DDC9143BC13D"
+					type: "advancement"
+				}
+			]
+			title: "鋸木機"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3F9F4B331D696ED3"]
+			description: ["諸如此類的大型擠壓機，已廣泛用於從材料提取流體或將乾燥材料壓實成固體形式。對於任何工程師而言，都是寶貴的工具。"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:squeezer"
+			id: "7E80A889357D36BC"
+			rewards: [
+				{
+					count: 24
+					id: "5BB46B34AA2E27C5"
+					item: "immersiveengineering:seed"
+					title: "Industrial Hemp Seeds"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7911BAC7D49A5DDE"
+					player_command: false
+					title: "Epic Immersive Engineering Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_squeezer"
+				criterion: ""
+				id: "55161FAC8F935405"
+				type: "advancement"
+			}]
+			title: "工業擠壓機"
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3F9F4B331D696ED3"]
+			description: ["透過熱量管理和仔細利用溫度差，煉油廠將流體分解成其他有用的材料。這些煉油廠能處理些不同的轉變。"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:refinery"
+			id: "1F5634F9CA3D2D10"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "539F9DA723B28F8D"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_refinery"
+				criterion: ""
+				id: "0B5F8C9759AD2030"
+				type: "advancement"
+			}]
+			title: "煉油廠"
+			x: -6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3F9F4B331D696ED3"]
+			description: ["裝配機是台大型的合成機器，能夠依序處理至多三種配方。它還有三個內部的儲罐，能從中提取流體來替代配方中使用的流體桶。"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:assembler"
+			id: "4F676F65E493205D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4052FF9F57585C7E"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_assembler"
+				criterion: ""
+				id: "6767B021FA04F5BB"
+				type: "advancement"
+			}]
+			title: "裝配機"
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3F9F4B331D696ED3"]
+			description: ["透過劇烈攪拌，混合器將固體溶解成流體。雖然常用於攪拌混凝土等普通任務，但用來製作藥水也相當不錯。"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:mixer"
+			id: "233D1CB2325D9C48"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "608E51DBB573ED51"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_mixer"
+				criterion: ""
+				id: "569CC41AEAAE373A"
+				type: "advancement"
+			}]
+			title: "混合器"
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3F9F4B331D696ED3"]
+			dependency_requirement: "one_completed"
+			description: ["裝罐機不僅能將流體填滿鐵桶，也能用於需要各種流體的合成，例如銅方塊生鏽或成型熱固性塑料。"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:bottling_machine"
+			id: "0F9D505BAF29FEFB"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3FFFB287BFADE2C3"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_bottling_machine"
+				criterion: ""
+				id: "7FB11D78FFF676E6"
+				type: "advancement"
+			}]
+			title: "裝罐機"
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["14039F7C90D023AB"]
+			description: [
+				"物品裝配台是個高級過濾方塊，專用於與傳送帶一起使用，並批次為機器提供物品。"
+				""
+				"例如，若想讓燃料更有效率，可將物品裝配台設為每當有八個生牛肉時輸出一個煤炭，從而確保該煤炭能完全使用製作八個牛排。"
+				""
+				"這也能用於合成，為了確保合成時能機器取得正確比例的物品。不多不少。"
+				""
+				"側面接上紅石接口連接器，也能使裝配台的過濾狀態與紅石網路溝通。"
+				""
+				"參閱工程師手冊取得更多資訊和其他使用狀況。"
+			]
+			hide_dependency_lines: true
+			id: "164FE2584474D812"
+			min_width: 325
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2C35D352E74590B4"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "14130BCFB4FEBB76"
+				item: "immersiveengineering:item_batcher"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["14039F7C90D023AB"]
+			description: [
+				"物品分配器是一種與傳送帶配合使用的高級物品分類機。"
+				""
+				"從一側輸入的物品能輸出至符合過濾的容器或輸送帶中。若一個物品不符合任何過濾，會被引導至沒有設定過濾的一側。"
+				""
+				"物品過濾器支援過濾物品類型，NBT，耐久與標籤。"
+			]
+			hide_dependency_lines: true
+			id: "496827CD87FB52CE"
+			min_width: 250
+			rewards: [
+				{
+					count: 8
+					id: "30783270906323D3"
+					item: "immersiveengineering:conveyor_basic"
+					random_bonus: 8
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3815899228753367"
+					item: "immersiveengineering:conveyor_vertical"
+					random_bonus: 4
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7714BC287F80EBB9"
+				item: "immersiveengineering:sorter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["14039F7C90D023AB"]
+			description: [
+				"就是大量物品的儲存器。物品從頂部輸入底部輸出。"
+				""
+				"給予底部方塊紅石訊號使其自動輸出。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:silo"
+			id: "797D4BF61A505A14"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2CD8CE867708CD0B"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_silo"
+				criterion: ""
+				id: "605A702B72CF012E"
+				type: "advancement"
+			}]
+			title: "物品筒倉"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["479A5350BDCB8AA0"]
+			description: [
+				"就是大量流體的儲存器。流體從頂部輸入底部輸出。"
+				""
+				"給予底部方塊紅石訊號使其自動輸出。"
+			]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:tank"
+			id: "455612A73D5FE24D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5CE05E3DA7229475"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_tank"
+				criterion: ""
+				id: "59D000E4664C3DC3"
+				type: "advancement"
+			}]
+			title: "流體儲罐"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3F9F4B331D696ED3"]
+			description: ["千年以來，發酵一直以這種或另一種形式進行。曾幾何時，水果需要自然發酵數天，現在透過工業化的魔法，這個過程所需時間減少許多。"]
+			hide_dependency_lines: true
+			id: "35DED7016E460908"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "5CCC54117C042EE1"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_fermenter"
+				criterion: ""
+				id: "59DC0A3CD9D7B743"
+				type: "advancement"
+			}]
+			title: "發酵機"
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["49C19EB5AD09505C"]
+			description: [
+				"就是個流體管道讓流體在工廠內移動。這些本身管道無法從連接的容器直接抽取流體。對於一些無法自動輸出流體的東西而言，需要流體幫浦。"
+				""
+				"即使是不需要使用流體幫浦的狀況下，使用流體幫浦也能大幅增加流體管道的流速。需要電且需要工程師槌子設定輸入（藍色）與輸出（橙色）。同時也需要紅石訊號才能啟動。"
+				""
+				"這些管道本身也能用鋼製或防腐木鷹架包覆，也能用染料右鍵染色。染色的管道不會與其他顏色的管道相連。"
+			]
+			icon: "immersiveengineering:fluid_pipe"
+			id: "479A5350BDCB8AA0"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "298946A9B451517E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "2CB5EE40D717FBF6"
+					item: "immersiveengineering:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "13EC40BEA756282E"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["479A5350BDCB8AA0"]
+			description: ["當某個區域需要被淹沒時，無論大小，流體放置器都是完美的工具。只需要將其放置並透過任何方式將流體輸入其中即可；它將開始將流體放如其下方的區域，從底部開始向上填滿。"]
+			hide_dependency_lines: true
+			id: "0FBB42C35C632D6E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "25E0E92F5231037D"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "3F821E6D4ECAD9B1"
+				item: "immersiveengineering:fluid_placer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["479A5350BDCB8AA0"]
+			description: [
+				"流體分配器是一種與流體管道配合使用的高級流體分類機。"
+				""
+				"從一側輸入的流體能輸出至符合過濾的儲罐或流體管道中。若一個流體不符合任何過濾，會被引導至沒有設定過濾的一側"
+			]
+			hide_dependency_lines: true
+			id: "4000EB49F6267A26"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4EEB280105923301"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "40EFA9FBD3043B54"
+				item: "immersiveengineering:fluid_sorter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["133A278BE0697460"]
+			description: [
+				"手持式的機械鋸，能砍樹或砍殭屍。"
+				""
+				"這個工具使用生物柴油，但內部容量較小。考慮隨身攜帶一個儲罐，以便在野外加油。只要放入儲罐的輸入欄就能加油。"
+				""
+				"放入工程師裝配台安裝或移除升級。"
+			]
+			hide_dependency_lines: true
+			id: "16EC372C27238D3F"
+			rewards: [
+				{
+					id: "2ED8178439A16546"
+					item: {
+						Count: 1b
+						id: "mekanism:advanced_fluid_tank"
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										Amount: 16000
+										FluidName: "immersiveengineering:biodiesel"
+									}
+								}]
+							}
+						}
+					}
+					title: "Advanced Fluid Tank"
+					type: "item"
+				}
+				{
+					id: "59F5D756932C4969"
+					item: {
+						Count: 1b
+						id: "thermal:fluid_reservoir"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "小心割手"
+			tasks: [{
+				id: "77B2CE6AE97C44D8"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:buzzsaw"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["133A278BE0697460"]
+			description: [
+				"對任何槍手來說是值得信賴的隨身武器。"
+				""
+				"放入工程師裝配台安裝或移除升級。"
+			]
+			hide_dependency_lines: true
+			id: "230E559B86C56A0D"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "7D5842BA0E299AD8"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+				{
+					count: 64
+					id: "69B649DB9E6D5964"
+					item: "immersiveengineering:casull"
+					title: "Casull Cartridge"
+					type: "item"
+				}
+			]
+			subtitle: "先是微笑，然後是謊言，最後是槍聲。"
+			tasks: [{
+				id: "0E585C2527A5AAFE"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 21
+						}
+					}
+					id: "immersiveengineering:revolver"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["133A278BE0697460"]
+			description: [
+				"手持式的隧道挖掘機，能快速挖掘最堅硬的岩石。"
+				""
+				"這個工具使用生物柴油，但內部油箱較小。考慮隨身攜帶一個儲罐，以便在野外加油。只要放入儲罐的輸入欄就能加油。"
+				""
+				"放入工程師裝配台安裝或移除升級。"
+			]
+			hide_dependency_lines: true
+			id: "377AAE2494B83CCF"
+			rewards: [
+				{
+					id: "48369F60F9DFF5C9"
+					item: {
+						Count: 1b
+						id: "mekanism:advanced_fluid_tank"
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b
+									stored: {
+										Amount: 16000
+										FluidName: "immersiveengineering:biodiesel"
+									}
+								}]
+							}
+						}
+					}
+					title: "Advanced Fluid Tank"
+					type: "item"
+				}
+				{
+					id: "258F2505776D8A0B"
+					item: {
+						Count: 1b
+						id: "thermal:fluid_reservoir"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "在煤礦坑裡工作。哎唷，要滑倒了！"
+			tasks: [{
+				id: "69714853E4C23B11"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 5
+						}
+					}
+					id: "immersiveengineering:drill"
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["133A278BE0697460"]
+			description: [
+				"能以極高的速度發射投射物並毫無顧忌地撕裂目標，磁軌砲是一種兇猛的武器。"
+				""
+				"能使用的彈藥包含鐵桿和鋼桿，也能使用石墨電極和許多其他的東西。"
+				""
+				"放入工程師裝配台中安裝或移除升級。"
+			]
+			hide_dependency_lines: true
+			id: "1787B3CDAC005F1E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "3669742F4DB4E3E8"
+					player_command: false
+					title: "Rare Immersive Engineering Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "6F7228CA2B868DFC"
+					item: "emendatusenigmatica:iron_rod"
+					title: "Iron Rod"
+					type: "item"
+				}
+			]
+			subtitle: "砲姐的最愛"
+			tasks: [{
+				id: "21EBFD2EFF83C494"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 3
+						}
+					}
+					id: "immersiveengineering:railgun"
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["230E559B86C56A0D"]
+			description: [
+				"當左輪手槍彈藥耗盡時，快速裝彈器會自動裝填彈藥，是續戰的好方法。"
+				""
+				"要隨時隨地重新裝填彈藥，只要右鍵將彈藥存入即可。但也可以在 3x3 的合成介面中將彈藥繞一圈填充。"
+				""
+				"可以使用沉浸工程的裝配機來自動裝填。只要一點點智慧，就能自動從容器中輸出空的快速裝彈器，填充完畢，然後送回。"
+			]
+			id: "5D5D2E8C9EABBB69"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7D784913D9E8D959"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "當射擊開始時，我們殺死所有移動的東西。"
+			tasks: [{
+				id: "7F69EA81B5E996DC"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 8
+						}
+					}
+					id: "immersiveengineering:speedloader"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["230E559B86C56A0D"]
+			description: ["當敵人離得太近或彈藥耗盡時使用。"]
+			id: "6F5C01A60646D61A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3DD0A53CCD932C32"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "黑衣人越過沙漠逃亡..."
+			tasks: [{
+				id: "32A57A5AE9CFD3B2"
+				item: "immersiveengineering:toolupgrade_revolver_bayonet"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1787B3CDAC005F1E"]
+			description: ["附加電容使磁軌砲能更快速地充電，使其能更快速的連續射擊。"]
+			id: "069B655AE0E4B1E2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6D5DCD5F5DC44E15"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "世界繼續為你而轉"
+			tasks: [{
+				id: "61AAAA2E434CACED"
+				item: "immersiveengineering:toolupgrade_railgun_capacitors"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1787B3CDAC005F1E"]
+			description: ["安裝瞄準鏡後使用滑鼠中鍵開啟，滾輪調整放大倍率。非常適合遠距離瞄準目標。"]
+			id: "0378DCB050B7679C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4254ABCD3D800570"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "不再泡槍"
+			tasks: [{
+				id: "0748647BEE65D7C4"
+				item: "immersiveengineering:toolupgrade_railgun_scope"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["230E559B86C56A0D"]
+			description: [
+				"卡蘇爾彈是最便宜，也最基礎的彈藥；但仍很有衝擊力。"
+				""
+				"穿甲彈可以快速消滅裝備精良的敵人，而銀彈能有效對抗不死生物。"
+				""
+				"為了抵抗大規模的敵人，可以考慮使用威力更強的彈藥，例如鹿彈或龍息蛋，它能發射短距離的錐形爆破。若你的目標太糟糕了，可以考慮使用狼群彈，它在撞擊時爆炸，向各個方向發追蹤彈藥，快速消滅遇到的任何東西。"
+				""
+				"查看工程師手冊找尋更多選擇及更多資訊。"
+			]
+			id: "4DD148DA6CA8C295"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4699D3CFC067C539"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "...槍手緊隨其後。"
+			tasks: [{
+				count: 24L
+				id: "61AE2889CFAB6E9E"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersiveengineering:casull"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:armor_piercing"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:buckshot"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:he"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:silver"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:dragons_breath"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:potion"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:flare"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:firework"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:homing"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:wolfpack"
+							}
+						]
+					}
+				}
+				title: "彈藥"
+				type: "item"
+			}]
+			title: "彈藥"
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["16EC372C27238D3F"]
+			description: ["一種特殊的切割工具，可以乾淨地切割石頭，冰或玻璃，能有效的作為絲綢之觸的工具。"]
+			id: "157407C0FB372FD9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "23B55FB82DC91FAD"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "乾淨俐落"
+			tasks: [{
+				id: "40591D033F727807"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:rockcutter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["377AAE2494B83CCF"]
+			description: ["機械鑽引擎通常不適於水下工作。但安裝壓縮空氣罐後，能全速運作。"]
+			id: "23075A2FBEEA0C6B"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "006A3342779F3BF5"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "別灌爆了它"
+			tasks: [{
+				id: "4A9773FA67662CE6"
+				item: "immersiveengineering:toolupgrade_drill_waterproof"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["377AAE2494B83CCF"]
+			description: [
+				"鑽頭會隨著時間消耗，雖然能從機械鑽中取出並使用鐵砧維修。"
+				""
+				"升級成鋼鑽頭不僅增加耐久，也能使其能挖掘黑曜石，不須消耗你珍貴的藍色石頭。"
+				""
+				"機械鑽最多可增加三個附加螺旋鑽，每個都能增加挖掘速度，甚至提高不小心站在它面前生物所造成的傷害。"
+			]
+			icon: "immersiveengineering:drillhead_steel"
+			id: "3C143602825AC132"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2A1CB70A6FBC5D1C"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "挖呀挖呀挖"
+			tasks: [
+				{
+					id: "57997CD29EEA7A62"
+					item: "immersiveengineering:drillhead_steel"
+					type: "item"
+				}
+				{
+					id: "2CDCFD399D0A61A4"
+					item: "immersiveengineering:toolupgrade_drill_damage"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16EC372C27238D3F"]
+			description: ["刀片盒子能在工程師裝配台中安裝至伐木機械鋸中，它能存放額外的鋸片，使你能在野外自由切換。蹲下滾輪切換鋸片。"]
+			id: "1EE0A3D7073E1E9C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "618B24D59812DB2E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			subtitle: "等等，不是裝箭矢的..."
+			tasks: [{
+				id: "0FAB5782F8F94AB9"
+				item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["24EB456683513CA7"]
+			description: ["磚，防腐木和鋼；這些是沉浸工程工廠的建造基礎，也是該模組早期的工作重點。"]
+			hide_dependency_lines: true
+			id: "2BE93580D70ADF20"
+			shape: "hexagon"
+			tasks: [{
+				icon: "minecraft:raw_iron"
+				id: "1D02949AB87F570D"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials/iron"
+					}
+				}
+				title: "Raw Iron"
+				type: "item"
+			}]
+			title: "如何開始：材料加工"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["24EB456683513CA7"]
+			description: ["從高功率的照明和連鎖挖掘工具到左輪手槍和磁軌砲，沉浸工程為幾乎所有任務提供了工具。"]
+			hide_dependency_lines: true
+			id: "133A278BE0697460"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2A30182F30E91A11"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "610492ACE6272701"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "工具與實用設備"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"377AAE2494B83CCF"
+				"16EC372C27238D3F"
+			]
+			description: ["一個能在採礦機械鑽和伐木機械鋸使用的擴充燃料缸。值得使用。"]
+			hide_dependency_lines: true
+			id: "7402400A005D191C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "448576DF1369C86E"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "4FD070D1057A1E4C"
+				item: "immersiveengineering:toolupgrade_drill_capacity"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["24EB456683513CA7"]
+			description: ["隨著取得更好的材料，就能打造更強大的機器。準備好弄髒雙手吧！"]
+			hide_dependency_lines: true
+			icon: "immersiveengineering:storage_steel"
+			id: "3F9F4B331D696ED3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "46E0B3AB7FBFB885"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: "immersiveengineering:heavy_engineering"
+				id: "27B54CB739B18ABA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersiveengineering:rs_engineering"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:heavy_engineering"
+							}
+							{
+								Count: 1b
+								id: "immersiveengineering:light_engineering"
+							}
+						]
+					}
+				}
+				title: "重型機器"
+				type: "item"
+			}]
+			title: "重型機器"
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["49C19EB5AD09505C"]
+			description: [
+				"紅石接線代表了紅石技術的進步，允許專業的工程師打造複雜的邏輯電路，比起傳統的紅石粉較不易出現故障。顏色編碼的頻道系統也讓小型紅石網絡能與多個獨立的機器進行互動。"
+				""
+				"紅石線纜可接在紅石線纜接線器，紅石探測接線器和紅石接口連接器。這些能傳輸紅石訊號且沒有訊號的衰減。"
+				""
+				"紅石線纜接線器是訊號的輸入與輸出點，能直接放置在方塊上。使用螺絲起子設定它們的模式和顏色頻道。"
+				""
+				"紅石探測接線器的功能非常類似比較器，但有一些額外的內建功能。大多數沉浸工程模組的機器能輸出特殊的比較器訊號，這些訊號能被紅石探測接線器判讀的到。關於每個機器的詳細訊息，請參閱工程師手冊。"
+				""
+				"紅石接口連接器是與特殊方塊像是物品裝配台和邏輯單元連接使用，讓這些方塊能夠讀取這些紅石訊號。"
+			]
+			icon: "immersiveengineering:wirecoil_redstone"
+			id: "1A60F4B67CFE76AC"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "42D13B8C156E8F61"
+				player_command: false
+				title: "Rare Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "6931858B544E7D77"
+					item: "immersiveengineering:wirecoil_redstone"
+					type: "item"
+				}
+				{
+					id: "033DE98D3AAE0000"
+					item: "immersiveengineering:connector_redstone"
+					type: "item"
+				}
+				{
+					id: "3EEDF03A7B5B9341"
+					item: "immersiveengineering:connector_probe"
+					type: "item"
+				}
+				{
+					id: "4DE83979FE78EE61"
+					item: "immersiveengineering:connector_bundled"
+					type: "item"
+				}
+			]
+			title: "紅石接線"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["1A60F4B67CFE76AC"]
+			description: [
+				"邏輯電路本身是在工程師電路裝配台製作的。"
+				""
+				"這個裝配台需要從後方輸入電力，以及一定數量的符文原型板，鉛線，和真空管。不同的邏輯運算需要不同的數量。"
+				""
+				"電路需編寫運算子與輸入輸出的顏色。"
+				""
+				"準備好後，完成的電路會從介面的右側輸出。"
+				""
+				"電路可以放回上方欄位重新編寫輸入輸出，但運算子在第一次編寫時就已鎖定。"
+			]
+			icon: "immersiveengineering:logic_circuit"
+			id: "4A717117EFEDB4CD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7AB92C9D40AE07DD"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "72C8A3BC45A0C163"
+					item: "immersiveengineering:circuit_table"
+					type: "item"
+				}
+				{
+					id: "15987861273FFC03"
+					item: "immersiveengineering:circuit_board"
+					type: "item"
+				}
+				{
+					id: "0B5C834806FAB2FE"
+					item: "immersiveengineering:wire_lead"
+					type: "item"
+				}
+				{
+					id: "5B2078E41414D91B"
+					item: "immersiveengineering:electron_tube"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1A60F4B67CFE76AC"]
+			description: [
+				"邏輯單元代表一個緊湊且可能相當複雜的紅石邏輯電腦。最多必須對十個邏輯電路編寫程式且放在內部，並在外部連接一個紅石接口連接器。"
+				""
+				"每當輸入的訊號改變時，邏輯單元會將已安裝的電路循環一次，執行每個電路運作，讓一個訊號對多個邏輯閘進行運作，或甚至將多個顏色編碼的頻道做為輸入和輸出訊號。"
+			]
+			id: "4E0820864EDAC42E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/immersive_engineering/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "0D5AB91F6CD6CDC5"
+				player_command: false
+				title: "Epic Immersive Engineering Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "78B9100B4FF5D14C"
+				item: "immersiveengineering:logic_unit"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+	]
+	title: "沉浸工程"
+}
