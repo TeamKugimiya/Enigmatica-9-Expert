@@ -25,7 +25,7 @@
 				icon: "kubejs:miners_delight"
 				id: "0000000000000968"
 				player_command: false
-				title: "Miner's Delight"
+				title: "礦工獎勵袋"
 				type: "command"
 			}]
 			subtitle: "你有試過關掉重開了嗎？"
@@ -57,7 +57,7 @@
 				icon: "kubejs:farmers_delight"
 				id: "0000000000000A5D"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "農夫獎勵袋"
 				type: "command"
 			}]
 			tasks: [
@@ -180,7 +180,7 @@
 				icon: "kubejs:farmers_delight"
 				id: "239155FDD340ECAF"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "農夫獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -249,7 +249,7 @@
 				icon: "kubejs:sorcerers_delight"
 				id: "3922A588208AF529"
 				player_command: false
-				title: "Sorcerer's Delight"
+				title: "巫師獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -282,7 +282,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "3C512C78B12406AA"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -319,7 +319,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "30E1EC30981D6B46"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -404,7 +404,7 @@
 						]
 					}
 				}
-				title: "Either Redstone Pen"
+				title: "任何一支紅石筆"
 				type: "item"
 			}]
 			title: "紅石筆"
@@ -687,7 +687,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "7E251F2D83DBC6E3"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -715,7 +715,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "621F32F72099BE12"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -931,7 +931,7 @@
 				icon: "kubejs:sorcerers_delight"
 				id: "27AFD476C3E9CE35"
 				player_command: false
-				title: "Sorcerer's Delight"
+				title: "巫師獎勵袋"
 				type: "command"
 			}]
 			tasks: [
@@ -976,7 +976,7 @@
 				icon: "kubejs:sorcerers_delight"
 				id: "56004BEDB4624F96"
 				player_command: false
-				title: "Sorcerer's Delight"
+				title: "巫師獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -996,7 +996,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "16F20BC236C77741"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1063,7 +1063,7 @@
 				icon: "kubejs:farmers_delight"
 				id: "67EA54AB859657A6"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "農夫獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1193,7 +1193,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "08DE601136922190"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1213,7 +1213,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "2243774A0B86BB25"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1233,7 +1233,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "2AD1A7E7FBED5577"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1257,7 +1257,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "27427773186BCFB8"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1281,7 +1281,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "5DA8602DB0ED0DF3"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1307,7 +1307,7 @@
 				icon: "kubejs:farmers_delight"
 				id: "36E4235895E38D38"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "農夫獎勵袋"
 				type: "command"
 			}]
 			tasks: [
@@ -1368,7 +1368,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "21186E3E79CE729E"
 				player_command: false
-				title: "Rare Immersive Engineering Loot Box"
+				title: "[稀有] 沉浸工程戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -1411,7 +1411,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "50603CD292ADFE2D"
 				player_command: false
-				title: "Epic Immersive Engineering Loot Box"
+				title: "[史詩] 沉浸工程戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -1442,7 +1442,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "59C423C8FAA91053"
 				player_command: false
-				title: "Epic Immersive Engineering Loot Box"
+				title: "[史詩] 沉浸工程戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -1514,13 +1514,13 @@
 				{
 					id: "78E81C6649951023"
 					item: "pneumaticcraft:block_tracker_upgrade"
-					title: "Block Tracker Upgrade"
+					title: "方塊追蹤升級"
 					type: "item"
 				}
 				{
 					id: "4A857F82E1E65B98"
 					item: "pneumaticcraft:gps_tool"
-					title: "GPS Tool"
+					title: "定位工具"
 					type: "item"
 				}
 			]

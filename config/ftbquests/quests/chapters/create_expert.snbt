@@ -26,7 +26,7 @@
 			rewards: [{
 				id: "14A1BD3883AD12AF"
 				item: "create:wrench"
-				title: "Wrench"
+				title: "扳手"
 				type: "item"
 			}]
 			shape: "gear"
@@ -40,7 +40,7 @@
 						value: "forge:raw_materials"
 					}
 				}
-				title: "Create"
+				title: "動力機械"
 				type: "item"
 			}]
 			title: "動力機械"
@@ -69,7 +69,7 @@
 			rewards: [{
 				id: "5B15F41A9F4FA7AE"
 				item: "create:goggles"
-				title: "Engineer's Goggles"
+				title: "工程師護目鏡"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -129,7 +129,7 @@
 							Damage: 0
 						}
 					}
-					title: "Super Glue"
+					title: "強力膠"
 					type: "item"
 				}
 				{
@@ -137,7 +137,7 @@
 					icon: "kubejs:epic_lootbox"
 					id: "265E3903847F3130"
 					player_command: false
-					title: "Epic Create Loot Box"
+					title: "[史詩] 動力機械戰利品箱"
 					type: "command"
 				}
 			]
@@ -203,7 +203,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "7F6B1C3C3F88F766"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			subtitle: "就像個唱片"
@@ -237,7 +237,7 @@
 				{
 					id: "0A143EDC0DB433E1"
 					item: "create:analog_lever"
-					title: "Analog Lever"
+					title: "可調式控制桿"
 					type: "item"
 				}
 				{
@@ -270,7 +270,7 @@
 					icon: "kubejs:rare_lootbox"
 					id: "6701BD22C891A0F5"
 					player_command: false
-					title: "Rare Create Loot Box"
+					title: "[稀有] 動力機械戰利品箱"
 					type: "command"
 				}
 				{
@@ -309,7 +309,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "78FA2D541E288B56"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "在輸送帶之下"
@@ -352,7 +352,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "689DB92C44140D9D"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "為你撐腰"
@@ -388,7 +388,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "37B5190441657460"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "箱中齒輪"
@@ -421,7 +421,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "5DA3139CCB2387ED"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "齒輪大師"
@@ -464,7 +464,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "62C35306B67B2809"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "站上去試試"
@@ -492,7 +492,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "5710F5B07DBCE190"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "鏈接工作"
@@ -518,7 +518,7 @@
 				{
 					id: "47BF8587EEDF584B"
 					item: "create:large_cogwheel"
-					title: "Large Cogwheel"
+					title: "大齒輪"
 					type: "item"
 				}
 				{
@@ -526,7 +526,7 @@
 					icon: "kubejs:legendary_lootbox"
 					id: "039581C4AD45A4C3"
 					player_command: false
-					title: "Legendary Create Loot Box"
+					title: "[傳說] 動力機械戰利品箱"
 					type: "command"
 				}
 			]
@@ -553,7 +553,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "0F1A62465CBB42D6"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "此漏斗非彼漏斗"
@@ -587,7 +587,7 @@
 			rewards: [{
 				id: "622EAD08CD315864"
 				item: "create:encased_fan"
-				title: "Encased Fan"
+				title: "鼓風機"
 				type: "item"
 			}]
 			subtitle: "不能溜滑梯"
@@ -619,7 +619,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "21CE398AFABF3FC8"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "雙狹縫實驗"
@@ -652,7 +652,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "5272BC579D3D9836"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "不負保管責任"
@@ -681,7 +681,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "0A7D176961C23E15"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "霹靂五號是真的"
@@ -707,7 +707,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "02080084ABF0EECA"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "石磨不是石墨"
@@ -740,7 +740,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "5464DCCBFDF03454"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "心碎了無痕"
@@ -771,7 +771,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "533389DECD3DB973"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "指向技"
@@ -807,7 +807,7 @@
 				icon: "kubejs:farmers_delight"
 				id: "5044588C6DA5D045"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "農夫獎勵袋"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -861,7 +861,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "20A5EC236DC4A972"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "Bonk！"
@@ -890,7 +890,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "634D74739A220234"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "攪一攪 拌一拌 再攪一攪"
@@ -925,7 +925,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "0AF701A6E011A769"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "可能是活的"
@@ -952,7 +952,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "17932E9C90BF9F0B"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "在地美食 非人食"
@@ -981,7 +981,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "563CFD1505CBBC00"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "阿基米德式螺旋抽水機"
@@ -1011,7 +1011,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "513969EA94AFA47D"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "把門關上"
@@ -1040,7 +1040,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "757E5C7AB9DC87FF"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "逆滲透"
@@ -1071,7 +1071,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "34E1C82BFD5BD409"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "深不可測"
@@ -1081,7 +1081,7 @@
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			title: "Fluid Tanks"
+			title: "流體儲存罐"
 			x: 0.5d
 			y: 6.5d
 		}
@@ -1095,7 +1095,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "2D708C8085FCBB03"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "單兵注意"
@@ -1206,14 +1206,14 @@
 					icon: "kubejs:rare_lootbox"
 					id: "48B4464DBD40B9D0"
 					player_command: false
-					title: "Rare Create Loot Box"
+					title: "[稀有] 動力機械戰利品箱"
 					type: "command"
 				}
 				{
 					count: 8
 					id: "350C5628949B4110"
 					item: "create:piston_extension_pole"
-					title: "Piston Extension Pole"
+					title: "活塞桿"
 					type: "item"
 				}
 			]
@@ -1260,7 +1260,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "4494D69A52071143"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "相當不科學"
@@ -1285,7 +1285,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "1597FC0ADBA5E7C9"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "轉轉轉 好運旺來一起轉"
@@ -1329,7 +1329,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "378F3AE6697344A6"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -1357,7 +1357,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "6ED3255791EBD190"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "農田專家"
@@ -1378,7 +1378,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "28C9B593F7559123"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "我的鑽頭可是突破天際的鑽頭啊！"
@@ -1403,7 +1403,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "54F79A04D05AC440"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "突破性的創新"
@@ -1430,7 +1430,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "001C17D5D029CEEE"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "鋸大斬獲"
@@ -1461,7 +1461,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "22E781622F117752"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "隨插隨用"
@@ -1496,7 +1496,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "762027CFF1BB1983"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "電梯向上"
@@ -1522,7 +1522,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "129FC9D4B142A885"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "這個才能改變轉速"
@@ -1552,7 +1552,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "12FECCF21E3A5E81"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "有分升起或下降"
@@ -1578,7 +1578,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "615974670DD4392E"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "沒有改變轉速 只改變轉向"
@@ -1604,7 +1604,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "4258C881DD19230C"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "停下來受檢"
@@ -1629,7 +1629,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "4BD7F5A9A1818D77"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "喝口茶 休息一下！"
@@ -1657,7 +1657,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "2573803F64C9B873"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "沒有排入下水道"
@@ -1687,7 +1687,7 @@
 					icon: "kubejs:legendary_lootbox"
 					id: "730DADB4DB8FCE64"
 					player_command: false
-					title: "Legendary Create Loot Box"
+					title: "[傳說] 動力機械戰利品箱"
 					type: "command"
 				}
 				{
@@ -1730,7 +1730,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "76589AD67CFA6AA0"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "注意月台間隙"
@@ -1814,7 +1814,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "4D53FA0D11747F26"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "囤積者的夢想"
@@ -1839,7 +1839,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "4F43163D2CBCABEF"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "開始拉線"
@@ -1864,7 +1864,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "30DE8FD2BCB34418"
 				player_command: false
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "海龜在哭泣"
@@ -1886,7 +1886,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "4CE1F858B1237850"
 				player_command: false
-				title: "Rare Create Loot Box"
+				title: "[稀有] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "繼續轉動"
@@ -1915,7 +1915,7 @@
 				icon: "kubejs:legendary_lootbox"
 				id: "4A9E638F4D1CD688"
 				player_command: false
-				title: "Legendary Create Loot Box"
+				title: "[傳說] 動力機械戰利品箱"
 				type: "command"
 			}]
 			subtitle: "與某汽車品牌無關"

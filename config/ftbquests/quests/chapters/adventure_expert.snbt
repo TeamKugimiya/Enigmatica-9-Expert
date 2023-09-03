@@ -63,7 +63,7 @@
 			description: [
 				"找不到路嗎？需要找個沙漠來個老派的採沙嗎？或是找個地方住下呢？"
 				""
-				"製作Nature’s Compass來幫你找到稀有或不常見的生態域。"
+				"製作自然羅盤來幫你找到稀有或不常見的生態域。"
 			]
 			hide: true
 			id: "5CB7CB9124468371"
@@ -134,7 +134,7 @@
 					type: "item"
 				}
 			]
-			title: "The Bumblezone"
+			title: "蜜蜂領域"
 			x: 1.0d
 			y: 2.5d
 		}

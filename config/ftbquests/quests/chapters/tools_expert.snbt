@@ -58,7 +58,7 @@
 						value: "forge:tools"
 					}
 				}
-				title: "Any Tool"
+				title: "任何工具"
 				type: "item"
 			}]
 			title: "工具與裝備"
@@ -93,7 +93,7 @@
 				{
 					id: "00DFFC8DE1F504C3"
 					item: "mininggadgets:upgrade_light_placer"
-					title: "Upgrade: Light Placer"
+					title: "光源放置升級"
 					type: "item"
 				}
 				{
@@ -157,7 +157,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "7B241F0433CB46B4"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			subtitle: "心思飄雲間"
@@ -183,7 +183,7 @@
 				icon: "kubejs:sorcerers_delight"
 				id: "7878D3C0A8B1AE6D"
 				player_command: false
-				title: "Sorcerer's Delight"
+				title: "巫師獎勵袋"
 				type: "command"
 			}]
 			subtitle: "只想與你度過..."
@@ -388,7 +388,7 @@
 				icon: "kubejs:sorcerers_delight"
 				id: "0074A49DCD3DD188"
 				player_command: false
-				title: "Sorcerer's Delight"
+				title: "巫師獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -426,7 +426,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "3570B6A36168655F"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -724,7 +724,7 @@
 				icon: "kubejs:sorcerers_delight"
 				id: "26D391BE317C1493"
 				player_command: false
-				title: "Sorcerer's Delight"
+				title: "巫師獎勵袋"
 				type: "command"
 			}]
 			tasks: [
@@ -863,7 +863,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "52510292FF8D040C"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -1030,20 +1030,20 @@
 			description: [
 				"悄然接近的苦力怕幹掉了你嗎？狂熱的殭屍總是糾纏在你面前嗎？淫穢的骷弓就是不讓你安心挖礦嗎？"
 				""
-				"拿個盾牌吧！但不只是普通的盾牌，Superior Shields 可以放在飾品欄中，自動保護佩戴者，甚至能阻擋背後的攻擊。"
+				"拿個盾牌吧！但不只是普通的盾牌，卓越護盾可以放在飾品欄中，自動保護佩戴者，甚至能阻擋背後的攻擊。"
 				""
-				"Superior Shields有三個重要的屬性，決定了它們的保護效果："
+				"卓越護盾有三個重要的屬性，決定了它們的保護效果："
 				""
-				"● Hit Points"
+				"● 生命值"
 				"它們能阻擋的傷害心數，在需要重新充能前。"
 				""
-				"● Recharge Rate"
+				"● 充能速率"
 				"它們需要多少秒才能充能一半的盾牌。"
 				""
-				"● Recharge Delay"
+				"● 充能延遲"
 				"在未受到傷害的情況下經過的秒數，盾牌開始充能。"
 				""
-				"總體而言，這些數據意味著盾牌只在持有者沒有受到持續攻擊的情況下才有效，一旦Hit Points減少，持有者需要遠離危險區域，以讓盾牌重新充電。因此，它們非常適用於意外攻擊，但不會讓你永遠存活下去。"
+				"總體而言，這些數據意味著盾牌只在持有者沒有受到持續攻擊的情況下才有效，一旦生命值減少，持有者需要遠離危險區域，以讓盾牌重新充電。因此，它們非常適用於意外攻擊，但不會讓你永遠存活下去。"
 				""
 				"除了基本屬性外，它們還可以附魔以多種有趣的效果，例如當盾牌耗盡時，可以治愈持有者的所有藥水效果，或者對損壞盾牌的任何東西施加中毒效果。"
 			]
@@ -1070,7 +1070,7 @@
 					icon: "kubejs:scavengers_delight"
 					id: "2FCA3B2C9ABB9D73"
 					player_command: false
-					title: "Scavenger's Delight"
+					title: "拾荒者獎勵袋"
 					type: "command"
 				}
 			]
@@ -1140,7 +1140,7 @@
 						]
 					}
 				}
-				title: "Superior Shields"
+				title: "卓越護盾"
 				type: "item"
 			}]
 			x: -8.0d

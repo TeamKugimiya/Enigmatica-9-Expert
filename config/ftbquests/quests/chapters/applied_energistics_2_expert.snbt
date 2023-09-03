@@ -31,7 +31,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "4F04543FFF72A9BD"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -55,7 +55,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "5CA8480BEB290EE9"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -83,7 +83,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "01BF4CB94D87B2BF"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -117,7 +117,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "332B628F01F6ACC8"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			shape: "diamond"
@@ -148,7 +148,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "2191B6E99F2D07AD"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			shape: "diamond"
@@ -179,7 +179,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "15402D7A6B44E06D"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			shape: "diamond"
@@ -208,7 +208,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "60E138B701BF7801"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -237,7 +237,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "1E9648A738A38B54"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -272,7 +272,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "67827C9AA3B11001"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -308,7 +308,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "0B9B7C9D9C4B7E3C"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -334,7 +334,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "73050A813C48DF48"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -375,7 +375,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "404BC61163C2C12B"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -450,7 +450,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "05BD8A1423C36C57"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -473,7 +473,7 @@
 							value: "ae2:memory_cards"
 						}
 					}
-					title: "Memory Cards"
+					title: "記憶卡"
 					type: "item"
 				}
 			]
@@ -501,7 +501,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "328112AEC0ACFA08"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -570,7 +570,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "19C4E8870DEE24D3"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -605,7 +605,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "255A9411D3B4D8FC"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -632,7 +632,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "4523DC97AA9D7388"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -660,7 +660,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "15C35DA822BB37E1"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -689,7 +689,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "7201CC8D7142B3D1"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [
@@ -729,7 +729,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "520888C8211BEEC9"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -771,7 +771,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "7C383955F6661648"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -796,7 +796,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "5AF2CC718C7B645A"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -822,7 +822,7 @@
 				icon: "kubejs:miners_delight"
 				id: "78266754B7850F70"
 				player_command: false
-				title: "Miner's Delight"
+				title: "礦工獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -846,7 +846,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "09CFB74977302E69"
 				player_command: false
-				title: "Rare Applied Energistics Loot Box"
+				title: "[稀有] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -891,7 +891,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "165D78BF236C3E68"
 				player_command: false
-				title: "Epic Applied Energistics Loot Box"
+				title: "[史詩] 應用能源戰利品箱"
 				type: "command"
 			}]
 			tasks: [{

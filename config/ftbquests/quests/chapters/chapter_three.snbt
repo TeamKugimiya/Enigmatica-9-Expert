@@ -21,7 +21,7 @@
 					icon: "kubejs:scavengers_delight"
 					id: "73146FCB5DE34BD0"
 					player_command: false
-					title: "Scavenger's Delight"
+					title: "拾荒者獎勵袋"
 					type: "command"
 				}
 				{
@@ -29,7 +29,7 @@
 					icon: "kubejs:aura_leaf"
 					id: "4A56772129E93DBD"
 					player_command: false
-					title: "Aura Infusion"
+					title: "靈氣灌注"
 					type: "command"
 				}
 			]
@@ -58,7 +58,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "240F67E11441400B"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -82,7 +82,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "435BC41E9248DDA9"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -108,7 +108,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "19B4DB02EEC8719A"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [
@@ -171,7 +171,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "691C3737512BE3BF"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -201,7 +201,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "0505511F544D9B32"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -239,7 +239,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "626DB2BAB756CD14"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -277,7 +277,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "27C72A314A0835DD"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			tasks: [{
@@ -304,7 +304,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "0139AC85B01E713C"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -348,7 +348,7 @@
 					icon: "kubejs:aura_leaf"
 					id: "6E801CF58CCC17F1"
 					player_command: false
-					title: "Aura Infusion"
+					title: "靈氣灌注"
 					type: "command"
 				}
 			]
@@ -385,7 +385,7 @@
 					icon: "kubejs:aura_leaf"
 					id: "79B5374F289BE361"
 					player_command: false
-					title: "Aura Infusion"
+					title: "靈氣灌注"
 					type: "command"
 				}
 			]
@@ -422,7 +422,7 @@
 					icon: "kubejs:aura_leaf"
 					id: "6EC8C22079A42D8F"
 					player_command: false
-					title: "Aura Infusion"
+					title: "靈氣灌注"
 					type: "command"
 				}
 			]
@@ -459,7 +459,7 @@
 					icon: "kubejs:aura_leaf"
 					id: "24D145AA7990A26D"
 					player_command: false
-					title: "Aura Infusion"
+					title: "靈氣灌注"
 					type: "command"
 				}
 			]
@@ -501,7 +501,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "0FC494420DB000EC"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -525,7 +525,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "0015D006738A40B6"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -553,7 +553,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "2275D9F976F77BDF"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -588,7 +588,7 @@
 					icon: "kubejs:aura_leaf"
 					id: "617415D046BDABDF"
 					player_command: false
-					title: "Aura Infusion"
+					title: "靈氣灌注"
 					type: "command"
 				}
 			]
@@ -637,7 +637,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "1D4D0A4842116B56"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -679,7 +679,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "48DA2969D0098400"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			shape: "hexagon"
@@ -808,7 +808,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "7A03B91B11415840"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -832,7 +832,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "109F6B48B5CA4221"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			tasks: [{
@@ -852,7 +852,7 @@
 				icon: "kubejs:scavengers_delight"
 				id: "43BF2A66732C89E4"
 				player_command: false
-				title: "Scavenger's Delight"
+				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
 			tasks: [{
@@ -879,7 +879,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "0874E8DB1A76AE45"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			shape: "heart"
@@ -962,7 +962,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "4014F4C50BC08A30"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			tasks: [
@@ -1007,7 +1007,7 @@
 				icon: "kubejs:aura_leaf"
 				id: "6C551A3BE7841241"
 				player_command: false
-				title: "Aura Infusion"
+				title: "靈氣灌注"
 				type: "command"
 			}]
 			tasks: [{

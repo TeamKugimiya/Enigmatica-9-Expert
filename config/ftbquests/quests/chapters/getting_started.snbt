@@ -28,7 +28,7 @@
 				icon: "kubejs:farmers_delight"
 				id: "0000000000000A93"
 				player_command: false
-				title: "Farmer's Delight"
+				title: "農夫獎勵袋"
 				type: "command"
 			}]
 			size: 1.5d
@@ -304,7 +304,7 @@
 					}
 				}
 				only_one: true
-				title: "Full Eccentric Tome"
+				title: "全套怪奇寶典"
 				type: "item"
 			}]
 			subtitle: "別緊張"

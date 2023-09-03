@@ -51,7 +51,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "379E1DF360B71C28"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "極端措施"
@@ -95,7 +95,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "6719F2C0C0E7FB2B"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "一些卡片"
@@ -140,7 +140,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "3EF8435392E86386"
 				player_command: false
-				title: "Epic Industrial Foregoing Loot Box"
+				title: "[史詩] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "岩石與沙灘"
@@ -168,7 +168,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "35FD9DE9C1AE9790"
 				player_command: false
-				title: "Epic Industrial Foregoing Loot Box"
+				title: "[史詩] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -202,7 +202,7 @@
 					count: 16
 					id: "0C51BC0086C07E6B"
 					item: "industrialforegoing:fertilizer"
-					title: "Fertilizer"
+					title: "肥料"
 					type: "item"
 				}
 				{
@@ -210,7 +210,7 @@
 					icon: "kubejs:rare_lootbox"
 					id: "076765969F37C975"
 					player_command: false
-					title: "Rare Industrial Foregoing Loot Box"
+					title: "[稀有] 工業先鋒戰利品箱"
 					type: "command"
 				}
 			]
@@ -239,7 +239,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "5C407B1EF44A000F"
 				player_command: false
-				title: "Epic Industrial Foregoing Loot Box"
+				title: "[史詩] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -282,7 +282,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "55819A4D04CED075"
 				player_command: false
-				title: "Epic Industrial Foregoing Loot Box"
+				title: "[史詩] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "雷神之鎚！"
@@ -322,7 +322,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "6C27923990829FB4"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "大地枯萎"
@@ -375,7 +375,7 @@
 						value: "forge:raw_materials"
 					}
 				}
-				title: "Any Raw Materials"
+				title: "任何原礦"
 				type: "item"
 			}]
 			title: "工具與實用設備"
@@ -396,7 +396,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "2CF35E56988649E5"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "光明與黑暗"
@@ -436,7 +436,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "131B8F1A1F1FE1FC"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "你留下了什麼"
@@ -458,7 +458,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "58FC0103111007F7"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "看你怎麼想"
@@ -486,7 +486,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "0DB5BF86FD75C324"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "收割獎勵"
@@ -512,7 +512,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "56424275050ABFF4"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "要種的太多 時間太少"
@@ -540,7 +540,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "3463EB949B33CDA9"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
@@ -561,7 +561,7 @@
 				icon: "kubejs:rare_lootbox"
 				id: "788C3E2A822F3CD0"
 				player_command: false
-				title: "Rare Industrial Foregoing Loot Box"
+				title: "[稀有] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "奇妙的轉折..."
@@ -583,7 +583,7 @@
 				icon: "kubejs:epic_lootbox"
 				id: "356398A4898C5D98"
 				player_command: false
-				title: "Epic Industrial Foregoing Loot Box"
+				title: "[史詩] 工業先鋒戰利品箱"
 				type: "command"
 			}]
 			subtitle: "沒記錯的話"
