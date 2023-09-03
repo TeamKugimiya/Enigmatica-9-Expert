@@ -516,7 +516,7 @@
 		}
 		{
 			dependencies: ["356B7D1DFF632DBD"]
-			description: ["看起來暮光幽靈教派的行為比之前想像的更加邪惡。它們用它們的Carminite反應爐打開的裂縫也讓他們有機會獲得這種奇怪的碎片。"]
+			description: ["看起來暮光幽靈教派的行為比之前想像的更加邪惡。它們用它們的砷鉛鐵反應器打開的裂縫也讓他們有機會獲得這種奇怪的碎片。"]
 			hide: true
 			hide_dependency_lines: true
 			id: "0CFE9B39B0643013"
@@ -999,7 +999,7 @@
 		}
 		{
 			dependencies: ["2C30585E7A2D5EB3"]
-			description: ["將終界龍的古老智慧巧妙地提煉成一種強大的材料，稱為 Enderium。"]
+			description: ["將終界龍的古老智慧巧妙地提煉成一種強大的材料，稱為終界合金。"]
 			hide_dependency_lines: true
 			id: "4A5EF56081E8EE6E"
 			rewards: [{
