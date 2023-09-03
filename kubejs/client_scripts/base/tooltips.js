@@ -496,24 +496,43 @@ ItemEvents.tooltip((event) => {
             ]
         },
         {
+            items: [
+                'ars_nouveau:red_sbed',
+                'ars_nouveau:blue_sbed',
+                'ars_nouveau:green_sbed',
+                'ars_nouveau:yellow_sbed',
+                'ars_nouveau:purple_sbed',
+                'ars_nouveau:orange_sbed'
+            ],
+            text: [Text.of(`星寶石獸裝備：紅石控制`).green()]
+        },
+        {
+            items: ['starbunclemania:wyrm_degree'],
+            text: [Text.of(`星寶石獸裝備：精細化搬運物品`).green()]
+        },
+        {
+            items: ['starbunclemania:direction_scroll'],
+            text: [Text.of(`星寶石獸裝備：允許與方塊的指定方向互動`).green()]
+        },
+        {
             items: ['ars_nouveau:starbuncle_shades'],
             text: [Text.of(`星寶石獸裝備：變酷的同時繼續完成任務`).green()]
         },
         {
             items: ['ars_nouveau:wixie_hat'],
-            text: [Text.of(`星寶石獸裝備：傳輸藥水`).green()]
+            text: [Text.of(`星寶石獸裝備：搬運藥水`).green()]
         },
         {
             items: ['starbunclemania:star_battery'],
-            text: [Text.of(`星寶石獸裝備：傳輸能量`).green()]
+            text: [Text.of(`星寶石獸裝備：搬運能量`).green()]
         },
         {
             items: ['starbunclemania:star_bucket'],
-            text: [Text.of(`星寶石獸裝備：傳輸液體`).green()]
+            text: [Text.of(`星寶石獸裝備：搬運液體`).green()]
         },
         {
             items: ['starbunclemania:star_balloon'],
-            text: [Text.of(`星寶石獸裝備：傳輸氣體`).green()]
+            text: [Text.of(`星寶石獸裝備：搬運氣體`).green()]
         },
         {
             items: ['starbunclemania:star_bin'],
