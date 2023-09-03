@@ -1,0 +1,13 @@
+{
+  "gui.darkmodeeverywhere.dark_mode": "深色模式",
+  "gui.darkmodeeverywhere.light_mode": "淺色模式",
+  "gui.darkmodeeverywhere.perfect_dark": "極致深色",
+  "gui.darkmodeeverywhere.less_perfect_dark": "中度深色",
+  "gui.darkmodeeverywhere.toasted_light": "輕度深色",
+  "gui.tooltip.darkmodeeverywhere.shader_switch_tooltip": " * 使用 Shift 鍵快速切換至淺色模式",
+  "config.darkemodeeverywhere.method_shader_blacklist": "A list of class:method strings (render methods) that the dark shader will not be applied to.\\nEach string consists of the class and the method (or any substring) to block the dark shader.\\nFor example, 'renderHunger' is sufficient to block 'net.minecraftforge.client.gui.overlay.ForgeGui:renderFood' (either will work)",
+  "config.darkemodeeverywhere.method_shader_dump": "Enabling this config will (every 5 seconds) dump which methods were used to render GUIs that the dark shader was applied to\\nThe dump will consist of a list of class:method strings, e.g. 'net.minecraftforge.client.gui.overlay.ForgeGui:renderFood'\\nUse this feature to help find the render method strings of GUIs you would like to blacklist.",
+  "config.darkemodeeverywhere.button_position_x": "Pixels away from the left of the GUI in the x axis",
+  "config.darkemodeeverywhere.button_position_y": "Pixels away from the bottom of the GUI in the y axis",
+  "config.darkmodeeverywhere.enabled": "Enabled"
+}
