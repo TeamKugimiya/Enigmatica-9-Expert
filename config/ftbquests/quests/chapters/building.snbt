@@ -538,14 +538,6 @@
 				""
 				"Ctrl + Shift 對空氣右鍵使用能開啟進階選項的介面，或是 Ctrl + 滾輪可以在建築模式中快速切換。"
 			]
-			icon: {
-				Count: 1b
-				id: "constructionwand:stone_wand"
-				tag: {
-					Damage: 0
-					wand_options: { }
-				}
-			}
 			id: "26B88D08862EA1AE"
 			rewards: [{
 				count: 16
@@ -559,12 +551,29 @@
 				id: "131EB02FBDE8DC98"
 				item: {
 					Count: 1b
-					id: "constructionwand:diamond_wand"
+					id: "itemfilters:or"
 					tag: {
-						Damage: 0
-						wand_options: { }
+						items: [
+							{
+								Count: 1b
+								id: "constructionwand:diamond_wand"
+								tag: {
+									Damage: 0
+									wand_options: { }
+								}
+							}
+							{
+								Count: 1b
+								id: "constructionwand:infinity_wand"
+								tag: {
+									wand_options: { }
+								}
+							}
+						]
+
 					}
 				}
+				title: "建築手杖"
 				type: "item"
 			}]
 			title: "建築手杖"
