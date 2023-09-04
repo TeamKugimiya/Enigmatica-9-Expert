@@ -1,0 +1,782 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism_expert"
+	group: "72A9465344128AF9"
+	icon: "mekanism:alloy_atomic"
+	id: "713775E5BF39DAAB"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2F22D2DB89CB9225"]
+			description: [
+				"如前所述，通用機械非常著重整個模組的效率。隨著機器的升級與安裝更多的升級，它們變得效率更高，產率更高，且運作成本更低。"
+				""
+				"從一開始就著重效率，長遠來看終將獲得回報。"
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:alloy_infused"
+			id: "094FAB57D8E3D2F6"
+			shape: "hexagon"
+			tasks: [{
+				id: "7FB5DB1D16235D02"
+				item: "kubejs:crude_iron_ingot"
+				title: "材料加工"
+				type: "item"
+			}]
+			title: "如何開始：材料加工"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"一旦一些基礎電力設施完善後，下一步是最重要的機器，冶金灌注機。"
+				""
+				"請注意機器介面中的顏色外框，因為它們指出了材料的去向。左邊黃色的外框是灌注材料輸入的地方。它會被吸入內部的暫存中，當實際製作時會被消耗。"
+				""
+				"這些顏色外框也對應了側面配置的面板。預設狀況下，機器從底部輸入灌注材料。但是，這些都是可以設定的，因此請依你方便的方式進行設定。"
+				""
+				"自動化提示：由於兩種所需的輸入材料是使用兩個不同的通道，紅色與黃色，因此無法從同一面輸入這兩種物品。因此，通常最容易的方法是製作多個機器，每台機器專用於各自的灌注材料。"
+			]
+			hide_dependency_lines: true
+			id: "13762022DEE4BEC5"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "03D6AC51756CA1AD"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "高級冶金"
+			tasks: [{
+				id: "367A53ACB8A3AECB"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:metallurgic_infuser"
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_infusing_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_infusing_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:elite_infusing_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:ultimate_infusing_factory"
+							}
+						]
+					}
+				}
+				title: "冶金灌注機"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"高級的機器通常需要合金。它們的製作成本可能相當高，因為灌注材料用量相當大。"
+				""
+				"然而，在富集倉中富集這些灌注材料，能使其進一步增量。"
+				""
+				"舉例來說，一個紅石粉只能製作一個富集合金，而一個富集紅石能製作八個。因此，花時間富集這些物品是非常值得的。"
+			]
+			hide_dependency_lines: true
+			id: "5EC7CA1A86435B30"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "131BF3970989B404"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "一發入魂"
+			tasks: [{
+				id: "5F5EE2F551F7913B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:enrichment_chamber"
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_enriching_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_enriching_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:elite_enriching_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:ultimate_enriching_factory"
+							}
+						]
+					}
+				}
+				title: "富集倉"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: ["某些化學反應僅在高壓環境下發生，加壓反應室可用於促進這些反應。"]
+			hide_dependency_lines: true
+			id: "4427B8F3C87DDF02"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1958B307B1019C34"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "壓力山大"
+			tasks: [{
+				id: "0E9481BE3E52363E"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"在灌注惡魔氣體與巨量的魔法能量後，它能被精煉為一種具有轉化特性的材料：神幻氣體。"
+				""
+				"一個端口讓增壓線圈接收能量輸入。另外兩個端口用於輸入惡魔氣體與輸出神幻氣體。"
+				""
+				"增加更多有增壓線圈的端口，能使機器運作得更快，當然前提是能提供足夠的能量與惡魔氣體。"
+				""
+				"{\"text\":\"Mekanism Wiki: 超臨界移相器\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Supercritical_Phase_Shifter\"}}"
+			]
+			hide_dependency_lines: true
+			icon: "mekanism:sps_casing"
+			id: "3F0DE5664216AD01"
+			min_width: 275
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "2A335028425C54BC"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "我已經給了她我們所擁有的一切，艦長"
+			tasks: [
+				{
+					count: 60L
+					id: "45E5874F0FCCDECE"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 123L
+					id: "2164A5647CB59BA2"
+					item: "mekanism:structural_glass"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "6E2FC37AF289F820"
+					item: "mekanism:sps_port"
+					type: "item"
+				}
+				{
+					id: "4D702AA818D8DE41"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "超臨界移相器"
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"昔日的煉金術士相信元素物質能被轉換，這是正確的。"
+				""
+				"但他們失敗的點是，不明白這個過程需要消耗巨量的能量。"
+			]
+			hide_dependency_lines: true
+			id: "2D91422DA1C8E72A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "5A38C9C7570957F9"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "什麼魔法"
+			tasks: [{
+				id: "0F4DBE31B74978E5"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"肯定會遇到這種狀況。管道和線纜遍布各處，誰知道機器放下時會不小心輸入了什麼東西。水？氫氣？而一旦東西進去了，通常就不知道該怎麼把它取出，"
+				""
+				"這就是滴量器為何存在。這個小工具能幫助從各種機器中，取出不需要的輸入材料。使用滴量器對機器介面中的輸入欄位左鍵，取出少量的輸入，這能輕鬆地將它移到另一台機器。蹲下左鍵則是銷毀欄位中的材料。"
+				""
+				"同樣的，手持滴量器對空氣蹲下右鍵，會銷毀目前其已儲存的材料。"
+			]
+			hide_dependency_lines: true
+			id: "06C3D5F78BA710C4"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "469F014669D8372A"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "聊勝於無"
+			tasks: [{
+				id: "68D52990792852FA"
+				item: "mekanism:gauge_dropper"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"機器能安裝的速度升級是有限的。之後，橫向擴展是加速的唯一選擇。慶幸的是，工廠安裝器使得比起放九台裝滿升級的機器更容易一些。記得嗎，一切都是為了高效！"
+				""
+				"每個工廠升級都增加一定數量的輸入與輸出欄位，使其能併行處理多個物品。每個欄位共享機器全部的升級，減少了需要製作的升級數量。"
+				""
+				"安裝時，只要對放出的機器蹲下右鍵即可。工廠升級需依序安裝，不能跳階。"
+			]
+			hide_dependency_lines: true
+			id: "5A47B6B53BADF585"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5D6190F7A86AA552"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "嗨，朋友！聽說你對機器很感興趣..."
+			tasks: [{
+				id: "1841697C3D1FDFAE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:basic_tier_installer"
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_tier_installer"
+							}
+							{
+								Count: 1b
+								id: "mekanism:elite_tier_installer"
+							}
+							{
+								Count: 1b
+								id: "mekanism:ultimate_tier_installer"
+							}
+						]
+					}
+				}
+				title: "工廠安裝器"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"有想去的地方但太花時間嗎？開始走路吧。下次，當你下次到那時，帶著傳送機並設置好，避免再走這麼遠的路。"
+				""
+				"傳送框架是選擇性的。"
+			]
+			hide_dependency_lines: true
+			id: "4A9E737597297689"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "418966840E6DECD6"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "請乘客注意，一號平台禁止使用武器，傳送與宗教活動。"
+			tasks: [{
+				id: "11AFA218FE7BA802"
+				item: {
+					Count: 1b
+					id: "mekanism:teleporter"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "5000000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F22D2DB89CB9225"]
+			description: [
+				"通用機械能處理能量，流體，氣體，物品和熱量的傳輸，每個都有相符的傳輸管道。"
+				""
+				"使用調整器來設定這些管道，調整器本身有多個模式。蹲下滾輪來改變目前的模式。"
+				""
+				"當設為板手模式時，蹲下右鍵能立刻拆下任何通用機械的機器或管道。"
+				""
+				"當設為任一種配置模式時，調整器能切換管道的面。參閱以下部分取得更多資訊。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "mekanism:configurator"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "60000"
+						}]
+					}
+				}
+			}
+			id: "06ABB5AAF6BEDC06"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4E6A4987E188A34D"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "503D71FFC12F066F"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			title: "如何開始：物流與儲存"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["094FAB57D8E3D2F6"]
+			description: [
+				"透過將物品施加巨大的壓力，能使其灌注其他材料。"
+				""
+				"化學壓射室雖然通常被視為大型生產線的其中一環，但也是個非常方便的工具，能自動執行更繁瑣的任務，例如製作混凝土或是在鋪屋頂前，先讓銅階梯氧化至正確的狀態。"
+				""
+				"記得安裝氣體升級，讓輸入的氣體更有效率的使用。"
+			]
+			hide_dependency_lines: true
+			id: "2A029FF13CC8072B"
+			rewards: [
+				{
+					id: "71CFB0EC8091E0AF"
+					item: "mekanism:upgrade_gas"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3F9BD229E827C77F"
+					player_command: false
+					title: "Epic Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "74C26C9ED32C3063"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:chemical_injection_chamber"
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_injecting_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_injecting_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:elite_injecting_factory"
+							}
+							{
+								Count: 1b
+								id: "mekanism:ultimate_injecting_factory"
+							}
+						]
+					}
+				}
+				title: "化學壓射室"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"所有部件都能升級增強能量護盾並增加輻射護盾。"
+				""
+				"其他值得注意的升級："
+				""
+				"頭盔"
+				""
+				"● 營養注射單元"
+				"● 視覺增強單元"
+				"● 太陽能充電單元"
+				"● 電解呼吸單元"
+				"● 吸入淨化單元"
+				""
+				"胸甲"
+				""
+				"● 重力調節單元"
+				"● 鞘翅單元"
+				"● 蓋革單元"
+				"● 充能分配單元"
+				""
+				"護腿"
+				""
+				"● 機車助推單元"
+				""
+				"靴子"
+				""
+				"● 液壓推進單元"
+				"● 磁吸力單元"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "mekanism:mekasuit_helmet"
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "16000000"
+						}]
+					}
+				}
+			}
+			id: "6E480CFB4EB48E71"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "3CB100DC1C534B42"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "222D45DF4BF00BC2"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "1B429878EA149C2F"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "48E391547CA0B9FE"
+					player_command: false
+					title: "Legendary Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "他們唯一害怕的...是你。"
+			tasks: [
+				{
+					id: "52DEDB7389CF027D"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "3A0F1CA49AFCE8A8"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "146A47DDB3624E78"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "5B0CE25726B003A6"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06ABB5AAF6BEDC06"]
+			description: [
+				"基礎化學儲罐能保存任何非輻射性的氣體，漿液，灌注材料或顏料。"
+				""
+				"這些能直接放入機器提供材料，或設定為自動輸出相鄰的機器。"
+				""
+				"它們也有一個過量銷毀的功能，將模式設為\"排出過量\"。"
+			]
+			id: "7471BAAE8A81DBA2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3237A18C32BE6F14"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7BEFF1CA0FC0612B"
+				item: "mekanism:basic_chemical_tank"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06ABB5AAF6BEDC06"]
+			description: ["基礎流體儲罐，能使用調整器對其蹲下右鍵，切換成將流體自動從底部輸出的模式。"]
+			id: "10371E1C04CA6673"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7F95A852BA445BB5"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "02E592C1CE9FB64A"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["06ABB5AAF6BEDC06"]
+			dependency_requirement: "one_started"
+			description: [
+				"大型的氣體或流體儲存，動態儲罐的結構能從 3x3x3 至 18x18x18。除了邊與角的位置外，能以結構玻璃取代動態儲罐的方塊。"
+				""
+				"{\"text\":\"Mekanism Wiki: 動態儲罐\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com/wiki/Dynamic_Tank\"}}"
+			]
+			id: "684B120D89102381"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "65A247D76D57636D"
+				player_command: false
+				title: "Rare Mekanism Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "1E9AAE22BA9F3FB5"
+					item: "mekanism:dynamic_tank"
+					type: "item"
+				}
+				{
+					id: "1453F79AA63C84DD"
+					item: "mekanism:dynamic_valve"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: ["所有必需的維生素，礦物質，胺基酸，都巧妙地濃縮成方便咀嚼的糊狀物。好吃。"]
+			hide_dependency_lines: true
+			id: "52B63C31B6522EBF"
+			rewards: [
+				{
+					id: "2FD336CE679DF10F"
+					item: "mekanism:canteen"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "6D14EA132AC6D0B8"
+					player_command: false
+					title: "Epic Mekanism Loot Box"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "49252566B6D91021"
+				item: "mekanism:nutritional_liquifier"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F22D2DB89CB9225"]
+			description: ["通用機械提供了一些相當實用的工具，裝備和實用設備。"]
+			hide_dependency_lines: true
+			id: "01E97C3D888A1677"
+			shape: "hexagon"
+			tasks: [{
+				id: "5E370E815E04D56C"
+				item: "mekanism:cardboard_box"
+				title: "工具與實用設備"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["01E97C3D888A1677"]
+			description: [
+				"一個強大的全能工具，並能安裝各種升級。"
+				""
+				"值得注意的升級"
+				""
+				"● 攻擊增強單元"
+				"● 挖掘升級單元"
+				"● 礦脈挖掘單元"
+				"● 絲綢之觸單元"
+				"● 傳送單元"
+				"● 耕種單元"
+			]
+			hide_dependency_lines: true
+			id: "3B271D8FF74A7F73"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/mekanism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "6646042C11EB98C5"
+				player_command: false
+				title: "Legendary Mekanism Loot Box"
+				type: "command"
+			}]
+			subtitle: "大鬧一場"
+			tasks: [{
+				id: "0290DC2A227A55BA"
+				item: "mekanism:meka_tool"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"通用機械是一款強調極致的科幻主題的科技模組，著重於製作效率，無論是通過礦物倍化或高級核融合反應爐來為你的基地供電。"
+				""
+				"它的系統旨在達到一定程度的真實感，並過程中也有一些妥協，以獲得更好的遊玩體驗。在此背景下，玩家需要掌握發電，管理熱量與輻射，並同時尋找最有效率的方法。"
+				""
+				"除了任務以外，通用機械並沒有遊戲內的說明書。然而可以到這裡找到非常詳盡的官方維基百科："
+				""
+				"{\"text\":\"Mekanism Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://wiki.aidancbrady.com\"}}"
+			]
+			hide: true
+			icon: "mekanism:teleportation_core"
+			id: "2F22D2DB89CB9225"
+			rewards: [{
+				id: "18CA99642BE84CA5"
+				item: {
+					Count: 1b
+					id: "mekanism:configurator"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "60000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "minecraft:raw_copper"
+				id: "2D65E0EFE062AF87"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "通用機械"
+				type: "item"
+			}]
+			title: "通用機械"
+			x: 1.5d
+			y: -3.0d
+		}
+	]
+	title: "通用機械"
+}
