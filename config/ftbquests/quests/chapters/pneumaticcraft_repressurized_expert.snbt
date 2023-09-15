@@ -1,0 +1,1721 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "pneumaticcraft_repressurized_expert"
+	group: "72A9465344128AF9"
+	icon: "pneumaticcraft:pressure_gauge_module"
+	id: "528DEAC4CBA79B23"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"氣動工藝是關於物流，自動化，且通常為了一些好處而炸毀一些東西。掌握壓縮空氣和熱量是你旅途的開始。"
+				""
+				"任務會引導你這個模組的發展，但請務必時不時查看手冊獲得更多訊息。當完成一些任務或相關成就時，手冊的章節會陸續解鎖。"
+			]
+			hide: true
+			icon: "pneumaticcraft:ingot_iron_compressed"
+			id: "6E942B6AC4460725"
+			rewards: [{
+				id: "26FC0CB6FE55E311"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:pneumatic_wrench"
+					tag: {
+						"pneumaticcraft:air": 30000
+					}
+				}
+				title: "Pneumatic Wrench"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: "pneumaticcraft:compressed_iron_block"
+				id: "75B5665CA0C8FECE"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:raw_materials"
+					}
+				}
+				title: "氣動工藝"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: [
+				"壓力室是任何壓力機械師工作室的核心。既是功能性的製作機器，也能作為空氣電池來平衡系統中的壓力臨界值。是個空心立方體的多方塊結構，尺寸可以是 3x3x3，4x4x4，或 5x5x5。建議以最小的壓力室開始，因為較大的在開始時要更長的時間才能充滿空氣。"
+				""
+				"壓縮空氣透過氣閥輸入，製作材料透過介面輸入。物品無法手動放入介面。相反的，能透過漏斗或管道輸入。每個物品傳輸時會使用一定量的空氣，意思是傳輸一組物品會需要 64 倍的空氣。若無法輸入一組物品時，請考慮安裝更多容量升級。"
+				""
+				"================================================================="
+				""
+				"壓縮空氣的運作原理通常與現實生活相似，空氣會從高壓往低壓流動形成平衡。意思是空氣在管道網路中能雙向流動，而系統中的所有空氣可供應所有連接上的設備使用。當然，若一台機器耗盡了所有空氣，意味著其他的機器將沒有足夠的空氣能運作。"
+				""
+				"使用空氣製作的配方會顯示運作時所需的最小壓力，以 bar 為單位。配方中的壓力表會顯示為綠色區域。在此範圍內的壓力都是可以接受的。"
+				""
+				"系統的容量越大，達到相同壓力所需的空氣就越多。安裝更多容量升級，或簡單地在產線上增加更多壓縮機，能增加系統可容納的總空氣量。這可能會暫時降低壓力，直到壓縮機重新將空氣填滿。"
+				""
+				"注意：打造壓力室時必須小心，整個結構應避免跨越區塊邊界。F3+G 會顯示區塊邊界。"
+			]
+			icon: "pneumaticcraft:pressure_chamber_wall"
+			id: "2BCEA81413D908E4"
+			min_width: 400
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "7364D55166238332"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					count: 23L
+					id: "7CAE99944A5DA34E"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "12F082C412932885"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+				{
+					id: "5529379BA0E98053"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+			]
+			title: "壓力室"
+			x: -21.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: [
+				"縮然這不會讓你在下一個千禧年受到來自太空危險麵條的襲擊或輻射感染鄉村，壓縮空氣本身就很危險，因為壓力過大可能會造成方塊爆炸並銷毀。"
+				""
+				"可建立一個紅石系統來控制空氣壓縮機，不僅能防止意外爆炸，且有助於提高燃料效率。"
+				""
+				"將壓力表管道模組放在壓縮機旁的第一根壓力管道上，然後拉正好九格紅石的長度接到中繼器指向壓縮機本體。最後，將壓縮機的紅石行為的介面設定為低紅石訊號啟用。成果是壓縮機將在大約 4.5 bar 時關閉。"
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:flux_compressor"
+			id: "3BDD27D9FDC82E36"
+			min_width: 300
+			rewards: [
+				{
+					count: 9
+					id: "2CF05CB4198898DA"
+					item: "minecraft:redstone"
+					title: "Redstone Dust"
+					type: "item"
+				}
+				{
+					id: "3F1E0BD337B23FF2"
+					item: "minecraft:repeater"
+					title: "Redstone Repeater"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "壓力山大"
+			tasks: [
+				{
+					id: "322423F415E284D8"
+					item: "pneumaticcraft:pressure_gauge_module"
+					type: "item"
+				}
+				{
+					id: "457687F0BC37E9EA"
+					item: "pneumaticcraft:flux_compressor"
+					title: "Air Compressors"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5631F8C109FD8A29"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+			]
+			title: "如何開始：壓力管理"
+			x: -21.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["2BCEA81413D908E4"]
+			description: [
+				"即使最縝密的計畫也可能為意外事件而摧毀。在機器中安裝安全升級，避免不慎發生的意外拆卸。"
+				""
+				"要強調的是，安全升級應該被視為次要的安全管理。正確的紅石控制壓縮機才是第一要務。"
+				""
+				"注意：手持氣動板手對氣動工藝模組的任何方塊蹲下右鍵能瞬間拆下，並保留空氣與升級。這對壓力室氣閥也適用。"
+			]
+			id: "21E80B4F1712E3FF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "6E8BDFC4506F6E33"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "安全第一"
+			tasks: [{
+				count: 2L
+				id: "1177F882F4EC6D68"
+				item: "pneumaticcraft:security_upgrade"
+				type: "item"
+			}]
+			title: "安全升級"
+			x: -21.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"雖然叫做煤油燈，但可以使用與液體壓縮機相同的燃料，照亮半徑 30 格的範圍。"
+				""
+				"非常適合趕走恐怖份子。"
+			]
+			hide_dependency_lines: true
+			id: "64B5744F479C4279"
+			rewards: [{
+				id: "1F3042103791237B"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:medium_tank"
+					tag: {
+						BlockEntityTag: {
+							SavedTanks: {
+								Tank: {
+									Amount: 64000
+									FluidName: "pneumaticcraft:kerosene"
+								}
+							}
+						}
+					}
+				}
+				title: "Medium Fluid Tank"
+				type: "item"
+			}]
+			subtitle: "夜晚不再黑..."
+			tasks: [{
+				id: "0372C21229B0B51F"
+				item: "pneumaticcraft:kerosene_lamp"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"渦流管的原理是在特殊的倉室中旋轉高壓空氣產生溫差，只要調節進入的壓力即可精細控制加熱或冷卻。"
+				""
+				"渦流管有熱端與冷端的一體兩面。熱端的溫度取決於冷端的溫度，反之亦然。例如，在冷端放至散熱器可使冷端的溫度更快的消散在空氣中，使熱端溫度增加。"
+				""
+				"然而，渦流管並不是產生熱量的唯一方式。查看 EMI 中熱管的用途，能顯示出各種能用來加熱或冷卻的方塊和流體。"
+				""
+				"最近，氣動工藝也能支援通用機械的熱系統，而沉浸工程也能通用。一些值得注意的熱源包含："
+				""
+				"● 外置加熱器"
+				"● 電阻加熱器"
+				"● 木料加熱器"
+			]
+			id: "52165EC21DD8ABFB"
+			min_width: 250
+			rewards: [{
+				count: 3
+				id: "4CF7E22863B404CF"
+				item: "pneumaticcraft:heat_sink"
+				title: "Heat Sink"
+				type: "item"
+			}]
+			subtitle: "旋轉舞者"
+			tasks: [{
+				id: "6C43F51641A8BB70"
+				item: "pneumaticcraft:vortex_tube"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: [
+				"雖然熱量管理僅次於壓力，仍是氣動工藝模組重要的一部分。有些需要保持在一定的溫度之上，而有些需要保持低溫才能正常運作。"
+				""
+				"熱量，類似壓力，會試著從系統中平衡，從各種與熱量相關的機器，甚至是消散在空氣中傳遞熱量。使用熱管能使熱量從一個位置傳至另一個，而不會消散在環境之中。"
+				""
+				"在需要達到非常高溫或非常低溫的情況下，需要某種形式的隔熱。"
+				""
+				"隔熱有許多形式。大部分沒有熱量相關的方塊都可以；地板門，管道，玻璃都能使用。然而，隔熱板往往是最理想的，因為即使安裝後也能右鍵存取機器。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:blue_ice"
+			id: "011EE483D38C9C23"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "29CC4AE5D8D278BA"
+				player_command: false
+				title: "Epic PNC:R Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "反正寒冷從不對我造成困擾"
+			tasks: [
+				{
+					count: 6L
+					id: "0BF764D71DBB2DA1"
+					item: "pneumaticcraft:heat_pipe"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "51CB4BC0AB80DA66"
+					item: "pneumaticcraft:thermal_lagging"
+					type: "item"
+				}
+			]
+			title: "如何開始：熱量管理"
+			x: -10.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["52165EC21DD8ABFB"]
+			description: [
+				"值得注意的是，渦流管使用大量空氣，且不直接受紅石控制。為了將其關閉，必須切斷空氣供應。調節器管道模組為此而生。"
+				""
+				"將它接上壓力管道並給予紅石訊號，允許通過的壓力量會減少。完整的 15 等級的紅石訊號將完全禁止空氣流通，關閉所有機器。"
+				""
+				"調節器也非常適合從高壓降到低壓，並自動調節至 4.9 bar，無須任何額外的功夫。這往往能簡化壓力管理，因為可以在任何地方接上高壓，然後在需要的地方降低壓力使低壓機器運作。"
+				""
+				"注意：放置時，較小的一端是\"調節\"端。和其他管道模組相同，右鍵放置會將其指向點擊方向的另一側，蹲下右鍵則會放置在管道的另一側。"
+			]
+			id: "6A0D0EE149F91408"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "42EDFE52FEF7D948"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "6FCA9EB91BB33E7E"
+				item: "pneumaticcraft:regulator_tube_module"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"導熱框架放置在任何容器上，並使該容器能利用熱或冷來進行製作。加熱時，能像熔爐熔煉物品。冷卻時能製作各種有用的物品。"
+				""
+				"為了要冷卻流體，使用氣動工藝的儲罐或鐵桶裝填流體並放入容器中。若容器有足夠的空間，冷卻後的物品會在容器中出現。"
+			]
+			hide_dependency_lines: true
+			id: "47AFE9BB5B8C4655"
+			rewards: [{
+				id: "0952FFF35BFD54EE"
+				item: "pneumaticcraft:reinforced_chest"
+				title: "Reinforced Chest"
+				type: "item"
+			}]
+			subtitle: "冷凍機"
+			tasks: [{
+				id: "598785CD3F83C151"
+				item: "pneumaticcraft:heat_frame"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"萬能感測器是個功能強大的方塊，它能根據各種條件輸出紅石訊號，例如偵測附近的玩家，當玩家右鍵點擊方塊，方塊是否存在，亮度值，或甚至目標方塊的熱量。"
+				""
+				"當偵測熱量時，試著將其瞄準熱管或氣動工藝的機器，而不是瞄準帶有導熱框架的容器。"
+			]
+			hide_dependency_lines: true
+			id: "7798C42F46156ECE"
+			rewards: [
+				{
+					id: "4225A74DA201F312"
+					item: "pneumaticcraft:block_tracker_upgrade"
+					title: "Block Tracker Upgrade"
+					type: "item"
+				}
+				{
+					id: "2345C95FB18383C8"
+					item: "pneumaticcraft:gps_tool"
+					title: "GPS Tool"
+					type: "item"
+				}
+			]
+			subtitle: "天羅地網"
+			tasks: [{
+				id: "6EFE971150331862"
+				item: "pneumaticcraft:universal_sensor"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: [
+				"氣舉能從世界上抽取流體。當用於 3x3 的水時，會視為無限水源。"
+				""
+				"將其放在任何流體源的上方，放入氣舉鑽管，然後給它空氣。鑽管會向下伸展至流體源，若有必要會破壞方塊，然後試著抽取附近相鄰的流體源。"
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:gas_lift"
+			id: "4BE812408CBFB588"
+			rewards: [{
+				count: 4
+				id: "012A65117575B993"
+				item: "pneumaticcraft:volume_upgrade"
+				type: "item"
+			}]
+			subtitle: "不是舉重！"
+			tasks: [
+				{
+					id: "278BF9D026EEEC6D"
+					item: "pneumaticcraft:gas_lift"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "4F62F1E2676A8DDF"
+					item: "pneumaticcraft:drill_pipe"
+					type: "item"
+				}
+			]
+			x: -22.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"精煉廠僅需要熱量，且透過放置控制器並在其頂部堆疊二至四個輸出建構而成。務必對所有邊進行隔熱，防止熱量流失，因為它需要相當高溫才能運作。"
+				""
+				"注意：當精煉廠可以運作時，比較器能讀取控制器並輸出紅石訊號，這意味著它有有效的輸入且有輸出的空間，使其成為有效控制渦流管的絕佳方法。"
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:refinery_output"
+			id: "77B7A8530C3B3421"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "2120D4C24F7F303D"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "煉油公司"
+			tasks: [
+				{
+					id: "1337A526608EDFB0"
+					item: "pneumaticcraft:refinery"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5354E44458DBF503"
+					item: "pneumaticcraft:refinery_output"
+					type: "item"
+				}
+			]
+			title: "煉油"
+			x: -10.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"簡稱 TPP，此機器利用熱量和壓力的組合來轉換固體和流體。近些年來甚至用於廚房。"
+				""
+				"將機器排成一排可以讓他們透過側面共享熱量和壓力。"
+				""
+				"有些機器需要非常精確地控制熱量，如 30° 到 60° 之間。這能透過調節空氣進出渦流管來實現，當方塊達到特定溫度時，使用萬能感測器來控制空氣流動。"
+			]
+			hide_dependency_lines: true
+			id: "341CD0E12D534A44"
+			rewards: [
+				{
+					count: 16
+					id: "27115E85D1071701"
+					item: "pneumaticcraft:cod_n_chips"
+					title: "Cod n Chips"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29296A9922AAC24F"
+					item: "pneumaticcraft:dispenser_upgrade"
+					title: "Dispenser Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "熱什麼來著？"
+			tasks: [{
+				id: "28A39770D414504E"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+				type: "item"
+			}]
+			title: "熱氣動加工"
+			x: -11.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: [
+				"物流框架和模組是物流網路中的主要工具。它們允許物品和流體同時在同一個管道網路上移動。"
+				""
+				"框架本身決定了要採取的動作，且為可設定過濾的地方。例如，請求框架接上熔爐能從接上儲存框架的容器中提取煤炭。"
+				""
+				"框架可以安裝在任何容器上，並使用物流設定器來進行調整。對於較大的設施，可透過對空氣右鍵整組的框架事先完成整組框架的設定。過濾設定會套用在整組的框架上。"
+				""
+				"模組必須安裝在壓力管道並指向框架。每次運作都會消耗少量空氣，且必須至少 3 bar 才能運作。這些模組有顏色編碼的頻道，允許在同一條管道網路上進行非常複雜的系統。"
+			]
+			id: "6F9B23BB2F05C9CF"
+			min_width: 300
+			rewards: [
+				{
+					count: 8
+					id: "0971F4B903BC0755"
+					item: "pneumaticcraft:logistics_frame_requester"
+					title: "Logistic Requester Frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5B69B45A7A2CEB1C"
+					item: "pneumaticcraft:logistics_frame_passive_provider"
+					title: "Logistic Passive Provider Frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3D2E76A2F71FD9F3"
+					item: "pneumaticcraft:logistics_frame_storage"
+					title: "Logistic Storage Frame"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "405F63DF3A2DA57F"
+					item: "pneumaticcraft:logistics_frame_active_provider"
+					title: "Logistic Active Provider Frame"
+					type: "item"
+				}
+				{
+					id: "17906620288CD598"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:logistics_configurator"
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "框住你的需求"
+			tasks: [{
+				count: 8L
+				id: "05D615B75A5D5E7E"
+				item: "pneumaticcraft:logistics_module"
+				type: "item"
+			}]
+			title: "物流"
+			x: -17.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["一個抗爆炸的儲物箱，破壞時能保存內部的物品。"]
+			hide_dependency_lines: true
+			id: "78AA867A347E4A37"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "620CA924053FE1B1"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "不要碰我的箱子！"
+			tasks: [{
+				id: "39F7DFB8722C0D56"
+				item: "pneumaticcraft:reinforced_chest"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["強化儲物箱的高級版，有更大的容量，每個欄位的物品類型和數量過濾，範圍內的物品收集，以及能自動輸入輸出鄰近的容器功能。"]
+			hide_dependency_lines: true
+			id: "31F1D77166705C31"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3621E6BD54CDE738"
+					player_command: false
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					id: "7B999E99D0741012"
+					item: "pneumaticcraft:magnet_upgrade"
+					title: "Magnet Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "動動大腦，別只動手"
+			tasks: [{
+				id: "559FDDE96388DC40"
+				item: "pneumaticcraft:smart_chest"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["氣動工藝的漏斗可過濾且速度快，可依照你喜歡的方式指定方向，且接受多個有用的升級。查看它的介面獲得更多訊息。"]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:omnidirectional_hopper"
+			id: "2B9F6B6CA560D326"
+			rewards: [{
+				count: 2
+				id: "52A67AF1A81A0B58"
+				item: "pneumaticcraft:speed_upgrade"
+				title: "Speed Upgrade"
+				type: "item"
+			}]
+			subtitle: "怪怪的"
+			tasks: [
+				{
+					id: "008D9C03C28B8704"
+					item: "pneumaticcraft:omnidirectional_hopper"
+					type: "item"
+				}
+				{
+					id: "1F4C8424CE84CA8F"
+					item: "pneumaticcraft:liquid_hopper"
+					type: "item"
+				}
+			]
+			title: "漏斗"
+			x: -15.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: ["自動化是氣動工藝的核心與靈魂，其物流，紅石，和程式功能，使其能做的事情無遠弗屆。"]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:logistics_core"
+			id: "7F36F40E0465B923"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "4598DFE37D84B116"
+				player_command: false
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: "pneumaticcraft:pressure_tube"
+				id: "4547231CF39FE5A6"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:pressure_tube"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:reinforced_pressure_tube"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:advanced_pressure_tube"
+							}
+						]
+					}
+				}
+				title: "Logistics and Programming"
+				type: "item"
+			}]
+			title: "物流與程式"
+			x: -16.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: [
+				"紅石管道模組透過傳輸管道網路來讀取和輸出紅石訊號。每個模組能設定顏色頻道，能在同一個管道網路中傳輸至多 16 個不同的訊號。"
+				""
+				"這不需要空氣且訊號不會隨著距離而衰減。"
+				""
+				"在接收模式下安裝模組擴充水晶時，它能設為和原版比較器完全相同的運作方式，從方塊中取得訊號並輸出特殊量級的紅石訊號，比如說精煉廠。"
+				""
+				"在輸出模式下安裝時，可以使用多種功能。例如，當使用多個顏色頻道時，可作為「與」閘，「或」閘，與另一個頻道的訊號等級或與定值比較等等。將這些連接在一起可以製作一些真正緊湊的紅石邏輯。"
+			]
+			id: "33C871735DD99224"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5D3612DC6DF205A4"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "紅石進化"
+			tasks: [{
+				count: 2L
+				id: "25B087926548F8F0"
+				item: "pneumaticcraft:redstone_module"
+				type: "item"
+			}]
+			title: "紅石管道模組"
+			x: -14.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["33C871735DD99224"]
+			description: [
+				"模組擴充水晶對各種管道模組增加額外的功能。只要對任何管道模組右鍵即可增加新功能："
+				""
+				"● 調節管道模組：精確控制調節壓力。"
+				""
+				"● 壓力表管道模組：精確控制紅石訊號。"
+				""
+				"● 空氣柵管道模組：增加過濾器決定什麼東西能受它影響。"
+				""
+				"● 紅石管道模組：增加一些邏輯功能如與閘和或閘，紅石鐘，比較器功能，以及更多。"
+				""
+				"例如，將模組擴充水晶安裝置壓力表後，能大大簡化壓縮機的紅石控制。設置當壓力低於 4.9 bar（高級壓縮機為 19.9 bar）時輸出訊號，然後使用一小段紅石模組將該訊號直接傳給壓縮機。這減少了之前建議過使用一長段紅石訊號的需要。"
+			]
+			id: "600E9DF5041FA21F"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "5600DC7079A960F8"
+				player_command: false
+				title: "Legendary PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "樹莓派"
+			tasks: [{
+				id: "5366CD0611A2224C"
+				item: "pneumaticcraft:module_expansion_card"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["當你不想在空中拉一堆管線時，物流無人機是方便的小幫手。試著使用一些物流框架並部屬物流無人機來幫你移動物品。"]
+			hide_dependency_lines: true
+			id: "2BF0EE004239C2AC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "312B40790B0E6AE3"
+					player_command: false
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					count: 4
+					id: "27AE33E162A1D6B8"
+					item: "pneumaticcraft:inventory_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "飛行馬戲團"
+			tasks: [{
+				id: "3B8551B48F0F93A4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:drone"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:logistics_drone"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:harvesting_drone"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:guard_drone"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:collector_drone"
+							}
+						]
+					}
+				}
+				title: "簡單的無人機"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2BCEA81413D908E4"]
+			description: [
+				"充氣站是為氣動板手，氣動鑿岩鑽和裝備充氣的主要方法。除此之外，也用於將升級安裝至這些物品的功能。"
+				""
+				"充氣站安裝發射器升級後，能為上方的實體充氣，無人機或是玩家身上的裝備。"
+				""
+				"當附近的無人機空氣不足時，它們會自動搜尋這樣的充氣站。"
+			]
+			id: "3730F4664875AF9E"
+			min_width: 300
+			rewards: [
+				{
+					id: "18CE044363A25CBD"
+					item: "pneumaticcraft:dispenser_upgrade"
+					title: "Dispenser Upgrade"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "440B5CB8A502E3BF"
+					item: "pneumaticcraft:volume_upgrade"
+					title: "Volume Upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "齁 氣氣氣氣"
+			tasks: [{
+				id: "378CFDE8FC3E5363"
+				item: "pneumaticcraft:charging_station"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["在無人機中安裝一個或多個壽命升級，幫助它們保持工作狀態。無人機偶爾會遇到環境危害而受損，這些升級能使它們自我修復，但需要消耗一些空氣。"]
+			id: "694279B52360ADD9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "09056410AC7B4F5E"
+				player_command: false
+				title: "Epic PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "自我修復"
+			tasks: [{
+				id: "406148B6217C1944"
+				item: "pneumaticcraft:item_life_upgrade"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["在不能程式化的無人機中安裝待機升級，使其能在沒有工作進行時進入休眠狀態。可程式化的無人機可直接編寫程式達到相同的目的，不需要安裝升級。"]
+			id: "2AF8CE856E0E9D71"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "501A756DAB89889A"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "休眠 工作 休眠 工作"
+			tasks: [{
+				id: "3D07056B2E9FE5B7"
+				item: "pneumaticcraft:standby_upgrade"
+				type: "item"
+			}]
+			x: -15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["在不能程式化的無人機中安裝一些範圍升級來增加工作範圍。"]
+			id: "0C0CF19495038130"
+			rewards: [{
+				count: 2
+				id: "6FD71C3AAA7C5554"
+				item: "pneumaticcraft:range_upgrade"
+				title: "Range Upgrade"
+				type: "item"
+			}]
+			subtitle: "別走太遠"
+			tasks: [{
+				id: "636E74B833DE113E"
+				item: "pneumaticcraft:range_upgrade"
+				type: "item"
+			}]
+			x: -17.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["在無人機中安裝一些這個能加快其速度。許多方塊也能從中受益。"]
+			id: "2CE1808F9FF6F4E6"
+			rewards: [{
+				count: 2
+				id: "0459D9273A6BCEB3"
+				item: "pneumaticcraft:speed_upgrade"
+				title: "Speed Upgrade"
+				type: "item"
+			}]
+			subtitle: "別走太快"
+			tasks: [{
+				id: "64F51201D174AF98"
+				item: "pneumaticcraft:speed_upgrade"
+				type: "item"
+			}]
+			x: -17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: [
+				"程式化的無人機是氣動工藝模組當中，自動化功能的巔峰，其選項幾乎是無限的，因為它們可以與方塊和實體互動，揮擊武器和工具，並依據複雜的條件執行工作。"
+				""
+				"深入研究看看這個視覺化的程式語言，看你能想出些什麼！若你還沒有什麼想法的話，試試下面這些："
+				""
+				"● 自動化波瓦科技模組的充能室"
+				"● 自動化植物魔法模組的符文祭壇"
+				"● 自動化氣動工藝模組的生物柴油"
+				"● 使用牛奶桶和綠色染料打造史萊姆農場"
+				"● 使用無人機移動並載著你，打造一個傳送網絡"
+			]
+			icon: "pneumaticcraft:programmer"
+			id: "4BC617E2C8CDEF24"
+			rewards: [{
+				count: 64
+				id: "7BB4D8C166E01C91"
+				item: "pneumaticcraft:programming_puzzle"
+				title: "Programming Puzzle Piece"
+				type: "item"
+			}]
+			subtitle: "我有我的方法"
+			tasks: [
+				{
+					id: "241C4FF7CA84BE39"
+					item: "pneumaticcraft:drone"
+					type: "item"
+				}
+				{
+					id: "60AFC2899CB71778"
+					item: "pneumaticcraft:programmer"
+					type: "item"
+				}
+			]
+			title: "程式化無人機"
+			x: -16.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BF0EE004239C2AC"]
+			description: ["遠程終端是能編寫的介面設備，透過操作全局變數運作。與萬能感測器結合使用時，可將它用於遠端操控紅石，或用來控制程式化無人機。"]
+			id: "60B082796E10B210"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "05534AA4AD901FDD"
+				player_command: false
+				title: "Legendary PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "始終觸手可及"
+			tasks: [{
+				id: "7AB632F4DB89BCE9"
+				item: "pneumaticcraft:remote"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"居家購物的巔峰之作。點擊按鈕，訂單在你沒有察覺的狀況下出現。"
+				""
+				"首先手持平板對一個容器蹲下右鍵綁定。有需要的話也能綁定儲罐。"
+				""
+				"將支付的款項物品放入容器中，然後從平板中完成訂單。提交後，一架無人機會從箱子中取走款項。不久後，第二架無人機會出現，將購買的物品放入容器中。購買流體時，會被送入綁定的儲罐中。"
+			]
+			hide_dependency_lines: true
+			id: "11D246E41A38ECDF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "71C74EE7350259ED"
+				player_command: false
+				title: "Epic PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "不是亞馬遜"
+			tasks: [{
+				id: "694D30A4D11B1C83"
+				item: "pneumaticcraft:amadron_tablet"
+				type: "item"
+			}]
+			x: -16.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: [
+				"裝配台提供了一種簡單的方法製作電路板，並讓你能進行更高級的製作配方。"
+				""
+				"每個部件放置的位置都有限制。關於確切的規則請參閱 PNC:R 手冊。"
+				""
+				"一個在 2x3 空間內簡單且能運作的配置為："
+				""
+				"           互動設備，裝配台，互動設備"
+				"             鑽頭   ， 平台 ，  雷射"
+				""
+				"注意：裝配程式：鑽頭\\&雷射，能使裝配台製作只需要鑽頭或只需要雷射的配方。大部分的狀況下，沒理由分開使用兩種裝配程式。"
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:assembly_platform"
+			id: "2C9A30956A2044A0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "33A65EE79C654898"
+				player_command: false
+				title: "Legendary PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "需要一些組裝"
+			tasks: [
+				{
+					id: "39256304C4298D2F"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "19E0D9C1E5354D91"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "577EB62DCE88CD01"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "50F09710E1BFAEF9"
+					item: "pneumaticcraft:assembly_drill"
+					type: "item"
+				}
+				{
+					id: "3D44FA9D501C2E3E"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+				{
+					id: "494CDB809E9F7ED1"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+				{
+					id: "3B65CED47E97C648"
+					item: "pneumaticcraft:assembly_program_drill_laser"
+					type: "item"
+				}
+			]
+			title: "裝配台"
+			x: -21.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: [
+				"攜帶型的流體儲存。能填充鐵桶和其他儲罐來實現自動化的要求。"
+				""
+				"垂直堆疊並使用氣動板手右鍵，能成型為多方塊結構的大型儲罐。"
+			]
+			hide_dependency_lines: true
+			id: "6B98810EDAC8DB0C"
+			rewards: [{
+				id: "0BFF7AA6126076FD"
+				item: "pneumaticcraft:medium_tank"
+				title: "Medium Fluid Tank"
+				type: "item"
+			}]
+			subtitle: "堆疊創奇蹟"
+			tasks: [{
+				count: 2L
+				id: "0EAB2205FB361207"
+				item: "pneumaticcraft:small_tank"
+				type: "item"
+			}]
+			title: "流體儲罐"
+			x: -15.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3EFFC773FB6104ED"]
+			description: [
+				"高級壓縮機能達到 20 bar 的壓力，為一些需要高壓的機器提供壓力。然而，這是需要使機器保持冷卻才能高效運作的。"
+				""
+				"雖然用渦流管之類的東西冷卻這些壓縮機確實有效，但遠非理想，因為渦流管需要大量空氣來冷卻任何東西。壓縮機生產的空氣很大一部分都回歸用於冷卻。"
+				""
+				"相反的，請考慮使用散熱器和空氣柵來冷卻。三個散熱器與壓縮機直接接觸，並設置多個空氣柵，每個空氣柵在所有三個散熱器上吹氣，可使高速運作的壓縮機保持冷卻運作，與渦流管冷卻相比，空氣消耗量相當小。"
+			]
+			icon: "pneumaticcraft:flux_compressor"
+			id: "34334E03CA719084"
+			min_width: 300
+			progression_mode: "flexible"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "14C53EBF59D4E97D"
+				player_command: false
+				title: "Legendary PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "超級層流"
+			tasks: [{
+				id: "04E4EB4FC3EA866B"
+				item: "pneumaticcraft:flux_compressor"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2BCEA81413D908E4"]
+			dependency_requirement: "one_completed"
+			description: [
+				"雖然大多數的東西都需要高壓才能運作，但有些機器需要真空才能運作。真空泵即為此而生。"
+				""
+				"將壓力輸入機器帶有綠色加號的一側，然後將管道接上紅色減號的一側。任何後端產線上即為真空之下。"
+				""
+				"提示：打造第二個壓力室，並永久真空會很有幫助，因為真空的壓力室能將附魔從物品轉移至書上。同樣的，在一般的壓力室中能將書上的附魔附在物品上，只需要消耗少量的空氣。"
+			]
+			id: "19F79435C6D185E3"
+			min_width: 300
+			rewards: [
+				{
+					id: "46B99CC6A928D067"
+					item: "pneumaticcraft:memory_stick"
+					title: "Memory Stick"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D37487ECAD39A8D"
+					item: "pneumaticcraft:volume_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "完全相反！"
+			tasks: [{
+				id: "543D0169C84EBE30"
+				item: "pneumaticcraft:vacuum_pump"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["19F79435C6D185E3"]
+			description: [
+				"你自訂生怪的大門。"
+				""
+				"不是所有生物都能自然生成。慶幸的是，有一個可以達成此目的的方法：真空陷阱。"
+				""
+				"首先將真空陷阱接上真空泵，抽出所有的空氣。建議安裝容量升級，且生怪磚核心是必備的。用氣動板手蹲下右鍵拆下真空陷阱。然後將它放置在任何生物旁並對空手它蹲下右鍵打開它。附近的生物會被吸入其中並加入核心內。"
+				""
+				"多個生物能被存入核心中，使混合生怪是可能的。"
+				""
+				"僅有一個生物的生怪磚核心也仍可被氣動生怪磚使用；非常適合很難捕捉或稀有的生物。"
+				""
+				"若真空陷阱內有記憶原質能使其運作的更有效率，意思是捕捉更少的生物就能裝滿它。"
+				""
+				"核心中的生物能隨機被釋放出來，手持核心對地板蹲下右鍵，在取得氣動生怪磚前，是個能簡單運送生物的方法。"
+			]
+			icon: "pneumaticcraft:vacuum_trap"
+			id: "40BD357818C3FC4B"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "71E7B2F1A0C4BCF2"
+				player_command: false
+				title: "Legendary PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "魔鬼剋星？"
+			tasks: [
+				{
+					id: "20D3B02690AA1ED2"
+					item: "pneumaticcraft:vacuum_trap"
+					type: "item"
+				}
+				{
+					id: "41F20BAC1A7A8ED0"
+					item: "pneumaticcraft:spawner_core"
+					type: "item"
+				}
+			]
+			x: -20.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6E942B6AC4460725"]
+			description: ["除了機器和物流，氣動工藝提供了一些有用的工具，裝備，和實用設備。"]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:plastic"
+			id: "32D56D0E1A7E8DAC"
+			rewards: [{
+				id: "2B4ADC90E329AD37"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:camo_applicator"
+					tag: {
+						"pneumaticcraft:air": 30000
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "能碰也能玩"
+			tasks: [{
+				icon: "pneumaticcraft:pressure_tube"
+				id: "3812A5C0C325C4CA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:pressure_tube"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:reinforced_pressure_tube"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:advanced_pressure_tube"
+							}
+						]
+					}
+				}
+				title: "Tools and Utility"
+				type: "item"
+			}]
+			title: "工具與實用設備"
+			x: -16.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["011EE483D38C9C23"]
+			description: [
+				"散熱器被動地提供熱量消散在空氣的效率，助於快速地將物體冷卻回環境的溫度。"
+				""
+				"啟動中的空氣柵作用區域中的散熱器運作的速度會更快。當空氣柵調節至剛好足以運作的壓力時，這是冷卻機器最有效的方法之一。"
+				""
+				"當接上真空的壓力管線時，空氣柵還能用為物品收集器，將物品和其他實體拉向它。一直拉到物品存入相鄰的容器為止。"
+			]
+			icon: "pneumaticcraft:heat_sink"
+			id: "3EFFC773FB6104ED"
+			rewards: [
+				{
+					id: "7DD78B29101BCA5B"
+					item: "pneumaticcraft:module_expansion_card"
+					type: "item"
+				}
+				{
+					id: "1D728890056FF024"
+					item: "pneumaticcraft:regulator_tube_module"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2F3872182DE0552B"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+				{
+					id: "203BC2C64168D2C7"
+					item: "pneumaticcraft:air_grate_module"
+					type: "item"
+				}
+			]
+			x: -9.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"每個部件都能升級增加護甲，自我修復，或防止豬布林攻擊。"
+				""
+				"其他值得注意的升級："
+				""
+				"頭盔"
+				"● 夜視升級"
+				"● 實體和物品追蹤升級"
+				"● Entity and Block Hacking"
+				"● 水肺升級"
+				""
+				"胸甲"
+				"● 磁鐵升級"
+				"● 充氣升級"
+				"● 發射器升級"
+				"● 鞘翅升級"
+				""
+				"護腿"
+				"● 速度升級"
+				"● 跳躍升級"
+				""
+				"靴子"
+				"● 內建步行輔助"
+				"● 內建摔落傷害免疫"
+				"● 腳蹼升級"
+				"● Creative Flight"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:pneumatic_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4023F483F5859ABE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "45F1066AD1B2C401"
+					player_command: false
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0C55EECDCDE4C01C"
+					player_command: false
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "320E3090BF091078"
+					player_command: false
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0CE417ED326B8137"
+					player_command: false
+					title: "Epic PNC:R Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "我能打倒一整個軍隊"
+			tasks: [
+				{
+					id: "54F6FEA6017FA1A3"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "406C722BC077C13F"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D6070EB3A5012AD"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41A9A6E8911D79B0"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:pneumatic_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"一個多功能的工具，能輕鬆清理大範圍的區域。蹲下右鍵開啟介面，可在其中安裝鑽頭與附魔書，改變挖掘模式。"
+				""
+				"接受幸運或絲綢之觸的附魔書。"
+			]
+			hide_dependency_lines: true
+			id: "4DB935C9023BE022"
+			rewards: [{
+				id: "717B60C4CC221693"
+				item: "pneumaticcraft:magnet_upgrade"
+				type: "item"
+			}]
+			subtitle: "瑞士刀"
+			tasks: [{
+				id: "215DF4ECB6072D79"
+				item: "pneumaticcraft:jackhammer"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: ["一個智慧型的炮塔，能過濾僅攻擊特定生物。如僅限成年動物。"]
+			hide_dependency_lines: true
+			id: "738C5B461AAEBDA7"
+			rewards: [{
+				id: "30C7FE88AE977339"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:gun_ammo_ap"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 5s
+						}]
+					}
+				}
+				title: "Armor-Piercing Minigun Ammo"
+				type: "item"
+			}]
+			subtitle: "站在最前線"
+			tasks: [{
+				id: "158359A805347117"
+				item: "pneumaticcraft:sentry_turret"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"狩獵魔物的現代解決方案。也對寵物友善！"
+				""
+				"安裝安全升級防止它傷害已馴服的生物和其他玩家。"
+			]
+			hide_dependency_lines: true
+			id: "6E6FC569FE823C92"
+			rewards: [{
+				id: "4B4D3D2CDAAC172C"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:gun_ammo"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 5s
+						}]
+					}
+				}
+				title: "Minigun Ammo"
+				type: "item"
+			}]
+			subtitle: "公平競爭"
+			tasks: [{
+				id: "1551C0D6DB15C9E7"
+				item: "pneumaticcraft:minigun"
+				type: "item"
+			}]
+			x: -18.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"蝙蝠。它們之中最大的敵人。現在看著，它們的厄運掌握在你手中。"
+				""
+				"微型導彈是目標搜尋的爆裂物。它們不會對地形造成損害，且可以針對不同程度的爆炸損害，行進速度，和轉彎速度進行調整。蹲下右鍵來設定。"
+			]
+			hide_dependency_lines: true
+			id: "7228CB144D83D28F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "0AF178227D43E923"
+				player_command: false
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "目的達成"
+			tasks: [{
+				id: "5A9880172381AF71"
+				item: {
+					Count: 1b
+					id: "pneumaticcraft:micromissiles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -17.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: ["作物架促進植物健康生長，提高生長速度。"]
+			hide_dependency_lines: true
+			id: "318DFB6006EB5CC5"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "624B43310C57D3AF"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "直達天際!"
+			tasks: [{
+				id: "7DBBDF18FF73F327"
+				item: "pneumaticcraft:crop_support"
+				type: "item"
+			}]
+			x: -14.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"氣動工藝的電梯是對任何垂直基地運作的完美設施，具有簡易使用的電梯呼叫器，能將使用者直接帶到要去的樓層。"
+				""
+				"每個電梯基座的高度都有限制，但能垂直堆疊增加額外高度。電梯框架必須放在基座頂部，直至所需達到的最大高度。"
+				""
+				"參閱 PNC:R 手冊取得更多資訊。"
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:elevator_base"
+			id: "07348A594F53E20F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "1C96B75BC65D3936"
+				player_command: false
+				title: "Epic PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "正面新聞"
+			tasks: [
+				{
+					id: "0D40D8A30E373F43"
+					item: "pneumaticcraft:elevator_base"
+					type: "item"
+				}
+				{
+					id: "1CCA7FB5D25FD689"
+					item: "pneumaticcraft:elevator_frame"
+					type: "item"
+				}
+				{
+					id: "1315EE038A39A303"
+					item: "pneumaticcraft:elevator_caller"
+					type: "item"
+				}
+			]
+			title: "電梯"
+			x: -14.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["雖然它能使用 TNT 或箭矢造成傷害，但也許更有趣的是，空氣炮能用來傳輸物品，生物，或只是將東西丟在地上，便於在世界中的製作。"]
+			hide_dependency_lines: true
+			id: "2F2DFDE1AF2C7CC2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "03A761B743DDD4FD"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "67B5DD98EB8424A5"
+				item: "pneumaticcraft:air_cannon"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7F36F40E0465B923"]
+			description: ["當放在容器或儲罐的一側時，傳輸裝置能有助於將物品和流體傳輸至相鄰的容器中。有點慢，但優點是不需要多一格方塊的空間。"]
+			hide_dependency_lines: true
+			id: "357E818321B68CEE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "15748F8C017B2B45"
+				player_command: false
+				title: "Rare PNC:R Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "5BEA30C650A77769"
+				item: "pneumaticcraft:transfer_gadget"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["32D56D0E1A7E8DAC"]
+			description: [
+				"空氣介面是個強大的個人自動化工具。它的面能設定與玩家身上互動達到自動化，使其能遠端自動補充彈藥和其他物品。"
+				""
+				"因為它將玩家的身上視為一個容器，因此它還允許遠端為任何氣動設備充氣。如，將一側設定為盔甲欄，然後接上一個安裝了充氣管道模組的管道。這能使氣動盔甲始終充滿著空氣。"
+				""
+				"此外，安裝發射器升級後，它還能自動餵食玩家，或與玩家的經驗介面互動，使其能以記憶原質的形式用管道輸入與輸出。"
+			]
+			hide_dependency_lines: true
+			id: "2861AD0EB02F37A2"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "3A10D0CC45A7D514"
+				player_command: false
+				title: "Legendary PNC:R Loot Box"
+				type: "command"
+			}]
+			subtitle: "與玩家身上互動"
+			tasks: [{
+				id: "4A701F7EA5F5A104"
+				item: "pneumaticcraft:aerial_interface"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["6F9B23BB2F05C9CF"]
+			description: [
+				"框架本身內建了強大的過濾選項，但並無包含全部的使用狀況。"
+				""
+				"為了依標籤過濾，必須在標籤工作台中建立標籤篩選器，並把物品放入建立。將物品放入左方上方欄位，中間書本圖示左方欄位放入紙。一個標籤列表會顯示在物品下方，可選擇並將其設定至右邊。"
+				""
+				"一旦按下書本圖示後，右側的所有標籤將被編寫至標籤篩選器中。一個標籤篩選器可以包含多個物品類型的標籤。"
+				""
+				"類別篩選器也能用於過濾大類別的物品。如所有熔爐燃料，所有不可堆疊的物品，所有附魔物品，或任何可在熔爐熔煉的物品。"
+			]
+			icon: {
+				Count: 1b
+				id: "pneumaticcraft:classify_filter"
+				tag: {
+					Filter: {
+						Conditions: [ ]
+						MatchAll: 0b
+					}
+				}
+			}
+			id: "72A73E10358253E8"
+			min_width: 300
+			tasks: [
+				{
+					id: "5FF6B6605886B59D"
+					item: {
+						Count: 1b
+						id: "pneumaticcraft:classify_filter"
+						tag: {
+							Filter: {
+								Conditions: [ ]
+								MatchAll: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5119730D4A3EAA91"
+					item: "pneumaticcraft:tag_workbench"
+					type: "item"
+				}
+			]
+			title: "篩選器"
+			x: -17.5d
+			y: -7.0d
+		}
+	]
+	title: "氣動工藝"
+}
