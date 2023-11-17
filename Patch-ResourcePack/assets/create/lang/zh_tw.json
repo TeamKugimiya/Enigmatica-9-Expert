@@ -24,6 +24,11 @@
     "block.create.andesite_bars": "壓縮石柵欄",
     "block.create.brass_block": "山銅方塊",
     "block.create.andesite_scaffolding": "壓縮石鷹架",
+    "advancement.create.belt": "驅動",
+	"advancement.create.brass_casing": "附魔時代",
+	"advancement.create.brass_casing.desc": "結合山銅錠與防腐木頭，為更複雜的機器製作外殼",
+	"advancement.create.brass": "附魔合金",
+	"advancement.create.brass.desc": "製作山銅錠"
 
     "comment_patch": "補充內容",
     "fluid.create.chocolate": "巧克力"
