@@ -25,7 +25,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
 				icon: "kubejs:farmers_delight"
 				id: "60A777DE4B85ED0F"
-				player_command: false
 				title: "農夫獎勵袋"
 				type: "command"
 			}]
@@ -79,7 +78,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "74F868CAED853121"
-				player_command: false
 				title: "靈氣灌注"
 				type: "command"
 			}]
@@ -111,7 +109,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "7447FA9138D4E94E"
-				player_command: false
 				title: "煉金術士獎勵袋"
 				type: "command"
 			}]
@@ -140,7 +137,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "4C4DBF8114CB2E51"
-				player_command: false
 				title: "靈氣灌注"
 				type: "command"
 			}]
@@ -171,7 +167,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "0BF68F0E91094483"
-				player_command: false
 				title: "靈氣灌注"
 				type: "command"
 			}]
@@ -225,7 +220,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "39B68CC0E19837B6"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -290,7 +284,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "6F2498DE79248A40"
-					player_command: false
 					title: "巫師獎勵袋"
 					type: "command"
 				}
@@ -365,7 +358,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "5414F5E5DBF5FCA4"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -445,7 +437,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "0E5BD92301912FBE"
-				player_command: false
 				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
@@ -547,7 +538,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "63EC6BE1C18F9E9A"
-					player_command: false
 					title: "巫師獎勵袋"
 					type: "command"
 				}
@@ -555,7 +545,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/medium"
 					icon: "kubejs:aura_leaf"
 					id: "38C17BE6339B21BC"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -646,7 +635,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "5CD17C5FC1E99147"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -788,7 +776,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "29AD14E62D652876"
-					player_command: false
 					title: "巫師獎勵袋"
 					type: "command"
 				}
@@ -801,7 +788,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "6BEDB6EB5F5DD15C"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -869,7 +855,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "181F9F12E4654AC3"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -894,7 +879,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "0CEB7353C721EF23"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -927,7 +911,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "368322B66A743C01"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -935,7 +918,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "43B5455E97D1AB02"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -969,7 +951,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "51CCBDE9F54731C8"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -977,7 +958,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "35079413F0D062FB"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1013,7 +993,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "3C9CCE31C80E1348"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -1021,7 +1000,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "11B3DE3B0795BA69"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1049,7 +1027,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "61B34E18FBDA8BE6"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -1057,7 +1034,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "06804245F30E2149"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1092,7 +1068,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
 				icon: "ars_nouveau:blank_glyph"
 				id: "4D3BD7740EAF736F"
-				player_command: false
 				title: "隨機一級魔符"
 				type: "command"
 			}]
@@ -1141,7 +1116,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "07DDF6CFF702FA3E"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -1149,7 +1123,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "1411C2FA9E44E9AE"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1181,7 +1154,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "624D22F8BB99AF09"
-				player_command: false
 				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
@@ -1227,7 +1199,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "75C613BBF99219CD"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -1235,7 +1206,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "5B324D5035FAA45D"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1270,7 +1240,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "5986A05AFF7B5081"
-				player_command: false
 				title: "煉金術士獎勵袋"
 				type: "command"
 			}]
@@ -1386,7 +1355,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "5C4A1E2E0AC85142"
-				player_command: false
 				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
@@ -1437,7 +1405,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "11AB85F4A8D711C2"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1483,7 +1450,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "5D0ACAACAA68E0CD"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1535,7 +1501,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "11443A06230EBBDC"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1619,7 +1584,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "5961092F4097FD3E"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1654,7 +1618,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "56ACF42C5D91BAF5"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1703,7 +1666,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "5177B763DE66FC8D"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1749,7 +1711,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "0BD0FAEB5CF42323"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -1757,7 +1718,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "4F929950817CCC3E"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -1810,7 +1770,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/large"
 				icon: "kubejs:aura_leaf"
 				id: "389C33B783F1A41E"
-				player_command: false
 				title: "靈氣灌注"
 				type: "command"
 			}]
@@ -1839,7 +1798,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "2D22DA949427C0B4"
-				player_command: false
 				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
@@ -1861,7 +1819,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "651C07D976AD902F"
-					player_command: false
 					title: "巫師獎勵袋"
 					type: "command"
 				}
@@ -1966,7 +1923,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 					icon: "kubejs:alchemists_delight"
 					id: "65C797E604B3DA0F"
-					player_command: false
 					title: "煉金術士獎勵袋"
 					type: "command"
 				}
@@ -2006,7 +1962,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
 				icon: "kubejs:alchemists_delight"
 				id: "5BAC9CC4EA1BAEEC"
-				player_command: false
 				title: "煉金術士獎勵袋"
 				type: "command"
 			}]
@@ -2080,7 +2035,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
 				icon: "kubejs:scavengers_delight"
 				id: "46B73E0A24DE5D55"
-				player_command: false
 				title: "拾荒者獎勵袋"
 				type: "command"
 			}]
@@ -2125,7 +2079,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/small"
 					icon: "kubejs:aura_leaf"
 					id: "2136A5B6580847A6"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -2169,7 +2122,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 				icon: "kubejs:aura_leaf"
 				id: "44AF536691C6AFC3"
-				player_command: false
 				title: "靈氣灌注"
 				type: "command"
 			}]
@@ -2196,7 +2148,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "13E73AB24BADDF67"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -2240,7 +2191,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "6D4844BFC44CD5D5"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -2280,7 +2230,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "5C504E7B50DF72CA"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -2308,7 +2257,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "53223E0F43F27F71"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
@@ -2342,7 +2290,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
 				icon: "kubejs:miners_delight"
 				id: "0278C7667B0EC3FE"
-				player_command: false
 				title: "礦工獎勵袋"
 				type: "command"
 			}]
@@ -2385,7 +2332,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "69D3102DD62060D9"
-					player_command: false
 					title: "巫師獎勵袋"
 					type: "command"
 				}
@@ -2393,7 +2339,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "0BE9EBECF0414FE5"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -2422,7 +2367,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 					icon: "kubejs:sorcerers_delight"
 					id: "67BBB8A5B92C7AE7"
-					player_command: false
 					title: "巫師獎勵袋"
 					type: "command"
 				}
@@ -2430,7 +2374,6 @@
 					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
 					icon: "kubejs:aura_leaf"
 					id: "6A9DEFBAF39BE8C7"
-					player_command: false
 					title: "靈氣灌注"
 					type: "command"
 				}
@@ -2580,7 +2523,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
 				icon: "kubejs:sorcerers_delight"
 				id: "64D8345AD1B57F8B"
-				player_command: false
 				title: "巫師獎勵袋"
 				type: "command"
 			}]
