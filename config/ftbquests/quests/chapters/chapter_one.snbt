@@ -381,11 +381,6 @@
 					item: "ars_nouveau:potion_jar"
 					type: "item"
 				}
-				{
-					id: "7E9ACE7C84B7A434"
-					item: "ars_nouveau:arcane_pedestal"
-					type: "item"
-				}
 			]
 			title: "從魔源直線前進"
 			x: -2.0d
