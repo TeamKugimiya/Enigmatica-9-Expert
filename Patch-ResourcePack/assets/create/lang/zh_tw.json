@@ -29,6 +29,8 @@
     "advancement.create.brass_casing.desc": "結合山銅錠與防腐木頭，為更複雜的機器製作外殼",
     "advancement.create.brass": "附魔合金",
     "advancement.create.brass.desc": "製作山銅錠",
+    "block.create.industrial_iron_block": "工業外殼",
+	"block.create.andesite_door": "壓縮石門",
 
     "comment_patch": "補充內容",
     "fluid.create.chocolate": "巧克力"

@@ -992,7 +992,7 @@
 		{
 			dependencies: ["3BDD27D9FDC82E36"]
 			description: [
-				"裝配台提供了一種簡單的方法製作電路板，並讓你能進行更高級的製作配方。"
+				"裝配台是一種多方塊結構機器，能夠進行更高階的合成。"
 				""
 				"每個部件放置的位置都有限制。關於確切的規則請參閱 PNC:R 手冊。"
 				""
@@ -1004,7 +1004,7 @@
 				"注意：裝配程式：鑽頭\\&雷射，能使裝配台製作只需要鑽頭或只需要雷射的配方。大部分的狀況下，沒理由分開使用兩種裝配程式。"
 			]
 			hide_dependency_lines: true
-			icon: "pneumaticcraft:assembly_platform"
+			icon: "pneumaticcraft:assembly_program_drill_laser"
 			id: "2C9A30956A2044A0"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/legendary"
@@ -1687,6 +1687,27 @@
 			title: "篩選器"
 			x: -17.5d
 			y: -7.0d
+		}
+		{
+			dependencies: ["52165EC21DD8ABFB"]
+			description: [
+				"A very handy tube module to have, the Thermostat Module will read the temperature of the block it is facing, outputting a Redstone signal along the tube that may be used to control a Vortex Tube or any other contraption.  "
+				""
+				"This allows for a very simple, and very compact way of meeting specific heat thresholds for crafting! "
+			]
+			id: "697B1DC7E396FEA6"
+			rewards: [{
+				id: "40EC73245610633E"
+				item: "pneumaticcraft:module_expansion_card"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F9CE0E8672E7028"
+				item: "pneumaticcraft:thermostat_module"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -12.0d
 		}
 	]
 	title: "氣動工藝"

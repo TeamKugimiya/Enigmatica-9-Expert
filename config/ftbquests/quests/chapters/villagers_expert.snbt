@@ -293,7 +293,7 @@
 		}
 		{
 			dependencies: ["7A341C5D96C4A809"]
-			description: ["魔導裝甲學者販售各種氣動工藝模組的設備，轉管機槍專用彈藥，甚至是電路板。"]
+			description: ["魔導裝甲學者會販售各種魔導裝置，像是物流核心、福魯伊克斯水晶，還有能量電池。"]
 			id: "18A0D921EEF7FE7F"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
