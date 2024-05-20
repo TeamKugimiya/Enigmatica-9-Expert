@@ -41,8 +41,8 @@ ServerEvents.genericLootTables((event) => {
 
                         { id: 'hexerei:sage_seed', Count: 4 },
                         { id: 'immersiveengineering:seed', Count: 4 },
-                        { id: 'occultism:datura_seeds', Count: 1 },
 
+                        { id: 'occultism:datura_seeds', Count: 1 },
                         { id: 'minecraft:pumpkin_seeds', Count: 1 },
                         { id: 'minecraft:beetroot_seeds', Count: 1 },
                         { id: 'minecraft:wheat_seeds', Count: 1 },
