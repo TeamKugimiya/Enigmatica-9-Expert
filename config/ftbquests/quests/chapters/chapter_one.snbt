@@ -445,13 +445,14 @@
 		}
 		{
 			dependencies: ["4830632A0E6E9651"]
-			description: ["透過平衡靈氣外向的力量與該法術的內向擠壓，我們能達到穩定的平衡，該平衡足夠堅固與耐用，足以協助先進的冶金術：壓縮石。"
+			description: [
+				"透過平衡靈氣外向的力量與該法術的內向擠壓，我們能達到穩定的平衡，該平衡足夠堅固與耐用，足以協助先進的冶金術：壓縮石。"
 				""
-				"The following spell form will crush blocks placed in the world: "
+				"以下法術鍊能將放置在世界上的方塊，進行粉碎處理："
 				""
-				"&5Touch&r > &aCrush&r"
+				"&5觸摸&r > &a粉碎&r"
 				""
-				"Note: Sensitive is &nnot&r required for crushing blocks."
+				"備註：粉碎方塊&n不需要&r敏感構件。"
 			]
 			id: "79B755D0BDB6A8B7"
 			rewards: [{
@@ -890,7 +891,7 @@
 		}
 		{
 			dependencies: ["7D67B1A9AC1F4445"]
-			description: ["With a steady supply of Antique Ink secured, glyphs may finally be crafted. Of course, using higher tier glyphs will still require further repair of the Spell Book. "]
+			description: ["當古風墨水有穩定來源之後，我們終於可以來製作符文了。理所當然地，使用更高等級的符文，仍然需要進一步修復法術書。"]
 			id: "7507572BD048B6C9"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -1166,7 +1167,7 @@
 				""
 				"================================="
 				""
-				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Subzero Crystal and induce it to grow. "
+				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化零下水晶並誘導它開始生長。"
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1276,26 +1277,19 @@
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
 			description: [
-				"More finely crafted devices will need more delicately processed materials than can easily be done by hand."
+				"要製作更精巧的設備，會需要更精緻型態的金屬，而這些材料無法透過人工作業輕易完成。"
 				""
-				"These tough mechanical devices are up to the task. "
+				"而這些堅固的機械裝置，將能夠勝任這項任務。"
 				""
-				"● Millstone - Capable of grinding "
-				"  materials much more finely than can "
-				"  be achieved by hand, the Millstone will "
-				"  occasionally produce secondary       "
-				"  materials that may be quite useful, "
-				"  such as Lead and Quartz."
+				"● 石磨 - 能比人工作業進行更精細的研磨處理，"
+				"  且有時還會產生非常有用的副產物，"
+				"  像是鉛與石英。"
 				""
-				"● Rolling Mill - Working from Ingots, the "
-				"  Rolling Mill can create the fine Rods "
-				"  and Wires required by many "
-				"  advanced devices. "
+				"● 輥軋機 - 從金屬錠開始進行加工，"
+				"  輥軋機能夠製造許多先進設備所需的精緻金屬桿與金屬線材。"
 				""
-				"● Mechanical Press - A device strong "
-				"  enough to flatten Ingots into Plates "
-				"  in only a few strokes. Well worth the "
-				"  effort of setting it up.  "
+				"● 鍛壓機 - 能夠在幾次衝壓中，"
+				"  將金屬錠加工成金屬板，非常值得在家裡設置一台。"
 			]
 			id: "44B02A5817C4144A"
 			rewards: [
@@ -1471,7 +1465,7 @@
 					type: "item"
 				}
 			]
-			title: "Keeping Organized with Bookwyrms"
+			title: "書龍倉儲管理"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -1522,7 +1516,7 @@
 					type: "item"
 				}
 			]
-			title: "Autocrafting with Wixies"
+			title: "薇克精自動合成"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -1566,7 +1560,7 @@
 				}
 				type: "item"
 			}]
-			title: "Starbuncle Logistics"
+			title: "星寶石獸物流"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -1650,7 +1644,7 @@
 				to_observe: "#occultism:familiars"
 				type: "observation"
 			}]
-			title: "Combat Assistance - 使魔"
+			title: "戰鬥輔助 - 使魔"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -1683,7 +1677,7 @@
 				item: "ars_nouveau:amethyst_golem_charm"
 				type: "item"
 			}]
-			title: "Budding Crystal Harvesting"
+			title: "晶簇收穫"
 			x: 2.5d
 			y: 2.0d
 		}
@@ -1692,7 +1686,7 @@
 			description: [
 				"儘管野林族雇傭烏鴉而聞名，但也有不少人更願意與體型較小但同樣聰明的烏鴉交朋友。"
 				""
-				"Perform this ritual to summon a tamed Crow.這些樂於助人的小動物可裝備武器和帽子，並誓死保衛它們的朋友。"
+				"進行這個儀式來召喚一隻已被馴服的烏鴉。這些樂於助人的小動物可裝備武器和帽子，並誓死保衛它們的朋友。"
 				""
 				"在調和巫術的章節中獲得更多關於烏鴉的資訊。"
 			]
@@ -1750,7 +1744,7 @@
 					type: "item"
 				}
 			]
-			title: "Crow Assisted Crop Harvesting"
+			title: "烏鴉協助收穫作物"
 			x: 3.0d
 			y: 1.0d
 		}
@@ -1873,7 +1867,6 @@
 					type: "item"
 				}
 				{
-
 					id: "7A958A675ABC4536"
 					item: "naturesaura:generator_limit_remover"
 					type: "item"
@@ -2247,9 +2240,9 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"通常粉碎只能對放在世界中的方塊使用。For example, when creating Compressed Stone. "
+				"通常粉碎只能對放在世界中的方塊使用。例如：製作壓縮石。"
 				""
-				"However, by augmenting it with Sensitive, it can target items dropped on the ground as well allowing it to function on Raw Ore as well."
+				"然而透過敏感增強後，也能對地上的掉落物使用，讓我們能夠對原礦進行處理。"
 				""
 				"以下的法術形式會粉碎地上的掉落物："
 				""
@@ -2330,7 +2323,7 @@
 				""
 				"取得各種顏色的羊毛並提供給謎題羊。"
 				""
-				"Through the natural transmutation magics imbued in a Botanist’s Pickaxe, it should be possible to purify the Therium and induce it to grow. "
+				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化野獸水晶並誘導它開始生長。"
 			]
 			id: "032D29DD7D946EDB"
 			rewards: [
@@ -2396,13 +2389,13 @@
 		{
 			dependencies: ["16E90BC107468EC2"]
 			description: [
-				"With heightened spell casting ability comes the ability to improve some automation through Spell Turrets."
+				"隨著施法能力的提升，我們可以藉由法術砲塔來改善一些自動化。"
 				""
-				"As a practical example, the following spell form will allow a Spell Turret to pull a standard potion from an adjacent Potion Jar, convert it to Lingering and throw it where the projectile lands."
+				"舉個實際的例子，以下法術鍊會讓法術砲塔從相鄰的藥水罐中抽取出一罐標準藥水，將其轉換為滯留型後，投擲到法術投射物命中的地方。"
 				""
-				"&5Projectile&r > &aInfuse&r > &6Extend Time&r"
+				"&5投射物&r > &a灌注&r > &6延長時效&r"
 				""
-				"These lingering potions will work exactly as their crafted variety for the purpose of running a Lingering Absorber without the need to craft beyond the base potion."
+				"這種透過魔法生產的滯留藥水，與正常釀造出來的效果相同。不需要對基礎藥水做額外的加工，就能用來讓滯留型吸收器生產靈氣。"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -2533,13 +2526,13 @@
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
 			description: [
-				"Build it and they’ll come, or so it was said. These tiny market stalls were once a common sight in places of business, trade, and agriculture and served as a way of making offerings to fae creatures that roam the lands. "
+				"從天而降，又或是從地底下鑽出，這些是你搭建農牧市集時，總會碰見的奇景。這些攤商曾活躍在各個商業、貿易，以及農業場所中。"
 				""
-				"With so few offerings happening these days, setting one out will surely attract some helpful company.  "
+				"這些商人過去會被作為祭品，獻祭給遊蕩在這片土地上的妖精。由於現在少有後人會進行獻祭儀式，因此擺出一個肯定能吸引到一些有用的同伴。"
 				""
 				"================================="
 				""
-				"The Market is in many cases the only source for seeds and saplings, and is therefore invaluable. Crafting one is highly recommended for obtaining missing plants one might need. "
+				"在多數情況下，農牧市集會是種子與樹苗的唯一來源，其價值不言而喻。因此這邊強烈推薦你製作一個農牧市集，方便後續取得缺少的植物。"
 			]
 			hide_dependency_lines: true
 			id: "37F045F66CCA1389"
@@ -2561,11 +2554,11 @@
 		{
 			dependencies: ["517271C3858C43FE"]
 			description: [
-				"Routers are capable of some truly impressive tasks and are indispensable to a fledgling witch. However, their ability to transfer power is often overlooked. "
+				"路由器能完成一些令人印象深刻的任務，對於見習巫師來說是不可或缺的設備。然而，其傳輸能量的能力經常遭到忽視。"
 				""
-				"A single router, for example, could receive power from Pulsating Crystals on all six sides, while wirelessly transmitting to up to 72 devices within a 48-block radius. "
+				"舉個例子：一台單獨的路由器，能從脈動水晶的六個面抽取能量，並向 48 格範圍內，最多 72 個裝置無線傳輸能量。"
 				""
-				"One can easily serve as a central power distribution for a moderate crafting area, keeping everything supplied with the magical energies they need to keep on ticking. "
+				"一台路由器就能輕鬆勝任為中等作業區分配能量的職務，為這區域內的所有裝置供應它們所需的魔法能量。"
 			]
 			icon: {
 				Count: 1b
@@ -2606,22 +2599,22 @@
 					type: "item"
 				}
 			]
-			title: "Energy Transfer"
+			title: "能量傳輸"
 			x: -8.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["75C38D71F1A04EB4"]
 			description: [
-				"Through some alchemical manipulation and transmutational trickery, simple plants may be transformed into this impressive material. "
+				"透過一些煉金與轉化的技巧，簡單的植物也能做出這種令人印象深刻的材料。"
 				""
-				"Mastering its creation early on will prove advantageous."
+				"盡早掌握這門技巧，將為後續進展帶來莫大的助益。"
 				""
 				"================================="
 				""
-				"Follow the recipes back from Liquid Plastic, keeping an eye on the PneumaticCraft machines, such as the Fluid Mixer and Thermopneumatic Processing Plant. "
+				"逐一檢視熔融塑膠的製作步驟，我們會需要關注氣動工藝的機器，像是流體混合器，以及熱氣動加工機。"
 				""
-				"The process requires multiple steps but can easily be performed with a little witchy ingenuity. "
+				"該製作流程會經過多次加工，但只要發揮一些巫師的小巧思，就能夠輕易地完成。"
 			]
 			hide_dependency_lines: true
 			icon: "pneumaticcraft:plastic"
@@ -2650,36 +2643,30 @@
 					type: "item"
 				}
 			]
-			title: "Plastic"
+			title: "塑膠"
 			x: -8.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
 			description: [
-				"Life on the road has its ups and downs but a nice warm tent to call home can smooth over many of the rougher parts of such a life-style."
+				"旅途路上起起伏伏，但將一個溫暖的帳篷作為家，能夠緩解這種生活方式帶來的艱苦部分。"
 				""
 				"================================="
 				""
-				"Nomadic Tents offer a portable home that can make a wonderful base of operations early on. Not only may the be moved with ease, but they may also be upgraded while retaining their contents. "
+				"游牧帳篷提供一種攜帶式的家，在遊戲早期能作為不錯的行動基地使用。這種帳篷不僅方便遷徙，還能在保留內容物的情況下進行升級。"
 				""
-				"Consider setting up a bed, basic storage, and some essential crafting stations inside!"
+				"可以考慮在內部擺設一張床、基礎的儲存容器，以及一些必要的合成工作站！"
 				""
-				"● Right-Click and Hold the tent on the "
-				"  ground to place the frame."
+				"● 手持帳篷，對著地面按下右鍵來架設帳蓬框架。
 				""
-				"● Right-Click each frame with a mallet "
-				"  to form that section. "
+				"● 手持游牧營鎚對著框架按下右鍵，進行篷帳的搭設。"
 				""
-				"  A Golden Mallet will form the entire "
-				"  tent at once!"
+				"  使用金游牧營鎚，能一次完成篷帳搭建！"
 				""
-				"● Right-Click or walk into the door to "
-				"  enter and exit."
+				"● 走進門或對著門按下右鍵來進出帳蓬。"
 				""
-				"● Right-Click the door from the outside "
-				"  with a mallet to pack up the tent as "
-				"  an item."
+				"● 在帳蓬外手持游牧營鎚，對著們按下右鍵，能將整個帳蓬打包並攜帶在身上。"
 			]
 			id: "00FB8D9041ED6D73"
 			rewards: [{
@@ -2715,21 +2702,21 @@
 						value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
 					}
 				}
-				title: "Any Tent"
+				title: "任何帳篷"
 				type: "item"
 			}]
-			title: "Nomadic Life"
+			title: "游牧生活"
 			x: -3.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["28A304E0F1600640"]
 			description: [
-				"Though many glyphs may be found and used to repair the spell book, they may also be crafted with appropriate materials. "
+				"雖然許多符文能透過冒險取得，並用來修復法術書，但也能透過一些合適的材料進行製作。"
 				""
-				"Finding proper spell ink, however, may prove rather difficult as it must be specially prepared using a process that can take years. "
+				"但要找到合適的法術墨水可能相當困難，因為這種墨水需要經過數年的特殊製作流程。"
 				""
-				"It was once heavily traded by the seafaring folk that specialized in its creation. Perhaps some could be retrieved with some good old-fashioned trawling. "
+				"過去曾有個海上民族擅長製作這種墨水，因此人們會從他們那進行大量採購。或許我們能透過傳統的拖網捕魚來取得一些。"
 			]
 			icon: "supplementaries:antique_ink"
 			id: "7D67B1A9AC1F4445"
@@ -2758,7 +2745,7 @@
 					type: "item"
 				}
 			]
-			title: "Antique Ink"
+			title: "古風墨水"
 			x: -9.0d
 			y: 1.5d
 		}
