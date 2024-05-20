@@ -1809,7 +1809,7 @@
 				""
 				"對烈焰使者動力爐使用吸管，使其能接受流體燃料。檢查吸管或烈焰使者動力爐的用途，來查詢有效的流體。"
 			]
-			id: ""
+			id: "22B7A9A1F7CDD7A1"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				icon: "kubejs:epic_lootbox"
@@ -1877,7 +1877,7 @@
 		}
 		{
 			dependencies: ["5F310E6373C3A6FF"]
-			description: ["A more advanced form of the Rope Pulley which allows for intelligent floor control as an elevator. The elevator may be called from any floor and can be sent to any floor without stopping between.  "]
+			description: ["更先進的滑輪繩索，能讓電梯進行精準的樓層控制。可以從任一樓層呼叫電梯，且能在不中途暫停的情況下，被運送到任何樓層。"]
 			id: "2B24B41DC7D98AB3"
 			rewards: [{
 				count: 4
@@ -1903,18 +1903,18 @@
 		{
 			dependencies: ["299048747CDB2516"]
 			description: [
-				"Placed in front of a rail-based contraption, Mechanical Rollers may be used to flatten terrain or fill gaps below the contraption.  "
+				"放置在軌道裝置前方，機械壓路機能用來整平地形，或填補裝置下方的坑洞。"
 				""
 				" "
 				""
-				"This can be put to great use with a contraption that is designed to lay down track over a great distance.  "
+				"這可以很好地使用在設計用來鋪設長距離軌道的裝置上。"
 			]
 			id: "20DF6273B489AD08"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/create/epic"
 				icon: "kubejs:epic_lootbox"
 				id: "3871F5B98963BA94"
-				title: "Epic Create Loot Box"
+				title: "[史詩] 動力機械戰利品箱"
 				type: "command"
 			}]
 			tasks: [{
