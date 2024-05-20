@@ -197,7 +197,11 @@ ItemEvents.tooltip((event) => {
             text: [Text.of(`奧術儀器：檢測靈氣程度`).green()]
         },
         {
-            items: ['naturesaura:pickup_stopper'],
+            items: [
+                'naturesaura:pickup_stopper',
+                'simplemagnets:basic_demagnetization_coil',
+                'simplemagnets:advanced_demagnetization_coil'
+            ],
             text: [Text.of(`奧術儀器：抵銷磁力`).green()]
         },
         {

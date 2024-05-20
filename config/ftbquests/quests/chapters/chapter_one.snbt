@@ -52,7 +52,7 @@
 				}
 			]
 			title: "基礎冶金"
-			x: -0.5d
+			x: -2.5d
 			y: -7.5d
 		}
 		{
@@ -74,13 +74,21 @@
 			]
 			hide: true
 			id: "73CDA6ED2393DE42"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
-				icon: "kubejs:aura_leaf"
-				id: "74F868CAED853121"
-				title: "靈氣灌注"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/aura_leaves/tiny"
+					icon: "kubejs:aura_leaf"
+					id: "74F868CAED853121"
+					title: "靈氣灌注"
+					type: "command"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "07FEE1BA2045C7FC"
+					table_id: 3385184300630852421L
+					type: "choice"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "恐懼是心靈殺手"
 			tasks: [{
@@ -152,7 +160,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -5.0d
 			y: -6.5d
 		}
 		{
@@ -186,7 +194,7 @@
 		{
 			dependencies: [
 				"7224985826C6E047"
-				"73CDA6ED2393DE42"
+				"00FB8D9041ED6D73"
 			]
 			description: [
 				"有了在納迦遺跡中找到的種子、草藥與樹苗後，是時候紮根了，我的意思是，是時候蓋個農場了。"
@@ -214,6 +222,11 @@
 							Potion: "apotheosis:knowledge"
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "4C7C143A9FAD1DF6"
+					item: "naturesaura:eye"
 					type: "item"
 				}
 				{
@@ -392,6 +405,7 @@
 				item: "twilightforest:ironwood_ingot"
 				type: "item"
 			}]
+			title: "鐵木"
 			x: -2.5d
 			y: -2.5d
 		}
@@ -431,7 +445,15 @@
 		}
 		{
 			dependencies: ["4830632A0E6E9651"]
-			description: ["透過平衡靈氣外向的力量與該法術的內向擠壓，我們能達到穩定的平衡，該平衡足夠堅固與耐用，足以協助先進的冶金術：壓縮石。"]
+			description: [
+				"透過平衡靈氣外向的力量與該法術的內向擠壓，我們能達到穩定的平衡，該平衡足夠堅固與耐用，足以協助先進的冶金術：壓縮石。"
+				""
+				"以下法術鍊能將放置在世界上的方塊，進行粉碎處理："
+				""
+				"&5觸摸&r > &a粉碎&r"
+				""
+				"備註：粉碎方塊&n不需要&r敏感構件。"
+			]
 			id: "79B755D0BDB6A8B7"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
@@ -517,8 +539,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: 1.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -529,8 +551,6 @@
 				"雖然還有一些其他的方式可以使用，但謎樣統整模組的脈動水晶提供了發電的基礎。"
 				""
 				"需要附近有魔源罐，它會定期從中抽取一定數量的魔源，將其轉換成電力。若此時存在任何的靈氣，也會消耗一部分靈氣，在此過程中產出更多的電力。"
-				""
-				"但要特別注意，這可能會將周圍的靈氣消耗至危險的臨界值。"
 			]
 			id: "3B372F597A05E777"
 			rewards: [
@@ -608,8 +628,8 @@
 				}
 			]
 			title: "應用能源"
-			x: -9.0d
-			y: 3.0d
+			x: -10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7CFD3DFD4C593EB5"]
@@ -674,8 +694,9 @@
 					type: "item"
 				}
 			]
+			title: "學會飛行"
 			x: 2.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7AD5D1665CA3DF4F"]
@@ -815,6 +836,7 @@
 				""
 				"透過EMI查看剩餘的製作過程。"
 			]
+			hide_dependency_lines: true
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "345CBD118EAA0C09"
 			rewards: [{
@@ -842,12 +864,12 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 2.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73CDA6ED2393DE42"]
-			description: ["或許造訪一些在地的巫妖塔能取得更多的訊息，或者至少能發現更多有用的工具來幫助恢復生命之樹？"]
+			description: ["或許造訪一些在地的巫妖塔能取得更多的資訊，或者至少能發現更多有用的工具，來幫助恢復生命之樹？"]
 			hide_dependency_lines: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "370C40BCC3A6A055"
@@ -868,12 +890,8 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["28A304E0F1600640"]
-			description: [
-				"雖然可以找到許多魔符來修理法術書，抄寫台也能用來製作任何魔符。"
-				""
-				"然而，要找到合適的魔法墨水，可能會更加困難，因為它必須經過特殊的製程，而這過程可能會需要數年的時間。"
-			]
+			dependencies: ["7D67B1A9AC1F4445"]
+			description: ["當古風墨水有穩定來源之後，我們終於可以來製作符文了。理所當然地，使用更高等級的符文，仍然需要進一步修復法術書。"]
 			id: "7507572BD048B6C9"
 			rewards: [{
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
@@ -888,8 +906,8 @@
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			x: -9.5d
-			y: 0.5d
+			x: -8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1056,6 +1074,7 @@
 				""
 				"執行此儀式可以召喚死亡之書。它們是補充這本新發現的法術書中遺失的魔符的最佳方法。"
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "gateways:gate_pearl"
@@ -1065,11 +1084,9 @@
 			}
 			id: "28A304E0F1600640"
 			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:ars_nouveau_glyph_cache/tier_1"
-				icon: "ars_nouveau:blank_glyph"
-				id: "4D3BD7740EAF736F"
-				title: "隨機一級魔符"
-				type: "command"
+				id: "5029C286520E55B1"
+				item: "ars_nouveau:glyph_sensitive"
+				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
@@ -1093,8 +1110,8 @@
 				}
 			]
 			title: "召喚死亡之書"
-			x: -8.5d
-			y: 0.5d
+			x: -10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1147,6 +1164,10 @@
 				"掌握了這些元素後，在生命之樹恢復之前只剩下一個任務：冰雪女王必須死。"
 				""
 				"前往寒冷的冰川並擊敗冰雪女王取得零下水晶。"
+				""
+				"================================="
+				""
+				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化零下水晶並誘導它開始生長。"
 			]
 			hide_dependency_lines: true
 			id: "729E9D41A28D0E4D"
@@ -1165,7 +1186,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["66585A158F41DE44"]
@@ -1251,21 +1272,38 @@
 			}]
 			title: "使魔夥伴"
 			x: 2.0d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["79B755D0BDB6A8B7"]
 			description: [
-				"製作更精細的設備將需要更精緻型態的金屬。"
+				"要製作更精巧的設備，會需要更精緻型態的金屬，而這些材料無法透過人工作業輕易完成。"
 				""
-				"這些堅固的機械設備，機械鍛壓機和輥軋機，分別能完成正確的板材或線材與桿材的任務。"
+				"而這些堅固的機械裝置，將能夠勝任這項任務。"
+				""
+				"● 石磨 - 能比人工作業進行更精細的研磨處理，"
+				"  且有時還會產生非常有用的副產物，"
+				"  像是鉛與石英。"
+				""
+				"● 輥軋機 - 從金屬錠開始進行加工，"
+				"  輥軋機能夠製造許多先進設備所需的精緻金屬桿與金屬線材。"
+				""
+				"● 鍛壓機 - 能夠在幾次衝壓中，"
+				"  將金屬錠加工成金屬板，非常值得在家裡設置一台。"
 			]
 			id: "44B02A5817C4144A"
-			rewards: [{
-				id: "0FC05A9E5B974922"
-				item: "ars_creo:starbuncle_wheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0FC05A9E5B974922"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					id: "36C648094A71AC39"
+					item: "createaddition:straw"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "7E269B72F57C62D3"
@@ -1275,6 +1313,11 @@
 				{
 					id: "1A61D7D0519A6615"
 					item: "createaddition:rolling_mill"
+					type: "item"
+				}
+				{
+					id: "00BD1D8A00CAB755"
+					item: "create:millstone"
 					type: "item"
 				}
 			]
@@ -1344,7 +1387,7 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
@@ -1379,7 +1422,7 @@
 				title: "合金"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -1422,6 +1465,7 @@
 					type: "item"
 				}
 			]
+			title: "書龍倉儲管理"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -1472,6 +1516,7 @@
 					type: "item"
 				}
 			]
+			title: "薇克精自動合成"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -1515,6 +1560,7 @@
 				}
 				type: "item"
 			}]
+			title: "星寶石獸物流"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -1590,12 +1636,15 @@
 			]
 			shape: "hexagon"
 			tasks: [{
-				advancement: "occultism:occultism/familiar/root"
-				criterion: ""
-				id: "44087E084C0010C4"
-				type: "advancement"
+				icon: "occultism:ritual_dummy/custom_ritual"
+				id: "3BFD0AAF1A00BC7C"
+				observe_type: 6
+				timer: 0L
+				title: "Observe an Occultism Familiar"
+				to_observe: "#occultism:familiars"
+				type: "observation"
 			}]
-			title: "使魔"
+			title: "戰鬥輔助 - 使魔"
 			x: 1.0d
 			y: 1.0d
 		}
@@ -1628,6 +1677,7 @@
 				item: "ars_nouveau:amethyst_golem_charm"
 				type: "item"
 			}]
+			title: "晶簇收穫"
 			x: 2.5d
 			y: 2.0d
 		}
@@ -1636,7 +1686,7 @@
 			description: [
 				"儘管野林族雇傭烏鴉而聞名，但也有不少人更願意與體型較小但同樣聰明的烏鴉交朋友。"
 				""
-				"召喚一隻烏鴉並餵食種子大雜燴來與它成為朋友。這些樂於助人的小動物可裝備武器和帽子，並誓死保衛它們的朋友。"
+				"進行這個儀式來召喚一隻已被馴服的烏鴉。這些樂於助人的小動物可裝備武器和帽子，並誓死保衛它們的朋友。"
 				""
 				"在調和巫術的章節中獲得更多關於烏鴉的資訊。"
 			]
@@ -1694,6 +1744,7 @@
 					type: "item"
 				}
 			]
+			title: "烏鴉協助收穫作物"
 			x: 3.0d
 			y: 1.0d
 		}
@@ -1763,6 +1814,8 @@
 				"================================="
 				""
 				"注意：生命之樹將面向北方，有一個小入口通往五芒星室。這個方向無法更改。"
+				""
+				"This structure is 23x23 and extends both into the ground and sky. It will overwrite blocks near it when it grows. You've been warned."
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
@@ -1787,57 +1840,12 @@
 					type: "item"
 				}
 			]
+			title: "Tree of Life"
 			x: -3.5d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["347A644441BCF449"]
-			description: ["通常與錫礦聚集在一起，地獄石英偶爾可以從更好的研磨工具，如石磨，研磨礦石時提取而出。"]
-			id: "5B7806FED7D58329"
-			rewards: [{
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
-				icon: "kubejs:scavengers_delight"
-				id: "2D22DA949427C0B4"
-				title: "拾荒者獎勵袋"
-				type: "command"
-			}]
-			tasks: [{
-				id: "76702DE4AA5CCE26"
-				item: "minecraft:quartz"
-				type: "item"
-			}]
-			x: -5.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["79B755D0BDB6A8B7"]
-			description: ["石磨由比簡單的研缽更堅韌的材料製成，可以研磨更堅硬的礦石，甚至偶爾能回收一些副產物。"]
-			hide_dependency_lines: true
-			id: "347A644441BCF449"
-			rewards: [
-				{
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
-					icon: "kubejs:sorcerers_delight"
-					id: "651C07D976AD902F"
-					title: "巫師獎勵袋"
-					type: "command"
-				}
-				{
-					id: "0E1F9854A317EE27"
-					item: "createaddition:straw"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "0F473BC094DDA58D"
-				item: "create:millstone"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["3A7AEB067C49F899"]
+			dependencies: ["11AB47232D9F5D6D"]
 			description: [
 				"就像煉金魔源通道可將藥水中的魔法精華提煉成魔源一樣，滯留型吸收器的結構，有助於將這些能量以靈氣的形式重新引導回環境中。"
 				""
@@ -1854,38 +1862,24 @@
 			min_width: 300
 			rewards: [
 				{
-					count: 8
-					id: "4AD02A30701D4394"
-					item: "minecraft:dragon_breath"
-					type: "item"
-				}
-				{
 					id: "56A596BFA05198BA"
 					item: "naturesaura:mover_cart"
 					type: "item"
 				}
-			]
-			tasks: [
 				{
-					id: "150E44FC952BB995"
-					item: "naturesaura:potion_generator"
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "741C6A98C22B5E2B"
-					item: "minecraft:nether_bricks"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "2E87B053B4E0E3E2"
-					item: "minecraft:red_nether_bricks"
+					id: "7A958A675ABC4536"
+					item: "naturesaura:generator_limit_remover"
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: -1.0d
+			tasks: [{
+				id: "150E44FC952BB995"
+				item: "naturesaura:potion_generator"
+				type: "item"
+			}]
+			title: "Aura Generation"
+			x: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4B874AA448FF4C7A"]
@@ -1953,7 +1947,7 @@
 				""
 				"首先找到一些賽特斯石英水晶；野林族當然在礦山中留下了一些。"
 				""
-				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化石英並誘導它開始生長。"
+				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化賽特斯石英並誘導它開始生長。"
 			]
 			hide_dependency_lines: true
 			id: "0BAE6EBFEA3026B9"
@@ -1973,7 +1967,7 @@
 			}]
 			title: "賽特斯石英農場"
 			x: -9.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["11AB47232D9F5D6D"]
@@ -1988,6 +1982,7 @@
 				""
 				"蜜蜂本身可以被降生祭壇召喚出來，只要給它們一些美味的花朵！"
 			]
+			hide_dependency_lines: true
 			icon: "naturesaura:animal_spawner"
 			id: "3A7AEB067C49F899"
 			rewards: [{
@@ -2018,8 +2013,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: -2.5d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["370C40BCC3A6A055"]
@@ -2044,8 +2039,8 @@
 				item: "ars_nouveau:glyph_dispel"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -0.5d
+			x: -9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7AD5D1665CA3DF4F"]
@@ -2214,8 +2209,8 @@
 				title: "藥水箭矢"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4682D4537535937C"]
@@ -2245,7 +2240,9 @@
 		{
 			dependencies: ["370C40BCC3A6A055"]
 			description: [
-				"通常粉碎只能對放在世界中的方塊使用。然而透過敏感增強後，也能對地上的掉落物使用。"
+				"通常粉碎只能對放在世界中的方塊使用。例如：製作壓縮石。"
+				""
+				"然而透過敏感增強後，也能對地上的掉落物使用，讓我們能夠對原礦進行處理。"
 				""
 				"以下的法術形式會粉碎地上的掉落物："
 				""
@@ -2274,8 +2271,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: -0.5d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["345CBD118EAA0C09"]
@@ -2313,7 +2310,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["66A59B3CD77FB54A"]
@@ -2325,6 +2322,8 @@
 				"================================="
 				""
 				"取得各種顏色的羊毛並提供給謎題羊。"
+				""
+				"透過植物學家之鎬中灌注的自然轉換魔法，應該可以淨化野獸水晶並誘導它開始生長。"
 			]
 			id: "032D29DD7D946EDB"
 			rewards: [
@@ -2388,80 +2387,24 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["3B372F597A05E777"]
+			dependencies: ["16E90BC107468EC2"]
 			description: [
-				"雖然幽魂塔本身就感染了大量的塔木蛀蟲，但吸引更多的小動物卻是微不足道的。另一方面，要擺脫它們可能有點複雜。"
+				"隨著施法能力的提升，我們可以藉由法術砲塔來改善一些自動化。"
 				""
-				"然而，它們不會單獨出現，所以請小心！"
+				"舉個實際的例子，以下法術鍊會讓法術砲塔從相鄰的藥水罐中抽取出一罐標準藥水，將其轉換為滯留型後，投擲到法術投射物命中的地方。"
+				""
+				"&5投射物&r > &a灌注&r > &6延長時效&r"
+				""
+				"這種透過魔法生產的滯留藥水，與正常釀造出來的效果相同。不需要對基礎藥水做額外的加工，就能用來讓滯留型吸收器生產靈氣。"
 			]
 			hide_dependency_lines: true
 			icon: {
 				Count: 1b
-				id: "gateways:gate_pearl"
+				id: "minecraft:lingering_potion"
 				tag: {
-					gateway: "gateways:swarm_gate_large"
+					Potion: "minecraft:strong_leaping"
 				}
 			}
-			id: "5D1FCC45134CB879"
-			rewards: [{
-				count: 4
-				id: "291E911003FDDDA7"
-				item: "emendatusenigmatica:carminite_gem"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					entity: "minecraft:endermite"
-					icon: "minecraft:spawner"
-					id: "534A73E9BF329237"
-					type: "kill"
-					value: 5L
-				}
-				{
-					entity: "twilightforest:towerwood_borer"
-					id: "2E7B9A411B813DED"
-					type: "kill"
-					value: 5L
-				}
-				{
-					entity: "minecraft:silverfish"
-					icon: "minecraft:spawner"
-					id: "1567106A573CDBAD"
-					type: "kill"
-					value: 5L
-				}
-				{
-					id: "7849128B7816AA53"
-					item: {
-						Count: 1b
-						id: "gateways:gate_pearl"
-						tag: {
-							gateway: "gateways:swarm_gate_small"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "召喚蟲群"
-			x: -8.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["729E9D41A28D0E4D"]
-			description: [
-				"隨著法術施法能力的提升，可以透過法術砲塔提高一些自動化的能力。"
-				""
-				"作為一個實際的例子，以下的法術形式將讓砲塔從鄰近的藥水罐中取出標準的藥水，將其轉換成滯留藥水並將其扔出。"
-				""
-				"&5彈射物&r > &a灌注&r > &6延長時效&r"
-				""
-				"這些滯留藥水與製作出的一模一樣，能用於運作滯留型吸收器，而不需要製作超出基礎藥水的材料。"
-				""
-				"使用混合過的藥水，也能提供實質上的提升！"
-			]
-			hide_dependency_lines: true
 			id: "7619B458914F41FF"
 			rewards: [{
 				id: "58831BD248E42B45"
@@ -2504,19 +2447,17 @@
 				}
 				type: "item"
 			}]
-			shape: "hexagon"
 			tasks: [{
 				id: "3716441EC6ACD043"
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
 			x: -6.0d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["729E9D41A28D0E4D"]
+			dependencies: ["345CBD118EAA0C09"]
 			description: ["一種賦予最多五個實體一個小時的飛行時間的強力儀式。對於遠離家園探索很有用。若有必要，請務必攜帶重新啟動儀式的材料。"]
-			hide_dependency_lines: true
 			icon: "ars_nouveau:ritual_flight"
 			id: "6952D7AD61181E37"
 			rewards: [{
@@ -2541,7 +2482,7 @@
 				}
 			]
 			x: -1.0d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1C6BF5FE58C49456"]
@@ -2581,6 +2522,232 @@
 			]
 			x: -4.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7CFD3DFD4C593EB5"]
+			description: [
+				"從天而降，又或是從地底下鑽出，這些是你搭建農牧市集時，總會碰見的奇景。這些攤商曾活躍在各個商業、貿易，以及農業場所中。"
+				""
+				"這些商人過去會被作為祭品，獻祭給遊蕩在這片土地上的妖精。由於現在少有後人會進行獻祭儀式，因此擺出一個肯定能吸引到一些有用的同伴。"
+				""
+				"================================="
+				""
+				"在多數情況下，農牧市集會是種子與樹苗的唯一來源，其價值不言而喻。因此這邊強烈推薦你製作一個農牧市集，方便後續取得缺少的植物。"
+			]
+			hide_dependency_lines: true
+			id: "37F045F66CCA1389"
+			rewards: [{
+				count: 7
+				id: "2C4B9277BDBFC583"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2B53987B276A6521"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["517271C3858C43FE"]
+			description: [
+				"路由器能完成一些令人印象深刻的任務，對於見習巫師來說是不可或缺的設備。然而，其傳輸能量的能力經常遭到忽視。"
+				""
+				"舉個例子：一台單獨的路由器，能從脈動水晶的六個面抽取能量，並向 48 格範圍內，最多 72 個裝置無線傳輸能量。"
+				""
+				"一台路由器就能輕鬆勝任為中等作業區分配能量的職務，為這區域內的所有裝置供應它們所需的魔法能量。"
+			]
+			icon: {
+				Count: 1b
+				id: "modularrouters:energy_distributor_module"
+				tag: {
+					modularrouters: {
+						Direction: "NONE"
+						ModuleFilter: { }
+					}
+				}
+			}
+			id: "6C9DDEF61EAD7D3E"
+			rewards: [{
+				count: 8
+				id: "7AD7EC515B2C999D"
+				item: "modularrouters:energy_upgrade"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6CEC2425EC1A3984"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "3BCA95773F8C5CAD"
+					item: {
+						Count: 1b
+						id: "modularrouters:energy_distributor_module"
+						tag: {
+							modularrouters: {
+								Direction: "NONE"
+								ModuleFilter: { }
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "能量傳輸"
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75C38D71F1A04EB4"]
+			description: [
+				"透過一些煉金與轉化的技巧，簡單的植物也能做出這種令人印象深刻的材料。"
+				""
+				"盡早掌握這門技巧，將為後續進展帶來莫大的助益。"
+				""
+				"================================="
+				""
+				"逐一檢視熔融塑膠的製作步驟，我們會需要關注氣動工藝的機器，像是流體混合器，以及熱氣動加工機。"
+				""
+				"該製作流程會經過多次加工，但只要發揮一些巫師的小巧思，就能夠輕易地完成。"
+			]
+			hide_dependency_lines: true
+			icon: "pneumaticcraft:plastic"
+			id: "517271C3858C43FE"
+			rewards: [{
+				count: 4
+				id: "1C6C3FA76D8A6461"
+				item: "pneumaticcraft:speed_upgrade"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "57052EFBDA7102DE"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+				{
+					id: "6ADB1BA954E32542"
+					item: "pneumaticcraft:fluid_mixer"
+					type: "item"
+				}
+				{
+					id: "2F6A22E42013A16D"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+			]
+			title: "塑膠"
+			x: -8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73CDA6ED2393DE42"]
+			description: [
+				"旅途路上起起伏伏，但將一個溫暖的帳篷作為家，能夠緩解這種生活方式帶來的艱苦部分。"
+				""
+				"================================="
+				""
+				"游牧帳篷提供一種攜帶式的家，在遊戲早期能作為不錯的行動基地使用。這種帳篷不僅方便遷徙，還能在保留內容物的情況下進行升級。"
+				""
+				"可以考慮在內部擺設一張床、基礎的儲存容器，以及一些必要的合成工作站！"
+				""
+				"● 手持帳篷，對著地面按下右鍵來架設帳蓬框架。
+				""
+				"● 手持游牧營鎚對著框架按下右鍵，進行篷帳的搭設。"
+				""
+				"  使用金游牧營鎚，能一次完成篷帳搭建！"
+				""
+				"● 走進門或對著門按下右鍵來進出帳蓬。"
+				""
+				"● 在帳蓬外手持游牧營鎚，對著們按下右鍵，能將整個帳蓬打包並攜帶在身上。"
+			]
+			id: "00FB8D9041ED6D73"
+			rewards: [{
+				id: "4C3A6668078E18B6"
+				item: {
+					Count: 1b
+					id: "nomadictents:mallet"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 3s
+						}]
+						display: {
+							Name: "{\"text\":\"Sturdy Tent Mallet\"}"
+						}
+						"quark:RuneAttached": 1b
+						"quark:RuneColor": {
+							Count: 1b
+							id: "quark:blank_rune"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "2CE21FBACA8A8DEA"
+				item: {
+					Count: 1b
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^nomadictents:(tiny|small|medium|large|giant|mega)"
+					}
+				}
+				title: "任何帳篷"
+				type: "item"
+			}]
+			title: "游牧生活"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["28A304E0F1600640"]
+			description: [
+				"雖然許多符文能透過冒險取得，並用來修復法術書，但也能透過一些合適的材料進行製作。"
+				""
+				"但要找到合適的法術墨水可能相當困難，因為這種墨水需要經過數年的特殊製作流程。"
+				""
+				"過去曾有個海上民族擅長製作這種墨水，因此人們會從他們那進行大量採購。或許我們能透過傳統的拖網捕魚來取得一些。"
+			]
+			icon: "supplementaries:antique_ink"
+			id: "7D67B1A9AC1F4445"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "3647C7DB6CC3E944"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1FF77511CCF22E34"
+					item: "thermal:device_fisher"
+					type: "item"
+				}
+				{
+					id: "479957F36710ECBC"
+					item: "thermal:junk_net"
+					type: "item"
+				}
+				{
+					id: "4AC9100D64D9A852"
+					item: "supplementaries:antique_ink"
+					type: "item"
+				}
+			]
+			title: "古風墨水"
+			x: -9.0d
+			y: 1.5d
 		}
 	]
 	title: "第 一 章"
