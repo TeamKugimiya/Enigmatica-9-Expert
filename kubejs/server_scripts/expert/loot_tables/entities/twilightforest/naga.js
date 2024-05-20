@@ -67,6 +67,11 @@ ServerEvents.genericLootTables((event) => {
                 }),
                 1
             );
+            
+            table.addPool((pool) => {
+                pool.rolls = 1;
+                pool.addItem(Item.of('ars_nouveau:air_essence'), 1, [10, 16]);
+            });
         });
     });
 });
