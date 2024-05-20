@@ -1691,9 +1691,9 @@
 		{
 			dependencies: ["52165EC21DD8ABFB"]
 			description: [
-				"A very handy tube module to have, the Thermostat Module will read the temperature of the block it is facing, outputting a Redstone signal along the tube that may be used to control a Vortex Tube or any other contraption.  "
+				"溫控模組是一種非常方便的管道模組，它會讀取其面前方塊的溫度，並沿著管道輸出紅石訊號，這可以用來控制渦流管或其他任何裝置。"
 				""
-				"This allows for a very simple, and very compact way of meeting specific heat thresholds for crafting! "
+				"這提供了一種非常簡單且緊湊的方法，來達到合成所需的特定熱閾值！"
 			]
 			id: "697B1DC7E396FEA6"
 			rewards: [{
