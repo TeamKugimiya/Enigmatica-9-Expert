@@ -1709,6 +1709,77 @@
 			x: -10.5d
 			y: -12.0d
 		}
+		{
+			dependencies: ["6C1F18A8BD2AF6CF"]
+			description: [
+				"法術吹氣機將吹氣機提升到了新的水準，處理速度是普通鼓風機的 4 倍快。它使用特殊的網格和氣動工藝的溫度機制，取代鼓風機的洗滌、融煉、喚魂，以及煙燻等功能。"
+				""
+				"網格可以透過按下右鍵安裝在風扇前端，至於熱源則必須向吹氣機的機身供應。"
+				""
+				"若要處理洗滌配方，吹氣機必須使用浸水網格。正常的環境溫度應該足夠使其工作。若環境溫度太冷，網格可能會結冰；若環境溫度太熱，網格上的水將會蒸發並變回原始的編織網格。"
+				""
+				"若要處理煙燻配方，無需安裝任何網格，但吹氣機需要加熱到約 110°C。若安裝了緻密網格，則只需要加熱到約 55°C。"
+				""
+				"若要處理融煉配方，溫度需要達到約 330°C。然而就像煙燻配方一樣，這個溫度要求可以透過安裝緻密網格來顯著降低，這時溫度只要達到 110°C 就能進行融煉處理。"
+				""
+				"最後，若要處理喚魂配方，需要安裝幽靈網格，並讓環境溫度達到約 110°C。"
+			]
+			id: "6BD73A0A40A22B92"
+			min_width: 300
+			rewards: [{
+				id: "1DA734BB4AA7029C"
+				item: "compressedcreativity:mesh_dense"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70C2E8C62171FF4B"
+				item: "compressedcreativity:industrial_air_blower"
+				type: "item"
+			}]
+			x: -11.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			description: ["吹氣機是一種小型的空氣動力裝置，用於模仿《動力機械》模組中的鼓風機。它能使用少量空氣來處理配方，且處理速度是鼓風機的兩倍快。當處理速度至關重要時，這是一個非常方便的升級。"]
+			hide_dependency_lines: true
+			id: "6C1F18A8BD2AF6CF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "5B619EDC810C432B"
+				title: "[稀有] 氣動工藝戰利品箱"
+				type: "command"
+			}]
+			tasks: [{
+				id: "60A5458BE637B6AB"
+				item: "compressedcreativity:air_blower"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3BDD27D9FDC82E36"]
+			dependency_requirement: "all_started"
+			description: ["西風引擎是一種將壓縮空氣轉換為旋轉動能的緊湊型裝置。這些引擎可以串聯在一起，從而疊加它們的效果，以達到更高的應力容量。"]
+			hide_dependency_lines: true
+			id: "6C3F0BEBC4650B5D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/pneumaticcraft/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "28DF7399F734FE9E"
+				title: "[稀有] 氣動工藝戰利品箱"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2A7CA436DF22BFE9"
+				item: "compressedcreativity:compressed_air_engine"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -6.5d
+		}
 	]
 	title: "氣動工藝"
 }
