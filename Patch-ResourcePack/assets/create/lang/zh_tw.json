@@ -31,6 +31,8 @@
     "advancement.create.brass.desc": "製作山銅錠",
     "block.create.industrial_iron_block": "工業外殼",
     "block.create.andesite_door": "壓縮石門",
+    "block.create.ornate_iron_window": "華麗的窗戶",
+    "block.create.ornate_iron_window_pane": "華麗的窗戶片",
 
     "comment_patch": "補充內容",
     "fluid.create.chocolate": "巧克力"
