@@ -1113,23 +1113,7 @@
 			}]
 			tasks: [{
 				id: "538B1DB69502E750"
-				item: {
-					Count: 1b
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "sophisticatedstorage:crafting_upgrade"
-							}
-							{
-								Count: 1b
-								id: "sophisticatedstorage:stonecutter_upgrade"
-							}
-						]
-					}
-				}
-				title: "功能性升級"
+				item: "sophisticatedstorage:stonecutter_upgrade"
 				type: "item"
 			}]
 			x: -5.0d

@@ -1,5 +1,9 @@
 {
 	"compressedcreativity.ponder.compressed_air_engine.text_1": "西風引擎使用壓縮空氣來產生旋轉動能",
 	"block.compressedcreativity.compressed_air_engine": "西風引擎",
-	"block.compressedcreativity.industrial_air_blower": "法術吹氣機"
+	"block.compressedcreativity.industrial_air_blower": "法術吹氣機",
+	"compressedcreativity.recipe.blasting.industrial_air_blower": "熔岩後的法術吹氣機",
+	"compressedcreativity.recipe.haunting.industrial_air_blower": "靈魂火後的法術吹氣機",
+	"compressedcreativity.recipe.smoking.industrial_air_blower": "火後的法術吹氣機",
+	"compressedcreativity.recipe.washing.industrial_air_blower": "流動水後的法術吹氣機"
 }
