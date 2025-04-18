@@ -17,7 +17,7 @@
 				""
 				"================================="
 				""
-				"金屬的製程已重度魔改，許多金屬有獨特的取得方式。請仔細地查閱EMI。"
+				"金屬的製程已重度魔改，許多金屬有獨特的取得方式。請仔細地查閱 EMI。"
 			]
 			hide: true
 			id: "1075F3BAA03841EF"
@@ -1872,11 +1872,23 @@
 					type: "item"
 				}
 			]
-			tasks: [{
-				id: "150E44FC952BB995"
-				item: "naturesaura:potion_generator"
-				type: "item"
-			}]
+			tasks: [
+ 				{
+ 					id: "150E44FC952BB995"
+ 					item: "naturesaura:potion_generator"
+ 					type: "item"
+ 				}
+ 				{
+ 					id: "0998AFFA192AA8CF"
+ 					item: "minecraft:red_nether_bricks"
+ 					type: "item"
+ 				}
+ 				{
+ 					id: "0E64F133545A5820"
+ 					item: "minecraft:nether_bricks"
+ 					type: "item"
+ 				}
+ 			]
 			title: "Aura Generation"
 			x: -5.5d
 			y: -2.5d
@@ -2670,24 +2682,13 @@
 			]
 			id: "00FB8D9041ED6D73"
 			rewards: [{
-				id: "4C3A6668078E18B6"
+				id: "767B408789000894"
 				item: {
 					Count: 1b
-					id: "nomadictents:mallet"
+					id: "nomadictents:golden_mallet"
 					tag: {
 						Damage: 0
-						Enchantments: [{
-							id: "minecraft:unbreaking"
-							lvl: 3s
-						}]
-						display: {
-							Name: "{\"text\":\"Sturdy Tent Mallet\"}"
-						}
-						"quark:RuneAttached": 1b
-						"quark:RuneColor": {
-							Count: 1b
-							id: "quark:blank_rune"
-						}
+						Unbreakable: 1.0d
 					}
 				}
 				type: "item"

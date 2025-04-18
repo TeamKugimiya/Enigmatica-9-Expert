@@ -106,7 +106,7 @@
 				""
 				"而位元組背後的計算方式事實上是有點複雜的，要知道的是，儲存單元若僅存放單一種類，那麼它們能存放的比更多類型的量更多。"
 				""
-				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			id: "0B95DC452E02E964"
 			rewards: [{
@@ -136,7 +136,7 @@
 				""
 				"而位元組背後的計算方式事實上是有點複雜的，要知道的是，儲存單元若僅存放單一種類，那麼它們能存放的比更多類型的量更多。"
 				""
-				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			id: "4B21571216DCDC69"
 			rewards: [{
@@ -166,7 +166,7 @@
 				""
 				"而位元組背後的計算方式事實上是有點複雜的，要知道的是，儲存單元若僅存放單一種類，那麼它們能存放的比更多類型的量更多。"
 				""
-				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
+				"{\"text\":\"AE2 Wiki: Storage Maths\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/storage-cells#:~:text=Portable%20Fluid%20Storage-,Capacity%20Limits,-Storage%20cells%20have\"}}"
 			]
 			id: "73765EC8E099FD57"
 			rewards: [{
@@ -380,7 +380,7 @@
 			description: [
 				"P2P 或稱為點對點，是一種使用一個頻道傳輸至多 32 個頻道的概念。對 AE2 新手而言，設置 P2P 無疑是個艱鉅的任務，但基礎知識是相當容易掌握的。"
 				""
-				"{\"text\":\"AE2 Wiki: P2P Tunnels\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/misc/p2p-tunnel\"}} "
+				"{\"text\":\"AE2 Wiki: P2P Tunnels\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/misc/p2p-tunnel\"}} "
 				""
 				"關於設置的範例，請參閱下面幾頁。"
 				""
@@ -662,7 +662,7 @@
 				""
 				"建好後，兩側的網路會視為相同的。但請確保兩側的區塊是載入的。"
 				""
-				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/features/me-network/quantum-bridge\"}}"
+				"{\"text\":\"AE2 Wiki: Quantum Bridge\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/features/me-network/quantum-bridge\"}}"
 			]
 			icon: "ae2:quantum_entangled_singularity"
 			id: "03662FB8C114E255"
@@ -920,7 +920,7 @@
 				""
 				"首先需要一些賽特斯石英水晶，這需要一些探索。穿上你的鞋子，是時候出發了。"
 				""
-				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://appliedenergistics.github.io/\"}}"
+				"{\"text\":\"AE2 Wiki\",\"color\":\"blue\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://guide.appliedenergistics.org/1.19.2/\"}}"
 			]
 			hide: true
 			icon: "ae2:singularity"
