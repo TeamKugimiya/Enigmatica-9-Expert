@@ -1622,7 +1622,12 @@
 							}
 						}
 						id: "occultism:familiar_ring"
-						tag: { }
+						tag: {
+							familiar: {
+								hasFamiliar: 0b
+							}
+							spiritName: "Harmornmorne"
+						}
 					}
 					type: "item"
 				}
@@ -1640,7 +1645,7 @@
 				id: "3BFD0AAF1A00BC7C"
 				observe_type: 6
 				timer: 0L
-				title: "Observe an Occultism Familiar"
+				title: "觀察一隻神祕學的使魔"
 				to_observe: "#occultism:familiars"
 				type: "observation"
 			}]
@@ -1815,7 +1820,7 @@
 				""
 				"注意：生命之樹將面向北方，有一個小入口通往五芒星室。這個方向無法更改。"
 				""
-				"This structure is 23x23 and extends both into the ground and sky. It will overwrite blocks near it when it grows. You've been warned."
+				"這個結構的尺寸為 23x23，並且會向上和向下延伸。它在成型時會覆蓋附近的方塊。我先警告過你了。"
 			]
 			icon: "kubejs:tree_of_life_1"
 			id: "33BCDA0A76E2523C"
@@ -1873,22 +1878,22 @@
 				}
 			]
 			tasks: [
- 				{
- 					id: "150E44FC952BB995"
- 					item: "naturesaura:potion_generator"
- 					type: "item"
- 				}
- 				{
- 					id: "0998AFFA192AA8CF"
- 					item: "minecraft:red_nether_bricks"
- 					type: "item"
- 				}
- 				{
- 					id: "0E64F133545A5820"
- 					item: "minecraft:nether_bricks"
- 					type: "item"
- 				}
- 			]
+				{
+					id: "150E44FC952BB995"
+					item: "naturesaura:potion_generator"
+					type: "item"
+				}
+				{
+					id: "0998AFFA192AA8CF"
+					item: "minecraft:red_nether_bricks"
+					type: "item"
+				}
+				{
+					id: "0E64F133545A5820"
+					item: "minecraft:nether_bricks"
+					type: "item"
+				}
+			]
 			title: "Aura Generation"
 			x: -5.5d
 			y: -2.5d
@@ -2678,7 +2683,7 @@
 				""
 				"● 走進門或對著門按下右鍵來進出帳蓬。"
 				""
-				"● 在帳蓬外手持游牧營鎚，對著們按下右鍵，能將整個帳蓬打包並攜帶在身上。"
+				"● 在帳蓬外手持游牧營鎚，對著門按下右鍵，能將整個帳蓬打包並攜帶在身上。"
 			]
 			id: "00FB8D9041ED6D73"
 			rewards: [{

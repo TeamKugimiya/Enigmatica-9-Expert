@@ -1,0 +1,862 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hexerei_expert"
+	group: "5A8B89F87F77CF4C"
+	icon: "hexerei:crow_ankh_amulet"
+	id: "72F8B431A016024B"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["27D3C19A82F5965F"]
+			description: ["巫師的法衣不僅僅提供普通的保護。穿戴它們會向其他巫師傳達和平的信號，同時也能提供強大的黑暗魔法保護。"]
+			icon: {
+				Count: 1b
+				id: "hexerei:witch_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "204242F437AA1238"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "7D5E908EC9DE9715"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "4E5A44CFE98B911C"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "麻布變巫袍"
+			tasks: [
+				{
+					id: "15928E06889A4120"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "632A3B8C91A3A3FC"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B862D07194E2754"
+					item: {
+						Count: 1b
+						id: "hexerei:witch_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "巫師套裝"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["10756D7A0325D98A"]
+			description: [
+				"鍋釜本身就是巫師們歷史悠久的傳統，用於一般烹飪、藥水製作以及更高級的魔法，對於任何修行者來說都是一種多功能的工具。"
+				""
+				"流體可以通過任何形式的管道輸入，也可以用桶或瓶子手工倒入。同樣地，流體也可以通過管道輸出，但對於藥水而言，最簡單的方法可能是用空瓶右鍵手動取出。"
+				""
+				"物品也可以通過任何類型的自動化系統輸入，也可以從上方投入。"
+			]
+			hide_dependency_lines: true
+			id: "21D5D34D6E1E5FF7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "73C8B33466F4D4F5"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "2C83DEA7BCE4D5F6"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "多麼美麗的釀造景象"
+			tasks: [{
+				id: "4A4F1B879659384D"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "由此開始：鍋釜製作"
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: ["學習巫術的藝術，探索調和巫術所提供的一切，從可愛的朋友到飛行的掃帚，這個模組會讓你感覺像一個真正的巫師。"]
+			hide: true
+			icon: "hexerei:belladonna_flowers"
+			id: "10756D7A0325D98A"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "7268A0D63151C75C"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "355BF861FF657694"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "hexerei:herbs"
+					}
+				}
+				title: "調和巫術"
+				type: "item"
+			}]
+			title: "調和巫術"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27D3C19A82F5965F"]
+			description: ["與巨魔同住會教會巫師一些事情，比如重物砸頭的價值。用來嫩化牛排也很棒！"]
+			id: "308521911C81C6E6"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/miners_delight"
+					icon: "kubejs:miners_delight"
+					id: "5F486CA7E6D10B56"
+					title: "Miner's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7B89FA27DB1AF100"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "以巫之道，還治其身"
+			tasks: [{
+				id: "098A80B8B424764E"
+				item: {
+					Count: 1b
+					id: "hexerei:warhammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4BBFA0119FC270E3"]
+			description: [
+				"手頭有了精選的草藥，並且準備好了一個小花園，真正的巫術魔法就可以開始了。"
+				""
+				"說到草藥和烹飪，新鮮的當然是最好的。但有時某些特性只有在植物乾燥後才會顯現出來。掛一兩個晾乾架來開始吧。"
+				""
+				"物品可以右鍵手動懸掛，並蹲下右鍵再次移除。它們也可以通過漏斗或其他自動化方式輸入，晾乾架會方便地防止在乾燥過程完成之前被取出。每個架子一次最多可容納九個物品。"
+			]
+			id: "3F2ACD64E7394122"
+			rewards: [
+				{
+					count: 5
+					id: "4F96F469C3A70DB1"
+					item: {
+						Count: 1b
+						id: "hexerei:herb_jar"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "26053E7A8577AEDF"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "高處晾乾"
+			tasks: [{
+				icon: "hexerei:herb_drying_rack"
+				id: "0429E8C49A97273F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:herb_drying_rack"
+							}
+							{
+								Count: 1b
+								id: "hexerei:mahogany_drying_rack"
+							}
+							{
+								Count: 1b
+								id: "hexerei:willow_drying_rack"
+							}
+							{
+								Count: 1b
+								id: "hexerei:witch_hazel_drying_rack"
+							}
+						]
+					}
+				}
+				title: "晾乾架"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3F2ACD64E7394122"]
+			description: [
+				"晾乾的鼠尾草具有多種療效，但更令人驚訝的是它能夠保護一個區域免受怪物入侵。對於想要在家中放鬆並釀造一些藥水而不被打擾的巫師來說，這是完美的選擇。"
+				""
+				"將晾乾的鼠尾草放在燃燒台上，並用打火石點燃。該區域將充滿溫和的煙霧，阻止怪物生成。用空手右鍵燃燒台將切換其各種模式，在需要時可完全關閉雲霧視覺效果。"
+				""
+				"晾乾的鼠尾草可以通過漏斗或其他自動化方式輸入，燃燒台也可用機械手點燃，實現鼠尾草燃燒台的完全自動化。"
+			]
+			icon: "hexerei:sage"
+			id: "0F3F2AA1B866CB50"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "03BD72914A1D5B9D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3DA1CA9DFD62B517"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "翻開新的一葉"
+			tasks: [
+				{
+					id: "401959B216C13383"
+					item: {
+						Count: 1b
+						id: "hexerei:dried_sage_bundle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1ADE6002E7D8BCAA"
+					item: "hexerei:sage_burning_plate"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["166B90CB9B8B6707"]
+			description: [
+				"遠遠不止是簡單的光源，真正的巫師知道如何將強大的魔法注入蠟燭中，使其附近的植物快速生長，將暴風雨天氣轉變為晴朗的天空，甚至使附近的怪物感染中毒或緩慢等效果。"
+				""
+				"蠟燭的持續時間有限，必須定期更換。然而，一個方塊空間最多可以放置四根蠟燭，並且每根蠟燭都是單獨點燃的。"
+				""
+				"最後，蠟燭可以在工作台中與染料組合進行染色。"
+			]
+			id: "67D7FA38C0232F32"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "76F8AD34ED2A1D87"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "546A5956FC94CA6E"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "…現在你是我的了"
+			tasks: [{
+				id: "3069C3E37887527D"
+				item: "hexerei:candle"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21D5D34D6E1E5FF7"]
+			description: [
+				"浸泡架是一種放在鍋釜頂部的裝置。當鍋釜裝滿動物油，並且浸泡架中放置了最多三根線時，它就會自動浸泡製作蠟燭。"
+				""
+				"線可以通過漏斗或其他自動化方式送入浸泡架。然而，需要使用某種過濾方式來防止過早地取出線。"
+				""
+				"注意：當熔化物品取得動物油時，鍋釜中必須有水。"
+			]
+			id: "166B90CB9B8B6707"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "66955850C37FE65A"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "2173E38F058618F7"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "我對你施了魔法…"
+			tasks: [{
+				id: "4A35A7C5EF7A644B"
+				item: "hexerei:candle_dipper"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["27D3C19A82F5965F"]
+			description: [
+				"掃帚絕對是任何巫師武器庫中最重要的工具，它能提供快速而精確的飛行，以便在採集草藥時避開小動物，或者只是為了安全地爬上屋頂修補被閃電擊穿的冒煙的洞。"
+				""
+				"使用掃帚需要一些照顧和維護，因為它的掃帚尾枝不會永遠耐用。不過，可以對其附魔耐久來延長使用壽命。"
+				""
+				"要騎掃帚，先右鍵將其放在地上，然後再次右鍵即可騎上去。它的控制方式類似於船，但也可以改變高度。"
+				""
+				"非騎乘時，蹲下右鍵掃帚可以開啟選單，在這裡可以安裝升級或更換掃帚尾枝。"
+				""
+				"在掃帚的尖端，可以懸掛在掃帚鏈上的簡單裝飾品進行裝飾，或者使用更實用的尖端，使掃帚能夠安全地通過熔岩或水。"
+				""
+				"將掃帚連接到掃帚口令哨可以更輕鬆地召回掃帚。掃帚必須在附近才能起作用。"
+			]
+			id: "46C031D455D8119B"
+			min_width: 300
+			rewards: [
+				{
+					id: "79FDF6BE8F6FA8F5"
+					item: {
+						Count: 1b
+						id: "hexerei:broom_whistle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "046D627EA75B7F8F"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "我要騎著我的掃帚去舊沼澤路"
+			tasks: [{
+				id: "1C70B5A79A69737E"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:witch_hazel_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "hexerei:mahogany_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "hexerei:willow_broom"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "ars_scalaes:archwood_broom"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "巫師的掃帚"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["27D3C19A82F5965F"]
+			description: ["掃帚還可以裝備不同尺寸的劍橋包，這些劍橋包是存放備用零件、藥水或任何長途旅行可能需要的物品的理想空間。"]
+			id: "674CDD2C25F46688"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2A1D5A2B94310D21"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "2DF6CEBE0C4B3EEA"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "我要一直飛到飛不動為止"
+			tasks: [{
+				id: "55B0201F142DDF03"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:small_satchel"
+							}
+							{
+								Count: 1b
+								id: "hexerei:medium_satchel"
+							}
+							{
+								Count: 1b
+								id: "hexerei:large_satchel"
+							}
+						]
+					}
+				}
+				title: "劍橋包"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["674CDD2C25F46688"]
+			description: ["一個與終界箱綁定的魔法包，對於那些經常搞丟掃帚的健忘巫師來說，這是一個完美的配件。至少他們不會搞丟裡面的東西！"]
+			id: "44F0D024BC9F442C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "5C04993CA46D530E"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "2080E81678E500BF"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "更好或更糟"
+			tasks: [{
+				id: "217329C4BB70B482"
+				item: "hexerei:ender_satchel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["674CDD2C25F46688"]
+			description: ["拆裝劍橋包並非簡單的包包，它會在掃帚尾枝壞掉時自動更換，讓巫師可以更長時間地不間斷飛行。"]
+			id: "6156B4D8713862EE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "62A06F40EC110553"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "5655A323A6A9076E"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "邪惡之人永不休息"
+			tasks: [{
+				id: "7BE681FD6562B7BD"
+				item: "hexerei:replacer_satchel"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["10756D7A0325D98A"]
+			description: [
+				"睿智的巫師了解其領地內每種植物的特性，而最博學的莫過於那些以沼澤為家的人。找到一個沼澤，嘗試尋找一些樣本來建立自己的藥草園。"
+				""
+				"古老的探測桿用於尋找地下水和寶石，甚至墓地和惡靈。調和巫術的探測桿經過完美調校，可以引導持有者找到附近的沼澤和叢林，當指向正確的方向時，葉子會變成鮮豔的綠色，而當背離目標時，則會變成暗淡的棕色。"
+				""
+				"自然羅盤也是尋找沼澤的可用工具。而對於不那麼喜歡冒險的巫師來說，在附近的農牧市集攤位停留一下可能就足夠了。"
+			]
+			hide_dependency_lines: true
+			icon: "hexerei:herb_drying_rack_full"
+			id: "4BBFA0119FC270E3"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "7283CC64122E8015"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "32F4AAD7197D4E70"
+					title: "Rare Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "鼠尾草的建議"
+			tasks: [
+				{
+					icon: "hexerei:dowsing_rod"
+					id: "1F0CC147BF76D2A1"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:dowsing_rod"
+								}
+								{
+									Count: 1b
+									id: "naturescompass:naturescompass"
+									tag: { }
+								}
+							]
+						}
+					}
+					title: "定位沼澤"
+					type: "item"
+				}
+				{
+					id: "103077F96C2D5147"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "hexerei:sage_seed"
+								}
+								{
+									Count: 1b
+									id: "hexerei:mandrake_flower"
+								}
+								{
+									Count: 1b
+									id: "hexerei:mugwort_bush"
+								}
+								{
+									Count: 1b
+									id: "hexerei:yellow_dock_bush"
+								}
+								{
+									Count: 1b
+									id: "hexerei:belladonna_flower"
+								}
+							]
+						}
+					}
+					title: "藥草"
+					type: "item"
+				}
+			]
+			title: "由此開始：藥草學"
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["10756D7A0325D98A"]
+			description: [
+				"當然，裝扮成巫師是可選的，但風格絕不應被忽視。"
+				""
+				"跟隨我來，探索巫師武器庫中一些非常有用的工具。"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "hexerei:crow_blank_amulet"
+				tag: { }
+			}
+			id: "27D3C19A82F5965F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "629C0100CFA99E07"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "77AF61904F0FFD0D"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "星光下的巫師"
+			tasks: [{
+				id: "09E97399DBE8D341"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "hexerei:mahogany_log"
+							}
+							{
+								Count: 1b
+								id: "hexerei:willow_log"
+							}
+						]
+					}
+				}
+				title: "巫師的木頭"
+				type: "item"
+			}]
+			title: "工具與實用性"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["21D5D34D6E1E5FF7"]
+			description: [
+				"鮮血是一種強大的魔法試劑，明智的巫師會謹慎地不讓其他魔法使用者接觸到自己的血。"
+				""
+				"要獲得用於製作的鮮血，將獻血印記放在鍋釜的左上角，然後跳進去。每次跳躍都會導致少量血液進入鍋釜。"
+				""
+				"當然，沒有任何地方規定血必須是自己的。試著把一個村民扔進去看看會發生什麼。更好的是，看看這個過程是否可以自動化…"
+			]
+			icon: "hexerei:blood_bottle"
+			id: "1CE9A7812DCDD8BC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "09A30010B022472D"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "29255C286BC7A1AA"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "人生苦短，巫師亦然"
+			tasks: [
+				{
+					id: "1CE6C1497FE22DE7"
+					item: "hexerei:blood_sigil"
+					type: "item"
+				}
+				{
+					id: "3CF00F2C956A7BC0"
+					item: "hexerei:blood_bottle"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["288651241042A695"]
+			description: [
+				"巫師經常被描述成與動物交朋友，從貓和老鼠到蛇和蜥蜴。然而，這些沼澤的巫師對當地的烏鴉有著特殊的喜愛。"
+				""
+				"作為一種特別聰明的鳥類，烏鴉能夠代表它們的巫師朋友處理許多任務。混合一些它們最喜歡的種子作為友誼的禮物。可以將種子大雜燴扔在附近的地上，也可以用手餵食。"
+				""
+				"烏鴉是非常群居的生物，因此它們不會介意身邊有更多的同類，可以馴服任意多隻！"
+				""
+				"一旦馴服，蹲下右鍵可以打開一個選單，在這裡可以將它們設為執行某項任務，或者裝備飾品、帽子或武器，例如戰鎚！"
+				""
+				"================================================="
+				""
+				"當指揮一群烏鴉時，烏鴉哨笛成為不可或缺的工具。蹲下右鍵哨笛可以打開選單。首先，點擊「選擇」按鈕，然後右鍵每隻被哨笛指揮的烏鴉。考慮為不同組別的烏鴉製作一個新的哨笛笛子，防止命令混淆。"
+				""
+				"使用哨笛，可以選擇並命令多隻烏鴉執行它們的動作，包括收割附近的農作物、收集附近的物品或扒竊附近的村民。"
+				""
+				"哨笛也是引導烏鴉在特定地點棲息的唯一方式。例如，棲息在木匣上可以讓收集物品的烏鴉自動將物品存入木匣。"
+				""
+				"關於扒竊的注意事項：烏鴉會從任何給定的職業中選擇一個固定的物品列表，該列表並非基於該村民可進行的交易。"
+			]
+			id: "006AA7562C9E592D"
+			min_width: 300
+			rewards: [
+				{
+					id: "2A2C32AC7AB124EF"
+					item: {
+						Count: 1b
+						id: "hexerei:crow_flute"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "693F4BD1CEBBB904"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "給那個鳥"
+			tasks: [{
+				id: "7871E574B7D1A2E9"
+				item: "hexerei:seed_mixture"
+				type: "item"
+			}]
+			title: "烏鴉"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4BBFA0119FC270E3"]
+			description: [
+				"在古老的藥劑店和廚房中常見的簡樸的研缽及杵，幾個世紀以來一直被用於研磨和混合配料。"
+				""
+				"物品能右鍵手動放置在研缽及杵中，並且可以相同的方式取出。"
+				""
+				"此外，物品可以通過自動化系統輸入，研缽及杵將在研磨完成之前保留住它們，只能提取最終產物。"
+			]
+			id: "288651241042A695"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "55630D935774736C"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "6AC6C7A90D19B9E8"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "保持地板清潔"
+			tasks: [{
+				id: "461CC24285C645D5"
+				item: "hexerei:pestle_and_mortar"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["006AA7562C9E592D"]
+			description: [
+				"雖然它也可以作為一個容易製作的界伏盒，但木匣主要為處於收穫模式的烏鴉增加了實用性。根據其介面中烏鴉收集按鈕的切換，烏鴉可以存入它找到的所有東西，或者只存入箱子中已經存在的物品，使其能作為一個過濾器。"
+				""
+				"只需左鍵即可快速撿起木匣。"
+			]
+			id: "260496087FA65B9F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "3839C03CB49C1A83"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/hexerei/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "25E2D68E1252E742"
+					title: "Epic Hexerei Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "你相信魔法嗎？"
+			tasks: [{
+				id: "367B2CA18ED5D6FA"
+				item: {
+					Count: 1b
+					id: "hexerei:coffer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+	]
+	title: "調和巫術"
+}

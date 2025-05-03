@@ -1,0 +1,1586 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "natures_aura_expert"
+	group: "5A8B89F87F77CF4C"
+	icon: "naturesaura:gold_leaf"
+	id: "073D8C9BCEF4C979"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.0d
+			hover: [ ]
+			image: "#FFFFFF"
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.0d
+			hover: [ ]
+			image: "#FFFFFF"
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 0.0d
+			hover: [ ]
+			image: "#FFFFFF"
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"自然靈氣是一個以德魯伊為主題的魔法科技模組，它利用無處不在的「靈氣」來獲取能量。"
+				""
+				"請注意，靈氣是一種有限的資源，必須加以管理和補充，以免擾亂自然秩序。過度消耗可能會導致嚴重的後果。"
+				""
+				"這些任務將引導你了解這個模組，但務必定期查閱手冊取得更多資訊。當你完成這些任務及其相關成就時，將會解鎖章節。"
+			]
+			hide: true
+			icon: "naturesaura:aura_bloom"
+			id: "2DED8E4FA6DCD410"
+			min_width: 250
+			rewards: [{
+				id: "730C37B154C65FBC"
+				item: {
+					Count: 1b
+					id: "superiorshields:bronze_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "1CA151483E2C22BB"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+				title: "自然靈氣"
+				type: "item"
+			}]
+			title: "自然靈氣"
+			x: -2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2735E47A2A965FEE"]
+			description: [
+				"森林儀式是所有魔法的基礎。儀式中心需要獻祭一棵樹來提供能量。"
+				""
+				"配方周圍的物品應分別放置在木基座上；順序無關緊要，物品可以手動放置或通過自動化系統放置。"
+				""
+				"一旦試劑準備就緒，放下所需的樹苗，樹長大時即開始進行儀式。當儀式完成後，金葉粉將與物品和樹木都將被消耗。"
+				""
+				"有關建造儀式的具體說明，請參閱自然靈氣之書。"
+			]
+			hide_dependency_lines: true
+			id: "699BC5534C19FC5E"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "36808DD105A48BCC"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+				{
+					count: 16
+					id: "753CD2F44D63188D"
+					item: "naturesaura:gold_powder"
+					type: "item"
+				}
+			]
+			subtitle: "拉把椅子來"
+			tasks: [{
+				icon: "naturesaura:wood_stand"
+				id: "05714B3C0C99E55B"
+				observe_type: 0
+				timer: 0L
+				title: "木基座"
+				to_observe: "naturesaura:wood_stand"
+				type: "observation"
+			}]
+			title: "森林儀式"
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			description: [
+				"要踏上自然學家的道路，應將閃耀纖維編織入樹葉之中。在那裡，它們會將樹葉轉化為美麗的金黃色。"
+				""
+				"製作一根或多根閃耀纖維，然後右鍵任何樹葉。效果會擴散到附近的樹葉，因此只要小心管理，應該不需要製作更多的璀璨纖維。"
+				""
+				"當完全轉化的葉子被破壞時，會掉落黃金葉。將新的樹葉放在已轉化葉子附近，也會開始轉化。"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:gold_fiber"
+			id: "2735E47A2A965FEE"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1B3CC9578B9BF05D"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "4D3CDE28F69D202C"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "連結我們的絲線"
+			tasks: [
+				{
+					id: "0E8F119E16CC852B"
+					item: "naturesaura:gold_fiber"
+					type: "item"
+				}
+				{
+					id: "6700A70D6F3F011C"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+			]
+			title: "由此開始：儀式"
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2735E47A2A965FEE"]
+			description: [
+				"當達到足夠高的技能水平時，自然學家可以直接與神明溝通，以祭品換取恩惠。然而，務必注意，無論祭品為何，神明有時會很小氣。"
+				""
+				"將祭品放入碗中，然後丟出一個呼喚之魂完成儀式。這個碗可以容納多個物品，批次祭祀只需要一個呼喚之魂。"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:offering_table"
+			id: "37D084A5FD96EACA"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "366B1FFE22EBE4E5"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "聽到的話請點頭"
+			tasks: [{
+				id: "061AD10825E1993F"
+				item: "naturesaura:offering_table"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			dependency_requirement: "all_started"
+			description: [
+				"自然祭壇是兩種儀式實踐的核心；一種是將生命注入物體，另一種是注入死亡。"
+				""
+				"有關所需結構的預覽，請參閱自然靈氣之書中關於自然祭壇和猩紅祭壇的部分。"
+				""
+				"建造時可以使用任何類型的木材。"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:nature_altar"
+			id: "465085DE51A72E73"
+			min_width: 250
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "097F8CAD66BB44FC"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "生與死的二元性"
+			tasks: [
+				{
+					id: "7EBAAE8549A91C6D"
+					item: "naturesaura:nature_altar"
+					type: "item"
+				}
+				{
+					id: "4DD75E6EBA654D12"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any Planks"
+					type: "item"
+				}
+				{
+					id: "3EA6FF0E4235DB44"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					id: "12D60736A8AF5AAB"
+					item: "naturesaura:gold_brick"
+					type: "item"
+				}
+				{
+					id: "03E99236300A5FFD"
+					item: "minecraft:chiseled_stone_bricks"
+					type: "item"
+				}
+			]
+			title: "駕馭靈氣：自動化"
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			description: [
+				"據說最早的自然學家通過觀察這些遠古樹發現了靈氣。他們發現遠古樹的根系深入地下，從深處汲取靈氣並將其散發到環境中。"
+				""
+				"當意識到靈氣可以再生後，他們開始設計越來越精巧的方法來使用和補充它。然而，那些過度消耗靈氣的人付出了慘痛的代價。"
+				""
+				"由遠古樹苗長成的樹木有兩個主要用途："
+				""
+				"首先，它們會幫助補充其區域的靈氣，儘管速度較慢。在這個過程中，樹葉會枯萎並腐爛。不用擔心，存在更有效的靈氣補充方法。"
+				""
+				"其次，這種木材在奧術方面尤其有用，因為它浸透了靈氣的魔法能量。它是許多奧術工具的優良基礎。"
+			]
+			hide_dependency_lines: true
+			id: "58438574716487D7"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "5C2B4E261DE782E4"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+				{
+					count: 32
+					id: "1A4E4A4713072598"
+					item: "naturesaura:ancient_log"
+					title: "Ancient Log"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "有付出，有收穫"
+			tasks: [{
+				id: "6EF9F130AE0F37FD"
+				item: "naturesaura:ancient_sapling"
+				type: "item"
+			}]
+			title: "由此開始：生產靈氣"
+			x: 0.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"嬗變催化劑增強了自然祭壇和猩紅祭壇，使其能夠執行更進一步的轉化。"
+				""
+				"將其放置在環繞祭壇本體的四個短柱中的任何一個上方即可啟動它。"
+			]
+			id: "2D92C208DD310E86"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7B473B34257E6C77"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "要取得就得失去某些對等的東西"
+			tasks: [{
+				id: "431A924319567586"
+				item: "naturesaura:conversion_catalyst"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"崩壞催化劑增強了自然祭壇和猩紅祭壇，使其能夠執行更進一步的轉化。"
+				""
+				"將其放置在環繞祭壇本體的四個短柱中的任何一個上方即可啟動它。"
+			]
+			id: "37B44865CE6DEB8E"
+			rewards: [{
+				count: 32
+				id: "7E5EAD13F8837458"
+				item: "naturesaura:gold_leaf"
+				title: "Gold Leaf"
+				type: "item"
+			}]
+			subtitle: "常春藤攀爬在崩塌的大廳上"
+			tasks: [{
+				id: "6420AC075A3ECCBF"
+				item: "naturesaura:crushing_catalyst"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["25AA7A1A041FAA0C"]
+			description: [
+				"每個靈氣產生裝置補充靈氣的能力都是有限的。然而，有可能突破這個界限，使一個區域充滿過量的靈氣。"
+				""
+				"將製造催化劑放置在任何靈氣產生器下方，移除其靈氣生產上限，並達到自創世紀以來從未見過的繁茂景象。"
+			]
+			id: "6C1C63E372ECFEDC"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7459B50D34DCEBD6"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "一場媲美史前時代的生命爆發"
+			tasks: [{
+				id: "5157C6BD4F309FF4"
+				item: "naturesaura:generator_limit_remover"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: ["許多裝置都有特定的運作範圍，只有通過使用奧秘放大鏡右鍵它們才能看到。對於任何自然學家來說，這都是一個很有價值的工具。"]
+			hide_dependency_lines: true
+			id: "11556E9D40C6EC4C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "3CFF3CA727552A59"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "放輕鬆，我得先取得一些資訊"
+			tasks: [{
+				id: "73A094D6919E1D91"
+				item: "naturesaura:range_visualizer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"未經訓練的眼睛可能會注意到一個區域更明顯的靈氣跡象，例如微妙的發光和茂盛的植物生長。"
+				""
+				"環境之眼進一步磨練了自然學家的視野，使其能夠更深入地了解注入地景的靈氣。"
+				""
+				"在這個階段找到一個靈氣高於正常水平的區域可能會很有幫助，因為製作用於幫助恢復靈氣的裝置會消耗一些靈氣。"
+			]
+			hide_dependency_lines: true
+			id: "111065FF35D1189F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "1E7F02A4791EFC1D"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "即使你知道它是怎麼做到的，它仍是魔法"
+			tasks: [{
+				id: "4A0A71CAE8332012"
+				item: "naturesaura:eye"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2DED8E4FA6DCD410"]
+			description: [
+				"一種攜帶式的靈氣來源，可以與各種工具配合使用。"
+				""
+				"有關潛在使用方式，請參閱自然靈氣之書中關於自然物品的部分。"
+			]
+			hide_dependency_lines: true
+			id: "4081F393EAB01CBE"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "11F0298FC3689734"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			shape: "hexagon"
+			subtitle: "地理藏寶入門"
+			tasks: [{
+				id: "588C80AFF089BC0A"
+				item: "naturesaura:aura_cache"
+				type: "item"
+			}]
+			title: "駕馭靈氣：吃飯工具"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["111065FF35D1189F"]
+			description: ["環境之眼的進階版，它賦予其使用者觀察周圍靈氣更精確細節的能力。"]
+			id: "6B065FDF3EA4EB78"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "49064FB70F4C89F2"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "睜開眼睛，然後再睜開一次"
+			tasks: [{
+				id: "3F9F4B01BE056CDC"
+				item: "naturesaura:eye_improved"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"比靈氣快取擁有更高的容量。"
+				""
+				"有關潛在用途，請參閱自然靈氣之書中關於自然工具的部分。"
+				""
+				"注意：穿戴時可能無法完全充滿。要獲得完全充能，或者甚至自動填充它們，可以將它們放置在自然祭壇上以達到其最大容量。"
+			]
+			id: "3DB84F7840BACBFF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4E8906F53D1A0AB0"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "杯子滿出來了"
+			tasks: [{
+				id: "1F1ED271AC9302C6"
+				item: "naturesaura:aura_trove"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"最強大的自然學家發現，當與一種稀有的催化劑結合使用時，時間的流逝本身也可以被操控。"
+				""
+				"這個過程將會以巨大的靈氣消耗為代價快速推進時間。務必小心不要讓靈氣降得太低！"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:time_changer"
+			id: "05CB261DC6E9F041"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "30A356076A18628A"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "從黃昏到黎明"
+			tasks: [
+				{
+					id: "5349956ADF68A295"
+					item: "naturesaura:clock_hand"
+					type: "item"
+				}
+				{
+					id: "3CAF0F4C5100B399"
+					item: "naturesaura:time_changer"
+					type: "item"
+				}
+			]
+			title: "移時日晷"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"一個簡單的裝置，有助於圈養牲畜和其他動物。在這個方塊範圍內的生物將無法越過其邊界。"
+				""
+				"此效果不消耗靈氣。"
+				""
+				"運作範圍取決於它接收到的紅石信號強度。"
+			]
+			hide_dependency_lines: true
+			id: "454A0F0E48005FFE"
+			rewards: [
+				{
+					id: "768D554686743991"
+					item: "create:analog_lever"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "1979E756D0AF7475"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "一道界線"
+			tasks: [{
+				id: "56626DE3C9E9BE87"
+				item: "naturesaura:animal_container"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2735E47A2A965FEE"]
+			description: [
+				"一個駕馭創造本身力量的儀式，讓使用者能從最微小的物質痕跡中創造出新的生命。"
+				""
+				"搭建完成後，只需將試劑扔在祭壇上。如果有靈氣足夠，儀式將自動進行。"
+				""
+				"有關建造儀式的具體說明，請參閱自然靈氣之書。"
+			]
+			hide_dependency_lines: true
+			icon: "naturesaura:animal_spawner"
+			id: "13986C2B6CB6272E"
+			min_width: 250
+			rewards: [{
+				id: "2DB4B63FBFDFB240"
+				item: "naturesaura:pet_reviver"
+				type: "item"
+			}]
+			subtitle: "跨越門檻"
+			tasks: [
+				{
+					id: "1773B426491B9FCE"
+					item: "naturesaura:animal_spawner"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7AC7D86119B588A1"
+					item: "naturesaura:infused_brick"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D397E94580AFC81"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2BEBFBB45AFD2A45"
+					item: "naturesaura:ancient_planks"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"無感知建造器協助完成複雜的自動化任務，它會從附近的容器中取出方塊並放置。"
+				""
+				"在建造器本體的物品展示框中放置一個方塊，來指定它應該放置方塊的位置。"
+				""
+				"有關具體說明，請參閱自然靈氣之書。"
+			]
+			hide_dependency_lines: true
+			id: "1AE73DC4CC5A7C6F"
+			rewards: [
+				{
+					id: "3CB75006420EC5A1"
+					item: "minecraft:item_frame"
+					title: "Item Frame"
+					type: "item"
+				}
+				{
+					id: "577AB47A801DB8DA"
+					item: "naturesaura:farming_stencil"
+					title: "Farming Stencil"
+					type: "item"
+				}
+			]
+			subtitle: "干涉建設"
+			tasks: [{
+				id: "15ABF90EC87A9A88"
+				item: "naturesaura:placer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"當兩個靈氣場產生器連接在一起時，它們之間會形成一個破壞區域，以消耗一些靈氣為代價快速破壞方塊。"
+				""
+				"要連接它們，只需右鍵一個，然後右鍵另一個。向它們中的任何一個提供紅石信號即可啟用該系統。它們會在短暫延遲後開始汲取靈氣並破壞方塊。"
+				""
+				"物品展示框也可以用於改變它們的行為："
+				""
+				"注意：靈氣場產生器將使用放置在框架中的任何工具，包括工具的任何附魔或特殊破壞屬性。剪刀剪樹葉，鏟子收集雪，幸運和絲綢之觸效果也會套用。"
+			]
+			hide_dependency_lines: true
+			id: "1EA9C29C8955827D"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "230DB717CFF25F0B"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "干涉破壞"
+			tasks: [{
+				count: 2L
+				id: "4AF95515F94B8839"
+				item: "naturesaura:field_creator"
+				type: "item"
+			}]
+			title: "靈氣場產生器"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"當放在熔爐、高爐或煙燻爐上方時，外置燃火器會吸取附近的靈氣，並將其轉化為用於冶煉和烹飪的熱量。"
+				""
+				"雖然這個過程比燃燒煤炭或其他可燃材料快得多，但它也有可能將靈氣消耗到危險水平的缺點。甚至可以安裝多個來增強效果。"
+			]
+			hide_dependency_lines: true
+			id: "4D68B5141952C6A6"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "563C2C460079661B"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "馬克斯威爾的惡魔，努力工作"
+			tasks: [{
+				id: "0F892FF01C192955"
+				item: "naturesaura:furnace_heater"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"整個靈氣場似乎以某種方式連接在一起，甚至跨越維度。儘管可測量的影響往往更局部化，但一些傑出的自然學家能夠推斷出一種利用這種微妙的漣漪在難以想像的距離上傳輸物質的方法。"
+				""
+				"終界板條箱可以在鐵砧上，同時重新命名並與終界之眼結合來分配一個頻道。隨時可以給予它們相同的名稱將更多終界板條箱分配到同一頻道。"
+				""
+				"同樣，終界目鏡也可以被分配一個頻道，使其能手持存取相同頻道的終界板條箱。非常適合在遠離家鄉時放入搜刮的戰利品。"
+				""
+				"每次物品輸入或輸出板條箱時都會消耗少量靈氣。因此，在連接的兩處都產生靈氣至關重要。"
+			]
+			hide_dependency_lines: true
+			id: "6B336E008C4B58C5"
+			rewards: [
+				{
+					id: "0F8D483E6F7371A5"
+					item: "naturesaura:ender_access"
+					title: "Ender Ocular"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2AFDC4D29F3C05D5"
+					item: "minecraft:ender_eye"
+					title: "Eye of Ender"
+					type: "item"
+				}
+			]
+			subtitle: "亞巴頓之門"
+			tasks: [{
+				id: "4515752CE8CF34B4"
+				item: "naturesaura:ender_crate"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["385927686A412EA6"]
+			description: [
+				"當放置在專家型漏斗或原版漏斗上方時，漏斗增強器可以收集最遠七格外的方塊。在任何自動化裝置中，這都是一個非常有用的工具。"
+				""
+				"如果與專家型漏斗一起使用，漏斗增強器將會遵守其設置的過濾。"
+			]
+			id: "1D37E396D04A74AD"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "023260B9B7374F59"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "它伸出手，沒有回應，但它繼續伸出手"
+			tasks: [{
+				id: "6DE026A64A7BEFF3"
+				item: "naturesaura:hopper_upgrade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"專家型漏斗是少數幾個不消耗靈氣就能運作的自然裝置之一，它是一種可過濾的漏斗，物品移動速度比原版漏斗稍快。"
+				""
+				"在側面放置一個物品展示框，並在框中放入任何物品或方塊，設置過濾。"
+			]
+			hide_dependency_lines: true
+			id: "385927686A412EA6"
+			rewards: [
+				{
+					count: 4
+					id: "1877981636A0F2C0"
+					item: "minecraft:item_frame"
+					title: "Item Frame"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+					icon: "kubejs:rare_lootbox"
+					id: "470293D0FB403EA6"
+					title: "Rare Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "在泥沼中過濾"
+			tasks: [{
+				id: "25F9A4238632D661"
+				item: "naturesaura:grated_chute"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["58438574716487D7"]
+			description: [
+				"釀造藥水的過程將所有生命中蘊含的魔法能量提煉成緊湊且便於攜帶的形式。借助適當的裝置，這些能量可以再次釋放為靈氣。"
+				""
+				"滯留型吸收器會吸收這些能量，並將其重新分散為靈氣。只需將滯留藥水砸在中心方塊上，它就會處理剩下的事情。"
+				""
+				"藥水可以通過發射器等裝置丟出。"
+			]
+			id: "25AA7A1A041FAA0C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "139066FD1275A723"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "要麼做，要麼不做，沒有什麼試試看。"
+			tasks: [{
+				id: "4C6D3095E8F582DF"
+				item: "naturesaura:potion_generator"
+				title: "Lingering Absorber"
+				type: "item"
+			}]
+			title: "深奧的生態學"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["699BC5534C19FC5E"]
+			description: [
+				"充沛的靈氣會產生各種各樣的副作用，這些副作用在不同的時間可能有利也可能不利。存在一些粉末可以用來控制這些效果發生的時間和地點。"
+				""
+				"● 荒蕪 - 阻止地獄石上長草。"
+				""
+				"● 穩生 - 農作物、植物和花朵的生長將不再受到靈氣的加速。"
+				""
+				"● 繁殖 - 被動型動物在條件允許時會繁殖。"
+				""
+				"● 無儲 - 你的靈氣快取或祕寶將不會在這個區域補充靈氣。"
+			]
+			hide_dependency_lines: true
+			id: "578B0B5E74FEAC97"
+			min_width: 250
+			rewards: [
+				{
+					id: "1626124D88199034"
+					item: "naturesaura:powder_placer"
+					title: "Powder Manipulator"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "1E29E1E01DA699F1"
+					title: "Epic Nature's Aura Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "風中之塵"
+			tasks: [
+				{
+					id: "0139B77473805166"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:nether_grass"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3454E74CF4BE75A5"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:plant_boost"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "015C350A93439B0D"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:animal"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21D23B7891E68030"
+					item: {
+						Count: 1b
+						id: "naturesaura:effect_powder"
+						tag: {
+							effect: "naturesaura:cache_recharge"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "效果之粉"
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: ["當靈氣通過這個裝置時，它會導致該區域的熱量迅速散失，降低局部溫度並形成雪和冰。"]
+			hide_dependency_lines: true
+			id: "228F799A45B48D70"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7A33E6109905AF66"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "聽起來她很慌亂"
+			tasks: [{
+				id: "5E4F851471B1F091"
+				item: "naturesaura:snow_creator"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"正如終界之眼能幫助定位要塞一樣，這些也能幫助定位其他重要的結構。"
+				""
+				"● 窳民之眼能定位掠奪者前哨站。"
+				""
+				"● 烈焰之眼能定位地獄堡壘。"
+				""
+				"● 界伏之眼能定位終界城。"
+			]
+			hide_dependency_lines: true
+			id: "033BE52CE2FD3347"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "455236A2B705B554"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			subtitle: "眼見為憑"
+			tasks: [{
+				id: "2595740F68610F84"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:outpost_finder"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:fortress_finder"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:end_city_finder"
+							}
+						]
+					}
+				}
+				title: "黑暗中之眼"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"這是一個防止任何靈氣損失的封閉系統，這個小型裝置能作為一個極佳的計時器，每當其內部的靈氣完全蒸發並重新凝結時，就會發出紅石脈衝。靈氣越多，這個過程所需的時間就越長。"
+				""
+				"使用瓶裝靈氣右鍵靈氣蒸發器可以定義時鐘的時間。用空手右鍵可以檢索先前安裝的任何物品。"
+				""
+				"每瓶瓶裝陽光等於一秒鐘的時間。一瓶瓶裝鬼魂等於一分鐘。一瓶瓶裝黑暗等於一小時。"
+			]
+			hide_dependency_lines: true
+			id: "59ECE9FF654CA492"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "4429099A540470BF"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "307B82D5D8385AD7"
+				item: "naturesaura:aura_timer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"雖然通過其他方式也很容易取得水，但永恆之泉提供了一個方便連接管道供給其他機器的方法。"
+				""
+				"永恆之泉消耗少量靈氣為代價提供無限水源。"
+			]
+			hide_dependency_lines: true
+			id: "24F34D3F5B186B51"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "20B45C4EAD3FE4CA"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "0480B58CE324B5CD"
+				item: "naturesaura:spring"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"使敵對生物遠離敏感的裝置至關重要。任何人最不需要的就是苦力怕的突然造訪。"
+				""
+				"以極小的維持成本，聖域之燈將會抑制其影響範圍內的自然怪物生成，其範圍大小取決於它接收到的紅石信號強度。"
+			]
+			hide_dependency_lines: true
+			id: "7829AB43D56BA11F"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "691D2626544B7801"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "64A9C3C426E11115"
+				item: "naturesaura:spawn_lamp"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["385927686A412EA6"]
+			description: ["一個相當簡單的裝置，但卻非常強大。物品分配器將物品從其上方的容器中取出，並平均地分配到相鄰的容器中。"]
+			id: "67EDDAD97465EEF0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "7212F8AC7AC84191"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4661053FF7AEF153"
+				item: "naturesaura:item_distributor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: ["對於任何花時間在土地上辛勤勞動獲取資源的人來說，這真是一個奇蹟。將埃爾的標記附在工具上後，工具會在耐久度過低時停止工作，而非直接損壞。"]
+			hide_dependency_lines: true
+			id: "712E3B21060DB19C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "28CC27FC10BC0B9B"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			tasks: [{
+				id: "4721EF89824DD695"
+				item: "naturesaura:break_prevention"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: ["當佩戴在物品欄中的任何位置時，最後機會之指環可以阻止致命一擊，它會自行破碎，而非使佩戴者喪命。"]
+			hide_dependency_lines: true
+			id: "127A0B252CBF60C1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "1B9403D8A20F2898"
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "7401EDCC5CD5093C"
+				item: "naturesaura:death_ring"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"植物學家的裝備除了作為基礎的盔甲和工具之外，還為使用者提供了幾種獨特的好處。"
+				""
+				"● 所有植物學家的裝備都能以靈氣修復，手持靈氣快取或靈氣祕寶右鍵即可裝備至飾品欄。"
+				""
+				"● 植物學家之鎬：右鍵將靈氣注入材料。"
+				""
+				"● 植物學家之斧：非常快速地砍伐樹葉。"
+				""
+				"● 植物學家之鏟：將泥土轉化為草地，並在草地上製作 3x3 的土徑。"
+				""
+				"● 植物學家之鋤：在耕地時隨機產生種子。"
+				""
+				"● 植物學家之劍：對目標施加緩慢效果。"
+				""
+				"● 植物學家之盔甲：當穿戴整套時，會對攻擊者施加凋零效果。"
+			]
+			icon: {
+				Count: 1b
+				id: "naturesaura:infused_iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "221AF0ABFEB4F736"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/rare"
+				icon: "kubejs:rare_lootbox"
+				id: "44955606B0E1C7B5"
+				title: "Rare Nature's Aura Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "732BF42DDF8E3C04"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "植物學家的工具"
+					type: "item"
+				}
+				{
+					id: "3DF384030CD7214E"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "植物學家的盔甲"
+					type: "item"
+				}
+			]
+			title: "植物學家的裝備"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"探天者的裝備除了作為基礎的盔甲和工具之外，還為使用者提供了幾種獨特的好處。"
+				""
+				"● 所有探天者的裝備都能以靈氣修復，手持靈氣快取或靈氣祕寶右鍵即可裝備至飾品欄。"
+				""
+				"● 探天者之鎬：立即將挖掘的方塊傳送到使用者的物品欄中。"
+				""
+				"● 探天者之斧：能夠一次性砍倒整棵樹。"
+				""
+				"● 探天者之鏟：右鍵時，將目標方塊替換為非慣用手持的方塊。"
+				""
+				"● 探天者之鋤：更大面積的耕地，並在此過程中摧毀芒草和其他植被。"
+				""
+				"● 探天者之劍：對目標施加漂浮效果。"
+				""
+				"● 探天者的盔甲：當穿戴整套時，提供速度加成和類似於穿戴鞘翅的滑翔能力。"
+			]
+			icon: {
+				Count: 1b
+				id: "naturesaura:sky_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C4D668C5FB91906"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "2927D64D54B5FDD6"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "3CCFA329B5099EA4"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_sword"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_pickaxe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shovel"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_axe"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_hoe"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "探天者的工具"
+					type: "item"
+				}
+				{
+					id: "532B0B84B31F2DCD"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:sky_helmet"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_chest"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_pants"
+									tag: {
+										Damage: 0
+									}
+								}
+								{
+									Count: 1b
+									id: "naturesaura:sky_shoes"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "探天者的盔甲"
+					type: "item"
+				}
+			]
+			title: "探天者裝備"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: ["這些法杖從穿戴的靈氣快取或祕寶中汲取靈氣，幫助定位各種物體；無論在家還是在外冒險都非常有用。"]
+			hide_dependency_lines: true
+			id: "0F179A3EBF0587B8"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "38D4D46D3976D5D6"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "76B216E795F6C3FE"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:loot_finder"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:netherite_finder"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:cave_finder"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:light_staff"
+							}
+						]
+					}
+				}
+				title: "法杖之力"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["465085DE51A72E73"]
+			description: [
+				"瓶裝靈氣用於製作多種強大的物品，其製作本身可以通過發射器輕鬆實現自動化。"
+				""
+				"只需將瓶與塞放入發射器，並提供一個紅石脈衝。如果該區域有足夠的靈氣，就會生產出一瓶與當地靈氣對應的瓶裝靈氣。"
+			]
+			hide_dependency_lines: true
+			id: "2F618EF3A3976CD3"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "0CC83443C0E4A90D"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2F4C36ECF8500535"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:aura_bottle"
+								tag: {
+									stored_type: "naturesaura:overworld"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:aura_bottle"
+								tag: {
+									stored_type: "naturesaura:nether"
+								}
+							}
+							{
+								Count: 1b
+								id: "naturesaura:aura_bottle"
+								tag: {
+									stored_type: "naturesaura:end"
+								}
+							}
+						]
+					}
+				}
+				title: "瓶裝靈氣"
+				type: "item"
+			}]
+			title: "瓶裝靈氣"
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"曾經被認為完全獨立的魔法能量，魔源、靈氣和 FE，實際上都是同一能量的不同面向。通過使用特殊的晶體，可以輕鬆地在它們之間進行轉換。"
+				""
+				"脈動水晶通過吸收附近魔罐中的魔源來工作，並將其轉換為可用的 FE。如果該區域包含足夠的靈氣，它也會被消耗，從而大大增強產生的 FE。"
+				""
+				"另一方面，共振水晶與 FE 建立內部共振，將其轉換回魔源或靈氣。如果附近有魔源罐，它會將其傳送到那裡。如果沒有魔源罐，或者魔源罐已滿 (100%)，共振水晶則會將輸入的 FE 轉換為靈氣並將其擴散到大氣中。"
+			]
+			hide_dependency_lines: true
+			id: "7C701D8BF9539E0C"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/natures_aura/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "7FE6DA1A9A33BC3F"
+				title: "Epic Nature's Aura Loot Box"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "0BB9E13D7D12A340"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enigmaticunity:dim_source_generator"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:bright_source_generator"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:iridescent_source_generator"
+								}
+							]
+						}
+					}
+					title: "脈動水晶"
+					type: "item"
+				}
+				{
+					id: "6523D564D0C06A9D"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enigmaticunity:dim_source_producer"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:bright_source_producer"
+								}
+								{
+									Count: 1b
+									id: "enigmaticunity:iridescent_source_producer"
+								}
+							]
+						}
+					}
+					title: "共振水晶"
+					type: "item"
+				}
+			]
+			title: "能量轉換"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4081F393EAB01CBE"]
+			description: [
+				"雖然人們經常將靈氣視為氣體，但這並不完全準確。"
+				""
+				"事實上，靈氣本身具有吸引力，這導致它聚集在某些區域，而不是完全分散。我們可以通過創造更強的吸引力並將大團靈氣從一個地方拖到另一個地方來利用這一點，有效地將靈氣移動到需要的地方。"
+				""
+				"這個過程絕非完美，當靈氣礦車移動時，會有靈氣殘留在後方並重新融入該區域。有些人甚至認為這是一個好處，因為它可以將靈氣分散到較大的區域，而不必將其集中在一個地方。"
+			]
+			hide_dependency_lines: true
+			id: "06BAE98B1543EBFC"
+			rewards: [
+				{
+					count: 32
+					id: "2D9AC743F4E418A2"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "798941F146979F79"
+					item: "minecraft:activator_rail"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "473100E7D4F400CE"
+					item: "minecraft:powered_rail"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6CFFD908E1209AF5"
+				item: "naturesaura:mover_cart"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+	]
+	title: "自然靈氣"
+}

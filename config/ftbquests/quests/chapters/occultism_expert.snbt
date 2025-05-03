@@ -1,0 +1,1115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "occultism_expert"
+	group: "5A8B89F87F77CF4C"
+	icon: {
+		Count: 1b
+		id: "occultism:miner_djinni_ores"
+		tag: {
+			Damage: 0
+			spiritName: "Drakarcark"
+		}
+	}
+	id: "2321BB9317FB0262"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2CCCDD05AED3153F"]
+			description: [
+				"藉由神秘學，異世界及其居民將聽從你的差遣。從提供各種戰鬥加成的簡單使魔，到用於早期礦石處理的碎礦精靈，再到應你要求收集珍貴材料的強大巨靈礦井，神秘學能滿足每個人的需求。"
+				""
+				"魔靈全典包含了入門所需的一切，既是指南，也是獲取精靈名字的製作材料。"
+			]
+			hide: true
+			icon: "occultism:dictionary_of_spirits"
+			id: "53F52A1385C25A50"
+			rewards: [{
+				count: 4
+				id: "48F36BF208EEBF46"
+				item: "minecraft:fire_charge"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "3EE2A2A44A030705"
+				item: "occultism:datura_seeds"
+				title: "神祕學"
+				type: "item"
+			}]
+			title: "神祕學"
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["53F52A1385C25A50"]
+			description: [
+				"據說是異界原生植物，由精靈在很久以前贈予以開啟兩界之間的貿易，魔鬼之夢是一種強效的果實，具有幾種獨特的特性，一直被修行者所使用。"
+				""
+				"食用魔鬼之夢果會推開分隔這個世界和異界的帷幕，使人能夠看到事物的真實面貌。特別是，異界之樹在這個世界往往呈現為普通的橡樹，但在魔鬼之夢的效果下，可以收穫它們真實的樣子。"
+				""
+				"燃燒這種果實會在異界打開一個小裂縫，產生一種主要存在於異界的火焰，只需將其扔下並點燃即可。這種火焰不會燒傷生物，但可以用於轉變或淨化某些材料。"
+				""
+				"最後，來自異界的精靈非常喜歡這種果實的味道，餵食它們有助於恢復它們的生命。"
+				""
+				"================================================="
+				""
+				"可以使用火焰彈以及打火石來點燃火焰。"
+			]
+			hide_dependency_lines: true
+			icon: "occultism:spirit_fire"
+			id: "5D872437E8DA574B"
+			min_width: 300
+			rewards: [
+				{
+					auto: "disabled"
+					count: 8
+					id: "6BDDE0CD478E45D8"
+					item: "occultism:otherstone"
+					title: "Otherstone"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "10F35B67ABCD0BE9"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "為你燃燒"
+			tasks: [{
+				id: "317B6BEEED6726F7"
+				item: "occultism:datura"
+				type: "item"
+			}]
+			title: "由此開始：儀式魔法"
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6174E9BF29FDE7FD"]
+			description: ["蠟燭是大多數儀式五芒星中使用的另一種物品。任何類型的蠟燭都可以。"]
+			icon: "minecraft:purple_candle"
+			id: "2F1875D08B052109"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "419B8DDAD1F2EFA8"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			subtitle: "標準蠟燭"
+			tasks: [{
+				id: "5FB8A527B476873A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "minecraft:candles"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "hexerei:candles"
+								}
+							}
+							{
+								Count: 1b
+								id: "occultism:candle_white"
+							}
+						]
+					}
+				}
+				title: "Any Candle"
+				type: "item"
+			}]
+			title: "蠟燭"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: [
+				"與異界的交流和交易對於新手來說是可行且安全的，儘管需要一些特殊的材料才能開始。"
+				""
+				"純淨墨水是唯一已知的適合抄寫精靈名字以用於儀式魔法的物質。任何其他東西都有一種奇怪的褪色傾向，彷彿它不想參與其中。"
+			]
+			hide_dependency_lines: true
+			id: "5779806AB9F94AC5"
+			rewards: [
+				{
+					count: 4
+					id: "37F0ADD4F34ADD80"
+					item: "occultism:purified_ink"
+					title: "Purified Ink"
+					type: "item"
+				}
+				{
+					id: "32336B415E043615"
+					type: "xp"
+					xp: 300
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "3C8C800F02B1B6BE"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [
+				{
+					id: "68921B19CAED8BD1"
+					item: "occultism:purified_ink"
+					type: "item"
+				}
+				{
+					id: "758D8B95F1FEE257"
+					item: "occultism:burnt_otherstone"
+					type: "item"
+				}
+			]
+			title: "神秘材料"
+			x: 13.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6174E9BF29FDE7FD"]
+			description: ["雖然在大多數已知的五芒星中會使用，但單獨的白色粉筆只有有限的束縛力。不過，在獲得額外材料之前，它仍然可以用於基本的儀式。"]
+			id: "4388924397A374AC"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "2CC2443610E4CFF1"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					id: "04F085F95D44995D"
+					item: "occultism:brush"
+					type: "item"
+				}
+			]
+			subtitle: "回到粉筆"
+			tasks: [{
+				id: "3ECECE7318EFD24D"
+				item: {
+					Count: 1b
+					id: "occultism:chalk_white"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "白色粉筆"
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6174E9BF29FDE7FD"]
+			description: ["在粉筆中加入稀有且昂貴的材料，可以使其與異界建立更強的連接，使你能將精靈直接束縛到物品中增強它們。"]
+			id: "3CA78CCDDF4B6D7F"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "3B6224538F94ADC5"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "1E48BCBE4012B685"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "生命的所有粉筆"
+			tasks: [{
+				id: "76D9E369A1D995F6"
+				item: {
+					Count: 1b
+					id: "occultism:chalk_gold"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "黃金粉筆"
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6174E9BF29FDE7FD"]
+			description: [
+				"憑藉強大的異位面成分，紫色粉筆有助於束縛越來越強大的精靈。"
+				""
+				"然而，使用紫色粉筆的儀式並非沒有風險，在與某些精靈打交道時謹慎行事是明智的；並非所有精靈都樂於被召喚到這個領域。"
+			]
+			id: "0A97462221C8E34C"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7079CA0B9EE429C9"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+					icon: "kubejs:alchemists_delight"
+					id: "2ACBBF255C72E5C5"
+					title: "Alchemist's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "... 月亮也隨他而去"
+			tasks: [{
+				id: "7CE825299DE46393"
+				item: {
+					Count: 1b
+					id: "occultism:chalk_purple"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6174E9BF29FDE7FD"]
+			description: ["注入了強大精靈的精華，紅色粉筆作為最強大的召喚法陣中的最後一層保護。"]
+			id: "67109DA616B29805"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "5994DD7843E5B711"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+					icon: "kubejs:sorcerers_delight"
+					id: "4E22EAB060EC7145"
+					title: "Sorcerer's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "文化粉筆"
+			tasks: [{
+				id: "546644A2AF5A7F45"
+				item: {
+					Count: 1b
+					id: "occultism:chalk_red"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79FA215631E6AB09"]
+			dependency_requirement: "one_completed"
+			description: [
+				"真是令人難以置信的魔法，維度儲存促動器聲稱擁有異界的一個空間，並使其可以從任何地方存取。"
+				""
+				"雖然它最初的容量很小，但通過增加穩定器可以極大地擴展其容量。最多可以增加六個穩定器；將它們放置成面向促動器頂部的水晶。"
+				""
+				"促動器可以手動存取，也可以通過自動化方式存取，例如管道、漏斗或 ME 儲存匯流排。"
+				""
+				"可以拿起並移動它們，無需擔心其中的內容物；當儲存促動器重新放置時，一切都會保持原樣。然而，任何連接促動器的東西，例如蟲洞，都需要重新綁定。"
+			]
+			id: "4109C076621DECF6"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "50C50A413C996365"
+				title: "Occultism Epic Loot Box"
+				type: "command"
+			}]
+			subtitle: "真乃異界之物"
+			tasks: [{
+				id: "2133FD24724570C5"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			title: "跨維度儲存"
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23E68C9DFD2F0ED7"]
+			description: [
+				"儲存穩定器用於通過維持次元空間的完整性來擴展儲存促動器的內部儲存空間。"
+				""
+				"穩定器本身可以放置在驅動器每個主要方向的五格範圍內。每一側只能有一個穩定器生效，但促動器的所有六個面都可以使用。確保它們面向驅動器頂部的水晶，而不是底座本身。"
+				""
+				"注意：移除穩定器不會導致促動器中的物品損失。相反，如果促動器當前的儲存量超過其當前容量，它將只會拒絕新的物品存入。然而，仍然可以提取物品。"
+			]
+			hide_dependency_lines: true
+			id: "7B94F0235872AEF3"
+			rewards: [
+				{
+					id: "777167B3E03C8AE9"
+					item: "occultism:storage_stabilizer_tier1"
+					title: "Tier 1 Dimensional Storage Stabilizer"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "678939723BB6DEB9"
+					title: "Occultism Epic Loot Chest"
+					type: "command"
+				}
+			]
+			subtitle: "放眼全球"
+			tasks: [{
+				id: "668E89E964FFC041"
+				item: "occultism:storage_stabilizer_tier1"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7B94F0235872AEF3"]
+			description: ["利用艾瑟金屬的共振特性來加強穩定場，這些穩定器是已知最強大的，可以將儲存促動器的容量擴展到驚人的程度。"]
+			id: "218F16DD5D21C905"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+				icon: "kubejs:legendary_lootbox"
+				id: "570703F75436A72B"
+				title: "Occultism Legendary Loot Box"
+				type: "command"
+			}]
+			subtitle: "拓展視野"
+			tasks: [{
+				id: "7249DA8073D07858"
+				item: "occultism:storage_stabilizer_tier4"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4109C076621DECF6"]
+			description: [
+				"一種小型手持設備，賦予持有者一個與其綁定的儲存促動器的攜帶式連結。"
+				""
+				"蹲下右鍵促動器綁定。"
+			]
+			id: "58AC34CCBBFAF2FF"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "3DCB985BD8CD3A83"
+				title: "Occultism Epic Loot Box"
+				type: "command"
+			}]
+			subtitle: "越界"
+			tasks: [{
+				id: "76B6B4F530956F37"
+				item: {
+					Count: 1b
+					id: "occultism:storage_remote"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4109C076621DECF6"]
+			description: [
+				"一個可以放置在任何地方的攜帶式蟲洞，可以存取綁定的儲存促動器。可以通過自動化方式存取，例如管道或魔精搬運工，實現簡單的長距離材料運輸。"
+				""
+				"蹲下右鍵促動器綁定。"
+			]
+			id: "23E68C9DFD2F0ED7"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "0375C6BE2CE4A248"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+				{
+					id: "56A1C03D00468EA3"
+					item: {
+						Count: 1b
+						id: "occultism:stable_wormhole"
+						tag: { }
+					}
+					title: "Stable Wormhole"
+					type: "item"
+				}
+			]
+			subtitle: "內有乾坤"
+			tasks: [{
+				id: "7F8475D5752EEDEA"
+				item: {
+					Count: 1b
+					id: "occultism:stable_wormhole"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1A8FB7EB02DAD9C9"]
+			description: [
+				"靈魂寶石是一種看似不起眼的小飾品，卻有著強大的作用，它實際上是一個通往異界的小型通道，可以將一個生物置於異界的一種靜止狀態。"
+				""
+				"以這種方式保存的生物不會經歷時間，它們的生理需求也完全停止。"
+				""
+				"右鍵生物保存它，再次右鍵方塊釋放它。"
+			]
+			id: "1EF97C3DDE7FDE06"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "4F87B6F409112BBE"
+				title: "Occultism Epic Loot Chest"
+				type: "command"
+			}]
+			subtitle: "多麼迷人"
+			tasks: [{
+				id: "00F97306718FE748"
+				item: {
+					Count: 1b
+					id: "occultism:soul_gem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "靈魂寶石"
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: [
+				"召喚被附身的終界蟎，可以讓剛入門的修行者輕鬆獲得某些儀式所需的稀有材料：終界石。"
+				""
+				"當然，可以直接前往終界取得，但前往終界的通道並不總是那麼容易。相反，與異界進行一些交易，就可以在只涉及少量複雜情況下獲得一些終界石。"
+			]
+			hide_dependency_lines: true
+			icon: "occultism:crushed_end_stone"
+			id: "696C0F6CA5142B75"
+			min_width: 300
+			rewards: [
+				{
+					count: 16
+					id: "6D68D32BAE5916C4"
+					item: "minecraft:end_stone"
+					title: "End Stone"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "040FFFDF6D527A73"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "通往星星的階梯"
+			tasks: [{
+				advancement: "occultism:occultism/possess_endermite"
+				criterion: ""
+				id: "1391952AB2665072"
+				type: "advancement"
+			}]
+			title: "粉碎終界石"
+			x: 13.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: ["頭顱用於幾個儀式五芒星，但獲取它們並不總是容易。可以尋求異界的幫助，召喚一個擁有大量頭顱的骷髏。"]
+			hide_dependency_lines: true
+			icon: "minecraft:skeleton_skull"
+			id: "6156EACCFCBBA9B7"
+			rewards: [
+				{
+					count: 2
+					id: "64CE30FF84E228B2"
+					item: "minecraft:skeleton_skull"
+					title: "Skeleton Skull"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "28C55284F9DF058D"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+			]
+			subtitle: "那就出發斬首吧"
+			tasks: [{
+				advancement: "occultism:occultism/possess_skeleton"
+				criterion: ""
+				id: "5FD5C297338C9493"
+				type: "advancement"
+			}]
+			title: "骷髏頭顱"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: [
+				"終界珍珠是煉金術中非常重要的物品。雖然可以從偶爾出現在我們世界中稀有的終界使者身上獲得，但它們並不一定會掉落。"
+				""
+				"另一方面，被附身的終界使者總是會掉落一些終界珍珠。"
+				""
+				"務必小心，因為這個特殊的儀式可能會變得非常不穩定，而且其多維度的性質已知會撕裂現實的結構。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:ender_pearl"
+			id: "661D81A679AD4AD4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "26CBC35CB3182775"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+				{
+					count: 8
+					id: "7D5FFD9577D45999"
+					item: "minecraft:ender_pearl"
+					title: "Ender Pearl"
+					type: "item"
+				}
+			]
+			subtitle: "黑牡蠣神秘學"
+			tasks: [{
+				advancement: "occultism:occultism/possess_enderman"
+				criterion: ""
+				id: "571F5BE95F64191B"
+				type: "advancement"
+			}]
+			title: "終界珍珠"
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6174E9BF29FDE7FD"]
+			description: ["這些同調水晶與異界能量產生共鳴，是一種簡單而有效的穩定儀式的方法，為修行者增加了一層保護。"]
+			id: "38D8C3DE5709BCD9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+				icon: "kubejs:scavengers_delight"
+				id: "2786EF02B7121DF1"
+				title: "Scavenger's Delight"
+				type: "command"
+			}]
+			subtitle: "不和諧的共鳴"
+			tasks: [{
+				id: "2BB71BED4F8DCD51"
+				item: "occultism:spirit_attuned_crystal"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: [
+				"年輕的修行者常常認為他們在命令精靈，使其屈服於自己的意志。然而，這是一種誤解。事實上，精靈是壽命悠長的生物，它們對時間的感知與我們這些短壽的生物截然不同。"
+				""
+				"最好將這些互動視為交易。用我們世界中稀有的東西來換取它們時間之海中的一滴。畢竟，即使是長壽的修行者，也會在他們所聯繫的精靈之前很久就逝去。"
+				""
+				"因此，在進行這些儀式時，必須交換有價值的東西。物品應在儀式開始前放置在獻祭之碗中。普通的獻祭之碗可以放置在黃金獻祭之碗八格範圍內的任何地方，甚至在五芒星之外。同樣，物品可以放置在任何碗中，順序無關緊要。"
+				""
+				"黃金獻祭之碗中的物品必須最後放置；如果其他所有物品都正確放置，將觸發儀式。如果儀式需要獻祭生物或使用物品，這些操作必須在儀式啟動後進行，並且必須在黃金獻祭之碗八格範圍內進行。"
+			]
+			hide_dependency_lines: true
+			icon: "occultism:golden_sacrificial_bowl"
+			id: "6174E9BF29FDE7FD"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "54B802039174BA9A"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [
+				{
+					id: "3F5A8D871A3D3403"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+				{
+					id: "1910EB323889349E"
+					item: "occultism:sacrificial_bowl"
+					type: "item"
+				}
+			]
+			title: "獻祭之碗"
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A8FB7EB02DAD9C9"]
+			description: [
+				"某些精靈擁有控制我們世界天氣的能力。"
+				""
+				"召喚合適的精靈可以帶來晴朗的天空、降雨，甚至引發暴風雨！"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:sunflower"
+			id: "230F148D699FFFE4"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "09704DE74B6D0FDF"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "429B8A9FC14F374D"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "7C2EBE033EADBC95"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "就在我們注視時綻放"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_afrit_rain_weather"
+					criterion: ""
+					id: "074A1DA5988D50DB"
+					type: "advancement"
+				}
+				{
+					advancement: "occultism:occultism/summon_afrit_thunder_weather"
+					criterion: ""
+					id: "16BD98D82120D9CC"
+					type: "advancement"
+				}
+			]
+			title: "天氣儀式"
+			x: 19.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1A8FB7EB02DAD9C9"]
+			description: [
+				"對於像異界精靈這樣永恆的生物來說，過去和現在之間幾乎沒有區別。它們知道我們對時間的感知，但對它們來說，這種差異更接近於我們對上和下的感知；對它們來說，移動到時間的另一個點就像我們爬山一樣簡單。"
+				""
+				"召喚一個巨靈將白天前進到夜晚，夜晚前進到白天。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:clock"
+			id: "69817D939DA2CB86"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/scavengers_delight"
+					icon: "kubejs:scavengers_delight"
+					id: "36144539BED9E23C"
+					title: "Scavenger's Delight"
+					type: "command"
+				}
+				{
+					id: "064A6A794057E56F"
+					item: "twilightforest:moon_dial"
+					type: "item"
+				}
+			]
+			subtitle: "時光荏苒"
+			tasks: [
+				{
+					advancement: "occultism:occultism/summon_djinni_night_time"
+					criterion: ""
+					id: "557D200FCE67921B"
+					type: "advancement"
+				}
+				{
+					advancement: "occultism:occultism/summon_djinni_day_time"
+					criterion: ""
+					id: "722922FFAACE6EB0"
+					type: "advancement"
+				}
+			]
+			title: "天象儀式"
+			x: 17.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: [
+				"一種強效的束縛劑，主要用於製造紅色粉筆，火靈靈髓只能通過在戰鬥中擊敗火靈來獲得，這需要在一个破損的五芒星中召喚火靈，使修行者毫無保護，任由這些強大的敵人擺佈。"
+				""
+				"注意：火靈靈髓並非總會掉落。建議使用附有掠奪的武器來增加這種強效材料掉落的機率。"
+			]
+			hide_dependency_lines: true
+			icon: "occultism:afrit_essence"
+			id: "4169ECD1F9E15BFC"
+			min_width: 300
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "11289E089F55DC13"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/legendary"
+					icon: "kubejs:legendary_lootbox"
+					id: "205E158A8C1DBFDD"
+					title: "Occultism Legendary Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "支配與臣服"
+			tasks: [{
+				advancement: "occultism:occultism/summon_wild_afrit"
+				criterion: ""
+				id: "68D3227B1A92A945"
+				type: "advancement"
+			}]
+			title: "火靈靈髓"
+			x: 13.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: [
+				"狂獵號角聲讓大多數聽到它的人心生恐懼，因為他們知道隨之而來的是苦難和死亡。故意召喚它們來戰鬥充其量也是愚蠢的。"
+				""
+				"然而，對於那些相信自己能夠在猛攻中倖存下來的人來說，異界精靈非常樂意提供幫助。"
+				""
+				"這個儀式保證獲得多個凋零骷髏頭顱，甚至可能為那些成功擊敗狂獵的人帶來其他特殊獎勵。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:wither_skeleton_skull"
+			id: "1C5B2606546FAF67"
+			rewards: [
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "5C1B16137B415C03"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+					icon: "kubejs:epic_lootbox"
+					id: "7F8FCF3FFACD8062"
+					title: "Occultism Epic Loot Box"
+					type: "command"
+				}
+			]
+			subtitle: "更上一層樓"
+			tasks: [{
+				advancement: "occultism:occultism/summon_wild_hunt"
+				criterion: ""
+				id: "6645C16E735F0A0D"
+				type: "advancement"
+			}]
+			title: "凋零骷髏頭顱"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["79FA215631E6AB09"]
+			description: [
+				"魔精搬運工曾經是任何修行者工作坊周圍常見的景象，它們快速而聰明，能夠將物品保持在需要的地方。"
+				""
+				"使用精靈附帶的召喚之書設置其提取和存放地點。蹲下右鍵精靈綁定。召喚之書也可用於傳送精靈。"
+				""
+				"蹲下右鍵精靈存取設置過濾的介面。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:chest_minecart"
+			id: "582C843AC0D5961E"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "79F50D4822BFDD4D"
+				title: "Occultism Epic Loot Box"
+				type: "command"
+			}]
+			subtitle: "繼續前進"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_transport_items"
+				criterion: ""
+				id: "52B74303B5A6D2D0"
+				type: "advancement"
+			}]
+			title: "召喚魔精搬運工"
+			x: 10.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4109C076621DECF6"]
+			description: [
+				"巨靈機械操作員精靈與次元儲存促動器一起使用，作為一種基本的自動合成形式。"
+				""
+				"使用召喚之書將精靈綁定到一台機器上，然後再次使用它來設置精靈將物品推送到哪一側以及從哪一側拉取物品。最後，將巨靈分配給一個儲存促動器。"
+				""
+				"在儲存促動器中，選擇一組要由精靈處理的物品，並將其放在介面左側的欄位中。這將彈出一個選單，可以在其中選擇一個機械操作員。這樣做將觸發該操作員收集物品並在其機器上處理它們。"
+			]
+			icon: "minecraft:furnace"
+			id: "1A59D971B729013C"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "337D8BD1DBAD5EE8"
+				title: "Occultism Epic Loot Chest"
+				type: "command"
+			}]
+			subtitle: "我最好能拿到加班費…"
+			tasks: [{
+				advancement: "occultism:occultism/summon_djinni_manage_machine"
+				criterion: ""
+				id: "037CEDAB050E3E9E"
+				type: "advancement"
+			}]
+			title: "召喚巨靈機械操作員"
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1A8FB7EB02DAD9C9"]
+			description: [
+				"有些使魔比其他使魔更適合戰鬥場合。對於那些提供簡單增益的使魔，有時最好將它們放在戒指中，這樣它們就可以安全地提供增益，而不會被流箭誤傷。"
+				""
+				"右鍵任何使魔將其儲存到戒指中。佩戴戒指將賦予你該使魔提供的任何被動加成。"
+				""
+				"這個戒指也可用於與其他修行者交易使魔，因為使魔會將從戒指中釋放它們的人視為它們新的主人。"
+			]
+			hide_dependency_lines: true
+			id: "117C9E6DFD48A647"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "14EB8F295FF2B7BB"
+				title: "Occultism Epic Loot Box"
+				type: "command"
+			}]
+			subtitle: "早該戴上戒指"
+			tasks: [{
+				id: "312AA4958730FD05"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							hasFamiliar: 0b
+						}
+					}
+					id: "occultism:familiar_ring"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79FA215631E6AB09"]
+			description: [
+				"魔精清潔工非常適合與粉碎精靈或任何其他喜歡將東西亂扔在地上的東西搭配使用。它會快速檢索物品並將其存放到指定的容器或穩定蟲洞中。"
+				""
+				"使用精靈附帶的召喚之書設置其工作區域和存放地點。蹲下右鍵精靈綁定。召喚之書也可用於傳送精靈。"
+				""
+				"蹲下右鍵精靈存取設置過濾的介面。"
+			]
+			hide_dependency_lines: true
+			icon: "occultism:brush"
+			id: "260C18F9A993C342"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "03243DB93AA2A084"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			subtitle: "我的工作。廁所和鍋爐，鍋爐和廁所。外加那個沸騰的廁所。有種就開除我。"
+			tasks: [{
+				advancement: "occultism:occultism/summon_foliot_cleaner"
+				criterion: ""
+				id: "6E9141A6979B6E0A"
+				type: "advancement"
+			}]
+			title: "召喚魔精清潔工"
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1A8FB7EB02DAD9C9"]
+			dependency_requirement: "one_completed"
+			description: [
+				"通過向異界獻祭生命，可以召喚一些真正非凡的朋友，它們會賦予主人永久的增益效果，甚至會與主人並肩作戰，直到它們的肉體形態無法維持，精靈回歸異界。"
+				""
+				"下列雖並不詳盡，但強調了與這些使魔交朋友所帶來的一些好處，可同時召喚多個。"
+				""
+				"有關這些和其他使魔的詳細資訊，參閱「魔靈全典」中使魔儀式的章節。"
+				""
+				"戰鬥"
+				"● 木乃伊 – 為你戰鬥。"
+				"● 眼魔 – 從它眼中發射魔法雷射。"
+				""
+				"實用"
+				"● 守護者 – 移動的不死圖騰。"
+				"● 貪婪 – 像磁鐵一樣蒐集物品。"
+				"● 河狸 – 砍樹更快。"
+				""
+				"增益"
+				"● 具翼 – 提供多段跳，跳躍提升和緩降。"
+				"● 龍 – 增加獲得的經驗值。"
+				"● 蝙蝠 – 獲得夜視。"
+				"● 克蘇魯 – 獲得水下呼吸。"
+				"● 小鹿 – 獲得跳躍提升。"
+				"● 惡魔 – 獲得火焰抗性。"
+				""
+				"其他"
+				"● 鐵匠 – 修理裝備並對其他使魔提供升級，以各種方式增強它們。"
+				""
+				""
+				"注意：使魔不受友軍傷害，因此在它們附近戰鬥通常是安全的。此外，一些戰鬥向的使魔也增強了，幫助它們存活。"
+			]
+			hide_dependency_lines: true
+			icon: "occultism:ritual_dummy/custom_ritual"
+			id: "1CA681DF652BF0D6"
+			min_width: 300
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/occultism/epic"
+				icon: "kubejs:epic_lootbox"
+				id: "1A015AA19FC395D2"
+				title: "Occultism Epic Loot Chest"
+				type: "command"
+			}]
+			tasks: [{
+				icon: "occultism:ritual_dummy/custom_ritual"
+				id: "4FF02C15A8C5ABE6"
+				observe_type: 6
+				timer: 0L
+				title: "觀察一隻神祕學的使魔"
+				to_observe: "#occultism:familiars"
+				type: "observation"
+			}]
+			title: "使魔"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D872437E8DA574B"]
+			description: ["對於一種大部分時間都在哭嚎的生物來說，幽靈之淚似乎供應不足。然而，在異界的幫助下，可以召喚出一隻完美淚眼的幽靈。"]
+			hide_dependency_lines: true
+			icon: "minecraft:ghast_tear"
+			id: "05DE3EB419143626"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "030D9B9A9ED78D12"
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			subtitle: "偉大的幽靈"
+			tasks: [{
+				advancement: "occultism:occultism/possess_ghast"
+				criterion: ""
+				id: "29BD5D2D2907AE91"
+				type: "advancement"
+			}]
+			title: "幽靈之淚"
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["53F52A1385C25A50"]
+			description: ["從材料處理和自動化採礦到天體操控，神秘學提供了大量的實用功能。在接下來的任務中探索一些選項吧。"]
+			hide_dependency_lines: true
+			icon: "occultism:spirit_lantern"
+			id: "1A8FB7EB02DAD9C9"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "244C22E3F35C9074"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "43742C4BF485D1CC"
+				item: "occultism:otherstone"
+				type: "item"
+			}]
+			title: "工具與實用物品"
+			x: 18.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53F52A1385C25A50"]
+			description: ["神秘學在儲存和物品物流方面有很多功能。接下來的任務將介紹其中一些更值得注意的特性。"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "occultism:satchel"
+				tag: {
+					spiritName: "Zurtimder"
+				}
+			}
+			id: "79FA215631E6AB09"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "2E3C0CEC5584142C"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "47C7E7EB53BB26F2"
+				item: "occultism:otherstone"
+				type: "item"
+			}]
+			title: "儲存與物流"
+			x: 8.5d
+			y: 1.0d
+		}
+	]
+	title: "神祕學"
+}

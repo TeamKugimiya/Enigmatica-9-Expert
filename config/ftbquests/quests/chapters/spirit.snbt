@@ -1,0 +1,329 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "spirit"
+	group: "5A8B89F87F77CF4C"
+	icon: "spirit:soul_crystal"
+	id: "596CC800F761E377"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["喚靈是一個小型模組，其主要功能是生成生物。"]
+			icon: "spirit:soul_crystal"
+			id: "0EF8C14BA566F377"
+			shape: "gear"
+			tasks: [{
+				id: "0A12ECED7816E2F0"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "喚靈"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57BF53D313AF25D1"]
+			description: [
+				"除了在用於殺死生物時獲得額外的靈魂外，靈魂鋼工具還可以通過靈魂水晶中包含的靈魂來強化。它們也可以通過將其丟入靈魂之火中來修理。"
+				""
+				"武器在強化時會自動從物品欄中的靈魂水晶中汲取靈魂，在擊中時施加額外的傷害或特殊效果。請注意；這會消耗靈魂水晶中的靈魂。"
+				""
+				"可以隨時通過按下其綁定的按鍵來強化或解除工具的強化狀態。"
+				""
+				""
+				"{@pagebreak}"
+				"&n蜜蜂&r"
+				"● 擊中附加中毒效果"
+				""
+				"&n烈焰使者&r"
+				"● 使方塊或生物著火"
+				""
+				"&n貓&r"
+				"● 擊中附加速度效果"
+				""
+				"&n洞穴蜘蛛&r"
+				"● 擊中附加中毒效果"
+				""
+				"&n雞&r"
+				"● 擊中附加緩降速效果"
+				"{@pagebreak}"
+				"&n苦力怕&r"
+				"● 撞擊時爆炸"
+				""
+				"&n海豚&r"
+				"● 擊中時附加海豚悠遊效果"
+				""
+				"&n地獄幽靈&r"
+				"● 使方塊或生物著火"
+				"● 衝擊時爆炸"
+				""
+				"&n螢光魷魚&r"
+				"● 衝擊時附加發光效果"
+				""
+				"&n鐵魔像&r"
+				"● 擊中時增加額外 2 點傷害"
+				"● 擊中時增加額外 1 級擊退效果"
+				""
+				"{@pagebreak}"
+				"&n河豚&r"
+				"● 擊中時附加中毒效果"
+				""
+				"&n兔子&r"
+				"● 擊中時附加跳躍提升效果"
+				""
+				"&n劫毀獸&r"
+				"● 擊中時附加額外 4 點傷害"
+				"● 擊中時附加額外 2 等擊退效果"
+				""
+				"&n界伏蚌&r"
+				"● 擊中時附加漂浮效果"
+				""
+				"&n魷魚&r"
+				"● 擊中時附加致盲效果"
+				"{@pagebreak}"
+				"&n海龜&r"
+				"● 擊中時附加緩速效果"
+				"● 擊中時附加抗性效果"
+				""
+				"&n伏守者&r"
+				"● 擊中時附加額外 5 點傷害"
+				"● 擊中時附加額外 2 等擊退效果"
+				"● 擊中時附加黑暗效果"
+				""
+				"&n凋零&r"
+				"● 擊中時附加凋零效果"
+				"● 衝擊時爆炸"
+				""
+				"&n凋零骷髏&r"
+				"● 擊中時附加凋零效果"
+			]
+			icon: {
+				Count: 1b
+				id: "spirit:soul_steel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4883919A7D067958"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "70AD156DCAFD0200"
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "323B0A316D4EFC03"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spirit:soul_steel_sword"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_shovel"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_axe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_hoe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_pickaxe"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "spirit:soul_steel_bow"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "靈魂鋼工具"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0EF8C14BA566F377"]
+			description: [
+				"靈魂吞噬是喚靈引入的主要合成機制。它涉及到建造一個中間燃燒著靈魂之火的結構，然後將物品投入靈魂之火中。"
+				""
+				"對於某些合成，這會消耗該結構。對於其他合成，該結構不會被消耗。無論哪種情況，如果結構和材料有效，製作的物品將會掉落在地上。"
+				""
+				"每個合成所需的結構，以及是否會被消耗的指示，都會在 JEI 中顯示。"
+			]
+			icon: "minecraft:soul_campfire"
+			id: "025ECC6F5458ABB7"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "7AE09C2B127B056C"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "66787F85815BDB87"
+				item: "minecraft:soul_sand"
+				title: "Soul Fire"
+				type: "item"
+			}]
+			title: "由此開始：靈魂吞噬"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["57BF53D313AF25D1"]
+			description: [
+				"簡單來說，靈魂牢籠用於生成更多的生物。一個儲存了足夠靈魂的靈魂水晶可以右鍵靈魂牢籠來設置要生成的生物類型。"
+				""
+				"靈魂水晶中包含的靈魂越多，靈魂牢籠的效果就越好！"
+			]
+			id: "5346D41AAE257E52"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "43916A1487F20C59"
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2F1C9041E33CE52F"
+				item: "spirit:soul_cage"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["025ECC6F5458ABB7"]
+			description: [
+				"靈魂水晶本身用於儲存生物的靈魂，每個水晶只能容納一種生物的靈魂。"
+				""
+				"要填充靈魂，需要在物品欄中持有該水晶並殺死生物。還需要使用特殊的武器；靈魂鋼工具或附有靈魂收割附魔的武器都可以。"
+			]
+			id: "57BF53D313AF25D1"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/alchemists_delight"
+				icon: "kubejs:alchemists_delight"
+				id: "0B4C2A547E498C69"
+				title: "Alchemist's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "67ECB1C64AFC1CD4"
+				item: "spirit:soul_crystal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5346D41AAE257E52"]
+			description: [
+				"水晶台座可用於幫助自動補充靈魂水晶。"
+				""
+				"將其放置在刷怪塔中，並提供一個靈魂水晶。任何時候，當一個正確類型的生物在六格範圍內被合適的武器殺死時，靈魂將會轉移到靈魂水晶中。"
+				""
+				"裝有執行模組的模組化路由器、動力機械模組的機械手和氣動工藝的無人機都能够使用這種武器。只是要記得不定時將其丟入靈魂之火中進行修理！"
+				""
+				"水晶台座還可用於合併兩個儲存了相同靈魂的靈魂水晶。將一個放在基座上，然後用另一個右鍵它，即可將靈魂轉移到台座上的水晶中。"
+			]
+			id: "72404755AE801AD0"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/sorcerers_delight"
+				icon: "kubejs:sorcerers_delight"
+				id: "6E37FF75A1558B1B"
+				title: "Sorcerer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2248DAC6DBF9E42F"
+				item: "spirit:crystal_pedestal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["025ECC6F5458ABB7"]
+			description: ["台座是個裝飾性方塊，用來展示物品。持物品右鍵放上去展示。"]
+			id: "1175EB3DD0105811"
+			rewards: [{
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+				icon: "kubejs:farmers_delight"
+				id: "5F1AF6109F3754D0"
+				title: "Farmer's Delight"
+				type: "command"
+			}]
+			tasks: [{
+				id: "2C6D9BB6EDEC585E"
+				item: "spirit:pedestal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["025ECC6F5458ABB7"]
+			description: [
+				"靈魂台座可用於展示生物的靈魂，作為一種更為陰森的裝飾。使用靈魂水晶右鍵可以展示其中包含的生物。"
+				""
+				"靈魂水晶碎片和靈魂水晶將顯示一個真實的生物實體，而原初靈魂水晶只會顯示一個通用的，但非常可愛的原初靈魂。"
+				""
+				"任何被展示的靈魂都能使用靈魂鋼手杖右鍵來轉換為原初靈魂。"
+			]
+			id: "193FD67844E7D2CD"
+			rewards: [
+				{
+					id: "2D7722107B0E6B0C"
+					item: "spirit:soul_steel_wand"
+					type: "item"
+				}
+				{
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:loot_boxes/farmers_delight"
+					icon: "kubejs:farmers_delight"
+					id: "77FCCB80FEB9BBB5"
+					title: "Farmer's Delight"
+					type: "command"
+				}
+			]
+			tasks: [{
+				id: "30B7F99C2453450E"
+				item: "spirit:soul_pedestal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+	]
+	title: "喚靈"
+}
